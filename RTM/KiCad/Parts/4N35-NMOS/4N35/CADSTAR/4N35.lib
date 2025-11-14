@@ -1,0 +1,16 @@
+.4N35 :1 ;Transistor Output Optocouplers Phototransistor Out
+DIP762W60P254L730H450Q6N
+*STM S
+*NGS
+*PLB 1="A" 2="K" 3="NC" 4="E" 5="C" 6="B"
+*MXP 6
+*DFN 4N35
+~!Mouser Part Number (78-4N35)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/4N35?qs=o4busQjUnQaG1dxXB%2Fpaxg%3D%3D)
+~!Manufacturer_Name (Vishay)
+~!Manufacturer_Part_Number (4N35)
+~!Link Datasheet (-)
+~!Height (4.5mm)
+~!3D_Model (4N35)
+"4N35"
+1.1!U 2.1!U 3.1!U 6.1!U 5.1!U 4.1!U 

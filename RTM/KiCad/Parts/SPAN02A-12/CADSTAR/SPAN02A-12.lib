@@ -1,0 +1,16 @@
+.SPAN02A-12 :1 ;Isolated DC/DC Converters 9-18Vin 12Vout 167mA SIP8 Reg Iso
+SPAN02A12
+*STM PS
+*NGS
+*PLB 1="-VIN" 2="+VIN" 3="R.C." 5="N.C._1" 6="+VOUT" 7="-VOUT" 8="N.C._2"
+*MXP 7
+*DFN SPAN02A-12
+~!Mouser Part Number (709-SPAN02A-12)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/MEAN-WELL/SPAN02A-12?qs=5aG0NVq1C4wxQqKsG84AkQ%3D%3D)
+~!Manufacturer_Name (Mean Well)
+~!Manufacturer_Part_Number (SPAN02A-12)
+~!Link Datasheet (https://datasheet.datasheetarchive.com/originals/distributors/DKDS-2/37032.pdf)
+~!Height (11.6mm)
+~!3D_Model (SPAN02A-12)
+SPAN02A-12
+1.1!U 2.1!U 3.1!U 5.1!U 6.1!U 7.1!U 8.1!U 

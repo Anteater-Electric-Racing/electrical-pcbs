@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '4N35'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Vishay", "4N35" (!) = "", "DIP762W60P254L730H450Q6N", "Dual-In-Line Packages", "78-4N35", "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/4N35?qs=o4busQjUnQaG1dxXB%2Fpaxg%3D%3D", "Transistor Output Optocouplers Phototransistor Out", "", "4.5 mm"
+END_PART
+
+END.
