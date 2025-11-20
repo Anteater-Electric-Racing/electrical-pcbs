@@ -1,3 +1,6 @@
 [submodule "CCM"]
 	path = CCM
 	url = https://github.com/Anteater-Electric-Racing/Central-Computer-Module.git
+[submodule "PCC"]
+	path = PCC
+	url = https://github.com/Anteater-Electric-Racing/Precharge-Circuit.git
