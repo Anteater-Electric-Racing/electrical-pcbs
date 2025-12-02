@@ -1,0 +1,9 @@
+Manufacturer=Mean Well
+PartNumber=SPAN02A-12
+PartCategory=Power Supply
+PackageCategory=Other
+PinCount=7
+Version=1.1
+Released=2020-03-30 06:46:36
+Downloaded=2025-02-08 22:28:16
+3D=Y

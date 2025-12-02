@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/737002/1595127/2.50/6/3/Switch/-->
+<quadcept_library>
+  <setting unit="mil" />
+  <textstyle name="Default" height="47.244094488189" strokewidth="7.8740157480315" charwidth="47.244094488189" />
+  <textstyle name="Dimension" height="19.6850393700787" strokewidth="0" charwidth="19.6850393700787" />
+  <textstyle name="H127W0635TH00762" height="50" strokewidth="3" charwidth="25" />
+  <textstyle name="H15W15TH02" height="59.0551181102362" strokewidth="7.8740157480315" charwidth="59.0551181102362" />
+  <padstyle name="c120_h80" surface="False" plated="True" isvia="False" nopaste="True" nomask="True" complex="False" holesize="31.496062992126">
+    <padshape layer="TOP" shape="round" width="47.244094488188" height="47.244094488188" />
+    <padshape layer="TOP_SOLDER_MASK" shape="round" width="55.11811023622" height="55.11811023622" />
+    <padshape layer="INNER" shape="round" width="47.244094488188" height="47.244094488188" />
+    <padshape layer="BOTTOM" shape="round" width="47.244094488188" height="47.244094488188" />
+    <padshape layer="BOTTOM_SOLDER_MASK" shape="round" width="55.11811023622" height="55.11811023622" />
+  </padstyle>
+  <padstyle name="s120_h80" surface="False" plated="True" isvia="False" nopaste="True" nomask="True" complex="False" holesize="31.496062992126">
+    <padshape layer="TOP" shape="square" width="47.244094488188" height="47.244094488188" />
+    <padshape layer="TOP_SOLDER_MASK" shape="square" width="55.11811023622" height="55.11811023622" />
+    <padshape layer="INNER" shape="round" width="47.244094488188" height="47.244094488188" />
+    <padshape layer="BOTTOM" shape="square" width="47.244094488188" height="47.244094488188" />
+    <padshape layer="BOTTOM_SOLDER_MASK" shape="square" width="55.11811023622" height="55.11811023622" />
+  </padstyle>
+  <footprint name="DIP762W60P254L730H450Q6N" originx="0" originy="0" pickpointx="0" pickpointy="0">
+    <pcbpin number="1" name="1" style="s120_h80" originx="-150" originy="99.999999999999" rotation="90" />
+    <pcbpin number="2" name="2" style="c120_h80" originx="-150" originy="0" rotation="90" />
+    <pcbpin number="3" name="3" style="c120_h80" originx="-150" originy="-99.999999999999" rotation="90" />
+    <pcbpin number="4" name="4" style="c120_h80" originx="150" originy="-99.999999999999" rotation="90" />
+    <pcbpin number="5" name="5" style="c120_h80" originx="150" originy="0" rotation="90" />
+    <pcbpin number="6" name="6" style="c120_h80" originx="150" originy="99.999999999999" rotation="90" />
+    <line layer="TOP_PLACE_BOUND" originx="-189.37007874016" originy="163.38582677165" endx="189.37007874016" endy="163.38582677165" width="1.9685039370079" />
+    <line layer="TOP_PLACE_BOUND" originx="189.37007874016" originy="163.38582677165" endx="189.37007874016" endy="-163.38582677165" width="1.9685039370079" />
+    <line layer="TOP_PLACE_BOUND" originx="189.37007874016" originy="-163.38582677165" endx="-189.37007874016" endy="-163.38582677165" width="1.9685039370079" />
+    <line layer="TOP_PLACE_BOUND" originx="-189.37007874016" originy="-163.38582677165" endx="-189.37007874016" endy="163.38582677165" width="1.9685039370079" />
+    <line layer="TOP_ASSEMBLY" originx="-137.79527559055" originy="153.54330708661" endx="137.79527559055" endy="153.54330708661" width="3.9370078740157" />
+    <line layer="TOP_ASSEMBLY" originx="137.79527559055" originy="153.54330708661" endx="137.79527559055" endy="-153.54330708661" width="3.9370078740157" />
+    <line layer="TOP_ASSEMBLY" originx="137.79527559055" originy="-153.54330708661" endx="-137.79527559055" endy="-153.54330708661" width="3.9370078740157" />
+    <line layer="TOP_ASSEMBLY" originx="-137.79527559055" originy="-153.54330708661" endx="-137.79527559055" endy="153.54330708661" width="3.9370078740157" />
+    <line layer="TOP_ASSEMBLY" originx="-137.79527559055" originy="103.54330708661" endx="-87.79527559055" endy="153.54330708661" width="3.9370078740157" />
+    <line layer="TOP_SILKSCREEN" originx="-173.62204724409" originy="153.54330708661" endx="137.79527559055" endy="153.54330708661" width="7.8740157480314" />
+    <line layer="TOP_SILKSCREEN" originx="-137.79527559055" originy="-153.54330708661" endx="137.79527559055" endy="-153.54330708661" width="7.8740157480314" />
+  </footprint>
+  <symbol name="4N35" originx="0" originy="0">
+    <line originx="200" originy="100" endx="700" endy="100" width="0" />
+    <line originx="700" originy="-300" endx="700" endy="100" width="0" />
+    <line originx="700" originy="-300" endx="200" endy="-300" width="0" />
+    <line originx="200" originy="100" endx="200" endy="-300" width="0" />
+    <sympin number="1" originx="200" originy="0" rotation="180" length="100" width="7.8740157480315" flipped="False">
+      <text name="pinname" originx="230" originy="0" style="Default" rotation="0" justify="left" flipped="False" hidden="False" data="A" />
+      <text name="pindes" originx="140" originy="20" style="Default" rotation="0" justify="lowerright" flipped="False" hidden="False" data="1" />
+    </sympin>
+    <sympin number="2" originx="200" originy="-100" rotation="180" length="100" width="7.8740157480315" flipped="False">
+      <text name="pinname" originx="230" originy="-100" style="Default" rotation="0" justify="left" flipped="False" hidden="False" data="K" />
+      <text name="pindes" originx="140" originy="-80" style="Default" rotation="0" justify="lowerright" flipped="False" hidden="False" data="2" />
+    </sympin>
+    <sympin number="3" originx="200" originy="-200" rotation="180" length="100" width="7.8740157480315" flipped="False">
+      <text name="pinname" originx="230" originy="-200" style="Default" rotation="0" justify="left" flipped="False" hidden="False" data="NC" />
+      <text name="pindes" originx="140" originy="-180" style="Default" rotation="0" justify="lowerright" flipped="False" hidden="False" data="3" />
+    </sympin>
+    <sympin number="6" originx="700" originy="0" rotation="0" length="100" width="7.8740157480315" flipped="False">
+      <text name="pinname" originx="670" originy="0" style="Default" rotation="0" justify="right" flipped="False" hidden="False" data="B" />
+      <text name="pindes" originx="760" originy="20" style="Default" rotation="0" justify="lowerleft" flipped="False" hidden="False" data="6" />
+    </sympin>
+    <sympin number="5" originx="700" originy="-100" rotation="0" length="100" width="7.8740157480315" flipped="False">
+      <text name="pinname" originx="670" originy="-100" style="Default" rotation="0" justify="right" flipped="False" hidden="False" data="C" />
+      <text name="pindes" originx="760" originy="-80" style="Default" rotation="0" justify="lowerleft" flipped="False" hidden="False" data="5" />
+    </sympin>
+    <sympin number="4" originx="700" originy="-200" rotation="0" length="100" width="7.8740157480315" flipped="False">
+      <text name="pinname" originx="670" originy="-200" style="Default" rotation="0" justify="right" flipped="False" hidden="False" data="E" />
+      <text name="pindes" originx="760" originy="-180" style="Default" rotation="0" justify="lowerleft" flipped="False" hidden="False" data="4" />
+    </sympin>
+  </symbol>
+  <component name="4N35" designatorprefix="S" height="177.16535433071" footprint="DIP762W60P254L730H450Q6N">
+    <comppin designator="1" sympin="1" pinswap="0" gateswap="0" gate="1" group="1" side="" type="Any" name="A" />
+    <comppin designator="2" sympin="2" pinswap="0" gateswap="0" gate="1" group="1" side="" type="Any" name="K" />
+    <comppin designator="3" sympin="3" pinswap="0" gateswap="0" gate="1" group="1" side="" type="Any" name="NC" />
+    <comppin designator="4" sympin="4" pinswap="0" gateswap="0" gate="1" group="1" side="" type="Any" name="E" />
+    <comppin designator="5" sympin="5" pinswap="0" gateswap="0" gate="1" group="1" side="" type="Any" name="C" />
+    <comppin designator="6" sympin="6" pinswap="0" gateswap="0" gate="1" group="1" side="" type="Any" name="B" />
+    <attached_symbol gate="1" name="4N35" />
+    <pinmap designator="1" footprintpin="1" />
+    <pinmap designator="2" footprintpin="2" />
+    <pinmap designator="3" footprintpin="3" />
+    <pinmap designator="4" footprintpin="4" />
+    <pinmap designator="5" footprintpin="5" />
+    <pinmap designator="6" footprintpin="6" />
+    <text name="Datasheet" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="" />
+    <text name="Description" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="Transistor Output Optocouplers Phototransistor Out" />
+    <text name="Mouser Part Number" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="78-4N35" />
+    <text name="Mouser Price/Stock" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/4N35?qs=o4busQjUnQaG1dxXB%2Fpaxg%3D%3D" />
+    <text name="Manufacturer_Name" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="Vishay" />
+    <text name="Manufacturer_Part_Number" originx="750" originy="200" style="Default" rotation="0" justify="left" flipped="False" hidden="False" data="4N35" />
+  </component>
+</quadcept_library>

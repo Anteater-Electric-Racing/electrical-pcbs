@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "SPAN02A-12"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2020-03-30-06:46:36)
+    (mountForm default
+        (footprintRef "SPAN02A12")
+        (spec "System")
+    )
+)

@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "4N35"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2020-05-13-10:43:52)
+    (mountForm default
+        (footprintRef "DIP762W60P254L730H450Q6N")
+        (spec "System")
+    )
+)

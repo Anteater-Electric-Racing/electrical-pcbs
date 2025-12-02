@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "SPAN02A12"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "SPAN02A12")
+        (spec "default")
+    )
+)
