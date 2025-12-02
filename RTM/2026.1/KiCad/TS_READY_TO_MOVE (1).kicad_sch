@@ -6810,7 +6810,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3597f45a-3961-4d7e-b408-35894984e2c9")
-		(property "Reference" "RX"
+		(property "Reference" "R2"
 			(at 221.742 134.366 0)
 			(effects
 				(font
@@ -6864,7 +6864,7 @@
 		(instances
 			(project "TS_READY_TO_MOVE (1)"
 				(path "/ec2b8551-75c2-4864-b31d-b681332831c2"
-					(reference "RX")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -7500,6 +7500,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" "Change to 24k, 0.125W, 0805"
+			(at 158.75 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0dea15d3-d475-408a-8118-a10b85a45702")
 		)
@@ -7975,6 +7984,15 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 167.64 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "Change to 24k, 0.125W, 0805"
 			(at 167.64 49.53 0)
 			(effects
 				(font
