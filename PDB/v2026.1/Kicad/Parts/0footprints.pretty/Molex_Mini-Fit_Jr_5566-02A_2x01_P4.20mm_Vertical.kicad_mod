@@ -12,7 +12,8 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
+				(thickness 0.2)
+				(bold yes)
 			)
 		)
 	)
@@ -401,6 +402,62 @@
 		)
 		(layer "F.Fab")
 		(uuid "ce6774bd-a56d-4e1f-8455-922c8fd005d7")
+	)
+	(fp_text user "↲"
+		(at 3.048 6.731 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "49a052c6-8f3a-4b31-90fe-9839a9c71681")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "Pin 2"
+		(at 2.921 5.588 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "7079bf41-a2ca-4d26-899b-5f66d3f4fc81")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.125)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "Pin 1"
+		(at 2.921 0.127 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "a1f02e8e-6b12-4e9e-95e4-7509a63c33a2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.125)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "↲"
+		(at 3.048 1.27 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "ceefc71a-0278-4399-8774-6bd3ffe8e7a2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 -1.55 0)
