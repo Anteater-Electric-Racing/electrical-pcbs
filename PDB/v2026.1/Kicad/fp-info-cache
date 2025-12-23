@@ -1,4 +1,4 @@
-26781808280940163
+26787107879950635
 0footprints
 649-SERIES-HOLDER
 649-Series-Holder
@@ -14,6 +14,13 @@ CONN02_FUSEBLOCK_22P6X9_LTF
 3
 3
 0footprints
+KEYSTONE_7797
+
+
+0
+4
+1
+0footprints
 Molex_Mini-Fit_Jr_5566-02A_2x01_P4.20mm_Vertical
 Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5566-02A, example for new mpn: 39-28-x02x, 1 Pins per row, Mounting:  (http://www.molex.com/pdm_docs/sd/039281043_sd.pdf), generated with kicad-footprint-generator
 connector Molex Mini-Fit_Jr vertical
@@ -27,6 +34,20 @@ connector Molex Mini-Fit_Jr vertical
 0
 4
 4
+0footprints
+Molex_Mini-Fit_Jr_5566-06A_2x03_P4.20mm_Vertical
+Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5566-06A, example for new mpn: 39-28-x06x, 3 Pins per row, Mounting:  (http://www.molex.com/pdm_docs/sd/039281043_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mini-Fit_Jr vertical
+0
+6
+6
+0footprints
+Molex_Mini-Fit_Jr_5566-10A_2x05_P4.20mm_Vertical
+Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5566-10A, example for new mpn: 39-28-x10x, 5 Pins per row, Mounting:  (http://www.molex.com/pdm_docs/sd/039281043_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mini-Fit_Jr vertical
+0
+10
+10
 0footprints
 SOT95P280X110-6N
 

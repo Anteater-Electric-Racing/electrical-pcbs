@@ -658,7 +658,7 @@
 		(uuid "e13d64cc-0c7c-4d98-a317-1944ade09fba")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/Parts/step/miniFix2x2/0039281043.stp"
+	(model "${KIPRJMOD}/Parts/step/miniFix2x2/miniFix2x2_female.stp"
 		(offset
 			(xyz 2 -2.5 0)
 		)

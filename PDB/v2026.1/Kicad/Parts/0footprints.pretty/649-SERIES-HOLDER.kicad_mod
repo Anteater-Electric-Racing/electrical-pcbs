@@ -478,4 +478,15 @@
 		(uuid "516f8b59-a419-4b2a-8568-57c445867747")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/Parts/step/64900001039_Fuse.STEP"
+		(offset
+			(xyz 0 0 6)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
 )
