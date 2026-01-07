@@ -2651,12 +2651,6 @@
 		(uuid "791272b5-4af5-4266-a4fb-12fe5adc55c3")
 	)
 	(junction
-		(at 124.46 20.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "909770a5-b6a9-4bd2-856d-21153687a520")
-	)
-	(junction
 		(at 57.15 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2739,30 +2733,12 @@
 		(uuid "c5dc8475-8f29-4a97-82d2-d3ac3c60b118")
 	)
 	(no_connect
-		(at 181.61 46.99)
-		(uuid "c9b4f064-36a8-4c02-8b5b-e9cf5455750f")
-	)
-	(no_connect
-		(at 181.61 60.96)
-		(uuid "d658d2a0-83b3-4a3d-bf39-dcceae77179b")
-	)
-	(no_connect
 		(at 124.46 48.26)
 		(uuid "fa0e830a-eaf6-4e84-80e9-c3840cbbdf18")
 	)
 	(no_connect
 		(at 124.46 77.47)
 		(uuid "ff9f4e7f-babf-4e06-8c77-816bac1347c9")
-	)
-	(wire
-		(pts
-			(xy 167.64 62.23) (xy 167.64 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0011f524-a1c8-4805-8857-a641154accfe")
 	)
 	(wire
 		(pts
@@ -2956,16 +2932,6 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 58.42) (xy 168.91 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "12843d64-86fe-483a-a4db-93f75fa59bf8")
-	)
-	(wire
-		(pts
 			(xy 135.89 20.32) (xy 135.89 21.59)
 		)
 		(stroke
@@ -3156,16 +3122,6 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 46.99) (xy 168.91 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "25e99343-e714-4dad-a857-6534379bf914")
-	)
-	(wire
-		(pts
 			(xy 181.61 85.09) (xy 182.88 85.09)
 		)
 		(stroke
@@ -3206,16 +3162,6 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 44.45) (xy 168.91 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2a74e8c2-d6ce-45c4-9ea4-987b5844a792")
-	)
-	(wire
-		(pts
 			(xy 250.19 52.07) (xy 250.19 49.53)
 		)
 		(stroke
@@ -3246,16 +3192,6 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 57.15) (xy 158.75 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c508f8d-83ec-43fd-b46b-dec33649bf2d")
-	)
-	(wire
-		(pts
 			(xy 182.88 83.82) (xy 184.15 83.82)
 		)
 		(stroke
@@ -3273,16 +3209,6 @@
 			(type default)
 		)
 		(uuid "2db939af-4704-474f-9a42-a77aa073751f")
-	)
-	(wire
-		(pts
-			(xy 149.86 57.15) (xy 151.13 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2f65192d-f42d-455e-8b18-50b55980f93c")
 	)
 	(wire
 		(pts
@@ -3756,16 +3682,6 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 43.18) (xy 158.75 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "60901022-37fc-4fb8-9296-09e9f2ee4e81")
-	)
-	(wire
-		(pts
 			(xy 267.97 104.14) (xy 265.43 104.14)
 		)
 		(stroke
@@ -3816,16 +3732,6 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 60.96) (xy 168.91 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63803023-32aa-4189-a9ee-e7fc91c1f57a")
-	)
-	(wire
-		(pts
 			(xy 265.43 104.14) (xy 264.16 104.14)
 		)
 		(stroke
@@ -3853,16 +3759,6 @@
 			(type default)
 		)
 		(uuid "6477c0f3-5294-431d-b576-357790d9224c")
-	)
-	(wire
-		(pts
-			(xy 182.88 57.15) (xy 184.15 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "657fe2c5-28c4-4cb0-a387-23e88b33720c")
 	)
 	(wire
 		(pts
@@ -3963,16 +3859,6 @@
 			(type default)
 		)
 		(uuid "6db6c1d2-d0be-4c3d-b374-45ab3e30a40d")
-	)
-	(wire
-		(pts
-			(xy 167.64 48.26) (xy 151.13 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ed6dd03-abc8-4796-8e2c-31bcb16695ca")
 	)
 	(wire
 		(pts
@@ -4316,16 +4202,6 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 44.45) (xy 182.88 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9168150f-f032-4729-a863-4d1c2ad65634")
-	)
-	(wire
-		(pts
 			(xy 130.81 127) (xy 132.08 127)
 		)
 		(stroke
@@ -4506,16 +4382,6 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 20.32) (xy 119.38 20.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a281bdad-a1d4-47b9-b129-54dbb4c94493")
-	)
-	(wire
-		(pts
 			(xy 116.84 123.19) (xy 116.84 124.46)
 		)
 		(stroke
@@ -4626,16 +4492,6 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 43.18) (xy 167.64 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "acab2c90-9d51-4461-9171-f1adb64c905a")
-	)
-	(wire
-		(pts
 			(xy 66.04 67.31) (xy 66.04 68.58)
 		)
 		(stroke
@@ -4673,16 +4529,6 @@
 			(type default)
 		)
 		(uuid "ae416260-de64-42fb-8d2d-80da576b7611")
-	)
-	(wire
-		(pts
-			(xy 182.88 43.18) (xy 184.15 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b030e49a-21ea-48e8-81f9-7e047fe1c82b")
 	)
 	(wire
 		(pts
@@ -4753,16 +4599,6 @@
 			(type default)
 		)
 		(uuid "b86125f0-7a97-4810-8da5-b18811a9186f")
-	)
-	(wire
-		(pts
-			(xy 149.86 43.18) (xy 151.13 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b87bc7c6-9c8e-4a03-b1d8-df475802f25e")
 	)
 	(wire
 		(pts
@@ -5046,16 +4882,6 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 58.42) (xy 182.88 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d5a9f2dd-ad0c-45b1-9a7a-d19591edd294")
-	)
-	(wire
-		(pts
 			(xy 171.45 118.11) (xy 182.88 118.11)
 		)
 		(stroke
@@ -5246,16 +5072,6 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 57.15) (xy 167.64 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef3079e3-d81f-4cdc-a92f-ab5a16d4f5b0")
-	)
-	(wire
-		(pts
 			(xy 171.45 137.16) (xy 182.88 137.16)
 		)
 		(stroke
@@ -5286,16 +5102,6 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 62.23) (xy 151.13 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f2c67d30-8c4a-4ada-a821-b9ffd6f7b1ab")
-	)
-	(wire
-		(pts
 			(xy 125.73 74.93) (xy 124.46 74.93)
 		)
 		(stroke
@@ -5303,16 +5109,6 @@
 			(type default)
 		)
 		(uuid "f35fde81-7802-477e-ba43-a5e257465022")
-	)
-	(wire
-		(pts
-			(xy 167.64 48.26) (xy 167.64 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f3c04076-ebb4-4684-8352-d692e1a00a48")
 	)
 	(wire
 		(pts
@@ -5333,16 +5129,6 @@
 			(type default)
 		)
 		(uuid "f5852978-72ee-48b9-b8c0-0aa130512b3a")
-	)
-	(wire
-		(pts
-			(xy 181.61 58.42) (xy 182.88 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f717d8a6-d63f-4250-84f5-a77e4aca1f12")
 	)
 	(wire
 		(pts
@@ -5423,16 +5209,6 @@
 			(type default)
 		)
 		(uuid "fd5dae4f-8066-4165-89cd-474ee4d1120f")
-	)
-	(wire
-		(pts
-			(xy 182.88 44.45) (xy 182.88 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fda41db5-e13b-4d83-ba21-313a11833151")
 	)
 	(wire
 		(pts
@@ -5584,16 +5360,6 @@
 		)
 		(uuid "852596fa-d963-4403-b976-dca11c95c07f")
 	)
-	(label "Fuse_Break2"
-		(at 167.64 57.15 180)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify right bottom)
-		)
-		(uuid "8b995916-4216-4a62-8c8d-459a760985bb")
-	)
 	(label "Fuse_CCM_12V"
 		(at 227.33 104.14 0)
 		(effects
@@ -5613,16 +5379,6 @@
 			(justify left bottom)
 		)
 		(uuid "978f1253-b550-4990-85b1-a2358d95ce4a")
-	)
-	(label "Fuse_Break1"
-		(at 167.64 43.18 180)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify right bottom)
-		)
-		(uuid "99a5f5cb-11da-4df2-a9db-044298c5112a")
 	)
 	(label "Fuse_Batt24V"
 		(at 266.7 76.2 0)
@@ -6116,28 +5872,6 @@
 			)
 		)
 	)
-	(global_label "GND"
-		(shape input)
-		(at 151.13 62.23 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "3c80f041-4f83-49b7-bc35-37dea5af7d03")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 141.4924 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "Brake_Sensor_Vout2"
 		(shape input)
 		(at 234.95 53.34 180)
@@ -6314,28 +6048,6 @@
 			)
 		)
 	)
-	(global_label "Brake_Sensor_Vout1"
-		(shape output)
-		(at 184.15 43.18 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "587ce705-d59c-496a-9ca9-007396af7e05")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 206.1245 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "GND"
 		(shape input)
 		(at 151.13 76.2 180)
@@ -6415,28 +6127,6 @@
 		(uuid "62406034-cfdc-4d54-9d07-786a008a13dd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 266.8427 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Brake_Sensor_Vout2"
-		(shape output)
-		(at 184.15 57.15 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "64c0da9b-abbd-40a0-ae0e-6b5718bc207e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 206.1245 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7040,28 +6730,6 @@
 			)
 		)
 	)
-	(global_label "5V"
-		(shape input)
-		(at 149.86 43.18 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b0146f64-a391-41e4-9e24-e277920e0564")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 144.5767 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "Wheel_Sensor_Vout1"
 		(shape output)
 		(at 184.15 71.12 0)
@@ -7234,28 +6902,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "5V"
-		(shape input)
-		(at 149.86 57.15 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c104c537-762b-4413-9a2d-f777adde4fa3")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 144.5767 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -7850,28 +7496,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape input)
-		(at 151.13 48.26 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f93c2a40-4f28-4bfd-b223-6270bd49ab9e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 141.4924 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -8697,79 +8321,6 @@
 			(project "Power_Dist_Board_KZ_2024"
 				(path "/da5a4d78-f95d-491b-b672-0f2926504265"
 					(reference "F33")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_02x02_Top_Bottom")
-		(at 173.99 44.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "23df8602-3f45-425e-8701-515e64ef1af5")
-		(property "Reference" "J22"
-			(at 175.006 41.402 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Brake_Sensor1"
-			(at 178.562 38.608 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "0footprints:Molex_Mini-Fit_Jr_5566-04A_2x02_P4.20mm_Vertical"
-			(at 173.99 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 173.99 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, double row, 02x02, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 173.99 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "81e55ce7-67d9-4781-a29a-99401bb9621f")
-		)
-		(pin "4"
-			(uuid "d08f4523-8095-44c6-9e1b-4451fae465d4")
-		)
-		(pin "2"
-			(uuid "041fa5d2-cf15-4f7a-b3b6-e6429373b466")
-		)
-		(pin "1"
-			(uuid "2152ca16-05a7-4992-ad03-b464f4db7579")
-		)
-		(instances
-			(project "Power_Dist_Board_KZ_2024"
-				(path "/da5a4d78-f95d-491b-b672-0f2926504265"
-					(reference "J22")
 					(unit 1)
 				)
 			)
@@ -10533,79 +10084,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_02x02_Top_Bottom")
-		(at 173.99 58.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "781bb7cb-f063-4691-9b6d-ad6b90d85cd6")
-		(property "Reference" "J23"
-			(at 175.006 55.372 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Brake_Sensor2"
-			(at 178.562 52.578 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "0footprints:Molex_Mini-Fit_Jr_5566-04A_2x02_P4.20mm_Vertical"
-			(at 173.99 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 173.99 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, double row, 02x02, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 173.99 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "c76870a0-b75e-42ac-a9e0-f86e5b3c9053")
-		)
-		(pin "4"
-			(uuid "94ff55c5-afb9-4719-b0a9-1fb74c123a79")
-		)
-		(pin "2"
-			(uuid "4090f0fa-12f5-4b58-a6f7-2eada0cbbed3")
-		)
-		(pin "1"
-			(uuid "9864fdb0-0a3c-4dd8-a34d-7876a12c1007")
-		)
-		(instances
-			(project "Power_Dist_Board_KZ_2024"
-				(path "/da5a4d78-f95d-491b-b672-0f2926504265"
-					(reference "J23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:Fuse")
 		(at 223.52 20.32 90)
 		(unit 1)
@@ -11229,73 +10707,6 @@
 			(project "Power_Dist_Board_KZ_2024"
 				(path "/da5a4d78-f95d-491b-b672-0f2926504265"
 					(reference "F12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Fuse")
-		(at 154.94 57.15 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8ecaffbc-b0c7-4b5b-8c75-0204f332e2f3")
-		(property "Reference" "F23"
-			(at 154.94 59.69 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "500mA"
-			(at 154.94 55.118 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
-			(at 154.94 58.928 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 154.94 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 154.94 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "65444204-886c-4666-8672-eb17ec9f7ab3")
-		)
-		(pin "1"
-			(uuid "e521c6d2-aaa6-42fa-b5fa-8283ea602667")
-		)
-		(instances
-			(project "Power_Dist_Board_KZ_2024"
-				(path "/da5a4d78-f95d-491b-b672-0f2926504265"
-					(reference "F23")
 					(unit 1)
 				)
 			)
@@ -12115,73 +11526,6 @@
 			(project "Power_Dist_Board_KZ_2024"
 				(path "/da5a4d78-f95d-491b-b672-0f2926504265"
 					(reference "H2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Fuse")
-		(at 154.94 43.18 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "bb446f91-2450-4ea1-b101-4c385b8e827f")
-		(property "Reference" "F22"
-			(at 154.94 45.72 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "500mA"
-			(at 154.94 41.148 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
-			(at 154.94 44.958 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 154.94 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 154.94 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a1abe49a-4607-4c93-aade-981cf15fc141")
-		)
-		(pin "1"
-			(uuid "42d3db83-5cc1-48a0-a3ae-85465b18cd55")
-		)
-		(instances
-			(project "Power_Dist_Board_KZ_2024"
-				(path "/da5a4d78-f95d-491b-b672-0f2926504265"
-					(reference "F22")
 					(unit 1)
 				)
 			)
