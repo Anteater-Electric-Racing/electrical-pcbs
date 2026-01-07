@@ -2596,6 +2596,26 @@
 		)
 		(uuid "91b795f7-2127-49f5-a326-1ac89d79e779")
 	)
+	(text "3V3 line \nmay be removed"
+		(exclude_from_sim no)
+		(at 70.866 150.368 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9596fd3c-a332-481e-a928-a17bc3ad5d39")
+	)
+	(text "3V3 line \nmay be removed"
+		(exclude_from_sim no)
+		(at 70.612 71.374 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "987f5144-6c9f-4b91-b1b8-649ef40f5167")
+	)
 	(text "GLV Enclosure"
 		(exclude_from_sim no)
 		(at 247.904 135.636 0)
@@ -7854,7 +7874,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "13d4b82a-8060-4926-bb3a-c8beeeb91724")
 		(property "Reference" "U1"
 			(at 57.15 53.34 0)
@@ -8601,7 +8621,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "36e75c55-7d5e-497a-9bf1-c0732d8fc889")
 		(property "Reference" "F26"
 			(at 40.64 138.176 90)
@@ -9545,7 +9565,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "6c531b8b-6362-4d30-b916-8c1ee449cba8")
 		(property "Reference" "C1"
 			(at 44.704 67.056 0)
@@ -10025,7 +10045,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "77ef699b-bc55-4619-896b-6b7d805dda49")
 		(property "Reference" "#PWR03"
 			(at 27.94 76.2 0)
@@ -10376,7 +10396,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "7e815753-b07a-494d-ba30-a39ba85a8987")
 		(property "Reference" "C2"
 			(at 68.58 62.738 0)
@@ -11538,7 +11558,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "bc8e40a7-f79a-4256-a7b8-9c6f7f7ca02e")
 		(property "Reference" "J26"
 			(at 52.324 142.24 0)
@@ -12308,7 +12328,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "e45b4bd0-1cba-4873-8d7e-cdae9bca9408")
 		(property "Reference" "FU1"
 			(at 27.94 55.372 90)
