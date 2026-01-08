@@ -6213,6 +6213,112 @@
 		)
 	)
 	(symbol
+		(lib_id "4xxx:4069")
+		(at 116.84 82.55 0)
+		(unit 7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "033dc300-b878-4dba-bbf5-3f3d1d34e90a")
+		(property "Reference" "U5"
+			(at 123.19 81.2799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4069"
+			(at 123.19 83.8199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 116.84 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf"
+			(at 116.84 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Hex inverter"
+			(at 116.84 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "96bb0081-ff5a-4ca2-a9e1-09e3e912f7a3")
+		)
+		(pin "13"
+			(uuid "ddac22d8-305e-48d7-a654-3d1c24c76152")
+		)
+		(pin "14"
+			(uuid "7c0e9f20-b7dc-4337-b041-4e57df4acb39")
+		)
+		(pin "12"
+			(uuid "98979c4c-6475-4a1e-897c-325ad47484de")
+		)
+		(pin "9"
+			(uuid "ff30775e-0c50-47cd-9eb5-482e60a9c3d0")
+		)
+		(pin "8"
+			(uuid "72051eaf-44d4-4c8c-b545-ba46c9c2f680")
+		)
+		(pin "10"
+			(uuid "d0667248-5bb4-4572-81d0-71c4143822ef")
+		)
+		(pin "2"
+			(uuid "8dfc1e88-7721-4601-b0c9-33bacc4b4b45")
+		)
+		(pin "11"
+			(uuid "52261190-f7ee-4732-8047-2640f6c8f8a1")
+		)
+		(pin "3"
+			(uuid "f02dffd5-371c-4350-acbc-8c7f19f4b6c8")
+		)
+		(pin "6"
+			(uuid "ea19ddd5-7507-43e0-9abb-76d36ced46c1")
+		)
+		(pin "1"
+			(uuid "f8804aba-bf3d-47cc-b659-5e83efe8c8bc")
+		)
+		(pin "4"
+			(uuid "7747e773-d077-4d0b-bfd8-d9c2587540af")
+		)
+		(pin "5"
+			(uuid "5ddc5bc7-7128-45ef-91f2-4b974b4f1900")
+		)
+		(instances
+			(project ""
+				(path "/d20a762a-d1cd-4658-ba50-73ef390fde04"
+					(reference "U5")
+					(unit 7)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x01_Pin")
 		(at 43.18 44.45 180)
 		(unit 1)
@@ -6821,6 +6927,110 @@
 		)
 	)
 	(symbol
+		(lib_id "4xxx:4069")
+		(at 88.9 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "27479cfb-d9fe-493b-8779-204a3b392690")
+		(property "Reference" "U5"
+			(at 88.9 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4069"
+			(at 88.9 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 88.9 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf"
+			(at 88.9 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Hex inverter"
+			(at 88.9 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "9"
+			(uuid "cbedc429-add9-4589-9e84-90a0bf8415b4")
+		)
+		(pin "3"
+			(uuid "53272228-39b8-4581-8689-cae504c36477")
+		)
+		(pin "11"
+			(uuid "f774a227-84ce-47ed-ab59-fc2f4f724e9c")
+		)
+		(pin "5"
+			(uuid "e555a077-fb88-4701-846a-073ebb1f6557")
+		)
+		(pin "12"
+			(uuid "0759d0e2-a20e-4aad-82f5-8504b10bda53")
+		)
+		(pin "1"
+			(uuid "af2124a8-548d-47c2-a273-bf3d773dcda4")
+		)
+		(pin "8"
+			(uuid "ebca6e79-9ff2-48bc-b630-0707c06887b6")
+		)
+		(pin "2"
+			(uuid "b5663f4d-effd-4cac-ba52-f09cb4211323")
+		)
+		(pin "13"
+			(uuid "c546942e-2dfa-40dd-8f04-e4b0380678a5")
+		)
+		(pin "4"
+			(uuid "c205b9a3-a411-422d-aece-e0abbcb0c248")
+		)
+		(pin "7"
+			(uuid "90676c03-4985-4e68-a832-3dedb4278d61")
+		)
+		(pin "14"
+			(uuid "a8b293bb-71e6-48af-9b86-a53549141bfc")
+		)
+		(pin "6"
+			(uuid "64728b9d-b079-43da-a541-f99507d20043")
+		)
+		(pin "10"
+			(uuid "404f1d79-1fd8-49ac-af28-11c4f9e75253")
+		)
+		(instances
+			(project ""
+				(path "/d20a762a-d1cd-4658-ba50-73ef390fde04"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 67.31 77.47 0)
 		(unit 1)
@@ -7025,110 +7235,6 @@
 		)
 	)
 	(symbol
-		(lib_id "4xxx:4069")
-		(at 88.9 41.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "55280610-5316-4a0d-9326-53021fa7503d")
-		(property "Reference" "U3"
-			(at 88.9 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4069"
-			(at 88.9 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 88.9 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf"
-			(at 88.9 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Hex inverter"
-			(at 88.9 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "e5255ecc-2dc9-4ebc-9acf-a6f46967c2c9")
-		)
-		(pin "14"
-			(uuid "8f7076a6-4535-4b9a-8e53-9889e077d4cf")
-		)
-		(pin "4"
-			(uuid "c616b4fc-5ed1-44b5-850b-fcbbb5b255dc")
-		)
-		(pin "11"
-			(uuid "76dc1bb5-65c9-497f-9db8-b43f1a8011f7")
-		)
-		(pin "13"
-			(uuid "103e223f-444d-4df0-a2ec-50220acfe432")
-		)
-		(pin "6"
-			(uuid "1152ee59-562b-4ccd-94a2-9f09852ea377")
-		)
-		(pin "5"
-			(uuid "dcaec70d-d3b1-493a-8d3f-e4620b972243")
-		)
-		(pin "9"
-			(uuid "2c4f205f-a312-4ead-9bac-45339923a487")
-		)
-		(pin "8"
-			(uuid "012a51f2-021c-4d1a-a3c8-d6182c6eb234")
-		)
-		(pin "10"
-			(uuid "fd83ebbe-38b3-4309-b242-6c848e93674e")
-		)
-		(pin "1"
-			(uuid "8023ac0f-1787-4c3f-b5b0-2d18bddbc78c")
-		)
-		(pin "2"
-			(uuid "8f86121d-5ee5-4702-8d23-7011987a088d")
-		)
-		(pin "12"
-			(uuid "6d59a5c7-7f89-4ff9-9d76-aefa74c5d7d1")
-		)
-		(pin "7"
-			(uuid "150e1f1e-dd42-4c14-b728-f6e607091f4c")
-		)
-		(instances
-			(project ""
-				(path "/d20a762a-d1cd-4658-ba50-73ef390fde04"
-					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Timer:LM555xN")
 		(at 209.55 68.58 0)
 		(unit 1)
@@ -7245,7 +7351,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+		(property "Footprint" "IRLZ34N:TO-220_2_"
 			(at 237.49 63.5 0)
 			(effects
 				(font
@@ -7909,112 +8015,6 @@
 				(path "/d20a762a-d1cd-4658-ba50-73ef390fde04"
 					(reference "H2")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "4xxx:4069")
-		(at 116.84 82.55 0)
-		(unit 7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9c467ed3-71b4-4bed-8708-771761cf3cc5")
-		(property "Reference" "U3"
-			(at 123.19 81.2799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4069"
-			(at 123.19 83.8199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 116.84 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf"
-			(at 116.84 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Hex inverter"
-			(at 116.84 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "dc678fa5-b782-474e-add4-5f91bb509f49")
-		)
-		(pin "2"
-			(uuid "d6585473-5620-4daf-8960-26ac909306b0")
-		)
-		(pin "12"
-			(uuid "86bf116f-4e6a-425d-a2a4-fe1148897fcf")
-		)
-		(pin "11"
-			(uuid "451db0c8-5adc-4547-821b-17a19670fe1d")
-		)
-		(pin "3"
-			(uuid "d5b9634b-b4fa-4ce6-a6a8-c7d82bb785a9")
-		)
-		(pin "7"
-			(uuid "246ac996-0d46-4a22-beef-60f60572d317")
-		)
-		(pin "1"
-			(uuid "e69f75e2-24fb-4dde-b67b-2c9d59fa2199")
-		)
-		(pin "6"
-			(uuid "f4d554b7-bf32-4a6d-a9f0-7363fd46a512")
-		)
-		(pin "10"
-			(uuid "d8aa290f-6668-4bae-8a25-e8aaf432164f")
-		)
-		(pin "4"
-			(uuid "42a3c3db-b3b9-4ba6-8614-2a61197c84bb")
-		)
-		(pin "14"
-			(uuid "cca0ba79-6e91-4f7b-a3a1-1affce119e47")
-		)
-		(pin "9"
-			(uuid "83d6fba1-359f-4e11-9941-043219a56de7")
-		)
-		(pin "13"
-			(uuid "60f42c20-c4c9-4cc4-93ae-878d7889de1b")
-		)
-		(pin "8"
-			(uuid "a389991c-6194-48bc-95b6-a22530969220")
-		)
-		(instances
-			(project ""
-				(path "/d20a762a-d1cd-4658-ba50-73ef390fde04"
-					(reference "U3")
-					(unit 7)
 				)
 			)
 		)
