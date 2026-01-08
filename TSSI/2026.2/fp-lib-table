@@ -1,4 +1,0 @@
-(fp_lib_table
-  (version 7)
-  (lib (name "IRsomething")(type "KiCad")(uri "/Users/adamhwu/Downloads/LIB_IRF820/IRF820/KiCad")(options "")(descr ""))
-)
