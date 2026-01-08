@@ -1,0 +1,9 @@
+Manufacturer=Diodes Incorporated
+PartNumber=74LVC1G08QSE-7
+PartCategory=Integrated Circuit
+PackageCategory=SOT23 (5-Pin)
+PinCount=5
+Version=5.1
+Released=2023-04-03 11:34:25
+Downloaded=2025-12-02 06:10:50
+3D=Y

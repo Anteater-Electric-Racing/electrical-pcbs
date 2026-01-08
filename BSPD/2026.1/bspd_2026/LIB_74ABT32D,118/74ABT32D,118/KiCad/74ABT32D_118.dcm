@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 74ABT32D,118
+D 74ABT32 - Quad 2-input OR gate@en-us
+K
+F https://assets.nexperia.com/documents/data-sheet/74ABT32.pdf
+$ENDCMP
+#
+#End Doc Library

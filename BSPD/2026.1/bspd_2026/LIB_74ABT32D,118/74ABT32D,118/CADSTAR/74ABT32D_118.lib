@@ -1,0 +1,16 @@
+.74ABT32D_118 :1 ;74ABT32 - Quad 2-input OR gate@en-us
+SOIC127P600X175-14N
+*STM IC
+*NGS
+*PLB 1="1A" 2="1B" 3="1Y" 4="2A" 5="2B" 6="2Y" 7="GND" 8="3Y" 9="3A" 10="3B" 11="4Y" 12="4A" 13="4B" 14="VCC"
+*MXP 14
+*DFN 74ABT32D_118
+~!Mouser Part Number (771-ABT32D118)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Nexperia/74ABT32D118?qs=P62ublwmbi%2FCK0s0KY0Vig%3D%3D)
+~!Manufacturer_Name (Nexperia)
+~!Manufacturer_Part_Number (74ABT32D,118)
+~!Link Datasheet (https://assets.nexperia.com/documents/data-sheet/74ABT32.pdf)
+~!Height (1.75mm)
+~!3D_Model (74ABT32D,118)
+"74ABT32D_118"
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 14.1!U 13.1!U 12.1!U 11.1!U 10.1!U 9.1!U 8.1!U 

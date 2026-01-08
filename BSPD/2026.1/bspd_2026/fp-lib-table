@@ -1,0 +1,7 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "8 input OR gate")(type "KiCad")(uri "/Users/eaton/Downloads/LIB_SN74LV4T32PWREP/SN74LV4T32PWREP/KiCad")(options "")(descr ""))
+  (lib (name "LM311 Comparator")(type "KiCad")(uri "/Users/eaton/Downloads/KiCADv6 2/footprints.pretty")(options "")(descr ""))
+  (lib (name "CAHC AND Gate")(type "KiCad")(uri "/Users/eaton/Downloads/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "CD4071BE")(type "KiCad")(uri "/Users/eaton/Downloads/KiCADv6 11/footprints.pretty")(options "")(descr ""))
+)

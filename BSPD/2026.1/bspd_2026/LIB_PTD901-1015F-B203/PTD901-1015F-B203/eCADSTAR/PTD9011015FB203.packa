@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "PTD901-1015F-B203"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2023-04-25-05:38:24)
+    (mountForm default
+        (footprintRef "PTD9011015FB203")
+        (spec "System")
+    )
+)
