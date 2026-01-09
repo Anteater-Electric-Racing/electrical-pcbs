@@ -1,9 +1,26 @@
 ## Schematic & PCB Rules Check
-
-THIS IS A DRAFT!!!!
-
 Use this checklist before handoff or generating fabrication outputs. Mark items off as you verify them.
 
+### 1. Familiarize yourself with the intended purpose of circuit
+Learn what the schematic is meant to do by:
+    - Reading FSAE rules applicable to circuit
+    - Reading documentation created by circuit designer
+        ASK: Does the circuit design goals match FSAE rules? 
+
+### 2. Jot down I/O of circuit
+Annotate what are the circuits inputs and outputs; sensors, signals, supply voltage, GND, etc. 
+    WRITE: What is the voltage range (analog)? What is the signal made up of (digital)? Input current?
+
+### 3. Analyze the logic of circuit 
+Using your knowledge of basic circuit components (gates, transistors, diodes, etc), trace & annotate the logic of the schematic. For IC's, read through its datasheet to find its logic. If you have any doubts on any components function (basic or IC), ALWAYS read the datasheet throughouly or use reputable sources (NOT chatgpt alone).
+    ASK: Does the logic on the schematic contradict my findings in step 1? Why? How can we improve it?
+
+### 4. Component Choice Validity 
+Go through each component's datasheet and look for voltage/current minimums and maximums, and any parameters it must abide by. (This is where your notes from step 2 come in). 
+    ASK: Are there any contradictions between the component's parameters and its I/O in the schematic? 
+
+
+### ChatGPT suggestions, use as applicable. 
 ### Project Hygiene
 - Version control clean; backup archives up to date.
 - All symbols/footprints from versioned libraries; no temporary local edits.
@@ -42,5 +59,5 @@ Use this checklist before handoff or generating fabrication outputs. Mark items 
 
 ### Handoff
 - Release package includes: source files, fabrication/assembly outputs, readme with revision history.
-- Upload to shared drive with date/revision; notify stakeholders.
+- Upload to shared drive with date/revision
 
