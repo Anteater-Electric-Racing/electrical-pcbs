@@ -514,8 +514,8 @@
 		(at 47.471847 41.32 180)
 		(descr "LED, diameter 5.0mm, 2 pins, http://cdn-reichelt.de/documents/datenblatt/A500/LL-504BC2E-009.pdf")
 		(tags "LED diameter 5.0mm 2 pins")
-		(property "Reference" "DEBUG_1"
-			(at 0.971847 -4.18 180)
+		(property "Reference" "DEBUG_LED_1"
+			(at -0.528153 4.32 180)
 			(layer "F.SilkS")
 			(uuid "7d6e1103-5f88-495f-9259-f01f368617c1")
 			(effects
@@ -2299,7 +2299,7 @@
 		(at 41.156847 69.82)
 		(descr "LED, diameter 5.0mm, 2 pins, http://cdn-reichelt.de/documents/datenblatt/A500/LL-504BC2E-009.pdf")
 		(tags "LED diameter 5.0mm 2 pins")
-		(property "Reference" "DEBUG_3"
+		(property "Reference" "DEBUG_LED_3"
 			(at 1.343153 4.18 0)
 			(layer "F.SilkS")
 			(uuid "86a0d373-0a8c-4a88-8abf-6d42daaaa8d5")
@@ -2520,7 +2520,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R1"
-			(at 0 -1.65 0)
+			(at 0 1.5925 0)
 			(layer "F.SilkS")
 			(uuid "d9509a15-d387-4893-807c-63eb43bd1069")
 			(effects
@@ -3016,7 +3016,7 @@
 		(at 76.731847 69.82)
 		(descr "LED, diameter 5.0mm, 2 pins, http://cdn-reichelt.de/documents/datenblatt/A500/LL-504BC2E-009.pdf")
 		(tags "LED diameter 5.0mm 2 pins")
-		(property "Reference" "DEBUG_2"
+		(property "Reference" "DEBUG_LED_2"
 			(at 1.268153 4.18 0)
 			(layer "F.SilkS")
 			(uuid "795513b9-ca22-4f17-8c6d-00b99c1736f6")
@@ -3898,7 +3898,7 @@
 		(descr "Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5566-02A2, example for new mpn: 39-28-902x, 1 Pins per row, Mounting: Snap-in Plastic Peg PCB Lock (http://www.molex.com/pdm_docs/sd/039289068_sd.pdf), generated with kicad-footprint-generator")
 		(tags "connector Molex Mini-Fit_Jr side entryplastic_peg")
 		(property "Reference" "J7"
-			(at 0 -3.45 0)
+			(at 0 -5.21 0)
 			(layer "F.SilkS")
 			(uuid "77c8cd85-888b-4c61-9cd0-90da1b99f22d")
 			(effects
@@ -10748,6 +10748,42 @@
 		(layer "Edge.Cuts")
 		(uuid "db0a153f-b3a1-4582-97d1-857a3e634861")
 	)
+	(gr_text "ANODE"
+		(at 78 29 90)
+		(layer "F.SilkS")
+		(uuid "0376130a-db75-41ac-993d-3dde13f5448b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "V_IN"
+		(at 62 43 90)
+		(layer "F.SilkS")
+		(uuid "06fe7b48-dab0-4424-99f0-61c7e984e459")
+		(effects
+			(font
+				(size 1 0.75)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "HV+"
+		(at 32.5 28.5 90)
+		(layer "F.SilkS")
+		(uuid "1324aea8-b595-4e42-a9b2-d50637fe5966")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "NON-ISOLATED"
 		(at 61.5 22.25 270)
 		(layer "F.SilkS")
@@ -10761,9 +10797,57 @@
 		)
 	)
 	(gr_text "LV CONNECTOR"
-		(at 22.75 56.5 0)
+		(at 22.75 58 0)
 		(layer "F.SilkS")
 		(uuid "249bf2ec-0c5d-4937-86ad-289c738f6d4b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "CATHODE"
+		(at 81.5 36 90)
+		(layer "F.SilkS")
+		(uuid "2ccbc71e-5188-44ec-b404-661872e46760")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "VCC"
+		(at 77 41 90)
+		(layer "F.SilkS")
+		(uuid "43223e4c-d5d5-42a4-b3e1-61aa27488fc2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "GND"
+		(at 27 56.5 0)
+		(layer "F.SilkS")
+		(uuid "432c9bd2-2dc1-4a6f-9624-234e6092e3a2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "+12V_UNISO"
+		(at 23.5 42.5 0)
+		(layer "F.SilkS")
+		(uuid "44049e69-852f-4ac6-9cab-3ef43326875d")
 		(effects
 			(font
 				(size 1 1)
@@ -10779,6 +10863,18 @@
 		(effects
 			(font
 				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "V_BIAS"
+		(at 62 46.5 90)
+		(layer "F.SilkS")
+		(uuid "aa74d0a8-29f0-4ba7-bd38-9fa703824ce6")
+		(effects
+			(font
+				(size 1 0.5)
 				(thickness 0.1)
 			)
 			(justify left bottom)
@@ -10800,6 +10896,30 @@
 		(at 69.5 37 0)
 		(layer "F.SilkS")
 		(uuid "cab6433f-ac74-42d3-a54a-2058b7aa53a4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "HV-"
+		(at 29.5 33.5 90)
+		(layer "F.SilkS")
+		(uuid "dded3f59-bd06-416e-8098-da0dd8e18220")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "GND"
+		(at 65 41 90)
+		(layer "F.SilkS")
+		(uuid "fb849e39-2c5e-447e-a5e3-beccb443ccab")
 		(effects
 			(font
 				(size 1 1)
