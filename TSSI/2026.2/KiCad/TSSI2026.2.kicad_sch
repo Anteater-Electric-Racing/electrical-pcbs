@@ -5045,6 +5045,12 @@
 		(uuid "82c2fd5a-907e-4bbf-8dc6-5581f0d0968d")
 	)
 	(junction
+		(at 67.31 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "84943c7b-b0bf-4c38-9407-863253e0a1ba")
+	)
+	(junction
 		(at 25.4 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5079,12 +5085,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c64d3909-4cb0-4220-9a71-f9bb6b265ba2")
-	)
-	(junction
-		(at 67.31 62.23)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d349af16-f877-412d-840a-6b13af72dd70")
 	)
 	(junction
 		(at 193.04 90.17)
@@ -5144,7 +5144,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 35.56) (xy 161.29 35.56)
+			(xy 144.78 35.56) (xy 199.39 35.56)
 		)
 		(stroke
 			(width 0)
@@ -5211,16 +5211,6 @@
 			(type default)
 		)
 		(uuid "25017876-a5ad-4045-9ecd-61d4213783bb")
-	)
-	(wire
-		(pts
-			(xy 67.31 62.23) (xy 100.33 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "26295498-227e-4112-ad45-572a7fc1283e")
 	)
 	(wire
 		(pts
@@ -5294,16 +5284,6 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 55.88) (xy 257.81 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3cffe4eb-bcac-4ab7-91e7-9c7e364c827d")
-	)
-	(wire
-		(pts
 			(xy 222.25 63.5) (xy 224.79 63.5)
 		)
 		(stroke
@@ -5374,16 +5354,6 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 27.94) (xy 248.92 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "50227e3c-1844-4ac0-8ee7-ca455ca0fdac")
-	)
-	(wire
-		(pts
 			(xy 195.58 63.5) (xy 195.58 80.01)
 		)
 		(stroke
@@ -5411,16 +5381,6 @@
 			(type default)
 		)
 		(uuid "56184a98-b231-4b6d-82c3-287508ef1b87")
-	)
-	(wire
-		(pts
-			(xy 161.29 26.67) (xy 161.29 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5675eb0a-5197-40bf-ad10-8b857406aa7a")
 	)
 	(wire
 		(pts
@@ -5574,6 +5534,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 62.23) (xy 100.33 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f003a2b-89b0-44c9-b98c-492650a62fa2")
+	)
+	(wire
+		(pts
 			(xy 196.85 63.5) (xy 195.58 63.5)
 		)
 		(stroke
@@ -5584,6 +5554,16 @@
 	)
 	(wire
 		(pts
+			(xy 67.31 62.23) (xy 74.93 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9470a733-ae72-41b7-b8e7-555f8dd2ca2e")
+	)
+	(wire
+		(pts
 			(xy 176.53 80.01) (xy 177.8 80.01)
 		)
 		(stroke
@@ -5591,6 +5571,26 @@
 			(type default)
 		)
 		(uuid "99832fa9-ebea-4626-b52b-9bc4212a1447")
+	)
+	(wire
+		(pts
+			(xy 255.27 57.15) (xy 260.35 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cca85b1-4215-4c2c-9986-4c8c226fe7a3")
+	)
+	(wire
+		(pts
+			(xy 248.92 17.78) (xy 248.92 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d3e8ac9-118e-4711-b43f-51439ac20cc0")
 	)
 	(wire
 		(pts
@@ -5684,6 +5684,16 @@
 	)
 	(wire
 		(pts
+			(xy 255.27 54.61) (xy 260.35 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c101bbfb-1586-4445-9dae-85c910f12a94")
+	)
+	(wire
+		(pts
 			(xy 224.79 63.5) (xy 229.87 63.5)
 		)
 		(stroke
@@ -5721,16 +5731,6 @@
 			(type default)
 		)
 		(uuid "d2c6f03b-7003-4c51-8d20-4f47f635d349")
-	)
-	(wire
-		(pts
-			(xy 167.64 34.29) (xy 171.45 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d32b43a3-354a-4e37-95b3-a305a82f7d83")
 	)
 	(wire
 		(pts
@@ -5784,6 +5784,16 @@
 	)
 	(wire
 		(pts
+			(xy 199.39 35.56) (xy 199.39 17.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1b3accb-d802-44e2-804a-72cc8c89133e")
+	)
+	(wire
+		(pts
 			(xy 193.04 90.17) (xy 209.55 90.17)
 		)
 		(stroke
@@ -5801,6 +5811,16 @@
 			(type default)
 		)
 		(uuid "e5aeac21-89a8-4a7f-851c-af4195fbcdc1")
+	)
+	(wire
+		(pts
+			(xy 199.39 17.78) (xy 248.92 17.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9a2351d-25f0-4000-b798-a127fd232790")
 	)
 	(wire
 		(pts
@@ -5928,7 +5948,7 @@
 	)
 	(global_label "RED_LED"
 		(shape input)
-		(at 257.81 55.88 0)
+		(at 260.35 57.15 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5938,7 +5958,7 @@
 		)
 		(uuid "30123a88-1711-4222-8adb-d2cff036caa8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 268.8989 55.88 0)
+			(at 271.4389 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6038,28 +6058,6 @@
 	)
 	(global_label "GLV"
 		(shape input)
-		(at 161.29 26.67 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "6e812a06-f79a-4391-af23-450af408a47e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 161.29 20.2981 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GLV"
-		(shape input)
 		(at 116.84 69.85 90)
 		(fields_autoplaced yes)
 		(effects
@@ -6071,28 +6069,6 @@
 		(uuid "84714d38-3389-4b45-95d5-54dd2af46ec2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 116.84 63.4781 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GLV"
-		(shape input)
-		(at 248.92 27.94 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8b13a27c-beb4-4458-8f1d-098d1b150e3b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 248.92 21.5681 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6146,28 +6122,6 @@
 			)
 		)
 	)
-	(global_label "GREEN_LED"
-		(shape input)
-		(at 171.45 34.29 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "93f90b20-520d-4d98-b85d-eaa5d1e5f658")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 185.0184 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "IMD_FAULT"
 		(shape input)
 		(at 63.5 34.29 180)
@@ -6186,6 +6140,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GREEN_LED"
+		(shape input)
+		(at 260.35 54.61 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fc0c04f0-d912-422c-beab-8583239c2271")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 273.9184 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -6684,7 +6660,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "IRLZ34N:TO-220_2_"
+		(property "Footprint" "Anteater-Electric-Racing electrical-pcbs main TSSI-2026.2_KiCad_Parts_IRLZ34N:TO-220_2_"
 			(at 144.78 40.64 0)
 			(effects
 				(font
@@ -7097,6 +7073,110 @@
 		)
 	)
 	(symbol
+		(lib_id "4xxx:4069")
+		(at 82.55 62.23 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3b76cd0a-5adb-4f42-be8e-1d2a9afd73d8")
+		(property "Reference" "U5"
+			(at 82.55 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4069"
+			(at 82.55 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 82.55 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf"
+			(at 82.55 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Hex inverter"
+			(at 82.55 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "12"
+			(uuid "f1f17a82-6838-4191-83c1-e936d174bb67")
+		)
+		(pin "1"
+			(uuid "f49e07ee-05a1-46e7-a164-ed00272b74bd")
+		)
+		(pin "6"
+			(uuid "bb30a675-c05d-4bfc-9da0-efd01692971b")
+		)
+		(pin "8"
+			(uuid "d0279895-d4e8-44fb-bc6c-f17582e1a3ad")
+		)
+		(pin "11"
+			(uuid "5e00ba5e-1705-479a-b28f-4c79ed5373ce")
+		)
+		(pin "14"
+			(uuid "056ab768-3a46-4fc7-b608-f0342d2f368b")
+		)
+		(pin "7"
+			(uuid "f37ef4cd-2a72-49ad-88e7-5171a0e9dd50")
+		)
+		(pin "10"
+			(uuid "b1fd760a-8fcf-41eb-97f5-d978ffd0386b")
+		)
+		(pin "5"
+			(uuid "d728839d-74cc-4e1a-be1d-8e00dd3bc49f")
+		)
+		(pin "2"
+			(uuid "7199000c-4d23-4b91-be59-cc44e9a35e87")
+		)
+		(pin "3"
+			(uuid "9de6b533-975b-4cb6-8859-c729633d560d")
+		)
+		(pin "4"
+			(uuid "2bdccfa3-0467-420a-8b85-1cd654be8908")
+		)
+		(pin "9"
+			(uuid "8c338fb1-b425-4269-80ca-1504c7fc2cf5")
+		)
+		(pin "13"
+			(uuid "73f3b91d-ae9f-44ca-8386-64382d3415a1")
+		)
+		(instances
+			(project ""
+				(path "/d20a762a-d1cd-4658-ba50-73ef390fde04"
+					(reference "U5")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
 		(at 254 54.61 0)
 		(unit 1)
@@ -7351,7 +7431,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "IRLZ34N:TO-220_2_"
+		(property "Footprint" "Anteater-Electric-Racing electrical-pcbs main TSSI-2026.2_KiCad_Parts_IRLZ34N:TO-220_2_"
 			(at 237.49 63.5 0)
 			(effects
 				(font
@@ -8735,7 +8815,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "IRLZ34N:TO-220_2_"
+		(property "Footprint" "Anteater-Electric-Racing electrical-pcbs main TSSI-2026.2_KiCad_Parts_IRLZ34N:TO-220_2_"
 			(at 166.37 62.23 0)
 			(effects
 				(font
@@ -9273,75 +9353,6 @@
 			(project "TSSI"
 				(path "/d20a762a-d1cd-4658-ba50-73ef390fde04"
 					(reference "#PWR0106")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 166.37 33.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ec8e4f2d-466d-48f6-ab99-074bbb99ce4a")
-		(property "Reference" "J1"
-			(at 166.878 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x02"
-			(at 157.988 38.608 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_Molex:Molex_Mini-Fit_Jr_5566-02A_2x01_P4.20mm_Vertical"
-			(at 166.37 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 166.37 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 166.37 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ac260b0d-ded1-486f-8e7c-d74dcb505aab")
-		)
-		(pin "2"
-			(uuid "7d6cc7a9-5c19-43f9-887b-0a5db8e003f2")
-		)
-		(instances
-			(project "TSSI"
-				(path "/d20a762a-d1cd-4658-ba50-73ef390fde04"
-					(reference "J1")
 					(unit 1)
 				)
 			)
