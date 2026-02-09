@@ -1,0 +1,60 @@
+# === General Files ===
+# Don't include .DS_STORE, prevent clutter
+.DS_Store
+
+# === KiCad Files ===
+# Setup with the following resources
+# - https://en.wikibooks.org/wiki/KiCad/File_Formats
+# - https://kicad-pcb.org/help/file-formats/
+#   (used wayback machine)
+# - https://github.com/github/gitignore
+#   (edited with more comments)
+# - https://docs.kicad.org/6.0/en/kicad/kicad.html#kicad_files_and_folders
+
+# For PCBs designed using KiCad: http://www.kicad-pcb.org/
+# Format documentation: http://kicad-pcb.org/help/file-formats/
+
+# Temporary files
+*.000               # Old ver.
+*.bak               # Old ver. For Schematics
+*.bck               # Old ver. For Symbol Editor
+*.kicad_pcb-bak     # For Board File except layout
+*.kicad_sch-bak     # For Schematics
+*.kicad_prl        # Local Project Settings
+*.sch-bak           # For Schematic (KiCad 5.x or earlier)
+*~
+_autosave-*
+*.tmp
+*-save.pro          # For Project File
+*-save.kicad_pcb    # PCB Layout File
+fp-info-cache       # Footprint Cache
+
+# Netlist files (exported from Eeschema)
+*.net
+
+# Autorouter files (exported from Pcbnew)
+*.dsn               # SPECCTRA DSN File
+*.ses               # SPECCTRA Session File
+
+# Other temporary from the template
+*.FCStd1
+
+
+# PCM build files
+build
+espressif-kicad-addon.zip
+
+# Extra Files
+# Ignore directory with backup zip files
+*-backups
+\#auto_saved_files\#
+# .lck files lead to loading errors in KiCad for multiple users
+*.lck
+
+
+# Fabrication files, and Exported BOM files
+fab/
+fabrication/
+*.zip
+*.csv
+*.xml
