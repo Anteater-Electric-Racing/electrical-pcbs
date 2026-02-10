@@ -8190,7 +8190,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
+		(property "Footprint" "0footprints:FUSE_3522-2"
 			(at 223.52 116.332 90)
 			(effects
 				(font
@@ -8257,7 +8257,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
+		(property "Footprint" "0footprints:FUSE_3522-2"
 			(at 38.1 89.662 90)
 			(effects
 				(font
@@ -8324,7 +8324,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
+		(property "Footprint" "0footprints:FUSE_3522-2"
 			(at 168.91 146.812 90)
 			(effects
 				(font
@@ -8458,7 +8458,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
+		(property "Footprint" "0footprints:FUSE_3522-2"
 			(at 168.91 129.032 90)
 			(effects
 				(font
@@ -8525,7 +8525,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
+		(property "Footprint" "0footprints:FUSE_3522-2"
 			(at 222.25 71.882 90)
 			(effects
 				(font
@@ -8729,7 +8729,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
+		(property "Footprint" "0footprints:FUSE_3522-2"
 			(at 38.1 137.922 90)
 			(effects
 				(font
@@ -8796,7 +8796,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
+		(property "Footprint" "0footprints:FUSE_3522-2"
 			(at 100.33 138.938 90)
 			(effects
 				(font
@@ -8863,7 +8863,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
+		(property "Footprint" "0footprints:FUSE_3522-2"
 			(at 38.1 104.902 90)
 			(effects
 				(font
@@ -8930,7 +8930,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
+		(property "Footprint" "0footprints:FUSE_3522-2"
 			(at 154.94 72.898 90)
 			(effects
 				(font
@@ -9064,7 +9064,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
+		(property "Footprint" "0footprints:FUSE_3522-2"
 			(at 223.52 99.822 90)
 			(effects
 				(font
@@ -9815,7 +9815,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
+		(property "Footprint" "0footprints:FUSE_3522-2"
 			(at 154.94 46.228 90)
 			(effects
 				(font
@@ -9882,7 +9882,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
+		(property "Footprint" "0footprints:FUSE_3522-2"
 			(at 168.91 118.872 90)
 			(effects
 				(font
@@ -10022,7 +10022,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
+		(property "Footprint" "0footprints:FUSE_3522-2"
 			(at 27.94 24.892 90)
 			(effects
 				(font
@@ -10154,7 +10154,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
+		(property "Footprint" "0footprints:FUSE_3522-2"
 			(at 223.52 22.098 90)
 			(effects
 				(font
@@ -10373,7 +10373,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
+		(property "Footprint" "0footprints:FUSE_3522-2"
 			(at 168.91 137.922 90)
 			(effects
 				(font
@@ -10582,7 +10582,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
+		(property "Footprint" "0footprints:FUSE_3522-2"
 			(at 38.1 154.432 90)
 			(effects
 				(font
@@ -10716,7 +10716,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
+		(property "Footprint" "0footprints:FUSE_3522-2"
 			(at 96.52 46.228 90)
 			(effects
 				(font
@@ -10929,7 +10929,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
+		(property "Footprint" "0footprints:FUSE_3522-2"
 			(at 222.25 85.852 90)
 			(effects
 				(font
@@ -11130,7 +11130,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
+		(property "Footprint" "0footprints:FUSE_3522-2"
 			(at 120.65 22.098 90)
 			(effects
 				(font
@@ -11337,7 +11337,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
+		(property "Footprint" "0footprints:FUSE_3522-2"
 			(at 38.1 121.412 90)
 			(effects
 				(font
@@ -11471,7 +11471,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
+		(property "Footprint" "0footprints:FUSE_3522-2"
 			(at 96.52 61.468 90)
 			(effects
 				(font
@@ -11538,7 +11538,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
+		(property "Footprint" "0footprints:FUSE_3522-2"
 			(at 100.33 151.638 90)
 			(effects
 				(font
@@ -11672,7 +11672,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
+		(property "Footprint" "0footprints:FUSE_3522-2"
 			(at 168.91 109.982 90)
 			(effects
 				(font
@@ -11806,7 +11806,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
+		(property "Footprint" "0footprints:FUSE_3522-2"
 			(at 100.33 109.728 90)
 			(effects
 				(font
@@ -11873,7 +11873,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
+		(property "Footprint" "0footprints:FUSE_3522-2"
 			(at 260.35 105.918 90)
 			(effects
 				(font
@@ -12168,7 +12168,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
+		(property "Footprint" "0footprints:FUSE_3522-2"
 			(at 261.62 88.138 90)
 			(effects
 				(font
@@ -12235,7 +12235,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
+		(property "Footprint" "0footprints:FUSE_3522-2"
 			(at 100.33 121.412 90)
 			(effects
 				(font
@@ -12375,7 +12375,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
+		(property "Footprint" "0footprints:FUSE_3522-2"
 			(at 27.94 61.468 90)
 			(effects
 				(font
@@ -12511,7 +12511,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
+		(property "Footprint" "0footprints:FUSE_3522-2"
 			(at 154.94 60.198 90)
 			(effects
 				(font
@@ -12578,7 +12578,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0footprints:649-SERIES-HOLDER"
+		(property "Footprint" "0footprints:FUSE_3522-2"
 			(at 154.94 85.598 90)
 			(effects
 				(font
