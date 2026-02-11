@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "LM3940IT-3.3")(type "KiCad")(uri "${KIPRJMOD}/Parts/LM3940IT-3.3.kicad_sym")(options "")(descr ""))
+  (lib (name "TPS54202HDDCR")(type "KiCad")(uri "${KIPRJMOD}/Parts/TPS54202HDDCR.kicad_sym")(options "")(descr ""))
+)
