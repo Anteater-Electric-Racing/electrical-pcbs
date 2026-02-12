@@ -3764,27 +3764,6 @@
 		)
 		(uuid "5b5d022f-63d0-499a-afe0-19dede87da1a")
 	)
-	(text_box "60V threshold\ndefined using \nRV1 tuned \nto 2.5k"
-		(exclude_from_sim no)
-		(at 156.21 165.1 0)
-		(size 17.78 11.43)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 239 242 255 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "aa33b79b-513d-4ea6-a9d4-663c3c9185b8")
-	)
 	(text_box "The high voltage is converted down through a voltage divider network to form V_IN. \n\nThese resistors are rated for at least 0.25W to ensure proper performance at high voltages."
 		(exclude_from_sim no)
 		(at 13.97 140.97 0)
@@ -5785,7 +5764,7 @@
 			)
 		)
 	)
-	(global_label "12V_UNISO"
+	(global_label "12V_ISO"
 		(shape input)
 		(at 109.22 179.07 270)
 		(fields_autoplaced yes)
@@ -5797,7 +5776,7 @@
 		)
 		(uuid "d4f09ea5-cc62-40eb-a513-f246a0cd9a35")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 109.22 192.3362 90)
+			(at 109.22 189.6752 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6434,7 +6413,7 @@
 				)
 			)
 		)
-		(property "Value" "324k"
+		(property "Value" "540k"
 			(at 102.87 130.81 90)
 			(effects
 				(font
@@ -7097,7 +7076,7 @@
 				)
 			)
 		)
-		(property "Value" "324k"
+		(property "Value" "540k"
 			(at 92.71 130.81 90)
 			(effects
 				(font
@@ -8507,7 +8486,7 @@
 				)
 			)
 		)
-		(property "Value" "324k"
+		(property "Value" "540k"
 			(at 113.03 130.81 90)
 			(effects
 				(font
@@ -9042,72 +9021,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 113.03 179.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cc31c6f6-87db-45db-86be-c075ef5f0fa2")
-		(property "Reference" "#PWR01"
-			(at 113.03 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 113.03 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 113.03 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 113.03 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 113.03 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a93289ed-7327-4c76-9bf9-4e1b2c244953")
-		)
-		(instances
-			(project "TS_READY_TO_MOVE (1)"
-				(path "/ec2b8551-75c2-4864-b31d-b681332831c2"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 80.01 153.67 90)
 		(unit 1)
@@ -9612,7 +9525,7 @@
 				)
 			)
 		)
-		(property "Value" "324k"
+		(property "Value" "540k"
 			(at 80.01 130.81 90)
 			(effects
 				(font
@@ -9913,7 +9826,7 @@
 				)
 			)
 		)
-		(property "Value" "324k"
+		(property "Value" "540k"
 			(at 66.04 130.81 90)
 			(effects
 				(font
@@ -9958,6 +9871,72 @@
 			(project "TSAL"
 				(path "/ec2b8551-75c2-4864-b31d-b681332831c2"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDPWR")
+		(at 113.03 179.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f63a09fa-7403-4ff7-9dfa-0ded506697b6")
+		(property "Reference" "#PWR018"
+			(at 113.03 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND_ISO"
+			(at 112.903 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
+			(at 113.03 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1ab4fdd4-7886-42e8-8a8d-2ae4a973a669")
+		)
+		(instances
+			(project "RTM"
+				(path "/ec2b8551-75c2-4864-b31d-b681332831c2"
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
