@@ -1,0 +1,160 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "PTD901-1015F-B203"
+   (description "Res Carbon Film POT 20K Ohm 10% 0.05W(1/20W) 1(Elec)/1(Mech)Turns 6mm (22.05 X 9.5 X 11.3mm) Pin Panel Mount/Through Hole")
+   (family "ANA")
+   (package "PTD9011015FB203")
+   (attribute "Datasheet Link" "https://www.digikey.ph/en/products/detail/bourns-inc/PTD901-1015F-B203/4699444")
+   (attribute "Geometry.Height" "11.9mm")
+   (attribute "Mouser Part Number" "652-PTD901-1015FB203")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bourns/PTD901-1015F-B203?qs=kWCfjVKDuI2E4NFIGwREVA%3D%3D")
+   (attribute "Manufacturer_Name" "Bourns")
+   (attribute "Manufacturer_Part_Number" "PTD901-1015F-B203")
+   (gate
+    (symbol "PTD901-1015F-B203")
+    (pin "CCW" R1 PS)
+    (pin "WIPER" R2 PS)
+    (pin "CW" R3 PS)
+   )
+  )
+  (symbol "PTD901-1015F-B203"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 800 100) (pt 800 -300) (pt 200 -300) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "PTD9011015FB203"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -2.05 7.25)
+      (pt 5 7.25)
+      (pt 5 -2.25)
+      (pt -2.05 -2.25)
+      (pt -2.05 7.25))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -2.05 7.25)
+      (pt 5 7.25)
+      (pt 5 -2.25)
+      (pt -2.05 -2.25)
+      (pt -2.05 7.25))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -3.05 8.25)
+      (pt 21 8.25)
+      (pt 21 -3.25)
+      (pt -3.05 -3.25)
+      (pt -3.05 8.25))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt 5 6)
+      (pt 10 6)
+      (pt 10 -1)
+      (pt 5 -1))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt 10 5.5)
+      (pt 13 5.5)
+      (pt 13 4)
+      (pt 20 4)
+      (pt 20 -0.5)
+      (pt 10 -0.5))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 10 5.5)
+      (pt 13 5.5)
+      (pt 13 4)
+      (pt 20 4)
+      (pt 20 -0.5)
+      (pt 10 -0.5))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 5 6)
+      (pt 10 6)
+      (pt 10 -1)
+      (pt 5 -1))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -2.6 0)
+      (arc (pt -2.600 0.000) (pt -2.700 -0.050) (pt -2.600 0.050) (start 180.0) (sweep .0))
+      (pt -2.7 0)
+      (arc (pt -2.700 0.000) (pt -2.700 -0.050) (pt -2.600 0.050) (start 180.0) (sweep 180.0))
+      (pt -2.6 0))))
+   (leg R1 (pt 0.000 0.000) (padstack 1))
+   (leg R2 (pt 0.000 2.500) (padstack 0))
+   (leg R3 (pt 0.000 5.000) (padstack 0))
+   (padstack 0
+    (hole 1)
+    (plated true)
+    (pad (layer TCOP) (round 1.500))
+    (pad (layer INNER) (round 1.500))
+    (pad (layer BCOP) (round 1.500))
+   )
+   (padstack 1
+    (hole 1)
+    (plated true)
+    (pad (layer TCOP) (square 1.500))
+    (pad (layer INNER) (round 1.500))
+    (pad (layer BCOP) (square 1.500))
+   )
+   (model "PTD901-1015F-B203.stp"
+    (euler 90 0 0)
+    (offset -2.1600000858306885 2.5 6.449999809265137)
+   )
+  )
+ )
+)

@@ -1,0 +1,16 @@
+.3296Y-11-103LF :1 ;Trimmer Resistors - Through Hole 3/8" SQ CERMET 10K SEALED TRIM POT
+"3296Y11103LF"
+*STM VR
+*NGS
+*PLB 1="CCW" 2="WIPER" 3="CW"
+*MXP 3
+*DFN 3296Y-11-103LF
+~!Mouser Part Number (652-3296Y-11-103LF)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Bourns/3296Y-11-103LF?qs=%2FALxmKEvhOJ7jN9kookT6w%3D%3D)
+~!Manufacturer_Name (Bourns)
+~!Manufacturer_Part_Number (3296Y-11-103LF)
+~!Link Datasheet (https://www.bourns.com/pdfs/3296.pdf)
+~!Height (11.8mm)
+~!3D_Model (3296Y-11-103LF)
+"3296Y-11-103LF"
+1.1!U 2.1!U 3.1!U 

@@ -4,4 +4,5 @@
   (lib (name "LM311 Comparator")(type "KiCad")(uri "/Users/eaton/Downloads/KiCADv6 2/footprints.pretty")(options "")(descr ""))
   (lib (name "CAHC AND Gate")(type "KiCad")(uri "/Users/eaton/Downloads/KiCADv6/footprints.pretty")(options "")(descr ""))
   (lib (name "CD4071BE")(type "KiCad")(uri "/Users/eaton/Downloads/KiCADv6 11/footprints.pretty")(options "")(descr ""))
+  (lib (name "T2M_105")(type "KiCad")(uri "${KIPRJMOD}/SAMTEC_T2M10501LDTHDS/T2M-105-01-X-D-TH-DS/T2M_105.pretty")(options "")(descr ""))
 )

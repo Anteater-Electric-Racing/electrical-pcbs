@@ -1,0 +1,9 @@
+Manufacturer=Kingbright
+PartNumber=APTD2012LSYCK
+PartCategory=LED
+PackageCategory=LEDs Chip
+PinCount=2
+Version=2.1
+Released=2020-06-25 16:51:26
+Downloaded=2026-02-13 02:47:31
+3D=Y
