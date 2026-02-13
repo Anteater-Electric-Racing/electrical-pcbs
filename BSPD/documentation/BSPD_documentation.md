@@ -100,6 +100,7 @@ Comparator outputs feed the fault logic stage.
 Schmitt-trigger inverter stage (40106) provides clean edges and optional latch interfacing depending on system integration.
 
 - Output net: `BSPD_FAULT`
+- Two bypass resistors were added to allow bypassing the Schmitt trigger if it is not useful in the final integration.
 
 ### Stage 7 - Power Switching
 
@@ -223,11 +224,44 @@ Trace widths were increased for higher-current and power-related nets (for examp
   - AND gate (`U5`)
   - OR gate (`U2`)
   - Schmitt (`U6`)
+- Team logo (`Team Logo.svg`) was added on the front silkscreen layer for board identification.
 - Schematic is staged (functional blocks separated and labeled) to match debug workflow
 
 ### DRC Status (v2026.3)
 
 - All DRC checks passed: no errors, no warnings
+
+---
+
+## Design Considerations (2026.3)
+
+### LED Drive Decision (No Extra MOSFET for Debug LEDs)
+
+Indicator LEDs are normally driven through a transistor/MOSFET to avoid loading a logic output. In this design, the debug LEDs are intentionally low-current and are used only as status indicators (non-safety-critical).
+
+The CD4081 output stage can source on the order of approximately 1-3 mA at high VDD (datasheet: >=1.3 mA min, approximately 2.6 mA typ at VDD = 10 V, and higher at 12 V), which is sufficient for modern high-efficiency LEDs operated at approximately 1-2 mA.
+
+Series resistors are selected to limit LED current to <= approximately 2 mA across supply tolerance, keeping the gate output within its DC drive capability and maintaining valid logic levels. Omitting a MOSFET reduces BOM count, board area, and routing complexity while still providing clear visual fault indication.
+
+Current implementation note:
+
+- `R22`, `R23`, and `R24` are currently 10k, targeting approximately 1 mA LED current.
+- LED forward current capability is 2 mA.
+- If brighter indication is needed, these may be changed to 5k (approximately 2 mA target) after test validation.
+
+### Ground/Via Stitching Strategy
+
+Stitching vias were added near decoupling capacitors and around the board perimeter to lower ground impedance at high frequency. Vias placed adjacent to capacitors tie top and bottom ground pours together directly at the point of decoupling, reducing return-path inductance and minimizing supply/ground bounce during fast switching events.
+
+Perimeter stitching forms a "via fence" that better bonds the ground pours and helps contain edge currents, which improves EMI behavior (reduced radiation) and increases noise immunity (reduced susceptibility).
+
+### Component Selection Philosophy
+
+Design preference was to use commonly available parts (especially logic/comparator ICs) and a 12 V-native implementation. A previous concept using higher-performance, more modern 5 V parts was considered, but the performance trade-off was not sufficient to justify the added complexity and availability risk.
+
+### Delay and Fall-Time Network
+
+The `D1`, `R15`, `R14`, and `C7` network is timing-critical. `R` and `C` values must be matched to achieve the intended fault delay and output fall-time behavior. Rules enforce less than 500ms time.
 
 ---
 
@@ -298,9 +332,17 @@ Induce each fault type and confirm corresponding LED behavior:
 
 ![BSPD 3D Front View](./bspd_3d_view_front.jpg)
 
+**Front View (with Team Logo)**
+
+![BSPD 3D Front View with Team Logo](./bspd_3d_view_front_v2_with_logo.jpg)
+
 **Rear View**
 
 ![BSPD 3D Rear View](./bspd_3d_view_rear.jpg)
+
+### Logo Asset
+
+![Team Logo](./Team%20Logo.svg)
 
 ### PDF Documents
 
