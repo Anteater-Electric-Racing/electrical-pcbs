@@ -2982,16 +2982,6 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 83.82) (xy 167.64 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "15a8b8a5-7d79-4bf5-9ec9-b94237c0d01d")
-	)
-	(wire
-		(pts
 			(xy 198.12 148.59) (xy 196.85 148.59)
 		)
 		(stroke
@@ -3182,7 +3172,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 73.66) (xy 218.44 73.66)
+			(xy 217.17 73.66) (xy 226.06 73.66)
 		)
 		(stroke
 			(width 0)
@@ -3252,7 +3242,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 20.32) (xy 116.84 20.32)
+			(xy 115.57 20.32) (xy 135.89 20.32)
 		)
 		(stroke
 			(width 0)
@@ -3262,7 +3252,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 71.12) (xy 151.13 71.12)
+			(xy 149.86 71.12) (xy 167.64 71.12)
 		)
 		(stroke
 			(width 0)
@@ -3342,7 +3332,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 58.42) (xy 151.13 58.42)
+			(xy 149.86 58.42) (xy 168.91 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3532,16 +3522,6 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 58.42) (xy 168.91 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4d395d74-3b94-4753-b679-a22e7eac5bba")
-	)
-	(wire
-		(pts
 			(xy 132.08 107.95) (xy 133.35 107.95)
 		)
 		(stroke
@@ -3609,16 +3589,6 @@
 			(type default)
 		)
 		(uuid "55058728-37fa-4c2e-8e08-7017333f405c")
-	)
-	(wire
-		(pts
-			(xy 167.64 71.12) (xy 158.75 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "566de48f-6390-40ed-8c39-f051f3007c57")
 	)
 	(wire
 		(pts
@@ -3952,16 +3922,6 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 20.32) (xy 135.89 20.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7378f88d-5ff5-4f6f-b0a8-8d4e7cc99c13")
-	)
-	(wire
-		(pts
 			(xy 57.15 101.6) (xy 55.88 101.6)
 		)
 		(stroke
@@ -4082,7 +4042,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 87.63) (xy 218.44 87.63)
+			(xy 217.17 87.63) (xy 226.06 87.63)
 		)
 		(stroke
 			(width 0)
@@ -4142,16 +4102,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 107.95) (xy 104.14 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "86006f8a-add5-4872-80f6-c2771ff2667d")
-	)
-	(wire
-		(pts
 			(xy 57.15 116.84) (xy 55.88 116.84)
 		)
 		(stroke
@@ -4182,7 +4132,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 44.45) (xy 92.71 44.45)
+			(xy 91.44 44.45) (xy 110.49 44.45)
 		)
 		(stroke
 			(width 0)
@@ -4372,7 +4322,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 44.45) (xy 151.13 44.45)
+			(xy 149.86 44.45) (xy 168.91 44.45)
 		)
 		(stroke
 			(width 0)
@@ -4572,7 +4522,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 83.82) (xy 151.13 83.82)
+			(xy 149.86 83.82) (xy 167.64 83.82)
 		)
 		(stroke
 			(width 0)
@@ -4692,7 +4642,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 59.69) (xy 92.71 59.69)
+			(xy 91.44 59.69) (xy 110.49 59.69)
 		)
 		(stroke
 			(width 0)
@@ -4762,16 +4712,6 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 44.45) (xy 168.91 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c01dc729-8eae-4f23-9ca3-e69783fedaea")
-	)
-	(wire
-		(pts
 			(xy 41.91 148.59) (xy 43.18 148.59)
 		)
 		(stroke
@@ -4822,7 +4762,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 107.95) (xy 96.52 107.95)
+			(xy 93.98 107.95) (xy 116.84 107.95)
 		)
 		(stroke
 			(width 0)
@@ -4909,16 +4849,6 @@
 			(type default)
 		)
 		(uuid "d12fc4de-0c53-424b-8a52-a9570046c4d4")
-	)
-	(wire
-		(pts
-			(xy 100.33 59.69) (xy 110.49 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2350440-42ea-4e89-9ece-abc3db108a0b")
 	)
 	(wire
 		(pts
@@ -5189,16 +5119,6 @@
 			(type default)
 		)
 		(uuid "f93541a5-baed-4d92-9cc6-f402cbc9a9eb")
-	)
-	(wire
-		(pts
-			(xy 110.49 44.45) (xy 100.33 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f987db47-9c06-4c52-845c-1a439bfabc71")
 	)
 	(wire
 		(pts
@@ -7961,7 +7881,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "13d4b82a-8060-4926-bb3a-c8beeeb91724")
 		(property "Reference" "U1"
 			(at 57.15 53.34 0)
@@ -8199,7 +8119,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
 			(at 223.52 118.11 0)
 			(effects
 				(font
@@ -8266,7 +8186,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
 			(at 38.1 91.44 0)
 			(effects
 				(font
@@ -8333,7 +8253,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
 			(at 168.91 148.59 0)
 			(effects
 				(font
@@ -8467,7 +8387,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
 			(at 168.91 130.81 0)
 			(effects
 				(font
@@ -8495,73 +8415,6 @@
 			(project "Power_Dist_Board_KZ_2024"
 				(path "/da5a4d78-f95d-491b-b672-0f2926504265"
 					(reference "F33")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Fuse")
-		(at 222.25 73.66 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "28ed3dc7-75bb-400f-8a35-81e6b269d28f")
-		(property "Reference" "F18"
-			(at 222.25 75.946 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "500mA"
-			(at 222.25 70.866 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "0footprints:FUSE_3522-2"
-			(at 222.25 71.882 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 222.25 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 222.25 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9beae333-240f-4f53-9030-970ccf5d0ea8")
-		)
-		(pin "2"
-			(uuid "4d27216e-86e8-403f-914f-00e284e3df16")
-		)
-		(instances
-			(project "Power_Dist_Board_KZ_2024"
-				(path "/da5a4d78-f95d-491b-b672-0f2926504265"
-					(reference "F18")
 					(unit 1)
 				)
 			)
@@ -8711,7 +8564,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "36e75c55-7d5e-497a-9bf1-c0732d8fc889")
 		(property "Reference" "F26"
 			(at 38.1 141.986 90)
@@ -8738,7 +8591,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
 			(at 38.1 139.7 0)
 			(effects
 				(font
@@ -8805,7 +8658,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
 			(at 100.33 137.16 0)
 			(effects
 				(font
@@ -8872,7 +8725,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
 			(at 38.1 106.68 0)
 			(effects
 				(font
@@ -8900,73 +8753,6 @@
 			(project "Power_Dist_Board_KZ_2024"
 				(path "/da5a4d78-f95d-491b-b672-0f2926504265"
 					(reference "F1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Fuse")
-		(at 154.94 71.12 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "479b92a2-fe82-4476-98e3-9fab1713cc9c")
-		(property "Reference" "F24"
-			(at 154.94 73.66 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "500mA"
-			(at 154.94 69.088 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "0footprints:FUSE_3522-2"
-			(at 154.94 72.898 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 154.94 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 154.94 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "993284a3-5fdd-4a40-bd1b-5db11b02917f")
-		)
-		(pin "1"
-			(uuid "a78a28d6-9491-4ccf-871d-52936f68d845")
-		)
-		(instances
-			(project "Power_Dist_Board_KZ_2024"
-				(path "/da5a4d78-f95d-491b-b672-0f2926504265"
-					(reference "F24")
 					(unit 1)
 				)
 			)
@@ -9073,7 +8859,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
 			(at 223.52 101.6 0)
 			(effects
 				(font
@@ -9655,7 +9441,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "6c531b8b-6362-4d30-b916-8c1ee449cba8")
 		(property "Reference" "C1"
 			(at 44.704 67.056 0)
@@ -9792,73 +9578,6 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 154.94 44.45 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7150101f-3761-48c3-a93e-cd8ddefe4850")
-		(property "Reference" "F14"
-			(at 154.94 46.736 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "500mA"
-			(at 154.94 42.418 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "0footprints:FUSE_3522-2"
-			(at 154.94 46.228 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 154.94 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 154.94 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f21f68ba-c517-45fa-b72d-33a9fa0ceb7a")
-		)
-		(pin "1"
-			(uuid "c959e26a-b69e-4a85-89c9-4ed1d153c549")
-		)
-		(instances
-			(project "Power_Dist_Board_KZ_2024"
-				(path "/da5a4d78-f95d-491b-b672-0f2926504265"
-					(reference "F14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Fuse")
 		(at 168.91 120.65 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9891,7 +9610,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
 			(at 168.91 120.65 0)
 			(effects
 				(font
@@ -10031,7 +9750,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
 			(at 27.94 26.67 0)
 			(effects
 				(font
@@ -10071,7 +9790,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "77ef699b-bc55-4619-896b-6b7d805dda49")
 		(property "Reference" "#PWR03"
 			(at 27.94 76.2 0)
@@ -10163,7 +9882,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
 			(at 223.52 20.32 0)
 			(effects
 				(font
@@ -10382,7 +10101,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
 			(at 168.91 139.7 0)
 			(effects
 				(font
@@ -10422,7 +10141,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "7e815753-b07a-494d-ba30-a39ba85a8987")
 		(property "Reference" "C2"
 			(at 68.58 62.738 0)
@@ -10591,7 +10310,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
 			(at 38.1 156.21 0)
 			(effects
 				(font
@@ -10686,73 +10405,6 @@
 			(project ""
 				(path "/da5a4d78-f95d-491b-b672-0f2926504265"
 					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Fuse")
-		(at 96.52 44.45 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8e35282c-aa8f-4343-a51c-cf12a45544ea")
-		(property "Reference" "F12"
-			(at 96.52 46.736 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "500mA"
-			(at 96.52 42.418 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "0footprints:FUSE_3522-2"
-			(at 96.52 46.228 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 96.52 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 96.52 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c234a2f5-8090-4253-ada0-30314d966b7a")
-		)
-		(pin "1"
-			(uuid "7d841513-bc2b-4ea1-bd88-c1a01d5f7100")
-		)
-		(instances
-			(project "Power_Dist_Board_KZ_2024"
-				(path "/da5a4d78-f95d-491b-b672-0f2926504265"
-					(reference "F12")
 					(unit 1)
 				)
 			)
@@ -10905,73 +10557,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Fuse")
-		(at 222.25 87.63 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a675f025-334f-4cb2-86c0-8463e0e99f72")
-		(property "Reference" "F17"
-			(at 222.25 89.916 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "500mA"
-			(at 221.996 85.598 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "0footprints:FUSE_3522-2"
-			(at 222.25 85.852 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 222.25 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 222.25 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9b24ea8e-a89d-4c75-bd3a-f0877e39ae13")
-		)
-		(pin "2"
-			(uuid "d8a31bd6-25ef-44a3-beec-8dce33412140")
-		)
-		(instances
-			(project "Power_Dist_Board_KZ_2024"
-				(path "/da5a4d78-f95d-491b-b672-0f2926504265"
-					(reference "F17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_02x01")
 		(at 48.26 163.83 0)
 		(unit 1)
@@ -11100,73 +10685,6 @@
 			(project "PowerDistributionBoard"
 				(path "/da5a4d78-f95d-491b-b672-0f2926504265"
 					(reference "H4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Fuse")
-		(at 120.65 20.32 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "aa802442-8c97-47aa-a690-e60c1448b1e9")
-		(property "Reference" "F20"
-			(at 120.65 15.748 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "500mA"
-			(at 120.65 18.288 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "0footprints:FUSE_3522-2"
-			(at 120.65 22.098 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 120.65 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 120.65 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "24ada165-6ce8-479f-9cfd-1c02ee3548da")
-		)
-		(pin "1"
-			(uuid "7ef5ac46-1d7a-4121-98b8-94fa58e69219")
-		)
-		(instances
-			(project "Power_Dist_Board_KZ_2024"
-				(path "/da5a4d78-f95d-491b-b672-0f2926504265"
-					(reference "F20")
 					(unit 1)
 				)
 			)
@@ -11346,7 +10864,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
 			(at 38.1 123.19 0)
 			(effects
 				(font
@@ -11448,73 +10966,6 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 96.52 59.69 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b5558aca-2bdb-49a3-87c6-a63ee75a28bc")
-		(property "Reference" "F13"
-			(at 96.52 61.976 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "500mA"
-			(at 96.52 57.658 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "0footprints:FUSE_3522-2"
-			(at 96.52 61.468 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 96.52 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 96.52 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "45e7c907-0fe7-444c-a639-cd937bba2573")
-		)
-		(pin "1"
-			(uuid "fbbe2f83-2688-479a-9fa4-dae3ef2da270")
-		)
-		(instances
-			(project "Power_Dist_Board_KZ_2024"
-				(path "/da5a4d78-f95d-491b-b672-0f2926504265"
-					(reference "F13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Fuse")
 		(at 100.33 149.86 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11547,7 +10998,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
 			(at 100.33 149.86 0)
 			(effects
 				(font
@@ -11587,7 +11038,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "bc8e40a7-f79a-4256-a7b8-9c6f7f7ca02e")
 		(property "Reference" "J26"
 			(at 49.784 146.05 0)
@@ -11681,7 +11132,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
 			(at 168.91 111.76 0)
 			(effects
 				(font
@@ -11783,73 +11234,6 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 100.33 107.95 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c94d6ee0-c8e2-479d-ab88-41fac5c7058b")
-		(property "Reference" "F21"
-			(at 100.076 110.236 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "500mA"
-			(at 100.33 105.918 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "0footprints:FUSE_3522-2"
-			(at 100.33 109.728 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 100.33 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 100.33 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "9e1e74df-214f-479a-889e-3c06a732f334")
-		)
-		(pin "1"
-			(uuid "cd47d342-dbcb-4422-8fba-dff3f545b8c2")
-		)
-		(instances
-			(project "Power_Dist_Board_KZ_2024"
-				(path "/da5a4d78-f95d-491b-b672-0f2926504265"
-					(reference "F21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Fuse")
 		(at 260.35 104.14 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11882,7 +11266,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
 			(at 260.35 104.14 0)
 			(effects
 				(font
@@ -12177,7 +11561,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
 			(at 261.62 86.36 0)
 			(effects
 				(font
@@ -12244,7 +11628,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
 			(at 100.33 123.19 0)
 			(effects
 				(font
@@ -12357,7 +11741,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "e45b4bd0-1cba-4873-8d7e-cdae9bca9408")
 		(property "Reference" "FU1"
 			(at 27.94 55.372 90)
@@ -12384,7 +11768,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
 			(at 27.94 59.69 0)
 			(effects
 				(font
@@ -12481,140 +11865,6 @@
 			(project ""
 				(path "/da5a4d78-f95d-491b-b672-0f2926504265"
 					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Fuse")
-		(at 154.94 58.42 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f6c8f694-c46a-43cd-abef-93e46de95870")
-		(property "Reference" "F15"
-			(at 154.94 60.706 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "500mA"
-			(at 154.94 56.388 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "0footprints:FUSE_3522-2"
-			(at 154.94 60.198 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 154.94 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 154.94 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "eb5006ba-c43a-4df3-9796-4bcea25b8c63")
-		)
-		(pin "1"
-			(uuid "0c645b1f-0d62-403b-b81e-e75953968b37")
-		)
-		(instances
-			(project "Power_Dist_Board_KZ_2024"
-				(path "/da5a4d78-f95d-491b-b672-0f2926504265"
-					(reference "F15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Fuse")
-		(at 154.94 83.82 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f72f7751-294c-461b-afa7-04d9fa2b0d83")
-		(property "Reference" "F25"
-			(at 154.94 86.36 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "500mA"
-			(at 154.94 81.788 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "0footprints:FUSE_3522-2"
-			(at 154.94 85.598 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 154.94 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 154.94 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "181a233a-a326-4160-9455-4286e7808959")
-		)
-		(pin "1"
-			(uuid "f1de2d9e-94da-43fd-bae3-821fd26378c6")
-		)
-		(instances
-			(project "Power_Dist_Board_KZ_2024"
-				(path "/da5a4d78-f95d-491b-b672-0f2926504265"
-					(reference "F25")
 					(unit 1)
 				)
 			)
