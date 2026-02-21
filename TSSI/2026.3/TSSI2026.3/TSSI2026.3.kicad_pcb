@@ -1228,7 +1228,18 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -90)
+			)
+		)
+		(model "C:/Users/Anoop/Downloads/039296048_stp/039296048.stp"
+			(offset
+				(xyz 2.1 -2.5 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -180)
 			)
 		)
 	)
@@ -5833,6 +5844,17 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+		(model "C:/Users/Anoop/Downloads/02x01/039296028.stp"
+			(offset
+				(xyz 0 -2.6 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -180)
 			)
 		)
 	)
