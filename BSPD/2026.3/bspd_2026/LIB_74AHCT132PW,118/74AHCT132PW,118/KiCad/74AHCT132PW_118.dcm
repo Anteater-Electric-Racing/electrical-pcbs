@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 74AHCT132PW,118
+D 74AHC(T)132 - Quad 2-input NAND Schmitt trigger@en-us
+K
+F https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT132.pdf
+$ENDCMP
+#
+#End Doc Library

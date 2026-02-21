@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'APTD2012LSYCK'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Kingbright", "APTD2012LSYCK" (!) = "", "LEDC2012X105N", "LEDs Chip", "604-APTD2012LSYCK", "https://www.mouser.co.uk/ProductDetail/Kingbright/APTD2012LSYCK?qs=AQlKX63v8Rs%252BoJzWpwxJ3A%3D%3D", "Standard LEDs - SMD 0805 Dome Lens LED Yellow- 590nm", "http://www.kingbrightusa.com/images/catalog/SPEC/APTD2012LSYCK.pdf", "1.05 mm"
+END_PART
+
+END.

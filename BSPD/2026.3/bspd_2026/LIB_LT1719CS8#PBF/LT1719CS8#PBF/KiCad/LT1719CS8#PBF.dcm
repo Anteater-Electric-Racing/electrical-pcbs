@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LT1719CS8#PBF
+D LT1719CS8#PBF, Comparator 3 V, 5 V 8-Pin SOIC N
+K
+F http://cds.linear.com/docs/en/datasheet/1719fa.pdf
+$ENDCMP
+#
+#End Doc Library
