@@ -1242,6 +1242,17 @@
 				(xyz -90 -0 -180)
 			)
 		)
+		(model "${KIPRJMOD}/Parts/Molexes/039296048_stp/039296048.stp"
+			(offset
+				(xyz 2.1 -2.5 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -180)
+			)
+		)
 	)
 	(footprint "Resistor_SMD:R_0805_2012Metric"
 		(layer "F.Cu")
@@ -5849,6 +5860,17 @@
 		(model "C:/Users/Anoop/Downloads/02x01/039296028.stp"
 			(offset
 				(xyz 0 -2.6 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -180)
+			)
+		)
+		(model "${KIPRJMOD}/Parts/Molexes/02x01/039296028.stp"
+			(offset
+				(xyz 0 -2.5 0)
 			)
 			(scale
 				(xyz 1 1 1)

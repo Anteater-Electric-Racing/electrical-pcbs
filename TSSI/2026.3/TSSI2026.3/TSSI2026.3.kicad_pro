@@ -512,7 +512,7 @@
       "plot": "Gerbers/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "TSSI2026.3.step",
       "svg": "",
       "vrml": ""
     },
