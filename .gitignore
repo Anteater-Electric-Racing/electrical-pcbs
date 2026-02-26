@@ -9,6 +9,7 @@
 #   (used wayback machine)
 # - https://github.com/github/gitignore
 #   (edited with more comments)
+#   (more specifically this link: https://github.com/github/gitignore/blob/main/KiCad.gitignore)
 # - https://docs.kicad.org/6.0/en/kicad/kicad.html#kicad_files_and_folders
 
 # For PCBs designed using KiCad: http://www.kicad-pcb.org/
@@ -40,21 +41,18 @@ fp-info-cache       # Footprint Cache
 *.FCStd1
 
 
-# PCM build files
-build
-espressif-kicad-addon.zip
-
 # Extra Files
 # Ignore directory with backup zip files
 *-backups
 \#auto_saved_files\#
+
 # .lck files lead to loading errors in KiCad for multiple users
 *.lck
 
 
 # Fabrication files, and Exported BOM files
-fab/
-fabrication/
+#fab/
+#fabrication/
 *.zip
-*.csv
+#*.csv
 *.xml
