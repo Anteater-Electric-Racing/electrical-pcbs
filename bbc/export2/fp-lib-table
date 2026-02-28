@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "GLVMP_Banana_Jack")(type "KiCad")(uri "${KIPRJMOD}/libraries/GLVMP_Banana_Jack.pretty")(options "")(descr ""))
+)
