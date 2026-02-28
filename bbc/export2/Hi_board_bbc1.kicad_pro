@@ -487,7 +487,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "hi_bbc1_export/",
+      "plot": "export2/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "hi_bbc1_export2/Hi_board_bbc1.step",
