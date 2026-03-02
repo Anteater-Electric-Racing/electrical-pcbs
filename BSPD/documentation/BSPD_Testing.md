@@ -53,6 +53,16 @@ Complete this section **before** applying power to the board.
   - [ ] Resistance between +12 V and GND at the connector is **high** (no direct short).
   - [ ] No unintended short between sensor inputs and supply rails.
 
+### 2.4 Harness & Wiring Checks (EV.5.2.5 / EV.6.3.2)
+
+These checks help demonstrate compliance with EV.5.2.5 and EV.6.3.2 for harness wiring connected to the BSPD.
+
+- [ ] All wires in the BSPD harness are rated for at least the maximum Tractive System or GLV voltage they may see (per EV.5.2.5).
+- [ ] Wire gauge and insulation temperature rating meet or exceed design requirements and applicable rules.
+- [ ] Harness documentation (ESF / wiring diagrams) clearly identifies wire gauge, temperature rating, and insulation voltage rating (per EV.6.3.2).
+- [ ] No orange wiring is used for non-Tractive System circuits; GLV wiring colors follow team standards.
+- [ ] Strain relief, bundling, and routing at `J1` / `J2` prevent chafing and vibration damage.
+
 ---
 
 ## 3. Power‑Up & Electrical Verification
@@ -113,6 +123,80 @@ Use this section to quantify threshold margins and switching behavior across GLV
 | BSPD fault trip delay                   | Time from BOTH_ON to `BSPD_FAULT`          |        |        |        |
 | Additional observation / measurement #1 |                                            |        |        |        |
 | Additional observation / measurement #2 |                                            |        |        |        |
+
+### 3.6 Vibration & Temperature Drift Check
+
+**Setup**
+
+- Mount the BSPD board on a fixture that can be gently vibrated (for example, small shaker table or handheld vibration source).
+- Provide controlled warming using a heat gun; avoid overheating components (keep below rated ambient, for example, < 70 °C).
+- Monitor key signals (`BSPD_FAULT`, `BOTH_ON`, `B_ERROR`, `P_ERROR`) and thresholds as in Sections 3.3–3.5 and 4.1–4.3.
+
+**Procedure**
+
+1. **Baseline (room temperature, no vibration):**
+   - Verify normal operation using the functional tests in Section 4; confirm no unexpected faults.
+2. **Vibration at room temperature:**
+   - With inputs set just below threshold and just above threshold for BRAKE and CURRENT channels, apply vibration.
+   - Observe that:
+     - [ ] Threshold crossings do not chatter excessively.
+     - [ ] No spurious `BSPD_FAULT` events occur.
+3. **Temperature increase (heat gun):**
+   - Gently warm the board while keeping airflow moving; periodically pause heating to avoid hotspots.
+   - At several temperature points (for example, warm, hot, near upper limit), re-check:
+     - [ ] Brake and current-channel thresholds.
+     - [ ] Fault delay behavior (`BOTH_ON` to `BSPD_FAULT`).
+     - [ ] Absence of false faults during steady inputs.
+4. Record any observed threshold drift or instability in the test log.
+
+### 3.7 BSPD Fault Delay Measurement
+
+This test measures the delay between a valid plausibility condition and assertion of `BSPD_FAULT`. The measured delay must be **less than 0.5 s** under all tested conditions.
+
+**Procedure**
+
+1. Connect an oscilloscope to:
+   - Channel 1: `BSPD_FAULT` test point.
+2. At 12.0 V supply and room temperature:
+   - Use the Plausibility Test procedure (Section 4.3) to step both channels above threshold.
+   - Measure the time from `BOTH_ON` assertion (or both inputs crossing threshold) to `BSPD_FAULT` rising edge.
+   - [ ] Confirm measured delay < 0.5 s and record the value.
+3. Repeat the measurement across:
+   - Supply variation (for example, 11.5 V and 12.5 V using Section 3.5).
+   - Temperature variation (warm conditions using Section 3.6).
+4. For each condition, verify:
+   - [ ] `BSPD_FAULT` delay remains < 0.5 s.
+   - [ ] Delay remains stable (no large drift) across repeated trials.
+5. If delay exceeds 0.5 s or is otherwise non‑compliant:
+   - Review the delay/fall‑time network (D1, R15, R14, C7) described in `BSPD_documentation.md`.
+   - Adjust resistor and/or capacitor values as needed.
+   - Re‑run this test until all measured delays are < 0.5 s over the tested supply and temperature range.
+
+---
+
+## Test Points Reference
+
+Use this table during testing to quickly locate internal BSPD nets on the board.
+
+| Test Point | Net        |
+|-----------:|-----------|
+| TP1        | B_SHORT   |
+| TP2        | OC        |
+| TP3        | B_OPEN    |
+| TP4        | P_ERROR   |
+| TP5        | FAULT_SENSED |
+| TP6        | B_ERROR   |
+| TP7        | BOTH_ON   |
+| TP8        | BRAKE_TH  |
+| TP9        | B_APPLIED |
+| TP10       | SC        |
+| TP11       | P_SHORT   |
+| TP12       | P_APPLIED |
+| TP13       | BSPD_FAULT |
+| TP14       | PEDAL (CURRENT channel node, legacy name) |
+| TP15       | PEDAL_TH (CURRENT threshold) |
+| TP16       | BRAKE     |
+| TP17       | P_OPEN    |
 
 ---
 
@@ -191,17 +275,44 @@ These tests validate BSPD behavior against FSAE rules EV.7.7.1–EV.7.7.4 and re
 - [ ] Induce a current-channel fault and confirm `P_ERROR` LED2 illuminates.
 - [ ] Induce a plausibility fault (both channels above threshold) and confirm `BOTH_ON` LED3 illuminates.
 
----
+### 4.7 Schmitt Trigger Bypass Evaluation
 
-## 5. BSPD Bring‑Up & Verification Checklist
+The BSPD output stage includes a Schmitt trigger inverter with two **mutually exclusive** bypass resistors:
 
-Use this condensed checklist as a final gate before vehicle integration or competition.
+- **Bypass 1 ON (0 Ω populated):** Schmitt stage is **bypassed** (direct path).
+- **Bypass 2 ON (0 Ω populated):** Schmitt stage is **in-circuit (connected)**.
 
-### 5.4 Documentation & Rule Compliance
+Exactly **one** bypass resistor must be populated for the board to function correctly. If both are connected or both are disconnected, the output path will not work as intended.
 
-- [ ] Calibration values (thresholds, fault delay) recorded and stored with the vehicle documentation.
-- [ ] BSPD behavior reviewed against FSAE rules EV.7.7.1–EV.7.7.4 and related shutdown rules.
-- [ ] FSAE rule checklist in Appendix A reviewed and confirmed for the BSPD implementation.
+**Setup**
+
+- Identify the two Schmitt bypass resistors (`Bypass 1` and `Bypass 2`) on the PCB (see `BSPD_documentation.md` for reference designators).
+- Prepare 0 Ω jumpers (or solder bridges) for each bypass position.
+- Connect the oscilloscope to:
+  - Channel 1: `BOTH_ON` (or equivalent pre‑Schmitt node).
+  - Channel 2: `BSPD_FAULT` (post‑Schmitt output).
+
+**Procedure**
+
+1. **Mode A – Schmitt enabled**
+   - Populate **Bypass 2** with a 0 Ω link (Schmitt connected).
+   - Ensure **Bypass 1** is open (not populated).
+   - Run the plausibility and fault‑delay tests (Sections 3.7 and 4.3).
+   - Observe:
+     - [ ] Output edge cleanliness on `BSPD_FAULT` (no chatter, clean transitions).
+     - [ ] Fault delay < 0.5 s and consistent across repetitions.
+2. **Mode B – Schmitt bypassed**
+   - Populate **Bypass 1** with a 0 Ω link (direct bypass).
+   - Ensure **Bypass 2** is open (not populated).
+   - Repeat the same tests and compare:
+     - [ ] Presence of any additional noise or chatter on `BSPD_FAULT`.
+     - [ ] Any change in timing, latch behavior, or susceptibility to false trips.
+3. **Decision**
+   - Select the mode that:
+     - [ ] Preserves clean switching with minimal chatter.
+     - [ ] Meets the < 0.5 s delay requirement.
+     - [ ] Integrates best with the downstream shutdown / latch circuitry.
+   - Document the chosen configuration (which bypass resistor is populated) and retain it with the BSPD design files and vehicle documentation.
 
 ---
 
