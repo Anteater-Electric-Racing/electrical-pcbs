@@ -28,7 +28,7 @@ For full BSPD design and signal descriptions, see `BSPD_documentation.md`. For t
 
 ## 2. Pre‑Power Hardware Checklist
 
-Complete this section **before** applying power to the board.
+This section is completed **before** power is applied to the board.
 
 ### 2.1 Visual Inspection & Orientation
 
@@ -71,46 +71,46 @@ These tests verify basic power behavior, current draw, and noise margins before 
 
 ### 3.1 Initial Power‑Up Sanity Check
 
-1. Set bench supply to 12 V with a conservative current limit (100 mA).
-2. Connect +12 V and GND to `J2` (or `J1`) per pinout; leave `B_IN` and `C_IN` at 0 V (or disconnected with appropriate pulldowns).
-3. Enable the supply and observe:
+1. The bench supply is set to 12 V with a conservative current limit (100 mA).
+2. +12 V and GND are connected to `J2` (or `J1`) per pinout; `B_IN` and `C_IN` are held at 0 V (or left disconnected with appropriate pulldowns).
+3. The supply is enabled and the following are observed:
    - [ ] Board powers without exceeding current limit.
    - [ ] No unexpected heating, smoke, or abnormal smell.
-4. Measure **idle supply current** at 12 V and log it:
+4. **Idle supply current** at 12 V is measured and logged:
    - [ ] Idle current is within expected range
 
 ### 3.2 Supply Voltage Verification (Current/Voltage Verification)
 
-- [ ] Measure voltage at +12 V pins on `J1`/`J2` relative to GND; confirm within system tolerance (11.5 V to 12.5 V).
-- [ ] Verify supply voltage at key IC VDD pins (comparators, logic ICs) is within the same range.
-- [ ] Confirm `BSPD_FAULT` output node is at the correct default level (defined in `BSPD_documentation.md`) with no applied inputs.
+- [ ] Voltage at +12 V pins on `J1`/`J2` relative to GND is measured and confirmed within system tolerance (11.5 V to 12.5 V).
+- [ ] Supply voltage at key IC VDD pins (comparators, logic ICs) is verified to be within the same range.
+- [ ] The `BSPD_FAULT` output node is confirmed to be at the correct default level (defined in `BSPD_documentation.md`) with no applied inputs.
 
 ### 3.3 Power Measurement at Test Conditions (Current/Voltage Power Measurement)
 
-1. With 12 V applied, exercise representative high-activity states:
+1. With 12 V applied, representative high-activity states are exercised:
    - Brake applied only.
    - Current-channel applied only.
    - Both channels applied (plausibility fault condition).
 2. For each condition, record:
    - [ ] Supply voltage at the board.
    - [ ] Supply current drawn by the BSPD.
-3. Confirm total power consumption (V × I) remains within the design envelope and connector / wiring ratings.
+3. Total power consumption (V × I) is confirmed to remain within the design envelope and connector / wiring ratings.
 
 ### 3.4 Noise & Stability Test
 
-- [ ] Attach an oscilloscope probe to +12 V near the BSPD (for example, decoupling capacitor pad) and to GND.
-- [ ] While sweeping `B_IN` and `C_IN` through thresholds and toggling fault conditions:
-  - [ ] Confirm supply ripple and transient spikes remain within acceptable bounds for the GLV system.
-  - [ ] Confirm outputs (`BSPD_FAULT`, `BOTH_ON`) transition cleanly without repeated chatter or oscillation.
+- [ ] An oscilloscope probe is attached to +12 V near the BSPD (for example, decoupling capacitor pad) and to GND.
+- [ ] While `B_IN` and `C_IN` are swept through thresholds and fault conditions are toggled:
+  - [ ] Supply ripple and transient spikes remain within acceptable bounds for the GLV system.
+  - [ ] Outputs (`BSPD_FAULT`, `BOTH_ON`) transition cleanly without repeated chatter or oscillation.
 
 If significant ringing or oscillation is observed, consult the \"Delay and Fall-Time Network\" and grounding sections in `BSPD_documentation.md` before proceeding.
 
 ### 3.5 Threshold Margin & Voltage Sweep Logging
 
-Use this section to quantify threshold margins and switching behavior across GLV supply variation.
+This section is used to quantify threshold margins and switching behavior across GLV supply variation.
 
-1. For each supply level (11.5 V, 12.0 V, 12.5 V), repeat the relevant parts of Sections 3.1–3.3 and 4.1–4.3.
-2. At each supply level, record measured values in the table below (fill in cells during testing):
+1. For each supply level (11.5 V, 12.0 V, 12.5 V), the relevant parts of Sections 3.1–3.3 and 4.1–4.3 are repeated.
+2. At each supply level, measured values are recorded in the table below during testing:
 
 | Parameter                                | Test Condition / Notes                     | 11.5 V | 12.0 V | 12.5 V |
 |------------------------------------------|--------------------------------------------|--------|--------|--------|
@@ -135,15 +135,15 @@ Use this section to quantify threshold margins and switching behavior across GLV
 **Procedure**
 
 1. **Baseline (room temperature, no vibration):**
-   - Verify normal operation using the functional tests in Section 4; confirm no unexpected faults.
+   - Normal operation is verified using the functional tests in Section 4; no unexpected faults are observed.
 2. **Vibration at room temperature:**
-   - With inputs set just below threshold and just above threshold for BRAKE and CURRENT channels, apply vibration.
-   - Observe that:
+   - With inputs set just below threshold and just above threshold for BRAKE and CURRENT channels, vibration is applied.
+   - Observations:
      - [ ] Threshold crossings do not chatter excessively.
      - [ ] No spurious `BSPD_FAULT` events occur.
 3. **Temperature increase (heat gun):**
-   - Gently warm the board while keeping airflow moving; periodically pause heating to avoid hotspots.
-   - At several temperature points (for example, warm, hot, near upper limit), re-check:
+   - The board is gently warmed while airflow is kept moving; heating is periodically paused to avoid hotspots.
+   - At several temperature points (for example, warm, hot, near upper limit), the following are re-checked:
      - [ ] Brake and current-channel thresholds.
      - [ ] Fault delay behavior (`BOTH_ON` to `BSPD_FAULT`).
      - [ ] Absence of false faults during steady inputs.
@@ -176,7 +176,7 @@ This test measures the delay between a valid plausibility condition and assertio
 
 ## Test Points Reference
 
-Use this table during testing to quickly locate internal BSPD nets on the board.
+This table is used during testing to quickly locate internal BSPD nets on the board.
 
 | Test Point | Net        |
 |-----------:|-----------|
@@ -202,7 +202,7 @@ Use this table during testing to quickly locate internal BSPD nets on the board.
 
 ## 4. Functional Test Procedures
 
-These tests validate BSPD behavior against FSAE rules EV.7.7.1–EV.7.7.4 and related shutdown requirements. Whenever possible, correlate observations with test points documented in `BSPD_documentation.md`.
+These tests validate BSPD behavior against FSAE rules EV.7.7.1–EV.7.7.4 and related shutdown requirements. Wherever practical, observations are correlated with test points documented in `BSPD_documentation.md`.
 
 ### 4.1 Brake Input Test
 
@@ -223,7 +223,7 @@ These tests validate BSPD behavior against FSAE rules EV.7.7.1–EV.7.7.4 and re
 **Procedure**
 
 1. Ensure `B_IN` is held below its threshold.
-2. Slowly ramp `C_IN` (CURRENT channel) from 0 V to its maximum test value.
+2. Slowly ramp `C_IN` from 0 V to its maximum test value.
 3. Observe:
    - [ ] `P_APPLIED` asserts when `C_IN` crosses the configured current-channel threshold.
    - [ ] No fault outputs assert while only the current channel is above threshold.
@@ -239,7 +239,7 @@ These tests validate BSPD behavior against FSAE rules EV.7.7.1–EV.7.7.4 and re
 3. Observe:
    - [ ] `BOTH_ON` asserts once both channels exceed thresholds.
    - [ ] `BSPD_FAULT` asserts after the designed delay (see calibration targets; must be < 500 ms).
-   - [ ] Fault remains latched until the system reset path is exercised (per latch-board / system integration).
+   - [ ] The fault remains latched until the system reset path is exercised (per latch-board / system integration).
 
 ### 4.4 Open‑Circuit Detection Test
 
@@ -250,9 +250,9 @@ These tests validate BSPD behavior against FSAE rules EV.7.7.1–EV.7.7.4 and re
 1. Apply nominal sensor-level voltage on `B_IN`, then disconnect the signal to simulate an open (or use a fixture that lifts the connection).
 2. Observe:
    - [ ] `B_OPEN` asserts.
-   - [ ] BSPD transitions to a faulted state (`BSPD_FAULT` asserted, appropriate error LED on).
-3. Repeat for the CURRENT channel by opening `C_IN`:
-   - [ ] `P_OPEN` asserts and BSPD enters fault state.
+   - [ ] The BSPD transitions to a faulted state (`BSPD_FAULT` asserted, appropriate error LED on).
+3. The procedure is repeated for the CURRENT channel by opening `C_IN`:
+   - [ ] `P_OPEN` asserts and the BSPD enters fault state.
 
 ### 4.5 Short‑Circuit Detection Test
 
@@ -260,12 +260,12 @@ These tests validate BSPD behavior against FSAE rules EV.7.7.1–EV.7.7.4 and re
 
 **Procedure**
 
-1. Using a safe series resistor or fixture, simulate a short on the brake input (for example, brake signal forced hard to GND or +V beyond valid range).
-2. Observe:
+1. Using a safe series resistor or fixture, a short is simulated on the brake input (for example, brake signal forced hard to GND or +V beyond valid range).
+2. The following are observed:
    - [ ] `B_SHORT` asserts.
-   - [ ] BSPD enters fault state; `BSPD_FAULT` and the appropriate error LED assert.
-3. Repeat for the CURRENT channel:
-   - [ ] `P_SHORT` asserts and BSPD enters fault state.
+   - [ ] The BSPD enters fault state; `BSPD_FAULT` and the appropriate error LED assert.
+3. The procedure is repeated for the CURRENT channel:
+   - [ ] `P_SHORT` asserts and the BSPD enters fault state.
 
 ### 4.6 Debug LED Confirmation (v2026.3)
 
