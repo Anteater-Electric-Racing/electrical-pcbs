@@ -1,0 +1,36 @@
+{
+  "applicable_pcbs": [
+    "CCM",
+    "LATCH",
+    "PCC",
+    "PDB",
+    "TSRTM",
+    "TSSI",
+    "BMS",
+    "IMD",
+    "ALL_GLV",
+    "ALL_HV",
+    "ALL",
+    "BSPD",
+    "SYSTEM"
+  ],
+  "functional_category": [
+    "Shutdown System",
+    "Accumulator / Tractive Battery",
+    "LV Power & GLV",
+    "TSAL / HV Indicators",
+    "TSM / IMD / Insulation",
+    "Harness & Wiring",
+    "Charger / Charging System",
+    "Technical Inspection – EV"
+  ],
+  "hardware_domain": [
+    "pcb_specific",
+    "wire_integration",
+    "enclosure_mechanical",
+    "safety_labeling",
+    "test_procedure",
+    "wire_connectors",
+    "vehicle_operations"
+  ]
+}

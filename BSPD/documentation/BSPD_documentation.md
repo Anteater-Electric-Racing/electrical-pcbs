@@ -284,7 +284,7 @@ Thresholds are adjustable using four trimmers:
 
 ---
 
-## Testing Procedures (Bring-Up)
+## Testing Procedures (Simple)
 
 ### Brake Input Test
 
