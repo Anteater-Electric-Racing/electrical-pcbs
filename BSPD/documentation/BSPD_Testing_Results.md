@@ -55,7 +55,7 @@ A short bench demonstration of BSPD operation (brake and current channels, plaus
 
 Testing was performed with the Tractive System disabled and the BSPD isolated from any motor power stage. Equipment used included 3 adjustable GLV bench supplies (power, brake signal, current signal), 1 multimeter, 1 oscilloscope, and the BSPD board under test.
 
-![Test setup](BSPD_test_media/test_setup.jpg)
+<img src="BSPD_test_media/test_setup.jpg" alt="Test setup" style="max-width: 400px;" />
 
 *Figure 1: Bench test setup for BSPD verification.*
 
@@ -74,7 +74,7 @@ These checks were completed **before** power was applied to the board.
 - [x] Connectors `J1` and `J2` are the correct part numbers and oriented per drawing (keying and latch direction).
 - [x] No visible solder bridges, tombstoned parts, or missing components in critical signal paths (comparators, logic ICs, MOSFET).
 
-![PCB soldering and back view](BSPD_test_media/soldering_pcb_back.jpg)
+<img src="BSPD_test_media/soldering_pcb_back.jpg" alt="PCB soldering and back view" style="max-width: 400px;" />
 
 *Figure 2: Solder quality and PCB back inspection.*
 
@@ -89,27 +89,27 @@ GND continuity was verified between `J1`, `J2`, and representative GND test poin
 
 **GND continuity (low resistance, near 0 Ω):**
 
-![GND test point 1](BSPD_test_media/gnd_testpoint1.jpg)
+<img src="BSPD_test_media/gnd_testpoint1.jpg" alt="GND test point 1" style="max-width: 400px;" />
 
-![GND test point 2](BSPD_test_media/gnd_testpoint2.jpg)
+<img src="BSPD_test_media/gnd_testpoint2.jpg" alt="GND test point 2" style="max-width: 400px;" />
 
-![GND test point 3](BSPD_test_media/gnd_testpoint3.jpg)
+<img src="BSPD_test_media/gnd_testpoint3.jpg" alt="GND test point 3" style="max-width: 400px;" />
 
-![GND test point 4](BSPD_test_media/gnd_testpoint4.jpg)
+<img src="BSPD_test_media/gnd_testpoint4.jpg" alt="GND test point 4" style="max-width: 400px;" />
 
 **VDD / +12 V continuity (low resistance along rail):**
 
-![VDD test point 1](BSPD_test_media/vdd_testpoint1.jpg)
+<img src="BSPD_test_media/vdd_testpoint1.jpg" alt="VDD test point 1" style="max-width: 400px;" />
 
-![VDD test point 2](BSPD_test_media/vdd_testpoint2.jpg)
+<img src="BSPD_test_media/vdd_testpoint2.jpg" alt="VDD test point 2" style="max-width: 400px;" />
 
-![VDD test point 3](BSPD_test_media/vdd_testpoint3.jpg)
+<img src="BSPD_test_media/vdd_testpoint3.jpg" alt="VDD test point 3" style="max-width: 400px;" />
 
-![VDD test point 4](BSPD_test_media/vdd_testpoint4.jpg)
+<img src="BSPD_test_media/vdd_testpoint4.jpg" alt="VDD test point 4" style="max-width: 400px;" />
 
 **Shorts check (unpowered):** Resistance between +12 V and GND at the connector was measured **high** (no direct short).
 
-![Unpowered VDD to GND resistance](BSPD_test_media/unpowered_vdd_to_gnd_resistance.jpg)
+<img src="BSPD_test_media/unpowered_vdd_to_gnd_resistance.jpg" alt="Unpowered VDD to GND resistance" style="max-width: 400px;" />
 
 *Measured VDD–GND resistance (unpowered): 7.51 kΩ.*
 
@@ -139,7 +139,7 @@ The bench supply was set to 12 V with a conservative current limit (100 mA). +12
 - [x] No unexpected heating, smoke, or abnormal smell.
 - [x] **Idle supply current** at 12 V: **0.08 A** (within expected range).
 
-![Static power at 12 V](BSPD_test_media/static_power_12V.jpg)
+<img src="BSPD_test_media/static_power_12V.jpg" alt="Static power at 12 V" style="max-width: 400px;" />
 
 *Figure: Idle current measurement at 12 V (0.08 A).*
 
@@ -152,11 +152,11 @@ The bench supply was set to 12 V with a conservative current limit (100 mA). +12
 
 **Powered continuity (VDD and GND):**
 
-![Powered VDD to VDD resistance](BSPD_test_media/powered_vdd_to_vdd_resistance.jpg)
+<img src="BSPD_test_media/powered_vdd_to_vdd_resistance.jpg" alt="Powered VDD to VDD resistance" style="max-width: 400px;" />
 
-![Powered GND to GND resistance](BSPD_test_media/powered_gnd_to_gnd_resistance.jpg)
+<img src="BSPD_test_media/powered_gnd_to_gnd_resistance.jpg" alt="Powered GND to GND resistance" style="max-width: 400px;" />
 
-![Powered VDD to GND resistance](BSPD_test_media/powered_vdd_to_gnd_resistance.jpg)
+<img src="BSPD_test_media/powered_vdd_to_gnd_resistance.jpg" alt="Powered VDD to GND resistance" style="max-width: 400px;" />
 
 ### 3.3 Power Measurement at Test Conditions
 
@@ -172,13 +172,13 @@ With 12 V applied, supply voltage and current were recorded for each condition:
 - [x] Supply voltage and current recorded for each condition.
 - [x] Total power consumption (V × I) within design envelope and connector/wiring ratings.
 
-![Power with no fault](BSPD_test_media/power_no_fault.jpg)
+<img src="BSPD_test_media/power_no_fault.jpg" alt="Power with no fault" style="max-width: 400px;" />
 
-![Power with single fault (fault A)](BSPD_test_media/power_fault_A.jpg)
+<img src="BSPD_test_media/power_fault_A.jpg" alt="Power with single fault (fault A)" style="max-width: 400px;" />
 
-![Power with both faults](BSPD_test_media/power_both_faults.jpg)
+<img src="BSPD_test_media/power_both_faults.jpg" alt="Power with both faults" style="max-width: 400px;" />
 
-![12.5 V power consumption](BSPD_test_media/12.5V_power_consumption.jpg)
+<img src="BSPD_test_media/12.5V_power_consumption.jpg" alt="12.5 V power consumption" style="max-width: 400px;" />
 
 *Power measurements: no fault, single fault, both faults, and at 12.5 V supply.*
 
@@ -247,7 +247,7 @@ Delay from valid plausibility condition (both channels above threshold) to asser
 - [x] Measured delay **&lt; 10 µs** (no significant delay observed). Confirmed at 12.0 V supply and room temperature. Accurate measurement with oscilloscope and installed capacitors to be repeated as needed.
 - [x] Delay remains &lt; 0.5 s and stable across repeated trials.
 
-![Response time oscilloscope capture](BSPD_test_media/response_time_oscope.jpg)
+<img src="BSPD_test_media/response_time_oscope.jpg" alt="Response time oscilloscope capture" style="max-width: 400px;" />
 
 *Note: This delay was measured without the RC network; delay is estimated to be less than 10 µs.*
 
@@ -264,7 +264,7 @@ Delay from valid plausibility condition (both channels above threshold) to asser
 - [x] `B_APPLIED` asserts when `B_IN` crosses the configured brake threshold.
 - [x] No fault outputs (`BSPD_FAULT`, `B_ERROR`, `P_ERROR`, `BOTH_ON`) assert while only the brake channel is above threshold.
 
-![Brake fault / brake channel indication](BSPD_test_media/brake_fault_BSPD.jpg)
+<img src="BSPD_test_media/brake_fault_BSPD.jpg" alt="Brake fault / brake channel indication" style="max-width: 400px;" />
 
 *Brake channel threshold and LED indication.*
 
@@ -275,7 +275,7 @@ Delay from valid plausibility condition (both channels above threshold) to asser
 - [x] `P_APPLIED` asserts when `C_IN` crosses the configured current-channel threshold.
 - [x] No fault outputs assert while only the current channel is above threshold.
 
-![Current channel fault indication](BSPD_test_media/current_fault_BSPD.jpg)
+<img src="BSPD_test_media/current_fault_BSPD.jpg" alt="Current channel fault indication" style="max-width: 400px;" />
 
 *Current channel threshold and LED indication.*
 
@@ -287,7 +287,7 @@ Delay from valid plausibility condition (both channels above threshold) to asser
 - [x] `BSPD_FAULT` asserts after the designed delay (&lt; 500 ms; measured &lt; 10 µs).
 - [x] Fault remains latched until system reset path is exercised.
 
-![Both channels fault (plausibility)](BSPD_test_media/both_fault_BSPD.jpg)
+<img src="BSPD_test_media/both_fault_BSPD.jpg" alt="Both channels fault (plausibility)" style="max-width: 400px;" />
 
 *Plausibility fault: both channels above threshold, fault latched.*
 
