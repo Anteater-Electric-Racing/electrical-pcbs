@@ -1,0 +1,1778 @@
+[
+  {
+    "rule_id": "EV.3.1.1",
+    "title": "Supplying power to the motor to drive the vehicle in reverse is prohibited",
+    "description": "Supplying power to the motor to drive the vehicle in reverse is prohibited",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "vehicle_operations",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": true
+  },
+  {
+    "rule_id": "EV.3.1.2",
+    "title": "Drive by wire control of wheel torque is permitted",
+    "description": "Drive by wire control of wheel torque is permitted",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "vehicle_operations",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": true
+  },
+  {
+    "rule_id": "EV.3.1.3",
+    "title": "Torque",
+    "description": "Any algorithm or electronic control unit that can adjust the requested wheel torque may only decrease the total driver requested torque and must not increase it",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "vehicle_operations",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": true
+  },
+  {
+    "rule_id": "EV.3.2.1",
+    "title": "All Electric Vehicles must run with the Energy Meter provided at the event",
+    "description": "",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "PCC"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": true
+  },
+  {
+    "rule_id": "EV.3.2.4",
+    "title": "All Tractive System power must flow through the Energy Meter",
+    "description": "",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.3.2.6",
+    "title": "Power and Voltage and temperature limits will be checked by the Energy Meter data",
+    "description": "Energy is calculated as the time integrated value of the measured voltage multiplied by the measured current logged by the Energy Meter",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "ALL_HV"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.3.3.1",
+    "title": "Maximum power",
+    "description": "The maximum power measured by the Energy Meter must not exceed 80 kW",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "vehicle_operations",
+    "applicable_pcbs": [
+      "ALL_HV"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.3.3.2",
+    "title": "Max Voltage",
+    "description": "The maximum permitted voltage that may occur between any two points must not exceed 600 V DC",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "ALL_HV"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.3.3.3",
+    "title": "The powertrain must not regenerate energy when vehicle speed is between 0 and 5 km/hr",
+    "description": "The powertrain must not regenerate energy when vehicle speed is between 0 and 5 km/hr",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "vehicle_operations",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.4.1.1",
+    "title": "Only electrical motors are permitted. The number of motors is not limited",
+    "description": "",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "vehicle_operations",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": true
+  },
+  {
+    "rule_id": "EV.4.2",
+    "title": "Motor Controller",
+    "description": "The Tractive System Motor(s) must be connected to the Tractive Battery through a Motor Controller. No direct connections between Motor(s) and Tractive Battery.",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "vehicle_operations",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": true
+  },
+  {
+    "rule_id": "EV.4.3.1",
+    "title": "Tractive Battery Container",
+    "description": "Tractive Battery Container(s) must: a. Meet F.10 b. Be removable from the vehicle while still remaining rules compliant c. Be completely closed at all times (when mounted to the vehicle and when removed from the vehicle) without the need to install extra protective covers",
+    "functional_category": "Accumulator / Tractive Battery",
+    "hardware_domain": "enclosure_mechanical",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.4.3.3",
+    "title": "Any Tractive Battery Container that may vent an explosive gas must have a ventilation system",
+    "description": "Any Tractive Battery Container that may vent an explosive gas must have a ventilation system or pressure relief valve to release the vented gas",
+    "functional_category": "Accumulator / Tractive Battery",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": true
+  },
+  {
+    "rule_id": "EV.4.3.4",
+    "title": "Modules sealed in Tractive Battery Containers must have a path to a pressure relief valve",
+    "description": "",
+    "functional_category": "Accumulator / Tractive Battery",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": true
+  },
+  {
+    "rule_id": "EV.4.3.6",
+    "title": "Tractive Battery Container Labeling",
+    "description": "Each Tractive Battery Container must be labelled with the: a. School Name and Vehicle Number b. Symbol specified in ISO 7010-W012 (triangle with black lightning bolt on yellow background) with: • Triangle side length of 100 mm minimum • Visibility from all angles, including when the lid is removed c. Text “Always Energized” d. Text “High Voltage” if the voltage meets T.9.1.1",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "safety_labeling",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": true
+  },
+  {
+    "rule_id": "EV.4.4.1",
+    "title": "The GLV System must be:",
+    "description": "a. A Low Voltage system that is Grounded to the Chassis b. Able to operate with the Tractive Battery Pack removed from the vehicle",
+    "functional_category": "LV Power & GLV",
+    "hardware_domain": "enclosure_mechanical",
+    "applicable_pcbs": [
+      "ALL_GLV"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": true
+  },
+  {
+    "rule_id": "EV.4.4.2",
+    "title": "The GLV System must include a Master Switch, see EV.7.9.1",
+    "description": "",
+    "functional_category": "LV Power & GLV",
+    "hardware_domain": "enclosure_mechanical",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": true
+  },
+  {
+    "rule_id": "EV.4.4.3",
+    "title": "GLV Measuring Point (GLVMP)",
+    "description": "A GLV Measuring Point (GLVMP) must be installed which is: a. Connected to GLV System Ground b. Next to the TSMP EV.5.8 c. 4 mm shrouded banana jack d. Color: Black e. Marked “GND”",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "enclosure_mechanical",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": true
+  },
+  {
+    "rule_id": "EV.4.4.4",
+    "title": "Low Voltage Batteries must meet T.9.2",
+    "description": "",
+    "functional_category": "LV Power & GLV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": true
+  },
+  {
+    "rule_id": "EV.4.5",
+    "title": "Accelerator Pedal Position Sensor - APPS",
+    "description": "Refer to T.4.2 for specific requirements of the APPS",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "BSPD"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.4.6",
+    "title": "Brake System Encoder - BSE",
+    "description": "Refer to T.4.3 for specific requirements of the BSE",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "BSPD"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.4.7.1",
+    "title": "APPS / Brake Pedal Plausibility Check",
+    "description": "Must monitor for the two conditions: • The mechanical brakes are engaged EV.4.6, T.3.2.4 • The APPS signals more than 25% Pedal Travel EV.4.5",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.4.7.2",
+    "title": "APPS / Brake Pedal Plausibility Check Fault",
+    "description": "If the two conditions in EV.4.7.1 occur at the same time: a. Power to the Motor(s) must be immediately and completely shut down b. The Motor shut down must stay active until the APPS signals less than 5% Pedal Travel, with or without brake operation. The team must be able to demonstrate these actions at Technical Inspection",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "LATCH",
+      "BSPD"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.4.9.1",
+    "title": "Labeling",
+    "description": "Each housing or enclosure containing parts of the Tractive System other than Motor housings, must be labelled with the: a. Symbol specified in ISO 7010-W012 (triangle with black lightning bolt on yellow background) b. Text “High Voltage” if the voltage meets T.9.1.1",
+    "functional_category": "Harness & Wiring",
+    "hardware_domain": "safety_labeling",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": true
+  },
+  {
+    "rule_id": "EV.4.9.2",
+    "title": "Grounding",
+    "description": "If the material of the housing containing parts of the Tractive System is electrically conductive, it must have a low resistance connection to GLV System Ground, see EV.6.7",
+    "functional_category": "Harness & Wiring",
+    "hardware_domain": "wire_connectors",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": true
+  },
+  {
+    "rule_id": "EV.4.10.1",
+    "title": "Teams must have a Hand Cart to transport their Tractive Battery Pack(s)",
+    "description": "",
+    "functional_category": "Charger / Charging System",
+    "hardware_domain": "vehicle_operations",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": true
+  },
+  {
+    "rule_id": "EV.4.10.3",
+    "title": "The Hand Cart must:",
+    "description": "a. Be able to carry the load of the Tractive Battery Pack(s) without tipping over b. Contain a minimum of two wheels c. Have a brake that must be: • Released only using a dead man type switch (where the brake is always on until released by pushing and holding a handle) or by manually lifting part of the cart off the ground • Able to stop the Hand Cart with a fully loaded Tractive Battery Pack",
+    "functional_category": "Charger / Charging System",
+    "hardware_domain": "vehicle_operations",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": true
+  },
+  {
+    "rule_id": "EV.5.1.2",
+    "title": "Cap Size Limit",
+    "description": "No further energy storage except for reasonably sized intermediate circuit capacitors are permitted after the Energy Meter",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.2.1",
+    "title": "All Tractive System components must be rated for the maximum Tractive System voltage",
+    "description": "",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "ALL"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.2.2",
+    "title": "Tractive Battery Container",
+    "description": "If the Tractive Battery Container is made from an electrically conductive material: a. The poles of the Modules(s) and/or Cells must be isolated from the inner wall of the Tractive Battery Container with an insulating material that is rated for the maximum Tractive System voltage b. All conductive surfaces on the outside of the Tractive Battery Container must have a low resistance connection to the GLV System Ground, see EV.6.7 c. Any conductive penetrations, such as mounting hardware, must be protected against puncturing the insulating barrier",
+    "functional_category": "Accumulator / Tractive Battery",
+    "hardware_domain": "enclosure_mechanical",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": true
+  },
+  {
+    "rule_id": "EV.5.2.4",
+    "title": "Soldering",
+    "description": "Soldering electrical connections in the high current path is prohibited. Soldering wires to cells for the voltage monitoring input of the BMS is permitted, these wires are not part of the high current path",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "wire_connectors",
+    "applicable_pcbs": [
+      "ALL"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.2.5",
+    "title": "Wiring",
+    "description": "Each wire used in a Tractive Battery Container, whether it is part of the GLV or Tractive System, must be rated to the maximum Tractive System voltage",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "wire_connectors",
+    "applicable_pcbs": [
+      "ALL"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.3.1",
+    "title": "Maintenance Plugs",
+    "description": "Maintenance Plugs must let electrical separation of the Modules meet the two: a. The separated Modules meet voltage and energy limits of EV.5.1.1 b. The separation must affect the two poles of the Module",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "enclosure_mechanical",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": true
+  },
+  {
+    "rule_id": "EV.5.3.2",
+    "title": "Maintenance Plugs:",
+    "description": "Maintenance Plugs must: a. Require the physical removal or separation of a component. Contactors or switches are not acceptable Maintenance Plugs b. Have access after opening the Tractive Battery Container and not necessary to move or remove any other components c. Not be physically possible to make electrical connection in any configuration other than the design intended configuration d. Not require tools to install or remove e. Include a positive locking feature which prevents the plug from unintentionally becoming loose f. Be nonconductive on surfaces that do not provide any electrical connection",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "enclosure_mechanical",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": true
+  },
+  {
+    "rule_id": "EV.5.3.3",
+    "title": "Opening TS Container",
+    "description": "When the Tractive Battery Containers are opened or Modules are removed, the Modules must be separated by using the Maintenance Plugs. See EV.11.4.1",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "enclosure_mechanical",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": true
+  },
+  {
+    "rule_id": "EV.5.4.1",
+    "title": "IR",
+    "description": "All Tractive Battery Packs must contain minimum one fuse (EV.6.6) and two or more Isolation Relays (IR)",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "PCC"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.4.2",
+    "title": "IR Definition",
+    "description": "The Isolation Relays must: a. Be a Normally Open type b. Open the two poles of the Tractive Battery Pack",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.4.3",
+    "title": "IR Definition",
+    "description": "When the Isolation Relays are open, High Voltage T.9.1.1 must not be external of the Tractive Battery Container",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "PCC"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.4.4",
+    "title": "The Isolation Relays and any fuses must be separated",
+    "description": "The Isolation Relays and any fuses must be separated from the rest of the Tractive Battery with an electrically insulated and Nonflammable Material (F.1.18)",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "enclosure_mechanical",
+    "applicable_pcbs": [
+      "PCC",
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.4.5",
+    "title": "IR Timing",
+    "description": "A capacitor may be used to hold the Isolation Relays closed for up to 250 ms after the Shutdown Circuit Opens",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "LATCH",
+      "PCC"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.5",
+    "title": "Manual Service Disconnect - MSD",
+    "description": "A Manual Service Disconnect (MSD) must be included to quickly disconnect one or the two poles of the Tractive Battery Pack EV.11.3.2",
+    "functional_category": "Shutdown System",
+    "hardware_domain": "wire_connectors",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.5.1",
+    "title": "Manual Service Disconnect (MSD) Definition",
+    "description": "The Manual Service Disconnect (MSD) must be: a. A directly accessible element, fuse or connector that will visually show disconnected b. More than 350 mm from the ground c. Easily visible when standing behind the vehicle d. Operable in 10 seconds or less by an untrained person e. Operable without removing any bodywork or obstruction or using tools f. Directly operated. Remote operation through a long handle, rope or wire is not acceptable. g. Clearly marked with \"MSD\"",
+    "functional_category": "Shutdown System",
+    "hardware_domain": "wire_connectors",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.5.3",
+    "title": "An Interlock EV.7.8 must Open the Shutdown Circuit EV.7.2.2 when the MSD is removed",
+    "description": "",
+    "functional_category": "Shutdown System",
+    "hardware_domain": "wire_connectors",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.6.1",
+    "title": "Precharge Circuit",
+    "description": "The Tractive Battery Pack must contain a Precharge Circuit. The Precharge Circuit must: a. Be able to charge the Intermediate Circuit to minimum 90% of the Tractive System voltage before closing the second IR b. Be supplied from the Shutdown Circuit EV.7.1",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.6.2",
+    "title": "The Intermediate Circuit must precharge before closing the second IR",
+    "description": "The Intermediate Circuit must precharge before closing the second IR a. The end of precharge must be controlled by feedback by monitoring the voltage in the Intermediate Circuit",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "PCC"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.6.3",
+    "title": "Discharge Circuit",
+    "description": "The Tractive System must contain a Discharge Circuit. The Discharge Circuit must be: a. Wired in a way that it is always active when the Shutdown Circuit is open b. Able to discharge the Intermediate Circuit capacitors if the MSD has been opened c. Not be fused d. Designed to handle the maximum Tractive System voltage for minimum 15 seconds",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "PCC"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.6.4",
+    "title": "Positive Temperature Coefficient (PTC) devices",
+    "description": "Positive Temperature Coefficient (PTC) devices must not be used to limit current for the Precharge Circuit or Discharge Circuit",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "PCC"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.6.5",
+    "title": "The precharge relay must be a mechanical type relay",
+    "description": "",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "PCC"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.7",
+    "title": "Voltage Indicator",
+    "description": "Each Tractive Battery Pack must have a prominent indicator when High Voltage T.9.1.1 is present at the vehicle side of the IRs",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "safety_labeling",
+    "applicable_pcbs": [
+      "TSSI",
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.7.1",
+    "title": "Voltage Indicator",
+    "description": "The Voltage Indicator must always function, including when the Tractive Battery Pack is disconnected or removed",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "safety_labeling",
+    "applicable_pcbs": [
+      "TSSI",
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.7.2",
+    "title": "No software control",
+    "description": "The voltage present at the vehicle side of the Isolation Relays must directly control and power the Voltage Indicator using hard wired electronics with no software control",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.7.3",
+    "title": "The control signal which closes the IRs must not control the Voltage Indicator",
+    "description": "The control signal which closes the IRs must not control the Voltage Indicator",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "TSSI"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.7.4",
+    "title": "Voltage Indicator Location and Labeling",
+    "description": "The Voltage Indicator must: a. Be located where it is clearly visible when connecting/disconnecting the Tractive Battery Pack connections b. Be labeled “High Voltage Present”",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "safety_labeling",
+    "applicable_pcbs": [
+      "TSSI"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.8.1",
+    "title": "Tractive System Measuring Points (TSMP)",
+    "description": "Two Tractive System Measuring Points (TSMP) must be installed in the vehicle which are: a. Connected to the positive and negative motor controller/inverter supply lines b. Next to the Master Switches EV.7.9 c. Protected by a nonconductive housing that can be opened without tools d. Protected from being touched with bare hands / fingers once the housing is opened",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.8.2",
+    "title": "TSMP Charger",
+    "description": "Two TSMPs must be installed in the Charger EV.8.2 which are: a. Connected to the positive and negative Charger output lines b. Available during charging of any Tractive Battery Pack(s)",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.8.3",
+    "title": "The TSMPs must be:",
+    "description": "a. 4 mm shrouded banana jacks rated to an appropriate voltage level b. Color: Red c. Marked “HV+” and “HV-“",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.8.4",
+    "title": "Each TSMP must be secured with a current limiting resistor",
+    "description": "Each TSMP must be secured with a current limiting resistor a. The resistor must be sized for the voltage: Maximum TS Voltage (Vmax) Resistor Value Vmax <= 200 V DC 5 kOhm 200 V DC < Vmax <= 400 V DC 10 kOhm 400 V DC < Vmax <= 600 V DC 15 kOhm b. Resistor continuous power rating must be more than the power dissipated across the TSMPs if they are shorted together c. Direct measurement of the value of the resistor must be possible during Electrical Technical Inspection",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.8.5",
+    "title": "Any TSMP must not contain additional Overcurrent Protection",
+    "description": "",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.9",
+    "title": "Connectors",
+    "description": "Tractive System connectors outside of a housing must contain an Interlock EV.7.8",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "wire_connectors",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.10",
+    "title": "Energy Meter and Cooling Fans",
+    "description": "the Energy Meter EV.3.1 and cooling fans must not be inside the Tractive Battery Container",
+    "functional_category": "Accumulator / Tractive Battery",
+    "hardware_domain": "enclosure_mechanical",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": true
+  },
+  {
+    "rule_id": "EV.5.10.1",
+    "title": "The vehicle must have two Ready to Move Lights:",
+    "description": "The vehicle must have two Ready to Move Lights: a. One pointed forward b. One pointed aft",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "TSRTM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.10.2",
+    "title": "Ready to Move Light",
+    "description": "Each Ready to Move Light must be: a. A Marker Light that complies with DOT FMVSS 108 b. Color: Amber",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "TSRTM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.10.3",
+    "title": "Mounting location of each Ready to Move Light must:",
+    "description": "a. Be near the Main Hoop near the highest point of the vehicle b. Be inside the Rollover Protection Envelope F.1.13 c. Be no lower than 150 mm from the highest point of the Main Hoop d. Not let the driver’s helmet touch it e. Be visible from 1300 mm vertically from ground level, inside a 2000 mm horizontal radius from the light Visibility is checked with Bodywork and Aerodynamic Devices in place",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "TSRTM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.10.4",
+    "title": "The Ready to Move Light must:",
+    "description": "a. Be powered by the GLV system b. Be directly controlled by the voltage present in the Tractive System using hard wired electronics. EV.6.5.4 Software control is not permitted. c. Flash with a frequency between 2 Hz and 5 Hz with 50% duty cycle when the voltage outside the Tractive Battery Container(s) exceeds T.9.1.1 d. Not do any other functions",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "TSRTM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.11.2",
+    "title": "The Tractive System Status Indicator must have two different lights:",
+    "description": "The Tractive System Status Indicator must have two different lights: a. One Green light b. One Red light",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "TSSI"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.11.3",
+    "title": "Each of the Tractive System Status Indicator Lights:",
+    "description": "Each of the Tractive System Status Indicator Lights: a. Must have a minimum luminous area of 130 mm2 b. Must be visible in direct sunlight c. May have one or more of the same elements",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "TSSI"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.11.4",
+    "title": "Mounting location of the Tractive System Status Indicator must be:",
+    "description": "Mounting location of the Tractive System Status Indicator must be: a. Near the Main Hoop at the highest point of the vehicle b. Above the Ready to Move Light c. In the Rollover Protection Envelope F.1.13 d. No lower than 150 mm from the highest point of the Main Hoop e. Not able to let the driver’s helmet touch it f. Easily visible from the front of the vehicle",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "TSSI"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.5.11.5",
+    "title": "The Tractive System Status Indicator must show when the GLV System is energized:",
+    "description": "The Tractive System Status Indicator must show when the GLV System is energized: a. No Faults Always GREEN ON RED OFF b. Fault in one or the two: Flash RED 2 Hz to 5 Hz, 50% duty cycle GREEN OFF",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "TSSI"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.6.1.2",
+    "title": "TS System Isolation",
+    "description": "Contact with any Tractive System connections with a 100 mm long, 6 mm diameter insulated test probe must not be possible when the Tractive System enclosures are in place",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.6.1.3",
+    "title": "Moisture Rating",
+    "description": "Tractive System components and Tractive Battery(s) must be protected from moisture, rain or puddles. A rating of IP65 is recommended",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.6.2.1",
+    "title": "Insulation material must:",
+    "description": "Insulation material must: a. Be appropriate for the expected surrounding temperatures b. Have a minimum temperature rating of 90°C",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "ALL",
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.6.2.2",
+    "title": "Insulating tape or paint may be part of the insulation, but must not be the only insulation",
+    "description": "",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "ALL",
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.6.3.1",
+    "title": "Wire Size",
+    "description": "All wires and terminals and other conductors used in the Tractive System must be sized for the continuous current they will conduct",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "wire_connectors",
+    "applicable_pcbs": [
+      "ALL",
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.6.3.2",
+    "title": "All Tractive System wiring must:",
+    "description": "All Tractive System wiring must: a. Be marked with wire gauge, temperature rating and insulation voltage rating A serial number or a norm printed on the wire is sufficient if this serial number or norm is clearly bound to the wire characteristics for example by a data sheet. b. Have temperature rating more than or equal to 90°C",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "wire_connectors",
+    "applicable_pcbs": [
+      "ALL_HV",
+      "ALL",
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.6.3.3",
+    "title": "Tractive System wiring must be:",
+    "description": "a. Done to professional standards with sufficient strain relief b. Protected from loosening due to vibration c. Protected against damage by rotating and / or moving parts d. Located out of the way of possible snagging or damage",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "wire_connectors",
+    "applicable_pcbs": [
+      "ALL",
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.6.3.4",
+    "title": "Any Tractive System wiring that runs outside of electrical enclosures:",
+    "description": "Any Tractive System wiring that runs outside of electrical enclosures: a. Must meet one of the two: • Enclosed in separate orange nonconductive conduit • Use an orange shielded cable b. The conduit or shielded cable must be securely anchored at each end to let it withstand a force of 200 N without straining the cable end crimp c. Any shielded cable must have the shield grounded",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "wire_connectors",
+    "applicable_pcbs": [
+      "ALL",
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.6.3.5",
+    "title": "Wiring that is not part of the Tractive System must not use orange wiring or conduit",
+    "description": "",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "wire_connectors",
+    "applicable_pcbs": [
+      "ALL",
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.6.4.1",
+    "title": "Tractive System connections",
+    "description": "All Tractive System connections must: a. Be designed to use intentional current paths through conductors designed for electrical current b. Not rely on steel bolts to be the primary conductor c. Not include compressible material such as plastic in the stack-up",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "wire_connectors",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.6.4.3",
+    "title": "Bolted electrical connections in the high current path",
+    "description": "Bolted electrical connections in the high current path of the Tractive System must include a positive locking feature to prevent unintentional loosening. Lock washers or thread locking compounds (Loctite®) or adhesives are not acceptable Bolts with nylon patches are permitted for blind connections into OEM components",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "wire_connectors",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.6.4.4",
+    "title": "Connector Documentation",
+    "description": "Information about the electrical connections supporting the high current path must be available at Electrical Technical Inspection",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "wire_connectors",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.6.5.1",
+    "title": "Separation of Tractive System and GLV System:",
+    "description": "The entire Tractive System and GLV System must be completely galvanically separated",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "ALL"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.6.5.3",
+    "title": "Tractive System and GLV circuits must not be in the same conduit or connector",
+    "description": "Tractive System and GLV circuits must not be in the same conduit or connector except as permitted in in EV.7.8.4",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "wire_connectors",
+    "applicable_pcbs": [
+      "ALL",
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.6.5.5",
+    "title": "Tractive System and GLV Physical Spacing",
+    "description": "Where Tractive System and GLV are included inside the same enclosure, they must meet one of the two: a. Be separated by insulating barriers (in addition to the insulation on the wire) made of moisture resistant, UL recognized or equivalent insulating materials rated for 90° C or higher (such as Nomex based electrical insulation) b. Maintain spacing through air, or over a surface (similar to those defined in UL1741) of: U < 100 V DC 10 mm 100 V DC < U < 200 V DC 20 mm U > 200 V DC 30 mm",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "enclosure_mechanical",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.6.5.7",
+    "title": "Tractive System and GLV PCB Spacing",
+    "description": "If Tractive System and GLV are on the same circuit board: a. They must be on separate, clearly defined and clearly marked areas of the board b. Required spacing related to the spacing between traces / board areas",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "ALL_HV",
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.6.5.8",
+    "title": "TS GLV Isolation Documentation",
+    "description": "Teams must be prepared to show spacing on team built equipment. For inaccessible circuitry, spare boards or appropriate photographs must be available for inspection",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "ALL_HV",
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.6.6.1",
+    "title": "Overcurrent Protection Required",
+    "description": "All electrical systems (Low Voltage and High Voltage) must have appropriate Overcurrent Protection/Fusing.",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "ALL"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.6.6.2",
+    "title": "Overcurrent Protection devices",
+    "description": "Unless otherwise permitted in the Rules, all Overcurrent Protection devices must: a. Be rated for the highest voltage in the systems they protect Overcurrent Protection devices used for DC must be rated for DC and must carry a DC rating equal to or more than the system voltage b. Have a continuous current rating less than or equal to the continuous current rating of any electrical component that it protects c. Have an interrupt current rating higher than the theoretical short circuit current of the system that it protects",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "ALL"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.6.6.3",
+    "title": "Battery Current Protection",
+    "description": "Each parallel element of multiple parallel battery cells, capacitors, strings of battery cells, strings of capacitors, or conductors must have individual Overcurrent Protection.",
+    "functional_category": "Accumulator / Tractive Battery",
+    "hardware_domain": "enclosure_mechanical",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.6.6.6",
+    "title": "Splicing Cables",
+    "description": "If conductor ampacity is reduced below the ampacity of the upstream Overcurrent Protection, the reduced conductor longer than 150 mm must have additional Overcurrent Protection. This additional Overcurrent Protection must be: a. 150 mm or less from the source end of the reduced conductor b. On the positive and the negative conductors in the Tractive System c. On the positive conductor in the Grounded Low Voltage System",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "wire_connectors",
+    "applicable_pcbs": [
+      "ALL",
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.7.1.1",
+    "title": "The Shutdown Circuit consists of these components",
+    "description": "The Shutdown Circuit consists of these components, connected in series: a. Battery Management System (BMS) EV.7.3 b. Insulation Monitoring Device (IMD) EV.7.6 c. Brake System Plausibility Device (BSPD) EV.7.7 d. Interlocks (as required) EV.7.8 e. Master Switches (GLVMS, TSMS) EV.7.9 f. Shutdown Buttons EV.7.10 g. Brake Over Travel Switch (BOTS) T.3.3 h. Inertia Switch T.9.4",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.7.1.2",
+    "title": "Shutdown Circuit",
+    "description": "The Shutdown Circuit must directly carry the current driving the Isolation Relays (IRs) and the Precharge Circuit Relay.",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "LATCH"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.7.1.3",
+    "title": "The BMS, IMD, and BSPD parts of the Shutdown Circuit must be Normally Open",
+    "description": "The BMS, IMD, and BSPD parts of the Shutdown Circuit must be Normally Open",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "LATCH",
+      "BMS",
+      "IMD",
+      "BSPD"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.7.1.4",
+    "title": "The BMS, IMD and BSPD must have completely independent circuits",
+    "description": "The BMS, IMD and BSPD must have completely independent circuits to Open the Shutdown Circuit. The design of the respective circuits must make sure that a failure cannot result in electrical power being fed back into the Shutdown Circuit.",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "LATCH",
+      "BMS",
+      "IMD",
+      "BSPD"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.7.1.5",
+    "title": "Shutdown Current",
+    "description": "The Shutdown Buttons, BOTS, TSMS, GLVMS and Interlocks must directly carry the Shutdown Circuit current",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "LATCH"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.7.2.1",
+    "title": "Shutdown Circuit Activation",
+    "description": "The Shutdown Circuit must Open when any of these exist: a. Operation of, or detection from any of the components listed in EV.7.1.1 b. Any shutdown of the GLV System",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "LATCH"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.7.2.2",
+    "title": "Shutdown Circuit Opens",
+    "description": "When the Shutdown Circuit Opens: a. The Tractive System must Shutdown b. All Tractive Battery current flow must stop immediately EV.5.4.3 c. The voltage in the Tractive System must be Low Voltage T.9.1.2 in five seconds or less d. The Motor(s) must spin free. Torque must not be applied to the Motor(s)",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "LATCH"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.7.2.3",
+    "title": "Shutdown Circuit Behavior",
+    "description": "When the BMS, IMD or BSPD Open the Shutdown Circuit: a. The Tractive System must stay disabled until manually reset b. The Tractive System must be reset only by manual action of a person directly at the vehicle c. The driver must not be able to reactivate the Tractive System from inside the vehicle",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "vehicle_operations",
+    "applicable_pcbs": [
+      "LATCH",
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.7.3.1",
+    "title": "BMS",
+    "description": "A Battery Management System must monitor the Tractive Battery Voltage EV.7.4 and Temperature EV.7.5 when the: a. Tractive System is Active EV.11.5 b. Tractive Battery is connected to a Charger EV.8.3",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "BMS"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.7.3.3",
+    "title": "Cell balancing is not permitted when the Shutdown Circuit is Open ( EV.7.2, EV.8.4 )",
+    "description": "",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "BMS"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.7.3.4",
+    "title": "The BMS must monitor for:",
+    "description": "The BMS must monitor for: a. Voltage values outside the permitted range EV.7.4.2 b. Voltage sense Overcurrent Protection device(s) blown or tripped c. Temperature values outside the permitted range EV.7.5.2 d. Missing or interrupted voltage or temperature measurements e. A fault in the BMS",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "BMS"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.7.3.5",
+    "title": "BMS Operations",
+    "description": "If the BMS detects one or more of the conditions of EV.7.3.4 above, the BMS must: a. Open the Shutdown Circuit EV.7.2.2 b. Turn on the BMS Indicator Light and the Tractive System Status Indicator EV.5.11.5 The two lights must stay on until the BMS is manually reset EV.7.2.3",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "BMS",
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.7.3.6",
+    "title": "BMS Indicator Light",
+    "description": "The BMS Indicator Light must be: a. Color: Red b. Clearly visible to the seated driver in bright sunlight c. Clearly marked with the lettering “BMS”",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "BMS"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.7.5.2",
+    "title": "TS Temperatures",
+    "description": "Temperatures (considering measurement accuracy) must stay below the lower of the two: • The maximum cell temperature limit stated in the cell data sheet • 60°C",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "BMS"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.7.6.1",
+    "title": "The vehicle must have an Insulation Monitoring Device (IMD) installed in the Tractive System",
+    "description": "",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "IMD"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.7.6.2",
+    "title": "IMD",
+    "description": "The IMD must be a Bender ISOMETER® IR155-3203 or IR155-3204 (website) or an approved alternate equivalent IMD Refer to the Rules FAQ on the Event Website for approved equivalent IMD",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "IMD"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.7.6.3",
+    "title": "IMD Requirement",
+    "description": "The response value of the IMD must be set to 500 Ohm / Volt or higher, related to the maximum Tractive System operation voltage.",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "IMD"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.7.6.4",
+    "title": "IMD Behavior",
+    "description": "The IMD must monitor the Tractive System for: a. An isolation failure b. A failure in the IMD operation This must be done without the influence of any programmable logic.",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "IMD"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.7.6.5",
+    "title": "IMD Behavior",
+    "description": "If the IMD detects one or more of the conditions of EV.7.6.4 above the IMD must: a. Open the Shutdown Circuit EV.7.2.2 b. Turn on the IMD Indicator Light and the Tractive System Status Indicator EV.5.11.5 The two lights must stay on until the IMD is manually reset EV.7.2.3",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "IMD",
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.7.6.6",
+    "title": "IMD Indicator Light",
+    "description": "The IMD Indicator Light must be: a. Color: Red b. Clearly visible to the seated driver in bright sunlight c. Clearly marked with the lettering “IMD”",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "IMD"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.7.7.1",
+    "title": "BSPD",
+    "description": "The vehicle must have a standalone nonprogrammable circuit to check for simultaneous braking and high power output. The BSPD must be provided in addition to the APPS / Brake Pedal Plausibility Check (EV.4.7)",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "BSPD"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.7.7.2",
+    "title": "BSPD Bahavior",
+    "description": "The BSPD must Open the Shutdown Circuit EV.7.2.2 when the two of these exist: • Demand for Hard Braking EV.4.6 • Tractive System current is at a level where 5 kW of electrical power in the DC circuit is delivered to the Motor(s) at the nominal battery voltage. The BSPD may delay opening the shutdown circuit up to 0.5 sec to prevent false trips.",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "BSPD"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.7.7.3",
+    "title": "BSPD Behavior",
+    "description": "The BSPD must Open the Shutdown Circuit EV.7.2.2 when there is an open or short circuit in any sensor input",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "BSPD"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.7.7.4",
+    "title": "The team must have a test to demonstrate BSPD operation at Electrical Technical Inspection.",
+    "description": "The team must have a test to demonstrate BSPD operation at Electrical Technical Inspection. a. Power must not be sent to the Motor(s) of the vehicle during the test b. The test must prove the function of the complete BSPD in the vehicle, including the current sensor. The suggested test would introduce a current by a separate wire from an external power supply simulating the Tractive System current while pressing the brake pedal.",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "BSPD",
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.7.9.1",
+    "title": "Master Switches",
+    "description": "Each vehicle must have two Master Switches that must: a. Meet T.9.3 for Configuration and Location b. Be direct acting, not act through a relay or logic",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "wire_connectors",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.7.9.2",
+    "title": "GLVMS",
+    "description": "The Grounded Low Voltage Master Switch (GLVMS) must: a. Completely stop all power to the GLV System EV.4.4 b. Be in the center of a completely red circular area of > 50 mm in diameter c. Be labeled “LV”",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "wire_connectors",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.7.9.3",
+    "title": "TSMS",
+    "description": "The Tractive System Master Switch (TSMS) must: a. Open the Shutdown Circuit in the OFF position EV.7.2.2 b. Be the last switch before the IRs except for Precharge circuitry and Interlocks. c. Be in the center of a completely orange circular area of > 50 mm in diameter d. Be labeled “TS” and the symbol specified in ISO 7010-W012 (triangle with black lightning bolt on yellow background). e. Be fitted with a \"lockout/tagout\" capability in the OFF position EV.11.3.1",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.8.1.1",
+    "title": "Charger and Charging Shutdown Circuit",
+    "description": "All features and functions of the Charger and Charging Shutdown Circuit must be demonstrated at Electrical Technical Inspection. IN.5.1",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "PCC",
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.8.2.1",
+    "title": "The Charger must be galvanically isolated (AC) input to (DC) output.",
+    "description": "",
+    "functional_category": "Charger / Charging System",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": true
+  },
+  {
+    "rule_id": "EV.8.2.2",
+    "title": "If the Charger housing is conductive it must be connected to the earth ground of the AC input.",
+    "description": "",
+    "functional_category": "Charger / Charging System",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": true
+  },
+  {
+    "rule_id": "EV.8.2.3",
+    "title": "All connections of the Charger(s) must be isolated and covered.",
+    "description": "",
+    "functional_category": "Charger / Charging System",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": true
+  },
+  {
+    "rule_id": "EV.8.2.4",
+    "title": "Charger connector",
+    "description": "The Charger connector(s) must incorporate a feature to let the connector become live only when correctly connected to the Tractive Battery Pack",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "wire_connectors",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.8.2.5",
+    "title": "High Voltage charging leads must be orange",
+    "description": "",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "wire_connectors",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.8.2.6",
+    "title": "The Charger must have two TSMPs installed, see EV.5.8.2",
+    "description": "",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "wire_connectors",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.8.2.7",
+    "title": "Charger Shutdown Button",
+    "description": "The Charger must include a Charger Shutdown Button which must: a. Be a push-pull or push-rotate emergency stop switch b. Have a minimum diameter of 25 mm c. Open the Charging Shutdown Circuit EV.8.4.2 when operated to the OFF position d. Hold when operated to the OFF position e. Be labelled with the international electrical symbol (a red spark on a white edged blue triangle)",
+    "functional_category": "Charger / Charging System",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.8.3.1",
+    "title": "The Charging Shutdown Circuit consists of:",
+    "description": "The Charging Shutdown Circuit consists of: a. Charger Shutdown Button EV.8.2.7 b. Battery Management System (BMS) EV.7.3 c. Insulation Monitoring Device (IMD) EV.7.6",
+    "functional_category": "Charger / Charging System",
+    "hardware_domain": "pcb_specific",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.8.3.2",
+    "title": "Charging Shutdown Circuit Requirements",
+    "description": "The BMS and IMD parts of the Charging Shutdown Circuit must: a. Be designed as Normally Open contacts b. Have completely independent circuits to Open the Charging Shutdown Circuit. Design of the respective circuits must make sure that a failure cannot result in electrical power being fed back into the Charging Shutdown Circuit.",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.8.4.1",
+    "title": "Charging Shutdown Circuit Inputs",
+    "description": "When Charging, the BMS and IMD must: a. Monitor the Tractive Battery b. Open the Charging Shutdown Circuit if a fault is detected",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "BMS",
+      "IMD"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.8.4.2",
+    "title": "Charging Shutdown Circuit Opens",
+    "description": "When the Charging Shutdown Circuit Opens: a. All current flow to the Tractive Battery must stop immediately b. The voltage in the Tractive System must be Low Voltage T.9.1.2 in five seconds or less c. The Charger must be turned off d. The Charger must stay disabled until manually reset",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.9.1",
+    "title": "Activation Requirement",
+    "description": "The driver must complete the Activation Sequence without external assistance after the Master Switches EV.7.9 are ON",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "vehicle_operations",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": true
+  },
+  {
+    "rule_id": "EV.9.2",
+    "title": "Activation Sequence",
+    "description": "The vehicle systems must energize in this sequence: a. Low Voltage (GLV) System EV.9.3 b. Tractive System Active EV.9.4 c. Ready to Drive EV.9.5",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "vehicle_operations",
+    "applicable_pcbs": [],
+    "inspection_criteria": "",
+    "is_mechanical": true
+  },
+  {
+    "rule_id": "EV.9.4.2",
+    "title": "Tractive System Active",
+    "description": "Tractive System Active must not be possible until the two: • GLV System is Energized • Shutdown Circuit is Closed Formula",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "vehicle_operations",
+    "applicable_pcbs": [
+      "ALL_HV",
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.9.7.1",
+    "title": "The vehicle must make a characteristic sound when it is Ready to Drive",
+    "description": "",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "vehicle_operations",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.9.7.2",
+    "title": "The Ready to Drive Sound must be:",
+    "description": "a. Sounded continuously for minimum 1 second and maximum 3 seconds b. A minimum sound level of 80 dBA, fast weighting IN.10.3 c. Easily recognizable. No animal voices, song parts or sounds that could be interpreted as offensive will be accepted",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "vehicle_operations",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.9.7.3",
+    "title": "The vehicle must not make other sounds similar to the Ready to Drive Sound.",
+    "description": "",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "vehicle_operations",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "EV.11.5.4",
+    "title": "Tractive Battery Pack Labeling",
+    "description": "Each Tractive Battery Pack must have a label with this data during Charging: • Team Name • Electrical System Officer phone number(s)",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "safety_labeling",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "IN.2.2.1",
+    "title": "Given dimensions are absolute, and do not have any tolerance unless specifically stated",
+    "description": "",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "ALL"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "IN.2.2.3",
+    "title": "No allowance is given for measurement accuracy or error",
+    "description": "",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "ALL"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "IN.2.3",
+    "title": "Visible Access",
+    "description": "All items on the Technical Inspection Form must be clearly visible to the technical inspectors without using instruments such as endoscopes or mirrors Methods to provide visible access include but are not limited to removable body panels, access panels, and other components",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "ALL"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "IN.5.1",
+    "title": "Inspection Items",
+    "description": "Bring these to Tractive Battery Pack and Charger Inspection: • Tractive Battery Pack mounted on the Hand Cart EV.4.10 • Spare Battery Pack(s) and Tractive Battery components (if applicable) EV.5.1.3 • Charger(s) for the Tractive Battery EV.8.1 • Tractive Battery Container samples (if applicable) F.10.2.1.c, F.10.2.2.c • Electrical Systems Form (ESF) and Component Data Sheets EV.2 • Electronic copies of any submitted Rules Questions with the received answer GR.7 These basic tools in good condition: • Insulated cable shears • Insulated screw drivers • Multimeter with protected probe tips • Insulated tools, if screwed connections are used in the Tractive System • Face Shield • HV insulating gloves which are 12 months or less from their test date • Two HV insulating blankets of minimum 0.83 m² each • Safety glasses with side shields for all team members that might work on the Tractive System or Battery Pack",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "ALL",
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "IN.10.1.1",
+    "title": "IMD Test",
+    "description": "The Insulation Monitoring Device will be tested by connecting a resistor between the Tractive System Measuring Points (EV.5.8), and several electrically conductive vehicle parts while the Tractive System is active",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "IMD",
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "IN.10.1.2",
+    "title": "IMD Test Pass",
+    "description": "The test passes if the IMD shuts down the Tractive System in 30 seconds or less at a fault resistance of 50% below the response value corresponding to 250 Ohm / Volt",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "IMD",
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "IN.10.2.1",
+    "title": "Isolation Test",
+    "description": "The insulation resistance between the Tractive System and GLV System Ground will be measured. a. The available measurement voltages are 250 V and 500 V b. All vehicles with a maximum nominal operation voltage below 500 V will be measured with the next available voltage level c. All vehicles with a system voltage of 500 V or more will be measured with 500 V",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "IN.10.2.2",
+    "title": "Isolation Test Pass",
+    "description": "To pass the Insulation Measurement Test the measured insulation resistance must be minimum 500 Ohm/Volt related to the maximum nominal Tractive System operation voltage",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "IN.10.3",
+    "title": "Ready to Drive Sound",
+    "description": "The sound level may be measured with a free field microphone placed free from obstructions in a radius of 2 m around the vehicle against the criteria in EV.9.7",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "IN.13.1",
+    "title": "Rain Test Requirements",
+    "description": "Rain Test Requirements • Tractive System must be Active • The vehicle must not be in Ready to Drive mode (EV.7) • Any driven wheels must not touch the ground • A driver must not be seated in the vehicle",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "IN.13.2",
+    "title": "Rain Test Conduct",
+    "description": "The water spray will be rain like, not a direct high pressure water jet a. Spray water at the vehicle from any possible direction for 120 seconds b. Stop the water spray c. Observe the vehicle for 120 seconds",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "IN.13.3.1",
+    "title": "Rain Test Pass",
+    "description": "The test is passed if the: a. Insulation Monitoring Device (EV.7.6) does not react during the entire 240 seconds duration b. Insulation Monitoring Device functionality is verified after the 240 seconds test",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "IN.14.3.1",
+    "title": "The Brake Test must use only the mechanical Brakes with no aid from the powertrain EV.3.3.3",
+    "description": "",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "IN.14.3.2",
+    "title": "Brake Test procedure",
+    "description": "Brake Test procedure: a. Accelerate to speed into the designated braking zone b. Switch off the Tractive System EV.7.10.4 c. Apply the brakes with force sufficient to demonstrate full lockup of all four wheels",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "IN.14.3.3",
+    "title": "Brake Test Pass",
+    "description": "The Brake Test passes if all four wheels lock IN.14.3.1",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  },
+  {
+    "rule_id": "IN.14.3.4",
+    "title": "Ready to Move Light Timing",
+    "description": "The Ready to Move Light may switch a short time after the vehicle has come to a complete stop as the reduction of the system voltage is not immediate. See EV.7.2.2.c",
+    "functional_category": "Technical Inspection – EV",
+    "hardware_domain": "test_procedure",
+    "applicable_pcbs": [
+      "TSRTM",
+      "SYSTEM"
+    ],
+    "inspection_criteria": "",
+    "is_mechanical": false
+  }
+]

@@ -4882,15 +4882,15 @@
 			(uuid "3aca9a76-c64b-4fb7-a93f-5cbd6fe16ae4")
 		)
 		(embedded_fonts no)
-		(model "39-30-6068.stp"
+		(model "${KIPRJMOD}/LIB_39-30-6068/39-30-6068/KiCad/LIB_39-30-6068 (1)/39-30-6068/3D/39-30-6068.stp"
 			(offset
-				(xyz -4.150000033 2.509999953 -0.1500000037)
+				(xyz -4.5 2.5 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -90 0 0)
+				(xyz -90 -0 -0)
 			)
 		)
 	)
@@ -12018,6 +12018,17 @@
 			(uuid "6753daf4-8d84-4492-8467-052de4dc141d")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/SAMTEC_T2M10501LDTHDS/LIB_T2M-105-01-L-D-TH-DS/T2M-105-01-L-D-TH-DS/3D/T2M-105-01-L-D-TH-DS.stp"
+			(offset
+				(xyz 0 0 3)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
