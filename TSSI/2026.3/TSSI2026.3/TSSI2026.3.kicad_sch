@@ -3112,7 +3112,7 @@
 		(uuid "85c67fa8-ec92-462b-b1d9-482eb457f336")
 	)
 	(junction
-		(at 90.17 62.23)
+		(at 82.55 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "925256db-2089-4970-8760-efb73192938c")
@@ -3136,7 +3136,7 @@
 		(uuid "a4d4b952-6bce-4144-aee6-aa4da34b20ab")
 	)
 	(junction
-		(at 90.17 50.8)
+		(at 82.55 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bb4e92a3-5818-4a40-9c89-fc75ab6e7f98")
@@ -3293,7 +3293,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 48.26) (xy 90.17 50.8)
+			(xy 82.55 48.26) (xy 82.55 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3363,7 +3363,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 69.85) (xy 90.17 72.39)
+			(xy 82.55 69.85) (xy 82.55 72.39)
 		)
 		(stroke
 			(width 0)
@@ -3513,7 +3513,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 62.23) (xy 107.95 62.23)
+			(xy 82.55 62.23) (xy 107.95 62.23)
 		)
 		(stroke
 			(width 0)
@@ -3683,7 +3683,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 50.8) (xy 92.71 50.8)
+			(xy 82.55 50.8) (xy 92.71 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3713,7 +3713,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 58.42) (xy 90.17 62.23)
+			(xy 82.55 58.42) (xy 82.55 62.23)
 		)
 		(stroke
 			(width 0)
@@ -3853,22 +3853,22 @@
 	)
 	(global_label "CCMCTRL"
 		(shape input)
-		(at 82.55 77.47 180)
+		(at 90.17 77.47 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "20cb91cc-1fe7-4893-8270-07d539b0fd7f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 71.0377 77.47 0)
+			(at 101.6823 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -4029,7 +4029,7 @@
 	)
 	(global_label "Latch_12V_Safe"
 		(shape input)
-		(at 90.17 48.26 90)
+		(at 82.55 48.26 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4039,7 +4039,7 @@
 		)
 		(uuid "831c7d1c-83b2-4f5b-8ecc-e99cb5a0b2f3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 90.17 30.5188 90)
+			(at 82.55 30.5188 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4139,7 +4139,7 @@
 	)
 	(global_label "GLV"
 		(shape input)
-		(at 90.17 82.55 270)
+		(at 82.55 82.55 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4149,7 +4149,7 @@
 		)
 		(uuid "f11bdf89-79ed-426f-88cc-ba4afde52544")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 90.17 88.9219 90)
+			(at 82.55 88.9219 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4386,7 +4386,7 @@
 	(symbol
 		(lib_name "IRLZ34N_1")
 		(lib_id "IRLZ34N:IRLZ34N")
-		(at 90.17 77.47 0)
+		(at 82.55 77.47 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4395,7 +4395,7 @@
 		(fields_autoplaced yes)
 		(uuid "19d50cb9-9975-4944-aef2-ced59209b13e")
 		(property "Reference" "Q1"
-			(at 95.25 76.2484 0)
+			(at 77.47 76.1514 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4404,7 +4404,7 @@
 			)
 		)
 		(property "Value" "IRLZ34N"
-			(at 95.25 78.7884 0)
+			(at 77.47 78.6914 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4412,8 +4412,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Anteater-Electric-Racing electrical-pcbs main TSSI-2026.2_KiCad_Parts_IRLZ34N:TO-220_2_"
-			(at 90.17 77.47 0)
+		(property "Footprint" "IRLZ34N:TO-220_2_"
+			(at 82.55 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4423,7 +4423,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 77.47 0)
+			(at 82.55 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4432,7 +4432,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 90.17 77.47 0)
+			(at 82.55 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4441,7 +4441,7 @@
 			)
 		)
 		(property "MF" "Infineon"
-			(at 90.17 77.47 0)
+			(at 82.55 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4451,7 +4451,7 @@
 			)
 		)
 		(property "Description_1" "N-Channel 55 V 30A (Tc) 3.8W (Ta), 68W (Tc) Surface Mount D2PAK"
-			(at 90.17 77.47 0)
+			(at 82.55 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4461,7 +4461,7 @@
 			)
 		)
 		(property "Package" "TO-220 Infineon"
-			(at 90.17 77.47 0)
+			(at 82.55 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4471,7 +4471,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 90.17 77.47 0)
+			(at 82.55 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4481,7 +4481,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/IRLZ34N/Infineon/view-part/?ref=snap"
-			(at 90.17 77.47 0)
+			(at 82.55 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4491,7 +4491,7 @@
 			)
 		)
 		(property "MP" "IRLZ34N"
-			(at 90.17 77.47 0)
+			(at 82.55 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4501,7 +4501,7 @@
 			)
 		)
 		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=346822&manufacturer=Infineon&part_name=IRLZ34N&search_term=None"
-			(at 90.17 77.47 0)
+			(at 82.55 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4511,7 +4511,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 90.17 77.47 0)
+			(at 82.55 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4521,7 +4521,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/IRLZ34N/Infineon/view-part/?ref=eda"
-			(at 90.17 77.47 0)
+			(at 82.55 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4935,7 +4935,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Anteater-Electric-Racing electrical-pcbs main TSSI-2026.2_KiCad_Parts_IRLZ34N:TO-220_2_"
+		(property "Footprint" "IRLZ34N:TO-220_2_"
 			(at 217.17 62.23 0)
 			(effects
 				(font
@@ -5100,7 +5100,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Anteater-Electric-Racing electrical-pcbs main TSSI-2026.2_KiCad_Parts_IRLZ34N:TO-220_2_"
+		(property "Footprint" "IRLZ34N:TO-220_2_"
 			(at 125.73 62.23 0)
 			(effects
 				(font
@@ -5507,7 +5507,7 @@
 	)
 	(symbol
 		(lib_id "Diode:RF01VM2S")
-		(at 90.17 66.04 270)
+		(at 82.55 66.04 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5516,7 +5516,7 @@
 		(fields_autoplaced yes)
 		(uuid "903cef3d-72cb-4eca-8af4-3a921fd24884")
 		(property "Reference" "D3"
-			(at 92.71 64.7699 90)
+			(at 85.09 64.7699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5525,7 +5525,7 @@
 			)
 		)
 		(property "Value" "RF01VM2S"
-			(at 92.71 67.3099 90)
+			(at 85.09 67.3099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5534,7 +5534,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
-			(at 90.17 66.04 0)
+			(at 82.55 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5543,7 +5543,7 @@
 			)
 		)
 		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/discrete/diode/fast_recovery/rf01vm2s.pdf"
-			(at 90.17 66.04 0)
+			(at 82.55 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5552,7 +5552,7 @@
 			)
 		)
 		(property "Description" "250 V, 100 mA, Super Fast Recovery Diode, SOD-323"
-			(at 90.17 66.04 0)
+			(at 82.55 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5561,7 +5561,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 90.17 66.04 0)
+			(at 82.55 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5570,7 +5570,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 90.17 66.04 0)
+			(at 82.55 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5660,7 +5660,7 @@
 	)
 	(symbol
 		(lib_id "Diode:RF01VM2S")
-		(at 90.17 54.61 90)
+		(at 82.55 54.61 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5669,7 +5669,7 @@
 		(fields_autoplaced yes)
 		(uuid "990a2ee7-dde3-4279-8300-2af912361c21")
 		(property "Reference" "D2"
-			(at 92.71 53.3399 90)
+			(at 85.09 53.3399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5678,7 +5678,7 @@
 			)
 		)
 		(property "Value" "RF01VM2S"
-			(at 92.71 55.8799 90)
+			(at 85.09 55.8799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5687,7 +5687,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
-			(at 90.17 54.61 0)
+			(at 82.55 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5696,7 +5696,7 @@
 			)
 		)
 		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/discrete/diode/fast_recovery/rf01vm2s.pdf"
-			(at 90.17 54.61 0)
+			(at 82.55 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5705,7 +5705,7 @@
 			)
 		)
 		(property "Description" "250 V, 100 mA, Super Fast Recovery Diode, SOD-323"
-			(at 90.17 54.61 0)
+			(at 82.55 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5714,7 +5714,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 90.17 54.61 0)
+			(at 82.55 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5723,7 +5723,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 90.17 54.61 0)
+			(at 82.55 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
