@@ -5317,7 +5317,7 @@
 		)
 		(uuid "cb63c5e8-b145-4ed1-9b37-6cf1360d857f")
 	)
-	(text "PCB Layout: Add decoupling caps close to the IC\n\nPEDAL_OPEN is HIGH when PEDAL > SHORT_CIRCUIT\nPEDAL_SHORT is HIGH when PEDAL > OPEN_CIRCUIT\nBRAKE_OPEN is HIGH when BRAKE > SHORT_CIRCUIT\nBRAKE_SHORT is HIGH when BRAKE > OPEN_CIRCUIT\nBRAKE_APPLIED is HIGH when BRAKE > BRAKE_THRESHOLD\nPEDAL_APPLIED is HIGH when PEDAL > PEDAL_THRESHOLD"
+	(text "PCB Layout: Add decoupling caps close to the IC\n\nPEDAL_OPEN is HIGH when PEDAL < SHORT_CIRCUIT\nPEDAL_SHORT is HIGH when PEDAL > OPEN_CIRCUIT\nBRAKE_OPEN is HIGH when BRAKE < SHORT_CIRCUIT\nBRAKE_SHORT is HIGH when BRAKE > OPEN_CIRCUIT\nBRAKE_APPLIED is HIGH when BRAKE > BRAKE_THRESHOLD\nPEDAL_APPLIED is HIGH when PEDAL > PEDAL_THRESHOLD"
 		(exclude_from_sim no)
 		(at 341.63 108.712 0)
 		(effects
@@ -6976,6 +6976,28 @@
 			)
 		)
 	)
+	(global_label "SHORT_CIRCUIT"
+		(shape input)
+		(at 285.75 30.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1d43865c-8308-4d94-bcd9-6f0d99d97a86")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 268.3714 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "C_IN"
 		(shape input)
 		(at 171.45 154.94 0)
@@ -7011,6 +7033,28 @@
 		(uuid "1fc5e557-1abf-4d4a-89e5-433a95d1fd76")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 21.4472 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "BRAKE"
+		(shape input)
+		(at 285.75 35.56 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2049f714-0ffb-40a7-9186-a20d0baa2011")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 276.7966 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7152,28 +7196,6 @@
 			)
 		)
 	)
-	(global_label "SHORT_CIRCUIT"
-		(shape input)
-		(at 285.75 35.56 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "34203f76-b08f-4dbb-a405-fdb21b9344e0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 268.3714 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "PEDAL_THRESHOLD"
 		(shape input)
 		(at 196.85 69.85 180)
@@ -7187,28 +7209,6 @@
 		(uuid "3637333a-ce13-4b8a-9fcf-d3cc3bdc9307")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 176.2058 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "BRAKE"
-		(shape input)
-		(at 285.75 30.48 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "3d85b8ae-083f-460e-89b7-7b94d682e2a4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 276.7966 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7308,28 +7308,6 @@
 	)
 	(global_label "CURRENT"
 		(shape input)
-		(at 363.22 29.21 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "46b5a269-832b-4b43-99ee-665d1d48eabc")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 351.6472 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CURRENT"
-		(shape input)
 		(at 35.56 147.32 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7385,6 +7363,28 @@
 		(uuid "54fed7a6-2a2f-44cf-a951-aa874c3a4ac1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 272.4234 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SHORT_CIRCUIT"
+		(shape input)
+		(at 363.22 29.21 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5ac3127c-1042-4333-b1ce-e478af01a124")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 345.8414 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7495,6 +7495,28 @@
 		(uuid "6219816c-f6fa-4045-a2b0-6433315b3722")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 108.1095 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CURRENT"
+		(shape input)
+		(at 363.22 34.29 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6558d3b3-41df-4fc8-a6cf-e12e3e7391d4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 351.6472 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8155,28 +8177,6 @@
 		(uuid "da0260de-4b71-406c-a7d0-f923d2e0d7bf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 107.0814 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SHORT_CIRCUIT"
-		(shape input)
-		(at 363.22 34.29 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "db06b8bd-39a0-4e02-8bbf-7ef7fd7cb753")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 345.8414 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
