@@ -1,4 +1,4 @@
-27119348496387813
+27121121812913411
 0footprints
 649-SERIES-HOLDER
 649-Series-Holder
@@ -48,6 +48,13 @@ connector Molex Mini-Fit_Jr vertical
 0
 6
 6
+0footprints
+Molex_Mini-Fit_Jr_5566-08A_2x04_P4.20mm_Vertical
+Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5566-08A, example for new mpn: 39-28-x08x, 4 Pins per row, Mounting:  (http://www.molex.com/pdm_docs/sd/039281043_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mini-Fit_Jr vertical
+0
+8
+8
 0footprints
 Molex_Mini-Fit_Jr_5566-10A_2x05_P4.20mm_Vertical
 Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5566-10A, example for new mpn: 39-28-x10x, 5 Pins per row, Mounting:  (http://www.molex.com/pdm_docs/sd/039281043_sd.pdf), generated with kicad-footprint-generator
