@@ -1,0 +1,227 @@
+(footprint "Ohmite HS100 500R F"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "R6"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "acae5004-b7c5-4b95-aaa0-e479cdae3f1b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "500"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "9ecdb71a-4529-4e56-8942-d967db1cfa45")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.digikey.ca/en/products/detail/ohmite/HS100-500R-F/21846379"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fa472002-026d-43c4-9169-0485ec35ba32")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Resistor, US symbol"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8a8ddc4c-8875-4f41-a671-a3a49dad95e8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Height" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "409dd32e-44df-4e52-8366-d527ad33c099")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Name" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "07fbf363-8874-45e8-98c0-ff430b85a707")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Part_Number" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "62807bc2-d4a3-4fa4-a7d4-da4e831faff2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Part Number" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c5063bad-6b8e-4ac7-8807-00919f64676b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Price/Stock" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5ffafc9f-f8b8-4361-a6d1-bbcc453a854f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_rect
+		(start 0 -47.5)
+		(end 88 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "bd3bba93-db76-43fc-91d5-99562c8b9bb1")
+	)
+	(fp_rect
+		(start 11.4 -47.5)
+		(end 76.6 0)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "50ba04d3-36c4-49cb-bf15-791f606ab50c")
+	)
+	(fp_circle
+		(center 26.8 -42.25)
+		(end 29 -42.25)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "6aa845cc-f98d-4e29-84f2-0e796bd35536")
+	)
+	(fp_circle
+		(center 26.8 -5.25)
+		(end 29 -5.25)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "9493d4a6-1541-43f3-bd32-3ff4cdfc8f13")
+	)
+	(fp_circle
+		(center 61.8 -42.25)
+		(end 64 -42.25)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "033add1e-9ad7-497d-aa82-a3a51c32bbce")
+	)
+	(fp_circle
+		(center 61.8 -5.25)
+		(end 64 -5.25)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "6a612f03-05d0-40bb-9807-607db78c51ef")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "40605c08-22d6-45c2-8b9d-a08af84d8ec2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 -23.75)
+		(size 2.5 2.5)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6820d420-ad25-4ae6-b8f7-3cdf63f4d5d2")
+	)
+	(pad "2" thru_hole circle
+		(at 88 -23.75)
+		(size 2.5 2.5)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "76acd5c3-8cfd-4855-bafa-71c73e712c44")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/library/STEPs/HS100.step"
+		(offset
+			(xyz 21.5 23.7 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 90)
+		)
+	)
+)
