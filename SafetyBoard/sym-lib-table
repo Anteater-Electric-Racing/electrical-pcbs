@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "I7DCDC1:16thBrick")(type "KiCad")(uri "${KIPRJMOD}/Library/Symbols/I7DCDC1:16thBrick.kicad_sym")(options "")(descr ""))
+  (lib (name "I7DCDC116thBrick")(type "KiCad")(uri "${KIPRJMOD}/Library/Symbols/I7DCDC116thBrick.kicad_sym")(options "")(descr ""))
+  (lib (name "12pRminifit")(type "KiCad")(uri "${KIPRJMOD}/Library/Symbols/12pRminifit.kicad_sym")(options "")(descr ""))
+)

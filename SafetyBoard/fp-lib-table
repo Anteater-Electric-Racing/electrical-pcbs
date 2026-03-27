@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "0footprints")(type "KiCad")(uri "/Users/gabrielschoene/Desktop/fsae /electrical-pcbs/PDB/v2026.1/Kicad/Parts/0footprints.pretty")(options "")(descr ""))
+  (lib (name "footprints")(type "KiCad")(uri "${KIPRJMOD}/Library/footprints.pretty")(options "")(descr ""))
+)

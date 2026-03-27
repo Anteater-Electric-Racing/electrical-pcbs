@@ -2,9 +2,314 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid 30d029c6-868b-41ac-953d-167a7d76c1a3)
+	(uuid "30d029c6-868b-41ac-953d-167a7d76c1a3")
 	(paper "A4")
 	(lib_symbols)
+	(sheet
+		(at 54.61 62.738)
+		(size 39.116 26.416)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4190f1e0-4d03-497d-8144-2fee4061bf6c")
+		(property "Sheetname" "BSPD"
+			(at 68.58 73.152 0)
+			(effects
+				(font
+					(size 2.54 2.54)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "../BSPD/BSPD/BSPD.kicad_sch"
+			(at 54.61 89.7386 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "12V" input
+			(at 54.61 71.374 180)
+			(uuid "42f9e911-005c-4ca7-86ca-563ad2c18a5e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Brake Sensor" input
+			(at 85.852 62.738 90)
+			(uuid "a28489b1-1691-4c30-b6c4-472b37ce9c93")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BSPD Fault" input
+			(at 74.93 89.154 270)
+			(uuid "413adbe9-a672-490e-bb30-27b957431ac3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Current Sensor" input
+			(at 89.154 62.738 90)
+			(uuid "78b82b51-ea02-4a50-ad13-2f32bfb8fe61")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "SafetyBoard"
+				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 166.624 25.146)
+		(size 21.844 14.732)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "6bcb544e-5cdf-4947-9194-5b4b6219d2f6")
+		(property "Sheetname" "Untitled Sheet"
+			(at 166.624 24.4344 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "../PDB/v2026.1/Kicad/PowerDistributionBoard.kicad_sch"
+			(at 166.624 40.4626 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "SafetyBoard"
+				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 74.676 105.41)
+		(size 61.976 58.674)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7743736e-4710-4d03-b8c1-f3c9dc11b6c4")
+		(property "Sheetname" "LATCH"
+			(at 102.108 143.51 0)
+			(effects
+				(font
+					(size 2.54 2.54)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "../LATCH/LATCH/LATCH.kicad_sch"
+			(at 74.676 164.6686 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "BMS_FAULT" input
+			(at 136.652 156.464 0)
+			(uuid "7c763bc4-f8ef-4ae0-9364-20cf31401238")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "bms_imd_latch_only" output
+			(at 129.032 105.41 90)
+			(uuid "a412dcb9-ff59-4642-9703-7cafc5328120")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BSPD_FAULT" input
+			(at 83.566 105.41 90)
+			(uuid "a9325c13-d05a-4467-82f9-8e68acdccf1a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GVLM_OUTPUT" output
+			(at 113.792 164.084 270)
+			(uuid "8db44647-43a9-4c0f-bdfc-c76757cd509f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "SafetyBoard"
+				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 128.143 55.88)
+		(size 47.879 35.687)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "83cb6a8b-0a8f-42f4-832f-715c5e86ba97")
+		(property "Sheetname" "TSSI"
+			(at 143.764 72.263 0)
+			(effects
+				(font
+					(size 2.54 2.54)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "../TSSI/TSSI/TSSI.kicad_sch"
+			(at 135.382 93.218 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "CCMCTRL" input
+			(at 139.7 55.88 90)
+			(uuid "e184e397-d692-48c9-bed6-8ccd177c6e41")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CCMSensorFeedBack" output
+			(at 137.414 55.88 90)
+			(uuid "56ed9066-c068-4a89-ad18-20c852c7b1b2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GLV" input
+			(at 176.022 66.929 0)
+			(uuid "8c88fc4e-fa4e-4120-9835-8c0600ccbb41")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GREEN_LED" output
+			(at 164.084 55.88 90)
+			(uuid "57cad4bd-5e7b-4f5e-b520-b223d9c2295c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RED_LED" output
+			(at 166.116 55.88 90)
+			(uuid "279082c8-bc6a-41e7-8781-d7436bd14457")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Latch_Control" input
+			(at 134.112 91.567 270)
+			(uuid "0aea67d2-5ebe-4009-bc0a-b55a51360e02")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "SafetyBoard"
+				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3"
+					(page "3")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")
