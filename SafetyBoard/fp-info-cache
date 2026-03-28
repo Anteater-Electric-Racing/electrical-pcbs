@@ -1,4 +1,4 @@
-26624616470653917
+26628165968404237
 0footprints
 649-SERIES-HOLDER
 649-Series-Holder
@@ -105343,6 +105343,13 @@ footprints
 12
 12
 footprints
+12pSTminifit
+
+39281123 
+0
+12
+12
+footprints
 12v5vDCDC
 
 OKX-T/5-D12N-C 
@@ -105370,6 +105377,13 @@ CONN02_FUSEBLOCK_22P6X9_LTF
 0
 3
 3
+footprints
+DPSTrelay
+
+G6B-2214P-US DC12 
+0
+6
+6
 footprints
 FUSE_3522-2
 

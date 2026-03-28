@@ -7,4 +7,5 @@
   (lib (name "amp")(type "KiCad")(uri "${KIPRJMOD}/Library/Symbols/amp.kicad_sym")(options "")(descr ""))
   (lib (name "12v5vDCDC")(type "KiCad")(uri "${KIPRJMOD}/Library/Symbols/12v5vDCDC.kicad_sym")(options "")(descr ""))
   (lib (name "614004135023")(type "KiCad")(uri "${KIPRJMOD}/Library/Symbols/614004135023.kicad_sym")(options "")(descr ""))
+  (lib (name "20pSTminifit")(type "KiCad")(uri "${KIPRJMOD}/Library/Symbols/20pSTminifit.kicad_sym")(options "")(descr ""))
 )
