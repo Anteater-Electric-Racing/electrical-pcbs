@@ -2,4 +2,8 @@
   (version 7)
   (lib (name "0footprints")(type "KiCad")(uri "/Users/gabrielschoene/Desktop/fsae /electrical-pcbs/PDB/v2026.1/Kicad/Parts/0footprints.pretty")(options "")(descr ""))
   (lib (name "footprints")(type "KiCad")(uri "${KIPRJMOD}/Library/footprints.pretty")(options "")(descr ""))
+  (lib (name "Library")(type "KiCad")(uri "${KIPRJMOD}/24V DC-DC Converter 2/Library/footprints.pretty/Library.pretty")(options "")(descr ""))
+  (lib (name "DCDCfootprints")(type "KiCad")(uri "${KIPRJMOD}/24V DC-DC Converter 2/Library/DCDCfootprints.pretty")(options "")(descr ""))
+  (lib (name "parts")(type "KiCad")(uri "/Users/gabrielschoene/Desktop/fsae /electrical-pcbs/LATCH/LATCH/parts.pretty")(options "")(descr ""))
+  (lib (name "IRLZ34N")(type "KiCad")(uri "/Users/gabrielschoene/Desktop/fsae /electrical-pcbs/TSSI/TSSI/Parts/IRLZ34N.pretty")(options "")(descr ""))
 )

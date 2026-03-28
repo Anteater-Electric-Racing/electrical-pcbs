@@ -3,4 +3,8 @@
   (lib (name "I7DCDC1:16thBrick")(type "KiCad")(uri "${KIPRJMOD}/Library/Symbols/I7DCDC1:16thBrick.kicad_sym")(options "")(descr ""))
   (lib (name "I7DCDC116thBrick")(type "KiCad")(uri "${KIPRJMOD}/Library/Symbols/I7DCDC116thBrick.kicad_sym")(options "")(descr ""))
   (lib (name "12pRminifit")(type "KiCad")(uri "${KIPRJMOD}/Library/Symbols/12pRminifit.kicad_sym")(options "")(descr ""))
+  (lib (name "New_Library")(type "KiCad")(uri "${KIPRJMOD}/Library/Symbols/New_Library.kicad_sym")(options "")(descr ""))
+  (lib (name "amp")(type "KiCad")(uri "${KIPRJMOD}/Library/Symbols/amp.kicad_sym")(options "")(descr ""))
+  (lib (name "12v5vDCDC")(type "KiCad")(uri "${KIPRJMOD}/Library/Symbols/12v5vDCDC.kicad_sym")(options "")(descr ""))
+  (lib (name "614004135023")(type "KiCad")(uri "${KIPRJMOD}/Library/Symbols/614004135023.kicad_sym")(options "")(descr ""))
 )

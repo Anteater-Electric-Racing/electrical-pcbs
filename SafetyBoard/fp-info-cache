@@ -1,4 +1,4 @@
-26612186482986263
+26624616470653917
 0footprints
 649-SERIES-HOLDER
 649-Series-Holder
@@ -58092,6 +58092,34 @@ ceramic
 0
 3
 3
+DCDCfootprints
+24V DCDC I7A24080A033V0C3R
+I7A24080A033V-0C3-R-2
+Power Supply
+0
+12
+12
+DCDCfootprints
+330 uF CAPPRD500W65D1275H2200
+12.5*20
+Capacitor Polarised
+0
+2
+2
+DCDCfootprints
+EMI Filter RGF48040A001
+RGF48040A-001
+Filter
+0
+5
+5
+DCDCfootprints
+I7DCDC1_16thBrick
+I7A24080A033V-0C3-R-2
+Power Supply
+0
+12
+12
 Diode_SMD
 D_0201_0603Metric
 Diode SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator
@@ -105301,6 +105329,13 @@ Varistor VF
 2
 2
 footprints
+614004135023
+
+
+0
+6
+6
+footprints
 12pRminifit
 
 874271202 
@@ -105308,12 +105343,26 @@ footprints
 12
 12
 footprints
+12v5vDCDC
+
+OKX-T/5-D12N-C 
+0
+5
+5
+footprints
 649-SERIES-HOLDER
 649-Series-Holder
 Undefined or Miscellaneous
 0
 3
 3
+footprints
+AmpBoard
+Through hole straight pin header, 1x04, 2.54mm pitch, single row
+Through hole pin header THT 1x04 2.54mm single row
+0
+4
+4
 footprints
 CONN02_FUSEBLOCK_22P6X9_LTF
 
