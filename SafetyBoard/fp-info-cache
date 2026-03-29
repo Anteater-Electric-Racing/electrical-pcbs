@@ -1,4 +1,4 @@
-26628165968404237
+26629940809541568
 0footprints
 649-SERIES-HOLDER
 649-Series-Holder
@@ -105357,6 +105357,20 @@ OKX-T/5-D12N-C
 5
 5
 footprints
+14pSTminifit
+
+39299142 
+0
+14
+14
+footprints
+20pSTminfit
+
+39306207 
+0
+20
+20
+footprints
 649-SERIES-HOLDER
 649-Series-Holder
 Undefined or Miscellaneous
@@ -105391,13 +105405,6 @@ FUSE_3522-2
 0
 4
 2
-footprints
-I7DCDC1:16thBrick
-I7A24080A033V-0C3-R-2
-Power Supply
-0
-12
-12
 footprints
 KEYSTONE_7797
 

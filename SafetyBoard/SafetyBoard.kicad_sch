@@ -623,6 +623,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.898 177.8) (xy 75.184 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33e3723b-fee4-4df2-a027-818f8327f867")
+	)
+	(wire
+		(pts
 			(xy 183.896 67.056) (xy 183.642 67.056)
 		)
 		(stroke
@@ -753,16 +763,6 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 177.8) (xy 72.898 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b88e973a-88d3-4a60-8342-64cf20944d1c")
-	)
-	(wire
-		(pts
 			(xy 134.112 91.567) (xy 134.112 99.06)
 		)
 		(stroke
@@ -842,6 +842,16 @@
 		(uuid "2c9720a5-210e-401a-bcc6-f0f221052351")
 	)
 	(label "24V"
+		(at 74.676 184.912 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "323c6913-fa64-42a8-8b66-765364fc9faf")
+	)
+	(label "24V"
 		(at 228.854 33.02 180)
 		(effects
 			(font
@@ -882,6 +892,16 @@
 		(uuid "52e6df85-ecb7-423e-85d6-09fec8b6d272")
 	)
 	(label "12V"
+		(at 75.184 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "61176c85-472b-46e7-bb70-486c67c5038a")
+	)
+	(label "12V"
 		(at 227.584 49.784 180)
 		(effects
 			(font
@@ -900,16 +920,6 @@
 			(justify right bottom)
 		)
 		(uuid "98941cba-f7d3-4176-9a85-6c0817b8bcf8")
-	)
-	(label "24V"
-		(at 74.93 177.8 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a020609e-8bf3-4889-b7ce-e47141d4c93f")
 	)
 	(label "5V"
 		(at 72.898 180.848 0)
@@ -960,16 +970,6 @@
 			(justify left bottom)
 		)
 		(uuid "d25577e7-9945-4010-8b5a-5ae6817ecdd4")
-	)
-	(label "12V"
-		(at 74.676 184.912 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e4691bde-0e65-4737-bb9f-ab1bf393f59c")
 	)
 	(label "12V"
 		(at 67.056 137.414 180)
@@ -1806,7 +1806,7 @@
 				)
 			)
 		)
-		(property "Value" "12v EXP"
+		(property "Value" "5v EXP"
 			(at 243.078 59.182 0)
 			(effects
 				(font
@@ -2753,16 +2753,6 @@
 				(justify right)
 			)
 		)
-		(pin "BPS1_OUT" input
-			(at 93.98 49.276 180)
-			(uuid "47c146fb-17f2-4761-91d6-f5d526aa645e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "CCM fdbk" input
 			(at 128.016 49.53 0)
 			(uuid "c4f9668a-d8a5-46e4-b7c6-5c0298f9235e")
@@ -2781,6 +2771,16 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "BPS1 OUT" input
+			(at 93.98 49.276 180)
+			(uuid "7f0bf50e-aa83-4c86-84fc-66f21efeceb1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
