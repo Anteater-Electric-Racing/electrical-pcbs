@@ -3910,15 +3910,15 @@
 			(uuid "db9995a1-c6b9-4132-9d43-33fc5b191bbb")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_Mini-Fit_Jr_5566-04A_2x02_P4.20mm_Vertical.step"
+		(model "/Users/gabrielschoene/Desktop/fsae /electrical-pcbs/SafetyBoard/Library/STEPS/miniFix2x2_female.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 2 -2.5 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 90 180 -0)
 			)
 		)
 	)
@@ -4641,15 +4641,15 @@
 			(uuid "d30da692-a956-4c9f-9081-f488e1b03a38")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_Mini-Fit_Jr_5566-06A_2x03_P4.20mm_Vertical.step"
+		(model "/Users/gabrielschoene/Desktop/fsae /electrical-pcbs/SafetyBoard/Library/STEPS/miniFix2x3.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 4 -2.5 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 -0 180)
 			)
 		)
 	)

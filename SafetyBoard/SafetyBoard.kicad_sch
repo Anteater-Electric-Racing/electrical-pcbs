@@ -483,6 +483,155 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:Polyfuse"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "F"
+				(at -2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Polyfuse"
+				(at 2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 1.27 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "resettable fuse PTC PPTC polyfuse polyswitch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*polyfuse* *PTC*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Polyfuse_0_1"
+				(polyline
+					(pts
+						(xy -1.524 2.54) (xy -1.524 1.524) (xy 1.524 -1.524) (xy 1.524 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -0.762 2.54)
+					(end 0.762 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Polyfuse_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -585,11 +734,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(junction
-		(at 152.908 140.208)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cfa519c8-8b0b-4ab4-af9d-ec64173070ff")
+	(no_connect
+		(at 154.432 140.208)
+		(uuid "95836e2f-de94-4d54-b8ad-c59b481fbf46")
 	)
 	(wire
 		(pts
@@ -713,16 +860,6 @@
 	)
 	(wire
 		(pts
-			(xy 154.432 140.208) (xy 152.908 140.208)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f1877c6-cfb5-4c13-b7a1-5e26adfddb7f")
-	)
-	(wire
-		(pts
 			(xy 139.7 46.99) (xy 139.7 55.88)
 		)
 		(stroke
@@ -780,6 +917,16 @@
 			(type default)
 		)
 		(uuid "bdc82eaa-50f9-477b-ac1b-cd1e4291ebea")
+	)
+	(wire
+		(pts
+			(xy 46.99 71.374) (xy 47.244 71.374)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d16c91b1-9324-4d7d-995d-88680c976bd7")
 	)
 	(wire
 		(pts
@@ -942,7 +1089,7 @@
 		(uuid "b3dfd01b-6174-4608-882e-87fc2a66c2ed")
 	)
 	(label "12V"
-		(at 46.99 71.374 180)
+		(at 47.244 71.374 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -980,73 +1127,6 @@
 			(justify right bottom)
 		)
 		(uuid "e9deea83-6218-4f4f-9c7f-9fc2a5022e1d")
-	)
-	(symbol
-		(lib_id "Device:Fuse")
-		(at 50.8 71.374 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "191d5244-a53e-4d98-b2f4-0c4f049e6cdd")
-		(property "Reference" "F1"
-			(at 50.8 73.66 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 50.8 69.596 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "0footprints:FUSE_3522-2"
-			(at 50.8 69.596 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
-			(at 50.8 71.374 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 50.8 71.374 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f5d9d613-c36d-4d82-8f4b-ac905dec2c30")
-		)
-		(pin "2"
-			(uuid "d68a5913-23f2-47e6-88ff-c4296b7759a7")
-		)
-		(instances
-			(project "SafetyBoard"
-				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3"
-					(reference "F1")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "Device:Fuse")
@@ -1132,7 +1212,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "10A MAX"
 			(at 131.826 37.846 90)
 			(effects
 				(font
@@ -1310,6 +1390,93 @@
 			(project "SafetyBoard"
 				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3"
 					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Polyfuse")
+		(at 180.086 67.056 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "45021e65-5dc1-4937-a9c1-63ad51a1396d")
+		(property "Reference" "F5"
+			(at 180.086 61.214 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2A"
+			(at 180.086 63.754 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_2920_7451Metric_Pad2.10x5.45mm_HandSolder"
+			(at 175.006 68.326 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 180.086 67.056 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
+			(at 180.086 67.056 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SMD2920B200TF/24 "
+			(at 180.086 67.056 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "YAGEO"
+			(at 180.086 67.056 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9553b67a-3633-4317-9f2a-ff8f5b34b0c8")
+		)
+		(pin "1"
+			(uuid "cb879586-5b52-4380-bd82-9a66d2c29ba3")
+		)
+		(instances
+			(project "SafetyBoard"
+				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3"
+					(reference "F5")
 					(unit 1)
 				)
 			)
@@ -1538,7 +1705,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "5A MAX"
 			(at 131.826 33.274 90)
 			(effects
 				(font
@@ -1605,7 +1772,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "10A MAX"
 			(at 231.902 19.05 90)
 			(effects
 				(font
@@ -1650,73 +1817,6 @@
 			(project "SafetyBoard"
 				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3"
 					(reference "F8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Fuse")
-		(at 180.086 67.056 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6b2d0544-ca9e-4ee6-a654-470ff3dba441")
-		(property "Reference" "F5"
-			(at 180.086 64.77 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 180.086 68.834 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "0footprints:FUSE_3522-2"
-			(at 180.086 68.834 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
-			(at 180.086 67.056 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 180.086 67.056 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "713c58ce-a61f-41f3-99a7-db5d6f9cb4c2")
-		)
-		(pin "2"
-			(uuid "698cb78e-bd97-430d-b266-41de78698974")
-		)
-		(instances
-			(project "SafetyBoard"
-				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3"
-					(reference "F5")
 					(unit 1)
 				)
 			)
@@ -1873,7 +1973,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "10A MAX"
 			(at 232.664 34.798 90)
 			(effects
 				(font
@@ -2384,6 +2484,93 @@
 			(project "SafetyBoard"
 				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Polyfuse")
+		(at 50.8 71.374 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f4a02874-8230-4a89-82a4-6193fcddef8a")
+		(property "Reference" "F1"
+			(at 50.8 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2A"
+			(at 50.8 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_2920_7451Metric_Pad2.10x5.45mm_HandSolder"
+			(at 55.88 70.104 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 71.374 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
+			(at 50.8 71.374 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SMD2920B200TF/24 "
+			(at 50.8 71.374 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "YAGEO"
+			(at 50.8 71.374 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "affc7c79-21c6-4ae9-bb0f-64f95a404f47")
+		)
+		(pin "1"
+			(uuid "f83fe780-8d3c-4514-82ec-d5ca2aed10b9")
+		)
+		(instances
+			(project "SafetyBoard"
+				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3"
+					(reference "F1")
 					(unit 1)
 				)
 			)

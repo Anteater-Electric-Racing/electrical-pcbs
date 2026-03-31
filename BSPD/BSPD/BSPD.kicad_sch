@@ -7311,7 +7311,7 @@
 				)
 			)
 		)
-		(property "Value" "4071 4 Channel 2 Input OR gate"
+		(property "Value" "CD4071BE OR Gate"
 			(at 298.704 192.278 0)
 			(effects
 				(font
@@ -7362,7 +7362,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "3"
@@ -10362,7 +10361,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4071 4 Channel 2 Input OR gate"
+		(property "Value" "CD4071BE OR Gate"
 			(at 381 224.028 0)
 			(effects
 				(font
@@ -11916,7 +11915,7 @@
 				)
 			)
 		)
-		(property "Value" "4071 4 Channel 2 Input OR gate"
+		(property "Value" "CD4071BE OR Gate"
 			(at 381 214.376 0)
 			(effects
 				(font
@@ -12411,7 +12410,7 @@
 				)
 			)
 		)
-		(property "Value" "4071 4 Channel 2 Input OR gate"
+		(property "Value" "CD4071BE OR Gate"
 			(at 295.91 210.82 0)
 			(effects
 				(font
@@ -18713,7 +18712,7 @@
 				)
 			)
 		)
-		(property "Value" "4071 4 Channel 2 Input OR gate"
+		(property "Value" "CD4071BE OR Gate"
 			(at 337.82 200.66 0)
 			(effects
 				(font

@@ -5517,10 +5517,6 @@
 		(uuid "1d9681e2-cdc2-42db-aaa1-aacf7d494e83")
 	)
 	(no_connect
-		(at 181.61 95.504)
-		(uuid "777ab469-c7e4-4e40-8501-f8f34c3a5725")
-	)
-	(no_connect
 		(at 52.07 58.42)
 		(uuid "e4d29ead-6c0b-4122-b4e4-06262e5ca89e")
 	)
@@ -6497,6 +6493,17 @@
 			(justify right)
 		)
 		(uuid "2df4afac-3d7d-4929-a593-1ddd724dd7e4")
+	)
+	(hierarchical_label "BPS 1"
+		(shape input)
+		(at 101.6 177.038 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "39d1061d-a915-4ed2-824a-db20069ab10e")
 	)
 	(hierarchical_label "12V"
 		(shape input)

@@ -1,13 +1,12 @@
 {
   "board": {
-    "active_layer": 0,
+    "active_layer": 2,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
     "hidden_nets": [
       "GND",
-      "+12V",
-      "/CCM Helper/CCMGND"
+      "/TSSI/GLV"
     ],
     "high_contrast_mode": 0,
     "net_color_mode": 1,
@@ -77,6 +76,8 @@
       false,
       false,
       false,
+      false,
+      false,
       false
     ],
     "col_order": [
@@ -89,7 +90,9 @@
       6,
       7,
       8,
-      9
+      9,
+      10,
+      11
     ],
     "col_widths": [
       156,
@@ -100,6 +103,8 @@
       103,
       103,
       74,
+      103,
+      103,
       103,
       103
     ],

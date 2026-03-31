@@ -2959,16 +2959,6 @@
 		)
 		(uuid "6f736fff-5012-4031-8196-686e3cec3c58")
 	)
-	(text "jumper points are 0 ohm unpopulated\nbypass resistor slots"
-		(exclude_from_sim no)
-		(at 258.318 128.27 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "8109e6bb-3646-46f0-ae40-118e9edae347")
-	)
 	(text "IO"
 		(exclude_from_sim no)
 		(at 171.196 179.578 0)
@@ -3301,7 +3291,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 35.56) (xy 181.61 63.5)
+			(xy 181.61 35.56) (xy 181.61 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3341,6 +3331,16 @@
 	)
 	(wire
 		(pts
+			(xy 178.308 63.5) (xy 178.308 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2537dfa9-767e-421a-8746-b5e52d75e906")
+	)
+	(wire
+		(pts
 			(xy 152.4 92.71) (xy 156.21 92.71)
 		)
 		(stroke
@@ -3371,13 +3371,13 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 45.72) (xy 176.53 60.96)
+			(xy 176.53 63.5) (xy 178.308 63.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "330be14c-2c73-4960-86b0-6eecb1179e64")
+		(uuid "34c778eb-367c-4122-80c3-c02f088db55f")
 	)
 	(wire
 		(pts
@@ -3458,6 +3458,16 @@
 			(type default)
 		)
 		(uuid "5131dce1-a57a-4e34-9176-62a0c647352a")
+	)
+	(wire
+		(pts
+			(xy 99.822 53.34) (xy 99.822 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51a57111-e239-43d7-8d2f-70bf6d3046c7")
 	)
 	(wire
 		(pts
@@ -3631,7 +3641,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 63.5) (xy 102.87 63.5)
+			(xy 97.79 60.96) (xy 102.87 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3741,16 +3751,6 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 53.34) (xy 97.79 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d00593b-8b48-4190-bed2-f4668390e44f")
-	)
-	(wire
-		(pts
 			(xy 135.89 123.19) (xy 135.89 140.97)
 		)
 		(stroke
@@ -3811,7 +3811,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 35.56) (xy 102.87 63.5)
+			(xy 102.87 35.56) (xy 102.87 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3881,6 +3881,16 @@
 	)
 	(wire
 		(pts
+			(xy 97.79 63.5) (xy 99.822 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6c5f7d9-574f-489d-8816-af7799a578b6")
+	)
+	(wire
+		(pts
 			(xy 231.14 92.71) (xy 234.95 92.71)
 		)
 		(stroke
@@ -3891,13 +3901,23 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 53.34) (xy 97.79 53.34)
+			(xy 95.25 53.34) (xy 99.822 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "becdeff0-84d7-4717-a1e2-6d0d6490ef5c")
+	)
+	(wire
+		(pts
+			(xy 176.53 60.96) (xy 181.61 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf29f80f-644e-4c21-89d3-8e2df687af6f")
 	)
 	(wire
 		(pts
@@ -4001,6 +4021,16 @@
 	)
 	(wire
 		(pts
+			(xy 44.196 131.064) (xy 44.196 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4e5ac65-3b44-4a42-aebb-63021907fbb3")
+	)
+	(wire
+		(pts
 			(xy 213.36 80.01) (xy 213.36 67.31)
 		)
 		(stroke
@@ -4031,7 +4061,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 45.72) (xy 173.99 45.72)
+			(xy 173.99 45.72) (xy 178.308 45.72)
 		)
 		(stroke
 			(width 0)
@@ -4058,16 +4088,6 @@
 			(type default)
 		)
 		(uuid "f1db23a2-ed60-43a7-b21d-01d3fbc6629b")
-	)
-	(wire
-		(pts
-			(xy 181.61 63.5) (xy 176.53 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fe1bef6c-779b-4bfc-8e8c-cc47924c94a5")
 	)
 	(hierarchical_label "IMDfault_LED"
 		(shape output)
@@ -4134,17 +4154,6 @@
 			(justify left)
 		)
 		(uuid "37b36912-048d-4288-9326-937395224ad8")
-	)
-	(hierarchical_label "12V"
-		(shape input)
-		(at 44.196 131.064 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "37b92c6f-2a83-42f3-9c1a-6324b71d2659")
 	)
 	(hierarchical_label "imd_reset"
 		(shape input)
@@ -4234,6 +4243,17 @@
 		)
 		(uuid "7ddc991b-d2d9-4faa-890e-490aad6e6cd2")
 	)
+	(hierarchical_label "12V"
+		(shape input)
+		(at 44.196 138.43 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9e80cb42-bc80-4b69-8344-d71ce9d6deb5")
+	)
 	(hierarchical_label "bspd_reset"
 		(shape input)
 		(at 55.88 97.79 270)
@@ -4289,6 +4309,17 @@
 		)
 		(uuid "d3793e43-2549-4695-a859-b5ed82dc82c0")
 	)
+	(hierarchical_label "12V"
+		(shape input)
+		(at 267.97 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d561ee84-0e64-4032-a9ec-a60d9179943c")
+	)
 	(hierarchical_label "BSPD_FAULT"
 		(shape input)
 		(at 101.6 93.98 90)
@@ -4325,7 +4356,7 @@
 	(rule_area
 		(polyline
 			(pts
-				(xy 106.68 31.75) (xy 106.68 101.6) (xy 177.8 101.6) (xy 177.8 31.75)
+				(xy 106.68 31.75) (xy 106.68 101.6) (xy 35.56 101.6) (xy 35.56 31.75)
 			)
 			(stroke
 				(width 0)
@@ -4523,78 +4554,6 @@
 			(project "latch fsae"
 				(path "/9a7f1bcf-9641-4eab-b9f1-953b9796f856"
 					(reference "R11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+12V")
-		(at 27.94 55.88 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1261819a-3b0c-477b-94a1-5db584b25f87")
-		(property "Reference" "#PWR070"
-			(at 27.94 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V"
-			(at 27.94 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 27.94 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 27.94 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 27.94 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2b4e7ee1-bd27-4da7-b4f9-322cacf90b78")
-		)
-		(instances
-			(project "latch fsae"
-				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3/7743736e-4710-4d03-b8c1-f3c9dc11b6c4"
-					(reference "#PWR070")
-					(unit 1)
-				)
-			)
-			(project "latch fsae"
-				(path "/9a7f1bcf-9641-4eab-b9f1-953b9796f856"
-					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -5776,6 +5735,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+12V")
+		(at 190.5 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5516411c-cee5-4c59-9f69-03b90fc11af8")
+		(property "Reference" "#PWR076"
+			(at 190.5 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 190.5 49.276 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 190.5 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "655ad59a-4fc9-43a6-a796-42a8f1f2904f")
+		)
+		(instances
+			(project "SafetyBoard"
+				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3/7743736e-4710-4d03-b8c1-f3c9dc11b6c4"
+					(reference "#PWR076")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 125.73 63.5 0)
 		(unit 1)
@@ -5994,6 +6019,106 @@
 		)
 	)
 	(symbol
+		(lib_name "PMOS_2")
+		(lib_id "Simulation_SPICE:PMOS")
+		(at 30.48 60.96 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "64f59f61-7e23-4a17-9207-3555e8425bca")
+		(property "Reference" "Q5"
+			(at 25.654 62.738 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PMOS IRF9540"
+			(at 36.068 65.278 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-220F-3_Horizontal_TabDown"
+			(at 25.4 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/91078/91078.pdf"
+			(at 30.48 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "P-MOSFET transistor, drain/source/gate"
+			(at 30.48 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "PMOS"
+			(at 30.48 43.815 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "VDMOS"
+			(at 30.48 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "2=D 1=G 3=S"
+			(at 30.48 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "8473a9ef-9463-48cb-a819-e857c8671b54")
+		)
+		(pin "2"
+			(uuid "bc1bbc47-f60a-411f-8708-0acc1c54c83f")
+		)
+		(pin "1"
+			(uuid "d2eaf217-ce5f-4fae-b266-5b6300f5f1cd")
+		)
+		(instances
+			(project "SafetyBoard"
+				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3/7743736e-4710-4d03-b8c1-f3c9dc11b6c4"
+					(reference "Q5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 138.43 176.53 0)
 		(unit 1)
@@ -6060,79 +6185,6 @@
 			(project "latch fsae"
 				(path "/9a7f1bcf-9641-4eab-b9f1-953b9796f856"
 					(reference "#PWR023")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+12V")
-		(at 267.97 62.23 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "726b0f5d-060f-409f-b830-bb5737155ea3")
-		(property "Reference" "#PWR088"
-			(at 264.16 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V"
-			(at 271.78 62.2299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 267.97 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 267.97 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 267.97 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "33933cef-a47c-4b3a-a97c-134584570182")
-		)
-		(instances
-			(project "latch fsae"
-				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3/7743736e-4710-4d03-b8c1-f3c9dc11b6c4"
-					(reference "#PWR088")
-					(unit 1)
-				)
-			)
-			(project "latch fsae"
-				(path "/9a7f1bcf-9641-4eab-b9f1-953b9796f856"
-					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -6235,8 +6287,8 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7f7a5f98-60ec-466b-b4f8-95b5c7afc364")
-		(property "Reference" "#PWR076"
+		(uuid "77886fac-08ee-4607-bd9d-be2598bfa56a")
+		(property "Reference" "#PWR070"
 			(at 115.57 82.55 0)
 			(effects
 				(font
@@ -6246,7 +6298,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 115.57 73.66 0)
+			(at 115.57 73.406 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6281,18 +6333,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "65ad9216-6467-49cf-82f7-a92eb298005b")
+			(uuid "24f73bca-e6a1-4cbb-99a5-fd63309c27ce")
 		)
 		(instances
-			(project "latch fsae"
+			(project "SafetyBoard"
 				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3/7743736e-4710-4d03-b8c1-f3c9dc11b6c4"
-					(reference "#PWR076")
-					(unit 1)
-				)
-			)
-			(project "latch fsae"
-				(path "/9a7f1bcf-9641-4eab-b9f1-953b9796f856"
-					(reference "#PWR010")
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -6797,6 +6843,72 @@
 			(project "SafetyBoard"
 				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3/7743736e-4710-4d03-b8c1-f3c9dc11b6c4"
 					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 27.94 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9d908b16-41de-4d19-a3aa-b0c844635d1a")
+		(property "Reference" "#PWR085"
+			(at 27.94 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 27.94 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 27.94 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 27.94 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "67eac07f-5904-4351-89b7-468b0179a667")
+		)
+		(instances
+			(project "SafetyBoard"
+				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3/7743736e-4710-4d03-b8c1-f3c9dc11b6c4"
+					(reference "#PWR085")
 					(unit 1)
 				)
 			)
@@ -7927,99 +8039,27 @@
 			)
 		)
 		(pin "4"
-			(uuid "fda68166-6904-456e-bcea-00ee3b873d34")
+			(uuid "fda68166-6904-456e-bcea-00ee3b873d35")
 		)
 		(pin "1"
-			(uuid "f56b02b9-787f-481d-888c-8161def0a528")
+			(uuid "f56b02b9-787f-481d-888c-8161def0a529")
 		)
 		(pin "3"
-			(uuid "3f3adedd-b3ba-4eea-9649-ef0b9709fd10")
+			(uuid "3f3adedd-b3ba-4eea-9649-ef0b9709fd11")
 		)
 		(pin "6"
-			(uuid "bcc6f4fd-0c3d-44b2-87ba-e577ccf8c83a")
+			(uuid "bcc6f4fd-0c3d-44b2-87ba-e577ccf8c83b")
 		)
 		(pin "8"
-			(uuid "553da507-e2f9-4940-898b-29e5c72ed28a")
+			(uuid "553da507-e2f9-4940-898b-29e5c72ed28b")
 		)
 		(pin "5"
-			(uuid "f262ebaf-b7cd-4e27-bb34-59ed707f25d5")
+			(uuid "f262ebaf-b7cd-4e27-bb34-59ed707f25d6")
 		)
 		(instances
 			(project "SafetyBoard"
 				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3/7743736e-4710-4d03-b8c1-f3c9dc11b6c4"
 					(reference "K2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+12V")
-		(at 190.5 54.61 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d9a85610-e273-4c98-9355-240a2d214916")
-		(property "Reference" "#PWR085"
-			(at 190.5 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V"
-			(at 190.5 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 190.5 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 190.5 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 190.5 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d4617a58-30d6-495d-ae40-566442fa1031")
-		)
-		(instances
-			(project "latch fsae"
-				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3/7743736e-4710-4d03-b8c1-f3c9dc11b6c4"
-					(reference "#PWR085")
-					(unit 1)
-				)
-			)
-			(project "latch fsae"
-				(path "/9a7f1bcf-9641-4eab-b9f1-953b9796f856"
-					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -8086,112 +8126,6 @@
 			(project "SafetyBoard"
 				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3/7743736e-4710-4d03-b8c1-f3c9dc11b6c4"
 					(reference "#PWR073")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "PMOS_2")
-		(lib_id "Simulation_SPICE:PMOS")
-		(at 30.48 60.96 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ebbc22d2-24c5-4860-9257-4bfaaa7fa6f8")
-		(property "Reference" "Q5"
-			(at 25.654 62.738 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "PMOS IRF9540"
-			(at 36.068 65.278 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220F-3_Horizontal_TabDown"
-			(at 25.4 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/91078/91078.pdf"
-			(at 30.48 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "P-MOSFET transistor, drain/source/gate"
-			(at 30.48 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "PMOS"
-			(at 30.48 43.815 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 30.48 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "2=D 1=G 3=S"
-			(at 30.48 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "d2373d33-6f24-49a2-9412-d8108be2d998")
-		)
-		(pin "2"
-			(uuid "2a9db26c-5831-4998-8065-6d63ac30e895")
-		)
-		(pin "1"
-			(uuid "327c4e9e-b110-45e8-9a7f-fcb2aa6f376a")
-		)
-		(instances
-			(project "latch fsae"
-				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3/7743736e-4710-4d03-b8c1-f3c9dc11b6c4"
-					(reference "Q5")
-					(unit 1)
-				)
-			)
-			(project "latch fsae"
-				(path "/9a7f1bcf-9641-4eab-b9f1-953b9796f856"
-					(reference "Q2")
 					(unit 1)
 				)
 			)

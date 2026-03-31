@@ -345,174 +345,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:D"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "D"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Device" "D"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=K 2=A"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "D_0_1"
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "D_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:LED"
 			(pin_numbers
 				(hide yes)
@@ -852,6 +684,173 @@
 					(at 0 -3.81 90)
 					(length 1.27)
 					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Diode:RF01VM2S"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "RF01VM2S"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SOD-323"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/discrete/diode/fast_recovery/rf01vm2s.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "250 V, 100 mA, Super Fast Recovery Diode, SOD-323"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*SOD?323*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "RF01VM2S_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "RF01VM2S_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1997,7 +1996,7 @@
 		(at 82.55 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9d6dbfd2-cb73-424e-ac74-c1680a86afa6")
+		(uuid "925256db-2089-4970-8760-efb73192938c")
 	)
 	(junction
 		(at 217.17 55.88)
@@ -2010,6 +2009,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9f5c271e-ecbe-458f-84fa-cbed7719c906")
+	)
+	(junction
+		(at 82.55 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bb4e92a3-5818-4a40-9c89-fc75ab6e7f98")
 	)
 	(junction
 		(at 146.05 54.61)
@@ -2028,12 +2033,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e825af0e-f055-49e9-9322-a3f11b01a854")
-	)
-	(junction
-		(at 82.55 50.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f5303d56-c0e0-4709-a568-0c84b8219cce")
 	)
 	(junction
 		(at 156.21 55.88)
@@ -2070,16 +2069,6 @@
 			(type default)
 		)
 		(uuid "061e477d-cd35-4d1e-9db3-28424eb244ed")
-	)
-	(wire
-		(pts
-			(xy 82.55 48.26) (xy 82.55 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0919e813-629d-474c-babf-40b041e1c603")
 	)
 	(wire
 		(pts
@@ -2160,6 +2149,16 @@
 			(type default)
 		)
 		(uuid "29a0c6f0-e86e-4739-90f0-949ea74d0b7b")
+	)
+	(wire
+		(pts
+			(xy 82.55 48.26) (xy 82.55 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b79c043-4a56-4d36-a39b-0c00e687e3f9")
 	)
 	(wire
 		(pts
@@ -2721,12 +2720,12 @@
 	)
 	(hierarchical_label "CCMCTRL"
 		(shape input)
-		(at 52.578 86.868 180)
+		(at 67.818 86.868 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "9f2b519b-1741-41d8-be3c-f9fa7d1e81e0")
 	)
@@ -2917,112 +2916,6 @@
 			(project "TSSI2026.3"
 				(path "/9d68cf00-7b78-45a1-9a66-0d88bd9188eb"
 					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D")
-		(at 82.55 66.04 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "34215a77-7f91-4fe9-a14c-efbc622aafa9")
-		(property "Reference" "D4"
-			(at 84.836 64.7699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "D"
-			(at 84.836 67.3099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
-			(at 82.55 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/bourns-inc/CD0603-B0240R/7796831?"
-			(at 82.55 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode"
-			(at 82.55 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 82.55 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 82.55 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Bourns Inc"
-			(at 82.55 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "CD0603-B0240R"
-			(at 82.55 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "05d51984-fdec-4fdf-9110-8e296b13ea86")
-		)
-		(pin "1"
-			(uuid "dc8c88e3-7d97-4ca9-a67f-d8b59f40feff")
-		)
-		(instances
-			(project "SafetyBoard"
-				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3/83cb6a8b-0a8f-42f4-832f-715c5e86ba97"
-					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -3852,7 +3745,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:IRLIZ44N")
-		(at 57.658 86.868 0)
+		(at 62.738 86.868 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3860,7 +3753,7 @@
 		(dnp no)
 		(uuid "70881d5b-876e-4df4-8002-7a05366f30be")
 		(property "Reference" "Q2"
-			(at 63.246 88.138 0)
+			(at 57.15 85.598 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3869,7 +3762,7 @@
 			)
 		)
 		(property "Value" "IRLIZ44N NMOS"
-			(at 62.992 90.678 0)
+			(at 57.404 83.058 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3878,7 +3771,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-220F-3_Horizontal_TabDown"
-			(at 62.738 88.773 0)
+			(at 57.658 84.963 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3889,7 +3782,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.irf.com/product-info/datasheets/data/irliz44n.pdf"
-			(at 62.738 90.678 0)
+			(at 57.658 83.058 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3899,7 +3792,7 @@
 			)
 		)
 		(property "Description" "30A Id, 55V Vds, 22mOhm Rds, N-Channel HEXFET Power MOSFET, TO-220AB"
-			(at 57.658 86.868 0)
+			(at 62.738 86.868 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3908,7 +3801,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Infineon"
-			(at 57.658 86.868 0)
+			(at 62.738 86.868 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3917,7 +3810,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "IRLZ44NPBF"
-			(at 57.658 86.868 0)
+			(at 62.738 86.868 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4092,6 +3985,100 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:RF01VM2S")
+		(at 82.55 66.04 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "903cef3d-72cb-4eca-8af4-3a921fd24884")
+		(property "Reference" "D4"
+			(at 85.09 64.7699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "RF01VM2S"
+			(at 85.09 67.3099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
+			(at 82.55 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/discrete/diode/fast_recovery/rf01vm2s.pdf"
+			(at 82.55 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "250 V, 100 mA, Super Fast Recovery Diode, SOD-323"
+			(at 82.55 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 82.55 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 82.55 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f456f31d-753f-4a8a-bd20-7c62beb31938")
+		)
+		(pin "1"
+			(uuid "936c9ae9-304b-4804-8cf4-a3d76f965fac")
+		)
+		(instances
+			(project "TSSI2026.3"
+				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3/83cb6a8b-0a8f-42f4-832f-715c5e86ba97"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+			(project "TSSI2026.3"
+				(path "/9d68cf00-7b78-45a1-9a66-0d88bd9188eb"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "MountingHole_3")
 		(lib_id "Mechanical:MountingHole")
 		(at 16.51 88.9 0)
@@ -4157,6 +4144,100 @@
 			(project "TSSI2026.3"
 				(path "/9d68cf00-7b78-45a1-9a66-0d88bd9188eb"
 					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:RF01VM2S")
+		(at 82.55 54.61 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "990a2ee7-dde3-4279-8300-2af912361c21")
+		(property "Reference" "D3"
+			(at 85.09 53.3399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "RF01VM2S"
+			(at 85.09 55.8799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
+			(at 82.55 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/discrete/diode/fast_recovery/rf01vm2s.pdf"
+			(at 82.55 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "250 V, 100 mA, Super Fast Recovery Diode, SOD-323"
+			(at 82.55 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 82.55 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 82.55 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "faa68546-e9c5-4377-a0e9-5df441797d4e")
+		)
+		(pin "1"
+			(uuid "7bdcbeaf-22c3-4112-bb8c-fc8b198fe8b5")
+		)
+		(instances
+			(project ""
+				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3/83cb6a8b-0a8f-42f4-832f-715c5e86ba97"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/9d68cf00-7b78-45a1-9a66-0d88bd9188eb"
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -4666,7 +4747,7 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c6e70b4f-e8b4-40f3-9675-50f1f228839f")
+		(uuid "c583ad63-7586-4a06-b330-cdcfaa55c68f")
 		(property "Reference" "D5"
 			(at 111.76 73.9774 90)
 			(effects
@@ -4676,7 +4757,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "ON when ok"
+		(property "Value" "DEBUGLatch"
 			(at 111.76 76.5174 90)
 			(effects
 				(font
@@ -4685,7 +4766,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
+		(property "Footprint" "LED_THT:LED_D4.0mm"
 			(at 107.95 73.66 0)
 			(effects
 				(font
@@ -4721,16 +4802,22 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "da9c5d0d-cd7f-4f5e-9aaf-d0119b59f001")
-		)
 		(pin "2"
-			(uuid "84ebbd39-9f6c-4a3a-8250-1ce3e6860578")
+			(uuid "d9a0930d-bfba-4b94-84fc-740ec99ec931")
+		)
+		(pin "1"
+			(uuid "4d2595d4-9772-4875-bb6c-e421bf040f82")
 		)
 		(instances
-			(project "SafetyBoard"
+			(project ""
 				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3/83cb6a8b-0a8f-42f4-832f-715c5e86ba97"
 					(reference "D5")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/9d68cf00-7b78-45a1-9a66-0d88bd9188eb"
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -5163,112 +5250,6 @@
 			(project "TSSI2026.3"
 				(path "/9d68cf00-7b78-45a1-9a66-0d88bd9188eb"
 					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D")
-		(at 82.55 54.61 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f1c6a741-8978-4945-a44c-8f28b258b25b")
-		(property "Reference" "D3"
-			(at 85.09 53.3399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "D"
-			(at 85.09 55.8799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
-			(at 82.55 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/bourns-inc/CD0603-B0240R/7796831?"
-			(at 82.55 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode"
-			(at 82.55 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 82.55 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 82.55 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Bourns Inc"
-			(at 82.55 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "CD0603-B0240R"
-			(at 82.55 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e4696725-815c-4c6d-8808-f7b13e9b44ad")
-		)
-		(pin "1"
-			(uuid "e342bfe9-e8d9-47cb-85de-95caeb311d87")
-		)
-		(instances
-			(project "SafetyBoard"
-				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3/83cb6a8b-0a8f-42f4-832f-715c5e86ba97"
-					(reference "D3")
 					(unit 1)
 				)
 			)
