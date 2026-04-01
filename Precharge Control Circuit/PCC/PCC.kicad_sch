@@ -13172,6 +13172,28 @@
 	)
 	(global_label "CANH"
 		(shape input)
+		(at 323.088 29.21 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5525eb0b-be67-4a8a-a00c-dde1c5b6eee3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 331.0928 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CANH"
+		(shape input)
 		(at 216.916 50.546 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13452,6 +13474,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CANL"
+		(shape input)
+		(at 323.088 24.13 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "88b422a0-7242-497f-a0f9-ba489c86d3ab")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 330.7904 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -22875,6 +22919,119 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x04_Socket")
+		(at 318.008 26.67 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "75f24547-0b41-404a-ac94-820e019de0b6")
+		(property "Reference" "J12"
+			(at 318.643 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "INVTR"
+			(at 318.643 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Molex:Molex_Mini-Fit_Jr_5566-04A2_2x02_P4.20mm_Vertical"
+			(at 318.008 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/molex/1724470004/5116903"
+			(at 318.008 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 318.008 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" ""
+			(at 318.008 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 318.008 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
+			(at 318.008 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 318.008 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 318.008 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "60efc484-0ede-4595-a6a5-59549d859bfc")
+		)
+		(pin "1"
+			(uuid "bf7ec5b8-d7af-4d5b-be18-79f0712a2af2")
+		)
+		(pin "4"
+			(uuid "20e5353c-d552-4682-ad58-155a34ef53f0")
+		)
+		(pin "2"
+			(uuid "6b197be6-fca8-401e-8643-1aff601e5533")
+		)
+		(instances
+			(project "PCC"
+				(path "/cd50b4df-2796-417a-bb78-7e5b371bc4af"
+					(reference "J12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Fuse")
 		(at 78.486 112.014 90)
 		(unit 1)
@@ -23589,6 +23746,73 @@
 			(project "pcc_v0.2"
 				(path "/cd50b4df-2796-417a-bb78-7e5b371bc4af"
 					(reference "R48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:-3V3")
+		(at 323.088 21.59 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7d3f0382-9594-4972-b59f-f774ffd1e870")
+		(property "Reference" "#PWR068"
+			(at 319.278 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GLV-"
+			(at 326.898 21.5899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 323.088 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 323.088 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"-3V3\""
+			(at 323.088 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fefe1d2c-f4c7-4392-a015-f5b57e937b05")
+		)
+		(instances
+			(project "PCC"
+				(path "/cd50b4df-2796-417a-bb78-7e5b371bc4af"
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -27056,6 +27280,71 @@
 			(project "pcc_v0.1"
 				(path "/cd50b4df-2796-417a-bb78-7e5b371bc4af"
 					(reference "R32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 323.088 26.67 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b49eea27-edd2-45d6-9665-0b96ccc2603a")
+		(property "Reference" "#PWR069"
+			(at 319.278 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GLV+"
+			(at 328.676 26.416 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 323.088 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 323.088 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 323.088 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c0e94ae2-d649-4f3f-aa56-71c6ba984f5d")
+		)
+		(instances
+			(project "PCC"
+				(path "/cd50b4df-2796-417a-bb78-7e5b371bc4af"
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
