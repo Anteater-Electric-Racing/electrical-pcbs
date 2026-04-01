@@ -1533,6 +1533,17 @@
 				(xyz -90 0 180)
 			)
 		)
+		(model "C:/Users/coolk/Documents/fsae ev/ccm v2/3d models/039296048.stp"
+			(offset
+				(xyz 2 -2.5 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -180)
+			)
+		)
 	)
 	(footprint "Resistor_SMD:R_0805_2012Metric"
 		(layer "F.Cu")
@@ -3695,6 +3706,17 @@
 				(xyz 0 0 0)
 			)
 		)
+		(model "C:/Users/coolk/Documents/fsae ev/ccm v2/3d models/039296048.stp"
+			(offset
+				(xyz 2 -2.5 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -180)
+			)
+		)
 	)
 	(footprint "Resistor_SMD:R_0805_2012Metric"
 		(layer "F.Cu")
@@ -5702,6 +5724,17 @@
 				(xyz -90 0 180)
 			)
 		)
+		(model "C:/Users/coolk/Documents/fsae ev/ccm v2/3d models/039296028.stp"
+			(offset
+				(xyz 0 -2.5 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -180)
+			)
+		)
 	)
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
@@ -6730,13 +6763,24 @@
 		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_Mini-Fit_Jr_5566-02A2_2x01_P4.20mm_Vertical.wrl"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 -2.5 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 -0 -180)
+			)
+		)
+		(model "C:/Users/coolk/Documents/fsae ev/ccm v2/3d models/039296028.stp"
+			(offset
+				(xyz 0 -2.5 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -180)
 			)
 		)
 	)
@@ -7369,6 +7413,17 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+		(model "C:/Users/coolk/Documents/fsae ev/ccm v2/3d models/039296028.stp"
+			(offset
+				(xyz 0 -2.5 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -180)
 			)
 		)
 	)
@@ -8126,6 +8181,17 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+		(model "C:/Users/coolk/Documents/fsae ev/ccm v2/3d models/039296048.stp"
+			(offset
+				(xyz 2 -2.5 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -180)
 			)
 		)
 	)
@@ -9084,6 +9150,17 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+		(model "C:/Users/coolk/Documents/fsae ev/ccm v2/3d models/039296048.stp"
+			(offset
+				(xyz 2 -2.5 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 180)
 			)
 		)
 	)
@@ -10793,6 +10870,17 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+		(model "C:/Users/coolk/Documents/fsae ev/ccm v2/3d models/039296028.stp"
+			(offset
+				(xyz 0 -2.5 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -180)
 			)
 		)
 	)
@@ -13223,6 +13311,17 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+		(model "C:/Users/coolk/Documents/fsae ev/ccm v2/3d models/039296028.stp"
+			(offset
+				(xyz 0 -2.5 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -180)
 			)
 		)
 	)
@@ -16009,6 +16108,17 @@
 				(xyz 0 0 90)
 			)
 		)
+		(model "C:/Users/coolk/Documents/fsae ev/ccm v2/3d models/Teensy_4.1_Assembly.STEP"
+			(offset
+				(xyz 7.5 -29 13)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 90)
+			)
+		)
 	)
 	(footprint "Connector_Molex:Molex_Mini-Fit_Jr_5566-02A2_2x01_P4.20mm_Vertical"
 		(layer "F.Cu")
@@ -16641,7 +16751,18 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 -0 -90)
+			)
+		)
+		(model "C:/Users/coolk/Documents/fsae ev/ccm v2/3d models/039296028.stp"
+			(offset
+				(xyz 0 -2.5 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -180)
 			)
 		)
 	)
@@ -17503,13 +17624,24 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_Mini-Fit_Jr_5566-02A2_2x01_P4.20mm_Vertical.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 -2.5 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 -0 -180)
+			)
+		)
+		(model "C:/Users/coolk/Documents/fsae ev/ccm v2/3d models/039296028.stp"
+			(offset
+				(xyz 0 -2.5 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -180)
 			)
 		)
 	)
@@ -18872,6 +19004,17 @@
 				(xyz -90 0 180)
 			)
 		)
+		(model "C:/Users/coolk/Documents/fsae ev/ccm v2/3d models/039296048.stp"
+			(offset
+				(xyz 2 -2.5 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -180)
+			)
+		)
 	)
 	(footprint "Resistor_SMD:R_0805_2012Metric"
 		(layer "F.Cu")
@@ -19908,7 +20051,7 @@
 		(descr "Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5566-02A2, example for new mpn: 39-28-902x, 1 Pins per row, Mounting: Snap-in Plastic Peg PCB Lock (http://www.molex.com/pdm_docs/sd/039289068_sd.pdf), generated with kicad-footprint-generator")
 		(tags "connector Molex Mini-Fit_Jr side entryplastic_peg")
 		(property "Reference" "J1"
-			(at -0.2 11.79 270)
+			(at -0.2 11.79 90)
 			(layer "F.SilkS")
 			(uuid "5b389eea-e0ba-45a6-a502-0314ec66307c")
 			(effects
@@ -20533,6 +20676,17 @@
 			)
 			(rotate
 				(xyz -90 0 180)
+			)
+		)
+		(model "C:/Users/coolk/Documents/fsae ev/ccm v2/3d models/039296028.stp"
+			(offset
+				(xyz 0 -2.5 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -180)
 			)
 		)
 	)
@@ -24096,13 +24250,24 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_Mini-Fit_Jr_5566-02A2_2x01_P4.20mm_Vertical.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 -2.5 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 -0 -180)
+			)
+		)
+		(model "C:/Users/coolk/Documents/fsae ev/ccm v2/3d models/039296028.stp"
+			(offset
+				(xyz 0 -2.5 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -180)
 			)
 		)
 	)
@@ -25262,6 +25427,17 @@
 				(xyz 0 0 0)
 			)
 		)
+		(model "C:/Users/coolk/Documents/fsae ev/ccm v2/3d models/039296048.stp"
+			(offset
+				(xyz 2 -2.5 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -180)
+			)
+		)
 	)
 	(footprint "Connector_Molex:Molex_Mini-Fit_Jr_5566-04A2_2x02_P4.20mm_Vertical"
 		(layer "F.Cu")
@@ -26017,6 +26193,17 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+		(model "C:/Users/coolk/Documents/fsae ev/ccm v2/3d models/039296048.stp"
+			(offset
+				(xyz 2 -2.5 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -180)
 			)
 		)
 	)
@@ -26957,6 +27144,17 @@
 			)
 			(rotate
 				(xyz -90 0 180)
+			)
+		)
+		(model "C:/Users/coolk/Documents/fsae ev/ccm v2/3d models/039296028.stp"
+			(offset
+				(xyz 0 -2.5 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -180)
 			)
 		)
 	)
@@ -28592,6 +28790,17 @@
 				(xyz -90 0 180)
 			)
 		)
+		(model "C:/Users/coolk/Documents/fsae ev/ccm v2/3d models/039296028.stp"
+			(offset
+				(xyz 0 -2.5 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -180)
+			)
+		)
 	)
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
@@ -30066,6 +30275,17 @@
 				(xyz -90 0 180)
 			)
 		)
+		(model "C:/Users/coolk/Documents/fsae ev/ccm v2/3d models/039296028.stp"
+			(offset
+				(xyz 0 -2.5 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -180)
+			)
+		)
 	)
 	(footprint "Resistor_SMD:R_0805_2012Metric"
 		(layer "F.Cu")
@@ -31101,6 +31321,17 @@
 			)
 			(rotate
 				(xyz -90 0 180)
+			)
+		)
+		(model "C:/Users/coolk/Documents/fsae ev/ccm v2/3d models/039296028.stp"
+			(offset
+				(xyz 0 -2.5 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -180)
 			)
 		)
 	)
@@ -33237,6 +33468,17 @@
 			)
 			(rotate
 				(xyz -90 0 180)
+			)
+		)
+		(model "C:/Users/coolk/Documents/fsae ev/ccm v2/3d models/039296028.stp"
+			(offset
+				(xyz 0 -2.5 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -180)
 			)
 		)
 	)
@@ -45287,4 +45529,3 @@
 	)
 	(embedded_fonts no)
 )
-

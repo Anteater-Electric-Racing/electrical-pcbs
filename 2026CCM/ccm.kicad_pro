@@ -466,7 +466,9 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "custom"
+    ]
   },
   "meta": {
     "filename": "ccm.kicad_pro",
