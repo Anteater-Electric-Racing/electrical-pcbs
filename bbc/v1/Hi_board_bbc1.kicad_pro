@@ -487,10 +487,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "export2/",
+      "plot": "export/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "hi_bbc1_export2/Hi_board_bbc1.step",
+      "step": "export/Hi_board_bbc1.step",
       "svg": "",
       "vrml": ""
     },
