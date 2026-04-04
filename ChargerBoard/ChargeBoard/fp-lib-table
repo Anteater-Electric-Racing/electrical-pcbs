@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "MODELS")(type "KiCad")(uri "${KIPRJMOD}/MoreParts/MODELS.pretty")(options "")(descr ""))
+)
