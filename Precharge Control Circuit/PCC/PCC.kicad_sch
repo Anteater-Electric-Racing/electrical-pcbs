@@ -24365,7 +24365,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "LM393P"
+		(property "MPN" "TLV2372IP"
 			(at 435.61 173.99 90)
 			(effects
 				(font

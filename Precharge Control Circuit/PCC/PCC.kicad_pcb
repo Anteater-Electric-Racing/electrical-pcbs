@@ -5000,7 +5000,7 @@
 				)
 			)
 		)
-		(property "Value" "PCN-112D3MHZ_000"
+		(property "Value" "PCN-105D3MHZ,000"
 			(at -1.27 8.7249 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5036,7 +5036,7 @@
 				)
 			)
 		)
-		(property "MPN" "PCN-112D3MHZ,000 "
+		(property "MPN" "PCN-105D3MHZ,000"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")

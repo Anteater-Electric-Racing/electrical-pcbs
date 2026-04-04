@@ -806,7 +806,7 @@
           "group_by": false,
           "label": "Description",
           "name": "Description",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -848,25 +848,109 @@
           "group_by": false,
           "label": "Manufacturer_Name",
           "name": "Manufacturer_Name",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "Manufacturer_Part_Number",
           "name": "Manufacturer_Part_Number",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "Mouser Part Number",
           "name": "Mouser Part Number",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "Mouser Price/Stock",
           "name": "Mouser Price/Stock",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MFG",
+          "name": "MFG",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "MP",
+          "name": "MP",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Field5",
+          "name": "Field5",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "MAXIMUM_PACKAGE_HEIGHT",
+          "name": "MAXIMUM_PACKAGE_HEIGHT",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MF",
+          "name": "MF",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "PARTREV",
+          "name": "PARTREV",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Package",
+          "name": "Package",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "STANDARD",
+          "name": "STANDARD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Check_prices",
+          "name": "Check_prices",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description_1",
+          "name": "Description_1",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "SnapEDA_Link",
+          "name": "SnapEDA_Link",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DigiKey_Part_Number",
+          "name": "DigiKey_Part_Number",
+          "show": true
         }
       ],
       "filter_string": "",
