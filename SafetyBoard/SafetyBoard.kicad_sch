@@ -591,6 +591,16 @@
 	)
 	(wire
 		(pts
+			(xy 46.228 71.882) (xy 46.99 71.882)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d0d45ab-17af-4a5d-98fb-7d6f0dc9d62d")
+	)
+	(wire
+		(pts
 			(xy 137.414 49.53) (xy 128.016 49.53)
 		)
 		(stroke
@@ -618,16 +628,6 @@
 			(type default)
 		)
 		(uuid "33e3723b-fee4-4df2-a027-818f8327f867")
-	)
-	(wire
-		(pts
-			(xy 184.785 68.58) (xy 183.896 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3508b82d-a03f-41d3-818b-2fcf3244cc9f")
 	)
 	(wire
 		(pts
@@ -741,16 +741,6 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 71.755) (xy 47.244 71.755)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d16c91b1-9324-4d7d-995d-88680c976bd7")
-	)
-	(wire
-		(pts
 			(xy 83.566 105.41) (xy 83.566 95.504)
 		)
 		(stroke
@@ -771,13 +761,23 @@
 	)
 	(wire
 		(pts
-			(xy 176.022 68.58) (xy 177.165 68.58)
+			(xy 176.022 68.58) (xy 177.292 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "face0794-bdcd-4f35-9ddf-aaeeb99e5b21")
+	)
+	(wire
+		(pts
+			(xy 183.896 68.58) (xy 184.912 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fba909d8-acc0-422a-b9ff-79143b9ad237")
 	)
 	(label "5V"
 		(at 229.108 62.992 180)
@@ -910,7 +910,7 @@
 		(uuid "b3dfd01b-6174-4608-882e-87fc2a66c2ed")
 	)
 	(label "12V"
-		(at 47.244 71.755 180)
+		(at 46.228 71.882 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -951,15 +951,15 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 210.566 125.73 270)
+		(at 232.918 62.992 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "271dd580-20f8-49f0-b5c1-76be96aeb46d")
-		(property "Reference" "F6"
-			(at 210.566 128.016 90)
+		(uuid "162a0a8f-695f-4b56-8c74-189f037ed8ad")
+		(property "Reference" "F10"
+			(at 232.918 60.706 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -967,7 +967,7 @@
 			)
 		)
 		(property "Value" "5A MAX"
-			(at 210.566 123.952 90)
+			(at 232.918 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -975,7 +975,7 @@
 			)
 		)
 		(property "Footprint" "0footprints:FUSE_3522-2"
-			(at 210.566 123.952 90)
+			(at 232.918 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -984,7 +984,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 210.566 125.73 0)
+			(at 232.918 62.992 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -993,7 +993,7 @@
 			)
 		)
 		(property "Description" "Fuse"
-			(at 210.566 125.73 0)
+			(at 232.918 62.992 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1001,8 +1001,8 @@
 				(hide yes)
 			)
 		)
-		(property "MFG" "Littelfuse"
-			(at 210.566 125.73 90)
+		(property "MFG" "Keystone Electronics "
+			(at 232.918 62.992 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1010,8 +1010,8 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "01530007Z"
-			(at 210.566 125.73 90)
+		(property "MPN" "3522-2 "
+			(at 232.918 62.992 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1020,15 +1020,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "99fa5fbf-924e-4293-ad85-49134cbc1ad7")
+			(uuid "a6bca898-8975-420f-afd8-b690178abda9")
 		)
 		(pin "2"
-			(uuid "dc6a577a-8dcf-435b-931c-76629845ead8")
+			(uuid "674b6781-3f9a-4fc0-89df-c3d8fd73b4be")
 		)
 		(instances
 			(project "SafetyBoard"
 				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3"
-					(reference "F6")
+					(reference "F10")
 					(unit 1)
 				)
 			)
@@ -1265,6 +1265,176 @@
 			(project "SafetyBoard"
 				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3"
 					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse")
+		(at 70.866 137.414 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "46739a79-9390-4155-bec3-9a1e82b3a84e")
+		(property "Reference" "F2"
+			(at 70.866 135.128 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "5A MAX"
+			(at 70.866 139.192 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "0footprints:FUSE_3522-2"
+			(at 70.866 139.192 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 70.866 137.414 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fuse"
+			(at 70.866 137.414 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Keystone Electronics "
+			(at 70.866 137.414 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "3522-2 "
+			(at 70.866 137.414 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bff8479d-f02a-48c3-b35c-a110635eb8d0")
+		)
+		(pin "2"
+			(uuid "b6db6347-3f19-490f-b5b7-b0286978b44f")
+		)
+		(instances
+			(project "SafetyBoard"
+				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3"
+					(reference "F2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse")
+		(at 231.394 49.784 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "46e618cf-6268-4b32-87d7-894c7710436e")
+		(property "Reference" "F7"
+			(at 231.394 47.498 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "5A MAX"
+			(at 231.394 51.562 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "0footprints:FUSE_3522-2"
+			(at 231.394 51.562 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 231.394 49.784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fuse"
+			(at 231.394 49.784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Keystone Electronics "
+			(at 231.394 49.784 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "3522-2 "
+			(at 231.394 49.784 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a9457635-ef14-47f5-9556-b5c0e49a5fa8")
+		)
+		(pin "2"
+			(uuid "2b01ec06-cc97-44a4-b42f-0c826aeb3b4e")
+		)
+		(instances
+			(project "SafetyBoard"
+				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3"
+					(reference "F7")
 					(unit 1)
 				)
 			)
@@ -1649,7 +1819,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG" "Littelfuse"
+		(property "MFG" "Keystone Electronics "
 			(at 231.902 17.272 90)
 			(effects
 				(font
@@ -1658,7 +1828,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "01530007Z"
+		(property "MPN" "3522-2 "
 			(at 231.902 17.272 90)
 			(effects
 				(font
@@ -1854,100 +2024,15 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 232.664 33.02 90)
+		(at 210.566 125.73 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7f86e434-caf6-4a0c-83f6-3838812f3526")
-		(property "Reference" "F9"
-			(at 232.664 30.734 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10A MAX"
-			(at 232.664 34.798 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "0footprints:FUSE_3522-2"
-			(at 232.664 34.798 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 232.664 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 232.664 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Littelfuse"
-			(at 232.664 33.02 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "01530007Z"
-			(at 232.664 33.02 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2c7ce651-eee1-4d39-8192-6b50d72cc254")
-		)
-		(pin "2"
-			(uuid "8410cff5-1511-49e0-9631-b1a726475bfc")
-		)
-		(instances
-			(project "SafetyBoard"
-				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3"
-					(reference "F9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Fuse")
-		(at 231.394 49.784 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8a2609cc-8f5c-425d-ae88-3535a605b121")
-		(property "Reference" "F7"
-			(at 231.394 47.498 90)
+		(uuid "8cf7bbef-60e9-4fcd-a976-2a9c4f2d4013")
+		(property "Reference" "F6"
+			(at 210.566 123.444 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1955,7 +2040,7 @@
 			)
 		)
 		(property "Value" "5A MAX"
-			(at 231.394 51.562 90)
+			(at 210.566 127.508 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1963,7 +2048,7 @@
 			)
 		)
 		(property "Footprint" "0footprints:FUSE_3522-2"
-			(at 231.394 51.562 90)
+			(at 210.566 127.508 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1972,7 +2057,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 231.394 49.784 0)
+			(at 210.566 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1981,7 +2066,7 @@
 			)
 		)
 		(property "Description" "Fuse"
-			(at 231.394 49.784 0)
+			(at 210.566 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1989,8 +2074,8 @@
 				(hide yes)
 			)
 		)
-		(property "MFG" "Littelfuse"
-			(at 231.394 49.784 90)
+		(property "MFG" "Keystone Electronics "
+			(at 210.566 125.73 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1998,93 +2083,8 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "01530007Z"
-			(at 231.394 49.784 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e94648e0-dc9c-44b3-a7b5-c0dbda85a432")
-		)
-		(pin "2"
-			(uuid "8a292948-54c0-408e-8195-a28fa843869f")
-		)
-		(instances
-			(project "SafetyBoard"
-				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3"
-					(reference "F7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Fuse")
-		(at 232.918 62.992 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8bed252b-4593-4b87-a992-3c573bd1675c")
-		(property "Reference" "F10"
-			(at 232.918 60.706 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "5A MAX"
-			(at 232.918 64.77 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "0footprints:FUSE_3522-2"
-			(at 232.918 64.77 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 232.918 62.992 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 232.918 62.992 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Littelfuse"
-			(at 232.918 62.992 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "01530007Z"
-			(at 232.918 62.992 90)
+		(property "MPN" "3522-2 "
+			(at 210.566 125.73 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2093,15 +2093,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "5539c662-3e71-4562-b0dd-7f4954188898")
+			(uuid "2728151c-00d2-4880-94c2-1975d1a5c8bf")
 		)
 		(pin "2"
-			(uuid "4fac409b-483d-4f95-b9b0-e984aeeadc08")
+			(uuid "69dece50-5024-4f7f-beb5-1e61535b2e62")
 		)
 		(instances
 			(project "SafetyBoard"
 				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3"
-					(reference "F10")
+					(reference "F6")
 					(unit 1)
 				)
 			)
@@ -2194,23 +2194,23 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 180.975 68.58 90)
+		(at 232.664 33.02 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a1021b85-ab79-4494-9bd2-5e565eea135d")
-		(property "Reference" "F5"
-			(at 180.975 66.294 90)
+		(uuid "a97bd562-3883-4e54-9255-56e13ea85423")
+		(property "Reference" "F9"
+			(at 232.664 30.734 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "2A MAX"
-			(at 180.975 70.358 90)
+		(property "Value" "10A MAX"
+			(at 232.664 34.798 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2218,7 +2218,7 @@
 			)
 		)
 		(property "Footprint" "0footprints:FUSE_3522-2"
-			(at 180.975 70.358 90)
+			(at 232.664 34.798 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2227,7 +2227,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 180.975 68.58 0)
+			(at 232.664 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2236,7 +2236,7 @@
 			)
 		)
 		(property "Description" "Fuse"
-			(at 180.975 68.58 0)
+			(at 232.664 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2244,8 +2244,8 @@
 				(hide yes)
 			)
 		)
-		(property "MFG" "Littelfuse"
-			(at 180.975 68.58 90)
+		(property "MFG" "Keystone Electronics "
+			(at 232.664 33.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2253,8 +2253,8 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "01530007Z"
-			(at 180.975 68.58 90)
+		(property "MPN" "3522-2 "
+			(at 232.664 33.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2263,15 +2263,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "1fd70db9-f851-486e-bd5a-e125e78d865c")
+			(uuid "8b6f3759-6269-4105-bf47-205e292d22f4")
 		)
 		(pin "2"
-			(uuid "0bc4e388-d4be-4d10-aaa9-0bc22f6909e2")
+			(uuid "f1b9ce64-ee51-43ce-92d0-eaf3a059e161")
 		)
 		(instances
 			(project "SafetyBoard"
 				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3"
-					(reference "F5")
+					(reference "F9")
 					(unit 1)
 				)
 			)
@@ -2581,15 +2581,15 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 50.8 71.755 90)
+		(at 181.102 68.58 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ca4c9b74-997a-425e-8598-d26b84cb63b3")
-		(property "Reference" "F1"
-			(at 50.8 69.469 90)
+		(uuid "c842fea5-0fc5-4163-ad07-1678a83ed0b5")
+		(property "Reference" "F5"
+			(at 181.102 66.294 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2597,7 +2597,7 @@
 			)
 		)
 		(property "Value" "2A MAX"
-			(at 50.8 73.533 90)
+			(at 181.102 70.358 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2605,7 +2605,7 @@
 			)
 		)
 		(property "Footprint" "0footprints:FUSE_3522-2"
-			(at 50.8 73.533 90)
+			(at 181.102 70.358 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2614,7 +2614,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 50.8 71.755 0)
+			(at 181.102 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2623,7 +2623,7 @@
 			)
 		)
 		(property "Description" "Fuse"
-			(at 50.8 71.755 0)
+			(at 181.102 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2631,8 +2631,8 @@
 				(hide yes)
 			)
 		)
-		(property "MFG" "Littelfuse"
-			(at 50.8 71.755 90)
+		(property "MFG" "Keystone Electronics "
+			(at 181.102 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2640,8 +2640,8 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "01530007Z"
-			(at 50.8 71.755 90)
+		(property "MPN" "3522-2 "
+			(at 181.102 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2650,15 +2650,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "2a780e03-f0d9-4867-812c-7cba0b172758")
+			(uuid "4537586b-e077-49f2-b33a-9eae2ace6814")
 		)
 		(pin "2"
-			(uuid "1af3d4cd-b93f-4779-9efc-353466eaab0a")
+			(uuid "e9864fe7-9737-4786-a2ae-98f7458a2149")
 		)
 		(instances
 			(project "SafetyBoard"
 				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3"
-					(reference "F1")
+					(reference "F5")
 					(unit 1)
 				)
 			)
@@ -2732,23 +2732,23 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 70.866 137.414 270)
+		(at 50.8 71.882 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f95be653-4928-4b5f-b2b8-58d110bc2211")
-		(property "Reference" "F2"
-			(at 70.866 139.7 90)
+		(uuid "f520d3c6-05d6-4579-9059-1ab0c64de720")
+		(property "Reference" "F1"
+			(at 50.8 69.596 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "5A MAX"
-			(at 70.866 135.636 90)
+		(property "Value" "2A MAX"
+			(at 50.8 73.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2756,7 +2756,7 @@
 			)
 		)
 		(property "Footprint" "0footprints:FUSE_3522-2"
-			(at 70.866 135.636 90)
+			(at 50.8 73.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2765,7 +2765,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 70.866 137.414 0)
+			(at 50.8 71.882 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2774,7 +2774,7 @@
 			)
 		)
 		(property "Description" "Fuse"
-			(at 70.866 137.414 0)
+			(at 50.8 71.882 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2782,8 +2782,8 @@
 				(hide yes)
 			)
 		)
-		(property "MFG" "Littelfuse"
-			(at 70.866 137.414 90)
+		(property "MFG" "Keystone Electronics "
+			(at 50.8 71.882 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2791,8 +2791,8 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "01530007Z"
-			(at 70.866 137.414 90)
+		(property "MPN" "3522-2 "
+			(at 50.8 71.882 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2801,15 +2801,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "ad342d56-ba0c-44ee-b51a-53465791ec8c")
+			(uuid "1700725e-dd44-4ae6-8233-ff58f639b4de")
 		)
 		(pin "2"
-			(uuid "21ca305b-2d14-464d-bbbf-5cc8c265257c")
+			(uuid "c8ea7576-e292-4741-b62d-9822ed11a908")
 		)
 		(instances
 			(project "SafetyBoard"
 				(path "/30d029c6-868b-41ac-953d-167a7d76c1a3"
-					(reference "F2")
+					(reference "F1")
 					(unit 1)
 				)
 			)
@@ -2849,7 +2849,7 @@
 			)
 		)
 		(pin "12V" input
-			(at 54.61 71.755 180)
+			(at 54.61 71.882 180)
 			(uuid "42f9e911-005c-4ca7-86ca-563ad2c18a5e")
 			(effects
 				(font

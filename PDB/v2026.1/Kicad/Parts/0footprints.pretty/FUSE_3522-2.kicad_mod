@@ -217,7 +217,7 @@
 		(uuid "cdf0bc12-e595-40d0-ac56-79d0855b841d")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/Parts/step/FUSE_3522-2.step"
+	(model "${KIPRJMOD}/Library/STEPS/FUSE_3522-2.step"
 		(offset
 			(xyz 0 0 0)
 		)

@@ -5513,16 +5513,8 @@
 		)
 	)
 	(no_connect
-		(at 52.07 76.2)
-		(uuid "1d9681e2-cdc2-42db-aaa1-aacf7d494e83")
-	)
-	(no_connect
 		(at 181.61 95.504)
 		(uuid "777ab469-c7e4-4e40-8501-f8f34c3a5725")
-	)
-	(no_connect
-		(at 52.07 58.42)
-		(uuid "e4d29ead-6c0b-4122-b4e4-06262e5ca89e")
 	)
 	(wire
 		(pts
@@ -5754,15 +5746,15 @@
 		)
 		(uuid "fdaecb50-45e9-4bbb-8b4f-fa5359ee4c7f")
 	)
-	(label "APPS2 IN"
-		(at 52.07 55.88 180)
+	(label "5V"
+		(at 52.07 76.2 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "01099fd4-642e-4ee6-9487-91893710851d")
+		(uuid "02d78cc7-b7de-4180-9c15-4b741e358422")
 	)
 	(label "Wheel{slash}Shock3 OUT"
 		(at 241.554 127.762 180)
@@ -5783,6 +5775,16 @@
 			(justify left bottom)
 		)
 		(uuid "0eea92bb-a41c-444b-807f-2336a5b7c324")
+	)
+	(label "CCMGND"
+		(at 52.07 48.26 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "17a69075-68d8-4c92-b811-ad00db9caa2e")
 	)
 	(label "BPS2 IN"
 		(at 105.664 147.32 0)
@@ -5814,15 +5816,15 @@
 		)
 		(uuid "1dd71025-5a5a-4f6b-9fed-831b624e97bc")
 	)
-	(label "BPS2 IN"
-		(at 52.07 48.26 180)
+	(label "APPS2 IN"
+		(at 52.07 63.5 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "2b092e95-8a86-4787-9123-1ad65471849e")
+		(uuid "247bd3b0-b098-4fcc-96ed-485f209d2172")
 	)
 	(label "5V"
 		(at 123.698 48.26 0)
@@ -5944,6 +5946,16 @@
 		)
 		(uuid "5b090909-cf17-4bad-b8c9-48398b3124fb")
 	)
+	(label "5V"
+		(at 52.07 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5e20758d-5de8-40af-a8a1-dc9f2c4844ee")
+	)
 	(label "Wheel{slash}Shock4 IN"
 		(at 98.298 35.56 180)
 		(effects
@@ -6044,26 +6056,6 @@
 		)
 		(uuid "8246b021-8d5f-487a-b23b-b4907eb59132")
 	)
-	(label "BPS1 IN"
-		(at 52.07 45.72 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8263d48a-deb1-4dcd-822f-4ad93f84af00")
-	)
-	(label "CCMGND"
-		(at 52.07 66.04 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "840ca99e-718b-4c28-98fd-cc4ff9c3b58a")
-	)
 	(label "CCMGND"
 		(at 252.476 136.906 180)
 		(effects
@@ -6083,6 +6075,16 @@
 			(justify left bottom)
 		)
 		(uuid "88abd88a-a483-4153-8426-a8c5bd3bd645")
+	)
+	(label "CCMGND"
+		(at 52.07 45.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "88f9a1ca-49e5-4648-817f-95afa69a3fee")
 	)
 	(label "CCMGND"
 		(at 55.88 181.61 180)
@@ -6143,6 +6145,46 @@
 			(justify right bottom)
 		)
 		(uuid "94262b05-2066-44ce-9e9f-6f8691ee3ce2")
+	)
+	(label "BPS2 IN"
+		(at 52.07 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "98b928bb-3562-4870-b6bb-40f6cf62d462")
+	)
+	(label "BPS1 IN"
+		(at 52.07 73.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9e5d5f1f-979f-4c2d-a409-834e27b30960")
+	)
+	(label "APPS1 IN"
+		(at 52.07 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a7362cb2-979b-4548-a0f1-2747d8718eea")
+	)
+	(label "CCMGND"
+		(at 52.07 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a8382ee4-a4a5-4c1f-ad9b-b740370f0927")
 	)
 	(label "CCMGND"
 		(at 123.698 35.56 0)
@@ -6234,16 +6276,6 @@
 		)
 		(uuid "cae13098-3e31-401c-8286-37d39c17b0c9")
 	)
-	(label "5V"
-		(at 52.07 60.96 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "cb1e6d5c-f97d-4ea6-88c7-351c7aee83ef")
-	)
 	(label "APPS2 OUT"
 		(at 181.61 72.644 180)
 		(effects
@@ -6253,16 +6285,6 @@
 			(justify right bottom)
 		)
 		(uuid "cd065579-e0dd-4ee6-87ef-85a9abda4158")
-	)
-	(label "5V"
-		(at 52.07 43.18 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ceb58efe-cb75-48a5-9cf8-005032e39e84")
 	)
 	(label "RTDB"
 		(at 181.61 77.724 180)
@@ -6314,25 +6336,15 @@
 		)
 		(uuid "e17b138f-ba82-40cc-b502-abeb906e088f")
 	)
-	(label "APPS1 IN"
-		(at 52.07 53.34 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e424f189-a8c1-413f-8711-44f1312de593")
-	)
 	(label "CCMGND"
-		(at 52.07 63.5 180)
+		(at 52.07 55.88 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "e42fb872-0d57-4731-b260-b934c983a681")
+		(uuid "e20ccac4-7dbd-471c-98a5-3c9e6391bfc1")
 	)
 	(label "5V"
 		(at 123.698 45.72 0)
@@ -6415,16 +6427,6 @@
 		(uuid "f18d7388-eb4f-45a7-8065-feaeb4038dbc")
 	)
 	(label "CCMGND"
-		(at 52.07 73.66 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f304d5d3-cfc2-4090-b6cd-eb0bb793676e")
-	)
-	(label "CCMGND"
 		(at 225.298 161.29 0)
 		(effects
 			(font
@@ -6433,16 +6435,6 @@
 			(justify left bottom)
 		)
 		(uuid "f5d31e72-5a65-4683-bf73-5e51d2d8fdc1")
-	)
-	(label "CCMGND"
-		(at 52.07 71.12 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "fd1ba001-0f5c-4b8d-bc86-2d2d774752a6")
 	)
 	(label "Speaker IN"
 		(at 181.61 57.404 180)
