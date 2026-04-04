@@ -983,7 +983,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
+		(property "Datasheet" "~"
 			(at 210.566 125.73 0)
 			(effects
 				(font
@@ -994,6 +994,24 @@
 		)
 		(property "Description" "Fuse"
 			(at 210.566 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Littelfuse"
+			(at 210.566 125.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "01530007Z"
+			(at 210.566 125.73 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1050,7 +1068,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
+		(property "Datasheet" "~"
 			(at 131.826 36.068 0)
 			(effects
 				(font
@@ -1061,6 +1079,24 @@
 		)
 		(property "Description" "Fuse"
 			(at 131.826 36.068 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Littelfuse"
+			(at 131.826 36.068 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "01530007Z"
+			(at 131.826 36.068 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1193,6 +1229,24 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x01, this symbol is compatible with counter-clockwise, top-bottom and odd-even numbering schemes., script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 240.284 49.784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Molex"
+			(at 240.284 49.784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0039310028"
 			(at 240.284 49.784 0)
 			(effects
 				(font
@@ -1334,6 +1388,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFG" "Molex"
+			(at 241.554 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0039310028"
+			(at 241.554 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d9c0d7de-b094-4fb6-9462-9d9cb173dac7")
 		)
@@ -1401,6 +1473,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFG" "Molex"
+			(at 219.456 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0039288040"
+			(at 219.456 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "b7fe4b12-e508-4043-a299-fd9fb8943197")
 		)
@@ -1456,7 +1546,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
+		(property "Datasheet" "~"
 			(at 131.826 31.496 0)
 			(effects
 				(font
@@ -1467,6 +1557,24 @@
 		)
 		(property "Description" "Fuse"
 			(at 131.826 31.496 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Littelfuse"
+			(at 131.826 31.496 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "01530007Z"
+			(at 131.826 31.496 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1523,7 +1631,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
+		(property "Datasheet" "~"
 			(at 231.902 17.272 0)
 			(effects
 				(font
@@ -1534,6 +1642,24 @@
 		)
 		(property "Description" "Fuse"
 			(at 231.902 17.272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Littelfuse"
+			(at 231.902 17.272 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "01530007Z"
+			(at 231.902 17.272 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1600,6 +1726,24 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x01, this symbol is compatible with counter-clockwise, top-bottom and odd-even numbering schemes., script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 240.792 17.272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Molex"
+			(at 240.792 17.272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0039310028"
 			(at 240.792 17.272 0)
 			(effects
 				(font
@@ -1675,6 +1819,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFG" "Molex"
+			(at 241.808 62.992 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0039310028"
+			(at 241.808 62.992 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "31ee2c14-287e-4b36-9fa3-ff3bdc576093")
 		)
@@ -1724,7 +1886,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
+		(property "Datasheet" "~"
 			(at 232.664 33.02 0)
 			(effects
 				(font
@@ -1735,6 +1897,24 @@
 		)
 		(property "Description" "Fuse"
 			(at 232.664 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Littelfuse"
+			(at 232.664 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "01530007Z"
+			(at 232.664 33.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1791,7 +1971,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
+		(property "Datasheet" "~"
 			(at 231.394 49.784 0)
 			(effects
 				(font
@@ -1802,6 +1982,24 @@
 		)
 		(property "Description" "Fuse"
 			(at 231.394 49.784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Littelfuse"
+			(at 231.394 49.784 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "01530007Z"
+			(at 231.394 49.784 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1858,7 +2056,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
+		(property "Datasheet" "~"
 			(at 232.918 62.992 0)
 			(effects
 				(font
@@ -1869,6 +2067,24 @@
 		)
 		(property "Description" "Fuse"
 			(at 232.918 62.992 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Littelfuse"
+			(at 232.918 62.992 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "01530007Z"
+			(at 232.918 62.992 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1943,6 +2159,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFG" "Molex"
+			(at 157.988 140.208 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0039310028"
+			(at 157.988 140.208 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4f3ac3d7-6a06-4630-a076-6226e3e631b8")
 		)
@@ -1992,7 +2226,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
+		(property "Datasheet" "~"
 			(at 180.975 68.58 0)
 			(effects
 				(font
@@ -2003,6 +2237,24 @@
 		)
 		(property "Description" "Fuse"
 			(at 180.975 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Littelfuse"
+			(at 180.975 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "01530007Z"
+			(at 180.975 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2077,6 +2329,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFG" "Molex"
+			(at 173.228 140.208 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0039310028"
+			(at 173.228 140.208 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "52a2127c-ab69-4b59-8409-0c0decab1b4e")
 		)
@@ -2136,6 +2406,24 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x01, this symbol is compatible with counter-clockwise, top-bottom and odd-even numbering schemes., script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 144.526 140.208 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Molex"
+			(at 144.526 140.208 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0039310028"
 			(at 144.526 140.208 0)
 			(effects
 				(font
@@ -2325,7 +2613,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
+		(property "Datasheet" "~"
 			(at 50.8 71.755 0)
 			(effects
 				(font
@@ -2336,6 +2624,24 @@
 		)
 		(property "Description" "Fuse"
 			(at 50.8 71.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Littelfuse"
+			(at 50.8 71.755 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "01530007Z"
+			(at 50.8 71.755 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2458,7 +2764,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
+		(property "Datasheet" "~"
 			(at 70.866 137.414 0)
 			(effects
 				(font
@@ -2469,6 +2775,24 @@
 		)
 		(property "Description" "Fuse"
 			(at 70.866 137.414 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Littelfuse"
+			(at 70.866 137.414 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "01530007Z"
+			(at 70.866 137.414 90)
 			(effects
 				(font
 					(size 1.27 1.27)

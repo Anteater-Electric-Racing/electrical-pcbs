@@ -6566,7 +6566,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 186.944 147.066 0)
 			(effects
 				(font
@@ -6652,7 +6652,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-6GEYJ152V/83022"
+		(property "Datasheet" "~"
 			(at 42.672 170.688 0)
 			(effects
 				(font
@@ -6738,7 +6738,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-6GEYJ152V/83022"
+		(property "Datasheet" "~"
 			(at 92.456 147.32 0)
 			(effects
 				(font
@@ -6826,7 +6826,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/CC0805KRX7R9BB104/302874"
+		(property "Datasheet" "~"
 			(at 247.65 87.376 0)
 			(effects
 				(font
@@ -6912,7 +6912,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-6GEYJ152V/83022"
+		(property "Datasheet" "~"
 			(at 91.186 177.038 0)
 			(effects
 				(font
@@ -7147,6 +7147,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFG" "Molex"
+			(at 110.998 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "39-30-6127"
+			(at 110.998 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "fa084185-25a1-4587-b8e5-553126815058")
 		)
@@ -7244,6 +7262,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFG" "Molex"
+			(at 82.804 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0039310028"
+			(at 82.804 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ee0ee7fc-3080-47eb-9069-d09172b6fc29")
 		)
@@ -7294,7 +7330,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 243.332 105.918 0)
 			(effects
 				(font
@@ -7380,7 +7416,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 248.666 127.762 0)
 			(effects
 				(font
@@ -7466,7 +7502,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 250.444 146.05 0)
 			(effects
 				(font
@@ -7554,7 +7590,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/CC0805KRX7R9BB104/302874"
+		(property "Datasheet" "~"
 			(at 252.476 131.572 0)
 			(effects
 				(font
@@ -7623,7 +7659,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "1uF"
 			(at 105.156 183.134 0)
 			(effects
 				(font
@@ -7641,7 +7677,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B105KBFNNNE/3886687"
+		(property "Datasheet" "~"
 			(at 104.394 180.848 0)
 			(effects
 				(font
@@ -7710,7 +7746,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10n"
+		(property "Value" "10nF"
 			(at 197.104 153.162 0)
 			(do_not_autoplace yes)
 			(effects
@@ -7729,7 +7765,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B103KBANNNC/3886673"
+		(property "Datasheet" "~"
 			(at 196.342 150.876 0)
 			(effects
 				(font
@@ -7817,7 +7853,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/CC0805KRX7R9BB104/302874"
+		(property "Datasheet" "~"
 			(at 247.65 110.236 0)
 			(effects
 				(font
@@ -7905,7 +7941,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/CC0805KRX7R9BB104/302874"
+		(property "Datasheet" "~"
 			(at 254.254 149.86 0)
 			(effects
 				(font
@@ -7974,7 +8010,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "1uF"
 			(at 56.642 176.784 0)
 			(effects
 				(font
@@ -7992,7 +8028,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B105KBFNNNE/3886687"
+		(property "Datasheet" "~"
 			(at 55.88 174.498 0)
 			(effects
 				(font
@@ -8061,7 +8097,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "1uF"
 			(at 56.388 150.876 0)
 			(effects
 				(font
@@ -8079,7 +8115,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B105KBFNNNE/3886687"
+		(property "Datasheet" "~"
 			(at 55.626 148.59 0)
 			(effects
 				(font
@@ -8174,6 +8210,24 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x01, this symbol is compatible with counter-clockwise, top-bottom and odd-even numbering schemes., script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 70.612 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Molex"
+			(at 70.612 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0039310028"
 			(at 70.612 115.57 0)
 			(effects
 				(font
@@ -8328,6 +8382,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFG" "Molex"
+			(at 181.61 52.324 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "39306207"
+			(at 181.61 52.324 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "15"
 			(uuid "887404d9-7bd6-4906-827b-d2de8ccd51ee")
 		)
@@ -8454,6 +8526,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFG" "Molex "
+			(at 52.07 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0039281143"
+			(at 52.07 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "5bbf23ef-dce0-43c1-a9d2-605aadd52be1")
 		)
@@ -8523,7 +8613,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "1uF"
 			(at 106.426 153.416 0)
 			(effects
 				(font
@@ -8541,7 +8631,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B105KBFNNNE/3886687"
+		(property "Datasheet" "~"
 			(at 105.664 151.13 0)
 			(effects
 				(font
@@ -8627,7 +8717,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-6GEYJ152V/83022"
+		(property "Datasheet" "~"
 			(at 42.418 144.78 0)
 			(effects
 				(font
@@ -8713,7 +8803,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 243.332 83.058 0)
 			(effects
 				(font

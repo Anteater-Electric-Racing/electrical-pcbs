@@ -2314,6 +2314,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFG" "Murata"
+			(at 121.412 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GRM21BR61A226ME44L"
+			(at 121.412 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "de5ebf6d-1aad-41f9-8423-dc4e17997030")
 		)
@@ -2390,6 +2408,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFG" "Murata"
+			(at 221.742 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GRM21BR61A226ME44L"
+			(at 221.742 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c7e8a939-605e-4d53-92f2-5233f7187d16")
 		)
@@ -2456,6 +2492,24 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 214.122 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Stackpole Electronics Inc"
+			(at 214.122 46.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RNCF0805DKE1K05"
+			(at 214.122 46.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2673,6 +2727,24 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "MFG" "TDK-Lambda"
+			(at 134.112 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "I7A24080A033V-0C3-R"
+			(at 134.112 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -2918,6 +2990,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFG" "Wurth Elektronik"
+			(at 44.196 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "614004135023"
+			(at 44.196 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "0e5116fd-bf17-48ea-873d-e049d7dfdd1e")
 		)
@@ -2963,7 +3053,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "1uF"
 			(at 212.09 107.696 0)
 			(effects
 				(font
@@ -2981,7 +3071,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B105KBFNNNE/3886687"
+		(property "Datasheet" "~"
 			(at 211.328 105.41 0)
 			(effects
 				(font
@@ -3050,7 +3140,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "1uF"
 			(at 240.538 48.26 0)
 			(effects
 				(font
@@ -3068,7 +3158,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B105KBFNNNE/3886687"
+		(property "Datasheet" "~"
 			(at 239.776 45.974 0)
 			(effects
 				(font
@@ -3239,6 +3329,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFG" "Panasonic Electronic Components"
+			(at 85.09 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "16SVPK330M"
+			(at 85.09 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1502a1c6-f171-47f3-9514-30c9d3997eae")
 		)
@@ -3300,6 +3408,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 232.156 46.482 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Panasonic Electronic Components"
+			(at 232.156 46.482 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "16SVPK330M"
 			(at 232.156 46.482 0)
 			(effects
 				(font
@@ -3377,6 +3503,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFG" "Murata"
+			(at 92.71 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GRM21BR61A226ME44L"
+			(at 92.71 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d4e99189-7eee-4702-b8b8-5716725279aa")
 		)
@@ -3426,7 +3570,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
+		(property "Datasheet" "~"
 			(at 72.39 99.06 0)
 			(effects
 				(font
@@ -3437,6 +3581,24 @@
 		)
 		(property "Description" "Fuse"
 			(at 72.39 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Littelfuse"
+			(at 72.39 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "01530007Z"
+			(at 72.39 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3477,7 +3639,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "10uF"
 			(at 185.42 107.696 0)
 			(effects
 				(font
@@ -3495,7 +3657,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B105KBFNNNE/3886687"
+		(property "Datasheet" "~"
 			(at 184.658 105.41 0)
 			(effects
 				(font
@@ -3801,6 +3963,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFG" "Murata"
+			(at 173.99 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GRM21BR61A226ME44L"
+			(at 173.99 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ea3b1c29-29a3-43aa-88cb-87e940e62c89")
 		)
@@ -3936,6 +4116,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFG" "Panasonic Electronic Components"
+			(at 192.532 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "16SVPK330M"
+			(at 192.532 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "285e90f1-78f2-474d-a2d8-280f24a4ac2f")
 		)
@@ -3985,7 +4183,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p41.pdf"
+		(property "Datasheet" "~"
 			(at 259.08 39.37 0)
 			(effects
 				(font
@@ -3996,6 +4194,24 @@
 		)
 		(property "Description" "Fuse"
 			(at 259.08 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Littelfuse"
+			(at 259.08 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "01530007Z"
+			(at 259.08 39.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4036,7 +4252,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "1uF"
 			(at 106.68 45.72 0)
 			(effects
 				(font
@@ -4054,7 +4270,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B105KBFNNNE/3886687"
+		(property "Datasheet" "~"
 			(at 105.918 43.434 0)
 			(effects
 				(font
@@ -4226,6 +4442,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFG" "Murata Power Solutions"
+			(at 106.426 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "OKX-T/5-D12N-C"
+			(at 106.426 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "7edf54cc-6840-4018-9865-113d3e6cf554")
 		)
@@ -4296,6 +4530,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 113.792 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Panasonic Electronic Components"
+			(at 113.792 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "16SVPK330M"
 			(at 113.792 43.18 0)
 			(effects
 				(font
