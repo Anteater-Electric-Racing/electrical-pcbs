@@ -20,4 +20,5 @@
   (lib (name "3pMolexMinifit")(type "KiCad")(uri "${KIPRJMOD}/library/symbol/3pMolexMinifit.kicad_sym")(options "")(descr ""))
   (lib (name "12pRminifit")(type "KiCad")(uri "${KIPRJMOD}/library/symbol/12pRminifit.kicad_sym")(options "")(descr ""))
   (lib (name "5x20fuseblock")(type "KiCad")(uri "${KIPRJMOD}/library/symbol/5x20fuseblock.kicad_sym")(options "")(descr ""))
+  (lib (name "FuseHolder")(type "KiCad")(uri "${KIPRJMOD}/library/symbol/FuseHolder.kicad_sym")(options "")(descr ""))
 )

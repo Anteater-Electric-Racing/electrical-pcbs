@@ -5828,6 +5828,220 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "FuseHolder:01220088Z"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "F"
+				(at 5.08 3.175 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "01220088Z"
+				(at 5.08 -3.175 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "footprints:FuseHolder"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "01220088Z"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MFG" "Littelfuse Inc. "
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "01220088Z "
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "01220088Z"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "FUSE_122SERIES_BOWED_LTF"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "01220088Z_1_1"
+				(arc
+					(start 2.54 0)
+					(mid 3.81 1.2645)
+					(end 5.08 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 7.62 0)
+					(mid 6.35 -1.2645)
+					(end 5.08 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 0 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "01220088Z_1_2"
+				(arc
+					(start 0 7.62)
+					(mid 1.2645 6.35)
+					(end 0 5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 2.54)
+					(mid -1.2645 3.81)
+					(end 0 5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 0 10.16 270)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Interface_CAN_LIN:SN65HVD230"
 			(pin_names
 				(offset 1.016)
@@ -9313,6 +9527,18 @@
 		(uuid "0d28e1e1-60f5-4b97-90cd-2f034aef392b")
 	)
 	(junction
+		(at 22.098 141.224)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0e01b92f-5811-4b7d-8ab8-1a98d89527be")
+	)
+	(junction
+		(at 21.336 171.704)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0f8639ea-9450-45ea-9c9a-587451915ea7")
+	)
+	(junction
 		(at 334.01 166.37)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9347,6 +9573,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2180afcf-f6a3-4d51-bf79-9a5a39e96306")
+	)
+	(junction
+		(at 24.13 98.806)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2389ba39-5dbb-4c92-813c-56da6f5e3b48")
 	)
 	(junction
 		(at 379.73 179.07)
@@ -9487,6 +9719,12 @@
 		(uuid "6ce9aa8f-08d5-437a-b036-6108307d0e2a")
 	)
 	(junction
+		(at 34.29 168.148)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6f0ce84d-0a20-461f-8ed6-522db2d77f85")
+	)
+	(junction
 		(at 453.644 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9565,6 +9803,18 @@
 		(uuid "96ba5a1b-a9d0-46a0-b217-b9de439aac07")
 	)
 	(junction
+		(at 23.114 130.556)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a1de9763-455d-4282-a427-fa01368bc1b6")
+	)
+	(junction
+		(at 35.814 119.634)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "adea92b7-d100-40bc-9074-3d494cdad03b")
+	)
+	(junction
 		(at 55.88 84.836)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9593,6 +9843,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c195b883-f18f-4e35-9d89-eb4bf5f2bdd3")
+	)
+	(junction
+		(at 38.354 98.806)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c1c721dc-70f8-4c35-a165-f76f2925f79f")
 	)
 	(junction
 		(at 364.49 179.07)
@@ -9649,6 +9905,12 @@
 		(uuid "e933d266-be84-4769-85b0-2e8b9ad983a8")
 	)
 	(junction
+		(at 35.814 108.712)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ee81e9e1-67ad-4790-827a-c3b175f783a8")
+	)
+	(junction
 		(at 428.244 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9665,6 +9927,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f4bf886b-bc2e-4270-b6f6-c72692fc7dbf")
+	)
+	(junction
+		(at 36.83 141.478)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fa56e3a1-d67d-4a8a-a3e8-cd7cc484b4f2")
 	)
 	(no_connect
 		(at 196.342 110.998)
@@ -9890,6 +10158,16 @@
 	)
 	(wire
 		(pts
+			(xy 35.814 108.712) (xy 35.814 98.806)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f11eec1-3053-4b3b-8459-78611a9e87df")
+	)
+	(wire
+		(pts
 			(xy 27.178 193.548) (xy 27.686 193.548)
 		)
 		(stroke
@@ -10000,6 +10278,16 @@
 	)
 	(wire
 		(pts
+			(xy 24.13 98.806) (xy 25.908 98.806)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1821fb24-73dc-4b12-b0df-5165f53ad0f4")
+	)
+	(wire
+		(pts
 			(xy 81.026 131.064) (xy 80.01 131.064)
 		)
 		(stroke
@@ -10017,6 +10305,16 @@
 			(type default)
 		)
 		(uuid "197bb400-0aa4-465a-97f0-d00ccb116cda")
+	)
+	(wire
+		(pts
+			(xy 22.098 141.224) (xy 22.098 151.384)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a5e458a-2425-4b43-95de-117c4b8598fe")
 	)
 	(wire
 		(pts
@@ -10080,6 +10378,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.354 98.806) (xy 48.514 98.806)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22d6c1fb-8c33-4609-b786-af0efef1b27a")
+	)
+	(wire
+		(pts
 			(xy 379.73 179.07) (xy 379.73 184.15)
 		)
 		(stroke
@@ -10127,6 +10435,16 @@
 			(type default)
 		)
 		(uuid "264f6158-6700-4586-81a2-4a672feb2294")
+	)
+	(wire
+		(pts
+			(xy 29.718 108.712) (xy 35.814 108.712)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "272dcd28-502d-4cd6-b1b5-b169bd197899")
 	)
 	(wire
 		(pts
@@ -10270,6 +10588,16 @@
 	)
 	(wire
 		(pts
+			(xy 24.13 168.148) (xy 34.29 168.148)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f3cd926-868f-4f74-ae9d-ef89ddce09db")
+	)
+	(wire
+		(pts
 			(xy 35.306 193.548) (xy 37.084 193.548)
 		)
 		(stroke
@@ -10350,7 +10678,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.844 98.806) (xy 25.908 98.806)
+			(xy 21.844 98.806) (xy 24.13 98.806)
 		)
 		(stroke
 			(width 0)
@@ -10470,6 +10798,16 @@
 	)
 	(wire
 		(pts
+			(xy 35.814 108.712) (xy 35.814 119.634)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "415ab7cf-fae3-4275-b50d-9978f56265c7")
+	)
+	(wire
+		(pts
 			(xy 361.442 115.57) (xy 362.966 115.57)
 		)
 		(stroke
@@ -10507,6 +10845,16 @@
 			(type default)
 		)
 		(uuid "46f82702-d31c-486a-b716-2e14caff6f7e")
+	)
+	(wire
+		(pts
+			(xy 36.83 141.478) (xy 36.83 171.704)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47052ae4-fd7a-4c62-8f86-36e3cf79457a")
 	)
 	(wire
 		(pts
@@ -10820,7 +11168,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 141.224) (xy 34.29 171.704)
+			(xy 34.29 141.224) (xy 34.29 168.148)
 		)
 		(stroke
 			(width 0)
@@ -10840,7 +11188,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.844 130.556) (xy 24.384 130.556)
+			(xy 21.844 130.556) (xy 23.114 130.556)
 		)
 		(stroke
 			(width 0)
@@ -10960,7 +11308,7 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 141.224) (xy 24.384 141.224)
+			(xy 20.32 141.224) (xy 22.098 141.224)
 		)
 		(stroke
 			(width 0)
@@ -11310,6 +11658,16 @@
 	)
 	(wire
 		(pts
+			(xy 34.29 168.148) (xy 34.29 171.704)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95757cd5-eee1-4d5f-8e25-13fa93c99f67")
+	)
+	(wire
+		(pts
 			(xy 361.442 107.696) (xy 361.442 115.57)
 		)
 		(stroke
@@ -11330,7 +11688,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 141.224) (xy 36.83 171.704)
+			(xy 36.83 141.224) (xy 36.83 141.478)
 		)
 		(stroke
 			(width 0)
@@ -11570,6 +11928,16 @@
 	)
 	(wire
 		(pts
+			(xy 22.098 141.224) (xy 24.384 141.224)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a958f794-4789-441c-ab9c-9e51939a82e9")
+	)
+	(wire
+		(pts
 			(xy 440.69 181.356) (xy 440.69 173.99)
 		)
 		(stroke
@@ -11587,6 +11955,16 @@
 			(type default)
 		)
 		(uuid "aabc9949-b0cb-41fa-bf07-ce28f6397c53")
+	)
+	(wire
+		(pts
+			(xy 23.114 120.396) (xy 23.114 130.556)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab4d78c8-d4c4-4b8a-947d-bef5cb962a03")
 	)
 	(wire
 		(pts
@@ -11637,6 +12015,16 @@
 			(type default)
 		)
 		(uuid "affda661-1cdf-4d42-b801-30a94a5de13d")
+	)
+	(wire
+		(pts
+			(xy 21.336 171.704) (xy 20.574 171.704)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0f8bfee-8844-498a-904f-7a8d730e90cb")
 	)
 	(wire
 		(pts
@@ -11740,7 +12128,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 171.704) (xy 20.574 171.704)
+			(xy 22.86 171.704) (xy 21.336 171.704)
 		)
 		(stroke
 			(width 0)
@@ -11757,6 +12145,16 @@
 			(type default)
 		)
 		(uuid "b92bf5b2-ddac-41c5-a88d-bdcd40298042")
+	)
+	(wire
+		(pts
+			(xy 23.114 130.556) (xy 24.384 130.556)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9727a1c-25d1-4a68-8a4b-f3508ca63836")
 	)
 	(wire
 		(pts
@@ -11870,6 +12268,16 @@
 	)
 	(wire
 		(pts
+			(xy 35.814 119.634) (xy 35.814 129.286)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c05f0cff-434a-4b04-a24c-ee0b818e4772")
+	)
+	(wire
+		(pts
 			(xy 244.348 91.44) (xy 255.27 91.44)
 		)
 		(stroke
@@ -11927,6 +12335,16 @@
 			(type default)
 		)
 		(uuid "c613d984-08c5-4b08-9ef6-bab90a0b0b42")
+	)
+	(wire
+		(pts
+			(xy 29.718 119.634) (xy 35.814 119.634)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6a00786-edfc-4956-af07-2808e49c537a")
 	)
 	(wire
 		(pts
@@ -12040,6 +12458,16 @@
 	)
 	(wire
 		(pts
+			(xy 24.13 108.966) (xy 24.13 98.806)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d507fc21-a09e-449e-b212-100a06f463b1")
+	)
+	(wire
+		(pts
 			(xy 200.66 108.458) (xy 196.342 108.458)
 		)
 		(stroke
@@ -12057,6 +12485,16 @@
 			(type default)
 		)
 		(uuid "d69a005c-7e84-419d-b729-0f41db5f10ff")
+	)
+	(wire
+		(pts
+			(xy 46.99 141.478) (xy 36.83 141.478)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6d2ce43-1d7d-41e9-af21-f923cc7755e5")
 	)
 	(wire
 		(pts
@@ -12200,6 +12638,16 @@
 	)
 	(wire
 		(pts
+			(xy 21.336 161.544) (xy 21.336 171.704)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e94ae325-dc4e-4707-a762-b2c606f03a36")
+	)
+	(wire
+		(pts
 			(xy 379.73 161.29) (xy 379.73 179.07)
 		)
 		(stroke
@@ -12250,7 +12698,17 @@
 	)
 	(wire
 		(pts
-			(xy 35.814 98.806) (xy 35.814 129.286)
+			(xy 23.114 130.556) (xy 23.114 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edc4fefd-94ba-4c6b-9f1a-fef593dd4cb7")
+	)
+	(wire
+		(pts
+			(xy 29.718 108.712) (xy 29.718 108.966)
 		)
 		(stroke
 			(width 0)
@@ -12277,6 +12735,16 @@
 			(type default)
 		)
 		(uuid "f001e007-edda-4928-8846-33044c47342b")
+	)
+	(wire
+		(pts
+			(xy 29.718 119.126) (xy 29.718 119.634)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f02e6841-18b0-4a32-b896-0d0946d03bb9")
 	)
 	(wire
 		(pts
@@ -15174,6 +15642,96 @@
 				(font
 					(size 1.27 1.27)
 					(italic yes)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FuseHolder:01220088Z")
+		(at 22.098 151.384 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0025c814-1e02-49a6-be9e-78d422887143")
+		(property "Reference" "F16"
+			(at 24.892 145.0339 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "01220088Z"
+			(at 24.892 147.5739 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "footprints:FuseHolder"
+			(at 22.098 151.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "01220088Z"
+			(at 22.098 151.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 22.098 151.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Littelfuse Inc. "
+			(at 22.098 151.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "01220088Z "
+			(at 22.098 151.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4db0705f-c157-43d4-85c9-2c70248d8ea4")
+		)
+		(pin "1"
+			(uuid "7362990a-2ef4-47ca-a56e-aaec08d1ba2e")
+		)
+		(instances
+			(project "PCC"
+				(path "/cd50b4df-2796-417a-bb78-7e5b371bc4af"
+					(reference "F16")
+					(unit 1)
 				)
 			)
 		)
@@ -18701,6 +19259,94 @@
 		)
 	)
 	(symbol
+		(lib_id "FuseHolder:01220088Z")
+		(at 46.99 141.478 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "33a8ae7b-63ef-417d-bfed-017f73b10c9e")
+		(property "Reference" "F17"
+			(at 41.91 134.874 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "01220088Z"
+			(at 41.91 137.414 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "footprints:FuseHolder"
+			(at 46.99 141.478 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "01220088Z"
+			(at 46.99 141.478 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 46.99 141.478 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Littelfuse Inc. "
+			(at 46.99 141.478 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "01220088Z "
+			(at 46.99 141.478 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4b868eee-4070-4dd7-897f-41f2149ead94")
+		)
+		(pin "1"
+			(uuid "6c71a44a-8f68-413b-b4e7-4a746175b9b0")
+		)
+		(instances
+			(project "PCC"
+				(path "/cd50b4df-2796-417a-bb78-7e5b371bc4af"
+					(reference "F17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:-3V3")
 		(at 255.27 92.456 0)
 		(mirror x)
@@ -21403,6 +22049,94 @@
 		)
 	)
 	(symbol
+		(lib_id "FuseHolder:01220088Z")
+		(at 34.29 168.148 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "580004fd-7589-4c2e-8875-bc77340c22e2")
+		(property "Reference" "F18"
+			(at 29.21 162.052 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "01220088Z"
+			(at 29.21 164.592 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "footprints:FuseHolder"
+			(at 34.29 168.148 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "01220088Z"
+			(at 34.29 168.148 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 34.29 168.148 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Littelfuse Inc. "
+			(at 34.29 168.148 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "01220088Z "
+			(at 34.29 168.148 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "85c2517b-e7f1-4ee5-9848-ac8a02d38b18")
+		)
+		(pin "1"
+			(uuid "90f2d430-d203-4c6a-8c4c-517a422fd63f")
+		)
+		(instances
+			(project "PCC"
+				(path "/cd50b4df-2796-417a-bb78-7e5b371bc4af"
+					(reference "F18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 437.134 181.356 90)
 		(unit 1)
@@ -21793,6 +22527,94 @@
 		)
 	)
 	(symbol
+		(lib_id "FuseHolder:01220088Z")
+		(at 38.354 98.806 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5fdaacfb-1208-4e20-be53-9caba2c47597")
+		(property "Reference" "F12"
+			(at 43.434 92.71 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "01220088Z"
+			(at 43.434 95.25 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "footprints:FuseHolder"
+			(at 38.354 98.806 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "01220088Z"
+			(at 38.354 98.806 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 38.354 98.806 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Littelfuse Inc. "
+			(at 38.354 98.806 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "01220088Z "
+			(at 38.354 98.806 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "964f6f06-5cc5-46fd-9291-051cccee54b3")
+		)
+		(pin "1"
+			(uuid "eada0433-4428-4bec-8144-01d7b3590ff3")
+		)
+		(instances
+			(project ""
+				(path "/cd50b4df-2796-417a-bb78-7e5b371bc4af"
+					(reference "F12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Power_Protection:ESDA5V3L")
 		(at 279.4 128.27 0)
 		(unit 1)
@@ -21879,6 +22701,96 @@
 			(project ""
 				(path "/cd50b4df-2796-417a-bb78-7e5b371bc4af"
 					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FuseHolder:01220088Z")
+		(at 29.718 119.126 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6435ebd2-66e6-4817-85b2-bbe68f7d9481")
+		(property "Reference" "F15"
+			(at 32.512 112.7759 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "01220088Z"
+			(at 32.512 115.3159 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "footprints:FuseHolder"
+			(at 29.718 119.126 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "01220088Z"
+			(at 29.718 119.126 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 29.718 119.126 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Littelfuse Inc. "
+			(at 29.718 119.126 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "01220088Z "
+			(at 29.718 119.126 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "69d01251-5821-4b1c-ae2e-ef4cf90d5c04")
+		)
+		(pin "1"
+			(uuid "4d3d4361-b558-4814-9d17-8b0a7733f405")
+		)
+		(instances
+			(project "PCC"
+				(path "/cd50b4df-2796-417a-bb78-7e5b371bc4af"
+					(reference "F15")
 					(unit 1)
 				)
 			)
@@ -26044,6 +26956,96 @@
 		)
 	)
 	(symbol
+		(lib_id "FuseHolder:01220088Z")
+		(at 23.114 130.556 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9fb36ac8-2d3a-45e2-a01f-c563efe7f7fe")
+		(property "Reference" "F13"
+			(at 25.908 124.2059 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "01220088Z"
+			(at 25.908 126.7459 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "footprints:FuseHolder"
+			(at 23.114 130.556 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "01220088Z"
+			(at 23.114 130.556 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 23.114 130.556 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Littelfuse Inc. "
+			(at 23.114 130.556 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "01220088Z "
+			(at 23.114 130.556 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2ade4da5-fcc5-4457-b4f0-3c386cd5ec1c")
+		)
+		(pin "1"
+			(uuid "3479e976-00a2-4f84-8f62-e42c45999b49")
+		)
+		(instances
+			(project "PCC"
+				(path "/cd50b4df-2796-417a-bb78-7e5b371bc4af"
+					(reference "F13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "LM331_1")
 		(lib_id "fsae:LM331")
 		(at 393.7 102.87 0)
@@ -26143,6 +27145,96 @@
 			(project "pcc_v0.2"
 				(path "/cd50b4df-2796-417a-bb78-7e5b371bc4af"
 					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FuseHolder:01220088Z")
+		(at 21.336 171.704 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a28ca9c7-4a21-4bd8-aef2-7501c321961c")
+		(property "Reference" "F19"
+			(at 24.13 165.3539 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "01220088Z"
+			(at 24.13 167.8939 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "footprints:FuseHolder"
+			(at 21.336 171.704 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "01220088Z"
+			(at 21.336 171.704 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 21.336 171.704 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Littelfuse Inc. "
+			(at 21.336 171.704 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "01220088Z "
+			(at 21.336 171.704 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cfe6878d-46f8-4613-a082-070b685504e9")
+		)
+		(pin "1"
+			(uuid "6aae1d8f-c288-41da-a73d-e5d33baf82a8")
+		)
+		(instances
+			(project "PCC"
+				(path "/cd50b4df-2796-417a-bb78-7e5b371bc4af"
+					(reference "F19")
 					(unit 1)
 				)
 			)
@@ -28197,6 +29289,96 @@
 			(project "pcc_v0.2"
 				(path "/cd50b4df-2796-417a-bb78-7e5b371bc4af"
 					(reference "F5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FuseHolder:01220088Z")
+		(at 24.13 108.966 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c09ff3f9-28c9-4829-bd92-dbb7a95ab7a4")
+		(property "Reference" "F14"
+			(at 26.162 102.6159 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "01220088Z"
+			(at 26.162 105.1559 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "footprints:FuseHolder"
+			(at 24.13 108.966 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "01220088Z"
+			(at 24.13 108.966 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 24.13 108.966 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Littelfuse Inc. "
+			(at 24.13 108.966 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "01220088Z "
+			(at 24.13 108.966 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "517d62fe-0af1-4201-8db8-df9e45fe9111")
+		)
+		(pin "1"
+			(uuid "75e0f26c-a596-4765-8270-f16502121665")
+		)
+		(instances
+			(project "PCC"
+				(path "/cd50b4df-2796-417a-bb78-7e5b371bc4af"
+					(reference "F14")
 					(unit 1)
 				)
 			)
