@@ -4721,7 +4721,7 @@
 		(fields_autoplaced yes)
 		(uuid "954e5aed-7e3f-42df-b5a9-ba676c91b5a4")
 		(property "Reference" "R9"
-			(at 113.538 140.2079 0)
+			(at 113.03 140.2079 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4729,8 +4729,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "120r"
-			(at 113.538 142.7479 0)
+		(property "Value" "60r"
+			(at 113.03 142.7479 0)
 			(effects
 				(font
 					(size 1.27 1.27)
