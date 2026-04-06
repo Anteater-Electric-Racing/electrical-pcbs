@@ -4525,7 +4525,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG" "Panasonic Electronic Components"
+		(property "MFG" "TDK "
 			(at 113.792 43.18 0)
 			(effects
 				(font
@@ -4534,7 +4534,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "16SVPK330M"
+		(property "MPN" "B41866C6337M000 "
 			(at 113.792 43.18 0)
 			(effects
 				(font
