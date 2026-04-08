@@ -1357,7 +1357,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 231.394 49.784 90)
+		(at 231.394 49.784 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1365,7 +1365,7 @@
 		(dnp no)
 		(uuid "46e618cf-6268-4b32-87d7-894c7710436e")
 		(property "Reference" "F7"
-			(at 231.394 47.498 90)
+			(at 231.394 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1373,7 +1373,7 @@
 			)
 		)
 		(property "Value" "5A MAX"
-			(at 231.394 51.562 90)
+			(at 231.394 48.006 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1381,7 +1381,7 @@
 			)
 		)
 		(property "Footprint" "0footprints:FUSE_3522-2"
-			(at 231.394 51.562 90)
+			(at 231.394 48.006 90)
 			(effects
 				(font
 					(size 1.27 1.27)
