@@ -500,4 +500,26 @@
 			(xyz -90 -0 -180)
 		)
 	)
+	(model "${KIPRJMOD}/Library/STEPS/miniFix2x1_female.stp"
+		(offset
+			(xyz 0 -2.5 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -180)
+		)
+	)
+	(model "${KIPRJMOD}/Library/STEPS/miniFix2x1_male.stp"
+		(offset
+			(xyz 0 2 13)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
 )

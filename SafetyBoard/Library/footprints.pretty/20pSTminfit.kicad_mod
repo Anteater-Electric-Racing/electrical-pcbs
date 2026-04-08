@@ -424,4 +424,15 @@
 			(xyz -90 -0 -0)
 		)
 	)
+	(model "${KIPRJMOD}/Library/STEPS/Molex Mini Fit 2x10 male/039012200.stp"
+		(offset
+			(xyz -19 -2.5 13)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -180)
+		)
+	)
 )

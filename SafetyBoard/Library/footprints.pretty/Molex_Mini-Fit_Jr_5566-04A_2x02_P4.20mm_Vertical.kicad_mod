@@ -670,4 +670,26 @@
 			(xyz -90 -0 -180)
 		)
 	)
+	(model "${KIPRJMOD}/Library/STEPS/miniFix2x2_female.stp"
+		(offset
+			(xyz 2 -2.5 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -180)
+		)
+	)
+	(model "${KIPRJMOD}/Library/STEPS/Molex 2x2 male/039012040.stp"
+		(offset
+			(xyz 2.5 2.5 13)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
 )
