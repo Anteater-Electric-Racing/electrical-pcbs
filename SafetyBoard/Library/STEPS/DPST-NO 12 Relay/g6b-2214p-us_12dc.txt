@@ -1,0 +1,13 @@
+﻿"Symbol";"Value";"Unit";
+"TraceParts.PartNumber";"10-16052011-064081";"";
+"REFERENCE";"G6B-2214P-US 12DC";"";
+"TraceParts.PartTitle";"PCB Relay (5A) – G6B";"";
+"TraceParts.InstanceId";"10-16052011-064081DN2L5FUNTC0QFGU0EE2YJZFJC";"";
+"DESIGN";"PCB Relay, Single-side stable, 5A, 12 DC";"";
+"TraceParts.PartStatus";"Published";"";
+"TraceParts.PartStatusId";"";"";
+"SUPPLIER";"OMRON";"";
+"TraceParts.PartVersion";"1.2.2";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartLanguage";"en";"";
+"TraceParts.ClassPath";"OMRON:10-16052011-064081";"";

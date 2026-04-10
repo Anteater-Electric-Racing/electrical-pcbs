@@ -510,7 +510,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../../../Users/senev/UC Irvine/SoE MAE EV-SPO - MZ/CAD/Harnessing CAD/LVE 4-7-26/SafetyBoard.step",
+      "step": "SafetyBoard.step",
       "svg": "",
       "vrml": ""
     },

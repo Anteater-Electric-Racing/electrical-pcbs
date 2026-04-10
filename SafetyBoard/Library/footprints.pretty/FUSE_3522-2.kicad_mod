@@ -218,8 +218,31 @@
 	)
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/Parts/step/FUSE_3522-2.step"
+		(hide yes)
 		(offset
 			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+	(model "${KIPRJMOD}/Library/STEPS/FUSE_3522-2.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+	(model "${KIPRJMOD}/Library/STEPS/3D_model_0287000_PXS-PXCN_ATO-ATOF.stp"
+		(offset
+			(xyz -7 -0.5 1)
 		)
 		(scale
 			(xyz 1 1 1)
