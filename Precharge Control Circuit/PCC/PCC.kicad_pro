@@ -225,8 +225,16 @@
           "drill": 0.0
         },
         {
+          "diameter": 0.7,
+          "drill": 0.4
+        },
+        {
           "diameter": 1.0,
-          "drill": 1.8
+          "drill": 0.6
+        },
+        {
+          "diameter": 2.0,
+          "drill": 1.7
         }
       ],
       "zones_allow_external_fillets": false
@@ -536,6 +544,27 @@
     },
     "net_colors": null,
     "netclass_assignments": {
+      "/FusedTS + (IMD)": [
+        "HV"
+      ],
+      "/FusedTS + (expansion)": [
+        "HV"
+      ],
+      "/FusedTS + (indicator)": [
+        "HV"
+      ],
+      "/FusedTS - (IMD)": [
+        "HV"
+      ],
+      "/FusedTS - (expansion)": [
+        "HV"
+      ],
+      "/FusedTS - (indicator)": [
+        "HV"
+      ],
+      "/FusedTS+ (EM)": [
+        "HV"
+      ],
       "/FusedTS+1": [
         "HV"
       ],
@@ -575,6 +604,9 @@
       "GNDS": [
         "precharge"
       ],
+      "HighVoltage+": [
+        "HV"
+      ],
       "IR+_12V": [
         "power"
       ],
@@ -602,10 +634,40 @@
       "Net-(DCDC2-PadP2_1)": [
         "HV"
       ],
+      "Net-(F1-Pad2)": [
+        "HV"
+      ],
       "Net-(F10-Pad2)": [
         "HV"
       ],
       "Net-(F11-Pad2)": [
+        "HV"
+      ],
+      "Net-(F13-Pad2)": [
+        "HV"
+      ],
+      "Net-(F14-Pad2)": [
+        "HV"
+      ],
+      "Net-(F15-Pad2)": [
+        "HV"
+      ],
+      "Net-(F16-Pad2)": [
+        "HV"
+      ],
+      "Net-(F17-Pad2)": [
+        "HV"
+      ],
+      "Net-(F18-Pad2)": [
+        "HV"
+      ],
+      "Net-(F19-Pad2)": [
+        "HV"
+      ],
+      "Net-(F3-Pad2)": [
+        "HV"
+      ],
+      "Net-(F4-Pad2)": [
         "HV"
       ],
       "Net-(F5-Pad1)": [
@@ -671,6 +733,9 @@
       "Net-(R28-Pad2)": [
         "precharge"
       ],
+      "Net-(R3-Pad1)": [
+        "HV"
+      ],
       "Net-(R3-Pad2)": [
         "HV"
       ],
@@ -695,8 +760,14 @@
       "TS+": [
         "HV"
       ],
+      "TS+ unfused": [
+        "HV"
+      ],
       "TS-": [
         "precharge"
+      ],
+      "TS- unfused": [
+        "HV"
       ],
       "TSMP+": [
         "power"
@@ -1004,6 +1075,10 @@
     [
       "cd50b4df-2796-417a-bb78-7e5b371bc4af",
       "Root"
+    ],
+    [
+      "f346416c-87a7-4cc0-9788-cbde600cebeb",
+      "RTM"
     ]
   ],
   "text_variables": {}
