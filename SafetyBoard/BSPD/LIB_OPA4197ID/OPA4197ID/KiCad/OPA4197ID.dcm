@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP OPA4197ID
+D 36-V, Precision, Rail-to-Rail Input Output, Low Offset Voltage Op Amp
+K
+F http://www.ti.com/lit/gpn/OPA4197
+$ENDCMP
+#
+#End Doc Library

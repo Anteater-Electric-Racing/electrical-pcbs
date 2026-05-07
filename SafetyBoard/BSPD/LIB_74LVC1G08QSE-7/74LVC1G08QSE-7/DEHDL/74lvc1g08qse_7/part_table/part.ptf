@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '74LVC1G08QSE_7'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Diodes Incorporated", "74LVC1G08QSE-7" (!) = "", "SOT65P210X110-5N", "SOT23 (5-Pin)", "621-74LVC1G08QSE-7", "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/74LVC1G08QSE-7?qs=P1JMDcb91o6ocAdFec%252BEzw%3D%3D", "Logic Gates Logic LVC 1 Gate SOT353 T&R 3K", "https://www.mouser.in/datasheet/2/115/DIOD_S_A0010762531_1-2543394.pdf", "1.1 mm"
+END_PART
+
+END.

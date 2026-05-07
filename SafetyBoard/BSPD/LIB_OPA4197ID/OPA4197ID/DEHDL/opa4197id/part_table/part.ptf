@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'OPA4197ID'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Texas Instruments", "OPA4197ID" (!) = "", "SOIC127P600X175-14N", "Small Outline Packages", "595-OPA4197ID", "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/OPA4197ID?qs=LuYMPh7GGMRrQsevs5FGag%3D%3D", "36-V, Precision, Rail-to-Rail Input Output, Low Offset Voltage Op Amp", "http://www.ti.com/lit/gpn/OPA4197", "1.75 mm"
+END_PART
+
+END.

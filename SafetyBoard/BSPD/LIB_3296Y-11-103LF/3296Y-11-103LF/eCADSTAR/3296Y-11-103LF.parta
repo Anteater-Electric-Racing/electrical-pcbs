@@ -1,0 +1,70 @@
+(Japanese_coding: sjis)
+(function "ECS_739433"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-02-17-16:21:15)
+    (utime 2023-03-07-16:10:32)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+        (port "3" (symbPinId 3) (portType INOUT))
+    )
+    (property "symbolName" "3296Y-11-103LF")
+)
+
+
+(pinAssign "ECS_739433"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-02-17-16:21:15)
+    (utime 2023-03-07-16:10:32)
+    (interface
+        (port "1" (symbPinId 1) (portName "CCW") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "WIPER") (portType INOUT))
+        (port "3" (symbPinId 3) (portName "CW") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_739433")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+                (port "3" (match "3"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "3296Y-11-103LF")
+)
+
+
+(part "3296Y-11-103LF"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-02-17-16:21:15)
+    (utime 2023-03-07-16:10:32)
+    (packageRef "3296Y-11-103LF")
+    (pinAssignRef "ECS_739433")
+    (interface
+        (port "1" (symbPinId 1) (portName "CCW") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "WIPER") (portType INOUT))
+        (port "3" (symbPinId 3) (portName "CW") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "VR")
+    (property "description" "Trimmer Resistors - Through Hole 3/8\" SQ CERMET 10K SEALED TRIM POT")
+    (property "Mouser_Part_Number" "652-3296Y-11-103LF")
+    (property "Mouser_Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bourns/3296Y-11-103LF?qs=%2FALxmKEvhOJ7jN9kookT6w%3D%3D")
+    (property "Manufacturer_Name" "Bourns")
+    (property "Manufacturer_Part_Number" "3296Y-11-103LF")
+    (property "Datasheet_Link" "https://www.bourns.com/pdfs/3296.pdf")
+    (property "compAreaTopHeight" 11.8)
+)
+
+

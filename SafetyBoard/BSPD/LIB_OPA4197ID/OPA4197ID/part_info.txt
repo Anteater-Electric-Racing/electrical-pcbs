@@ -1,0 +1,9 @@
+Manufacturer=Texas Instruments
+PartNumber=OPA4197ID
+PartCategory=Integrated Circuit
+PackageCategory=Small Outline Packages
+PinCount=14
+Version=1.1
+Released=2021-04-22 05:59:53
+Downloaded=2025-12-02 02:35:03
+3D=Y

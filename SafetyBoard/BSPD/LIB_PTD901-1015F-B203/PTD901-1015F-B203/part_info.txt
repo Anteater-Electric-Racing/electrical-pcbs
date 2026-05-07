@@ -1,0 +1,9 @@
+Manufacturer=Bourns
+PartNumber=PTD901-1015F-B203
+PartCategory=Variable Resistor
+PackageCategory=Other
+PinCount=3
+Version=1.3
+Released=2023-04-25 05:38:24
+Downloaded=2026-01-08 08:07:02
+3D=Y

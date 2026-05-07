@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '3296Y_11_103LF'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Bourns", "3296Y-11-103LF" (!) = "", "3296Y11103LF", "Other", "652-3296Y-11-103LF", "https://www.mouser.co.uk/ProductDetail/Bourns/3296Y-11-103LF?qs=%2FALxmKEvhOJ7jN9kookT6w%3D%3D", "Trimmer Resistors - Through Hole 3/8" SQ CERMET 10K SEALED TRIM POT", "https://www.bourns.com/pdfs/3296.pdf", "11.8 mm"
+END_PART
+
+END.

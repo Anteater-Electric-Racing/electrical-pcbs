@@ -1,0 +1,16 @@
+.39-30-6068 :1 ;Mini-Fit Jr. Vertical Header, 4.20mm Pitch, Dual Row, 6 Circuits, with Snap-in Plastic Peg PCB Lock, Tin, Natural
+"39-30-606Y"
+*STM J
+*NGS
+*PLB 1="1" 2="2" 3="3" 4="4" 5="5" 6="6"
+*MXP 8
+*DFN 39-30-6068
+~!Mouser Part Number (538-39-30-6068)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Molex/39-30-6068?qs=HghdDNGXMEQzYr6dBmgN%252BQ%3D%3D)
+~!Manufacturer_Name (Molex)
+~!Manufacturer_Part_Number (39-30-6068)
+~!Link Datasheet (https://www.molex.com/pdm_docs/sd/039306048_sd.pdf)
+~!Height (12.8mm)
+~!3D_Model (39-30-6068)
+"39-30-6068"
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 

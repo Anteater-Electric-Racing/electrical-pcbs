@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '39_30_6068'
+CLASS = IO
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Molex", "39-30-6068" (!) = "", "39-30-606Y", "Other", "538-39-30-6068", "https://www.mouser.co.uk/ProductDetail/Molex/39-30-6068?qs=HghdDNGXMEQzYr6dBmgN%252BQ%3D%3D", "Mini-Fit Jr. Vertical Header, 4.20mm Pitch, Dual Row, 6 Circuits, with Snap-in Plastic Peg PCB Lock, Tin, Natural", "https://www.molex.com/pdm_docs/sd/039306048_sd.pdf", "12.8 mm"
+END_PART
+
+END.

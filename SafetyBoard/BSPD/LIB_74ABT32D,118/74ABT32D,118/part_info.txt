@@ -1,0 +1,9 @@
+Manufacturer=Nexperia
+PartNumber=74ABT32D,118
+PartCategory=Integrated Circuit
+PackageCategory=Small Outline Packages
+PinCount=14
+Version=2.1
+Released=2019-11-04 20:21:44
+Downloaded=2025-12-02 06:08:02
+3D=Y

@@ -1,0 +1,16 @@
+.LT1011CN8_PBF :1 ;Linear Technology LT1011CN8#PBF Comparator, Open Collector O/P, 0.15us 30 V 8-Pin PDIP
+DIP794W53P254L1016H394Q8N
+*STM IC
+*NGS
+*PLB 1="GND" 2="INPUT+" 3="INPUT-" 4="V-" 5="BALANCE" 6="BALANCE/ STROBE" 7="OUTPUT" 8="V+"
+*MXP 8
+*DFN LT1011CN8_PBF
+~!Mouser Part Number (584-LT1011CN8#PBF)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Analog-Devices/LT1011CN8PBF?qs=ytflclh7QUWFs7XG0lj57g%3D%3D)
+~!Manufacturer_Name (Analog Devices)
+~!Manufacturer_Part_Number (LT1011CN8#PBF)
+~!Link Datasheet (http://www.linear.com/docs/2476)
+~!Height (3.937mm)
+~!3D_Model (LT1011CN8#PBF)
+LT1011CN8_PBF
+1.1!U 2.1!U 3.1!U 4.1!U 8.1!U 7.1!U 6.1!U 5.1!U 

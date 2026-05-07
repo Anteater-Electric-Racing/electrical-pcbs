@@ -1,0 +1,162 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "39-30-6068"
+   (description "Mini-Fit Jr. Vertical Header, 4.20mm Pitch, Dual Row, 6 Circuits, with Snap-in Plastic Peg PCB Lock, Tin, Natural")
+   (family "CON")
+   (package "39-30-606Y")
+   (attribute "Datasheet Link" "https://www.molex.com/pdm_docs/sd/039306048_sd.pdf")
+   (attribute "Geometry.Height" "12.8mm")
+   (attribute "Mouser Part Number" "538-39-30-6068")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Molex/39-30-6068?qs=HghdDNGXMEQzYr6dBmgN%252BQ%3D%3D")
+   (attribute "Manufacturer_Name" "Molex")
+   (attribute "Manufacturer_Part_Number" "39-30-6068")
+   (gate
+    (symbol "39-30-6068")
+    (pin "1" 1 PS)
+    (pin "2" 2 PS)
+    (pin "3" 3 PS)
+    (pin "4" 4 PS)
+    (pin "5" 5 PS)
+    (pin "6" 6 PS)
+   )
+  )
+  (symbol "39-30-6068"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 600 100) (pt 600 -300) (pt 200 -300) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 800 -200) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 800 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 800 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "39-30-606Y"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.127)
+     (path
+      (closed true)
+      (pt -11.1 7.75)
+      (pt 2.7 7.75)
+      (pt 2.7 -1.85)
+      (pt -11.1 -1.85)
+      (pt -11.1 7.75))))
+   (layer TSLK
+    (graphic
+     (stroke 0.127)
+     (path
+      (closed true)
+      (pt -11.1 7.75)
+      (pt 2.7 7.75)
+      (pt 2.7 -1.85)
+      (pt -11.1 -1.85)
+      (pt -11.1 7.75))))
+   (layer TSLK
+    (graphic
+     (stroke 0.127)
+     (path
+      (closed true)
+      (pt 4.1 0.5)
+      (pt 4.1 -0.5)
+      (pt 3.1 0)
+      (pt 4.1 0.5))))
+   (layer TASM
+    (graphic
+     (stroke 0.127)
+     (path
+      (closed true)
+      (pt 4.1 0.5)
+      (pt 4.1 -0.5)
+      (pt 3.1 0)
+      (pt 4.1 0.5))))
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -15.8192 9.02)
+      (pt 7.4192 9.02)
+      (pt 7.4192 -3.12)
+      (pt -15.8192 -3.12)
+      (pt -15.8192 9.02))))
+   (leg 1 (pt 0 0) (padstack 1))
+   (leg 2 (pt -4.2 0) (padstack 0))
+   (leg 3 (pt -8.4 0) (padstack 0))
+   (leg 4 (pt 0 5.5) (padstack 0))
+   (leg 5 (pt -4.2 5.5) (padstack 0))
+   (leg 6 (pt -8.4 5.5) (padstack 0))
+   (leg 7 (pt 4.7 5.04) (padstack 7))
+   (leg 8 (pt -13.1 5.04) (padstack 8))
+   (padstack 0
+    (hole 1.4)
+    (plated true)
+    (pad (layer TCOP) (round 1.75))
+    (pad (layer INNER) (round 1.75))
+    (pad (layer BCOP) (round 1.75))
+   )
+   (padstack 7
+    (hole 3)
+    (plated false)
+    (pad (layer TCOP) (round 3))
+    (pad (layer INNER) (round 3))
+    (pad (layer BCOP) (round 3))
+   )
+   (padstack 8
+    (hole 3)
+    (plated false)
+    (pad (layer TCOP) (round 3))
+    (pad (layer INNER) (round 3))
+    (pad (layer BCOP) (round 3))
+   )
+   (padstack 1
+    (hole 1.4)
+    (plated true)
+    (pad (layer TCOP) (square 1.75))
+    (pad (layer INNER) (round 1.75))
+    (pad (layer BCOP) (square 1.75))
+   )
+   (model "39-30-6068.stp"
+    (euler 90 0 0)
+    (offset -4.150000095367432 2.509999990463257 -0.15000000596046448)
+   )
+  )
+ )
+)

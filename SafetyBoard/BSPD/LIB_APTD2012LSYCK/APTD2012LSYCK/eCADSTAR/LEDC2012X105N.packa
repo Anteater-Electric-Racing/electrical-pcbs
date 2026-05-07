@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "APTD2012LSYCK"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2019-06-03-16:53:04)
+    (mountForm default
+        (footprintRef "LEDC2012X105N")
+        (spec "System")
+    )
+)

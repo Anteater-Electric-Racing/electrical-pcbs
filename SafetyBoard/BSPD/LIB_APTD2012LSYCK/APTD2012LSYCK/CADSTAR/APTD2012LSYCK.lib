@@ -1,0 +1,16 @@
+.APTD2012LSYCK :1 ;Standard LEDs - SMD 0805 Dome Lens LED Yellow- 590nm
+LEDC2012X105N
+*STM LED
+*NGS
+*PLB 1="K" 2="A"
+*MXP 2
+*DFN APTD2012LSYCK
+~!Mouser Part Number (604-APTD2012LSYCK)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Kingbright/APTD2012LSYCK?qs=AQlKX63v8Rs%252BoJzWpwxJ3A%3D%3D)
+~!Manufacturer_Name (Kingbright)
+~!Manufacturer_Part_Number (APTD2012LSYCK)
+~!Link Datasheet (http://www.kingbrightusa.com/images/catalog/SPEC/APTD2012LSYCK.pdf)
+~!Height (1.05mm)
+~!3D_Model (APTD2012LSYCK)
+APTD2012LSYCK
+1.1!U 2.1!U 

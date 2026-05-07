@@ -1,0 +1,16 @@
+.LT1719CS8_PBF :1 ;LT1719CS8#PBF, Comparator 3 V, 5 V 8-Pin SOIC N
+SOIC127P599X175-8N
+*STM IC
+*NGS
+*PLB 1="VCC" 2="+IN" 3="-IN" 4="VEE" 5="GND" 6="SHDN" 7="OUT" 8="+VS"
+*MXP 8
+*DFN LT1719CS8_PBF
+~!Mouser Part Number (584-LT1719CS8#PBF)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Analog-Devices/LT1719CS8PBF?qs=ytflclh7QUVguooTyPJ7PQ%3D%3D)
+~!Manufacturer_Name (Analog Devices)
+~!Manufacturer_Part_Number (LT1719CS8#PBF)
+~!Link Datasheet (http://cds.linear.com/docs/en/datasheet/1719fa.pdf)
+~!Height (1.752mm)
+~!3D_Model (LT1719CS8#PBF)
+LT1719CS8_PBF
+1.1!U 2.1!U 3.1!U 4.1!U 8.1!U 7.1!U 6.1!U 5.1!U 

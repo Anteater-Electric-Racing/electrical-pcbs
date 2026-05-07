@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'LT1011CN8#PBF'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Analog Devices", "LT1011CN8#PBF" (!) = "", "DIP794W53P254L1016H394Q8N", "Dual-In-Line Packages", "584-LT1011CN8#PBF", "https://www.mouser.co.uk/ProductDetail/Analog-Devices/LT1011CN8PBF?qs=ytflclh7QUWFs7XG0lj57g%3D%3D", "Linear Technology LT1011CN8#PBF Comparator, Open Collector O/P, 0.15us 30 V 8-Pin PDIP", "http://www.linear.com/docs/2476", "3.937 mm"
+END_PART
+
+END.

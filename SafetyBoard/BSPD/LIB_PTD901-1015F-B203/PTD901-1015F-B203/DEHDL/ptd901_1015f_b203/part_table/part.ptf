@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'PTD901_1015F_B203'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Bourns", "PTD901-1015F-B203" (!) = "", "PTD9011015FB203", "Other", "652-PTD901-1015FB203", "https://www.mouser.co.uk/ProductDetail/Bourns/PTD901-1015F-B203?qs=kWCfjVKDuI2E4NFIGwREVA%3D%3D", "Res Carbon Film POT 20K Ohm 10% 0.05W(1/20W) 1(Elec)/1(Mech)Turns 6mm (22.05 X 9.5 X 11.3mm) Pin Panel Mount/Through Hole", "https://www.digikey.ph/en/products/detail/bourns-inc/PTD901-1015F-B203/4699444", "11.9 mm"
+END_PART
+
+END.

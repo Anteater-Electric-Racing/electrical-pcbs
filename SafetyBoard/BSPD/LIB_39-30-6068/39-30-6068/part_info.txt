@@ -1,0 +1,9 @@
+Manufacturer=Molex
+PartNumber=39-30-6068
+PartCategory=Connector
+PackageCategory=Other
+PinCount=6
+Version=3.1
+Released=2019-01-13 18:00:12
+Downloaded=2026-02-09 19:34:44
+3D=Y

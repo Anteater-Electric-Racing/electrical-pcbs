@@ -1,0 +1,17 @@
+.PTD901-1015F-B203 :1 ;Res Carbon Film POT 20K Ohm 10% 0.05W(1/20W) 1(Elec)/1(Mech)Turns 6mm (22.05 X 9.5 X 11.3mm) Pin Panel Mount/Through Hole
+PTD9011015FB203
+*STM VR
+*NGS
+*PNM 1=R1 2=R2 3=R3
+*PLB 1="CCW" 2="WIPER" 3="CW"
+*MXP 3
+*DFN PTD901-1015F-B203
+~!Mouser Part Number (652-PTD901-1015FB203)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Bourns/PTD901-1015F-B203?qs=kWCfjVKDuI2E4NFIGwREVA%3D%3D)
+~!Manufacturer_Name (Bourns)
+~!Manufacturer_Part_Number (PTD901-1015F-B203)
+~!Link Datasheet (https://www.digikey.ph/en/products/detail/bourns-inc/PTD901-1015F-B203/4699444)
+~!Height (11.9mm)
+~!3D_Model (PTD901-1015F-B203)
+PTD901-1015F-B203
+1.1!U 2.1!U 3.1!U 

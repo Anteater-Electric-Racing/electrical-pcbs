@@ -1,0 +1,16 @@
+.74LVC1G08QSE-7 :1 ;Logic Gates Logic LVC 1 Gate SOT353 T&R 3K
+SOT65P210X110-5N
+*STM IC
+*NGS
+*PLB 1="A" 2="B" 3="GND" 4="Y" 5="VCC"
+*MXP 5
+*DFN 74LVC1G08QSE-7
+~!Mouser Part Number (621-74LVC1G08QSE-7)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/74LVC1G08QSE-7?qs=P1JMDcb91o6ocAdFec%252BEzw%3D%3D)
+~!Manufacturer_Name (Diodes Incorporated)
+~!Manufacturer_Part_Number (74LVC1G08QSE-7)
+~!Link Datasheet (https://www.mouser.in/datasheet/2/115/DIOD_S_A0010762531_1-2543394.pdf)
+~!Height (1.1mm)
+~!3D_Model (74LVC1G08QSE-7)
+"74LVC1G08QSE-7"
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 

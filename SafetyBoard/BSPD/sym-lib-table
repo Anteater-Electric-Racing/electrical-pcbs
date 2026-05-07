@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "8 input OR gate")(type "Legacy")(uri "/Users/eaton/Downloads/LIB_SN74LV4T32PWREP/SN74LV4T32PWREP/KiCad/SN74LV4T32PWREP.lib")(options "")(descr ""))
+  (lib (name "CD4071BE")(type "KiCad")(uri "/Users/eaton/Downloads/KiCADv6 11/2025-02-11_03-32-17.kicad_sym")(options "")(descr ""))
+)
