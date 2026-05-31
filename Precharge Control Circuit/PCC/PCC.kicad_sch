@@ -14955,7 +14955,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "footprints:Precharge_Discharge_Relay_Rincon"
+		(property "Footprint" "footprints:RH3_Mount"
 			(at 77.47 259.08 0)
 			(hide yes)
 			(show_name no)
@@ -21155,7 +21155,7 @@
 				)
 			)
 		)
-		(property "MPN" "PWR220T-35-1502J "
+		(property "MPN" "MP925-15.0K-1% "
 			(at 34.29 193.04 90)
 			(hide yes)
 			(show_name no)
@@ -21166,7 +21166,7 @@
 				)
 			)
 		)
-		(property "MFG" "Bourns Inc."
+		(property "MFG" "Caddock Electronics Inc."
 			(at 34.29 193.04 90)
 			(hide yes)
 			(show_name no)
@@ -28239,7 +28239,7 @@
 				)
 			)
 		)
-		(property "MPN" "PWR220T-35-1502J "
+		(property "MPN" "MP925-15.0K-1%  "
 			(at 34.29 185.42 90)
 			(hide yes)
 			(show_name no)
@@ -28250,7 +28250,7 @@
 				)
 			)
 		)
-		(property "MFG" "Bourns Inc."
+		(property "MFG" "Caddock Electronics Inc."
 			(at 34.29 185.42 90)
 			(hide yes)
 			(show_name no)
