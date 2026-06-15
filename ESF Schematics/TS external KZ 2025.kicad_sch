@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "050ba9a1-7689-47bf-927c-9857e41ae0a7")
 	(paper "A4")
 	(lib_symbols)
@@ -16,7 +16,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 0851e2bd-a99f-4427-be54-f845422b83a0)
+		(uuid "0851e2bd-a99f-4427-be54-f845422b83a0")
 	)
 	(rectangle
 		(start 15.24 63.5)
@@ -30,7 +30,7 @@
 			(type color)
 			(color 255 255 194 1)
 		)
-		(uuid 0d90f6dc-d721-4d9a-a453-ea493e3faccd)
+		(uuid "0d90f6dc-d721-4d9a-a453-ea493e3faccd")
 	)
 	(circle
 		(center 160.02 83.82)
@@ -42,7 +42,20 @@
 		(fill
 			(type none)
 		)
-		(uuid 188709bb-f44c-4b13-98f0-51989514ce7d)
+		(uuid "188709bb-f44c-4b13-98f0-51989514ce7d")
+	)
+	(arc
+		(start 55.6489 91.4004)
+		(mid 57.6681 92.6969)
+		(end 59.6414 94.0622)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "1f3c9ad6-3cd7-4459-bc74-ad789e6862cb")
 	)
 	(rectangle
 		(start 107.95 63.246)
@@ -55,44 +68,75 @@
 			(type color)
 			(color 255 229 191 1)
 		)
-		(uuid 86b55680-a99e-4708-890b-1a659ec9f946)
+		(uuid "86b55680-a99e-4708-890b-1a659ec9f946")
 	)
-	(arc
-		(start 101.6 93.98)
-		(mid 104.1097 92.6494)
-		(end 106.68 91.44)
+	(rectangle
+		(start 35.306 39.878)
+		(end 50.546 49.022)
 		(stroke
 			(width 0)
-			(type default)
+			(type dash_dot_dot)
+			(color 0 0 0 1)
 		)
 		(fill
-			(type none)
+			(type color)
+			(color 255 255 194 1)
 		)
-		(uuid a20f989d-8885-4bb0-b207-99b0de825b6c)
+		(uuid "b0982883-504f-41ac-9deb-4564a9e87a53")
 	)
-	(text "Shielding terminates\nat controller connectors"
+	(text "TSMP Container"
 		(exclude_from_sim no)
-		(at 95.25 72.39 0)
+		(at 42.926 42.164 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "1e42c571-d88a-477f-8d7f-4e46bd83f5fc")
+		(uuid "0f944c55-df4d-4eb7-8e37-c235725affb0")
 	)
-	(text "SurLok Plus EMI Plugs\nSLPIPB50BSO1EH Straight\nonnector\non HV-"
+	(text "Sheilding terminates \nat gland to housing"
 		(exclude_from_sim no)
-		(at 93.218 99.314 0)
+		(at 31.496 51.308 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "3a3577e3-0085-48fd-8a4e-e87bdfb00db6")
+		(uuid "10f1ba57-d31e-427b-8802-5f3c30645874")
 	)
-	(text "TSMP connector\nCT2910-2"
+	(text "All Inverter connections:\nSLPIPB50BSO1EH\nSheilding terminates:\nconnector on inverter"
 		(exclude_from_sim no)
-		(at 42.672 57.15 0)
+		(at 92.202 77.978 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2a423a4a-53fc-4d06-a71f-b348965a1383")
+	)
+	(text "No connector, wire passes \nthrough gland to inside container"
+		(exclude_from_sim no)
+		(at 72.136 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4061870f-0e26-466a-ac94-4beb8e9d672c")
+	)
+	(text "motor lug:\n5580850\nShielding underminated"
+		(exclude_from_sim no)
+		(at 155.448 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "606377bf-57d0-496c-be80-ad1b98e9c74d")
+	)
+	(text "TSMP connector\nCT2910-2\nSoldered Wire"
+		(exclude_from_sim no)
+		(at 61.468 45.212 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -110,6 +154,26 @@
 		)
 		(uuid "64811169-6002-49f6-b3b8-40737820437b")
 	)
+	(text "All Inverter connections:\nSLPIPB50BSO1EH\nSheilding terminates\nat inverter connector"
+		(exclude_from_sim no)
+		(at 137.668 72.136 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "684d299f-16b6-4b67-9f05-6d4b41de7737")
+	)
+	(text "Sheild terminates \nat gland to HVB\n(No connector)"
+		(exclude_from_sim no)
+		(at 54.356 59.944 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6fb1b808-1b4c-4520-9f19-eceafc0c150c")
+	)
 	(text "HV-"
 		(exclude_from_sim no)
 		(at 111.76 92.71 0)
@@ -122,7 +186,7 @@
 	)
 	(text "Motor Controller"
 		(exclude_from_sim no)
-		(at 116.84 74.93 0)
+		(at 116.078 74.676 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -130,17 +194,17 @@
 		)
 		(uuid "7fad985f-9eaa-44a8-9a9d-2127bae2bacf")
 	)
-	(text "motor controller shielding \nterminates at connector\nmotor sheilding is terminated \nwith copper braid to gnd"
+	(text "TSMP wire:\nCF270-UL-07-04-D\n18 awg (0.82mm2)"
 		(exclude_from_sim no)
-		(at 140.97 92.71 0)
+		(at 30.226 59.182 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "82530ebd-68c3-4591-a8ba-44a86277c73c")
+		(uuid "931028fd-365d-4959-be45-08992713f503")
 	)
-	(text "HV-"
+	(text "TS-"
 		(exclude_from_sim no)
 		(at 46.99 92.71 0)
 		(effects
@@ -150,7 +214,7 @@
 		)
 		(uuid "943e23d4-b4b0-4a25-8231-4de80323a0f9")
 	)
-	(text "HV+"
+	(text "TS+"
 		(exclude_from_sim no)
 		(at 46.99 86.36 0)
 		(effects
@@ -160,25 +224,15 @@
 		)
 		(uuid "9ddd6369-b6d5-4c57-8aa4-dc4ff7a94b8c")
 	)
-	(text "Accumulator"
+	(text "High Voltage Battery (HVB)"
 		(exclude_from_sim no)
-		(at 30.48 83.82 0)
+		(at 32.258 83.566 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "b49a6aa9-81df-44b3-8f01-f43ed94dc9e4")
-	)
-	(text "SurLok Plus EMI Plugs\nSLPIPB50BSO1EH Straight\nConnector\non HV+"
-		(exclude_from_sim no)
-		(at 93.726 80.772 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "b6e1422e-6b19-496f-ad86-d0b5259c95b3")
 	)
 	(text "Motor\n"
 		(exclude_from_sim no)
@@ -189,16 +243,6 @@
 			)
 		)
 		(uuid "c4362136-3fde-4276-b0f3-3c5f02c2729b")
-	)
-	(text "AC-HA011042 & AC-HA015861\nAccumulator HV out connector"
-		(exclude_from_sim no)
-		(at 67.31 93.98 0)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-		)
-		(uuid "cf160f91-42e3-4d16-a779-ef8216317d66")
 	)
 	(text "TSMP Resistors \ninside accumulator"
 		(exclude_from_sim no)
@@ -220,17 +264,6 @@
 		)
 		(uuid "db48f39a-3ecf-4d61-be0b-23549f90fcd6")
 	)
-	(text "Motor Connectors:\nLCMA50-6-L Lugs\n\nOut of Inverter:\nSurLok Plus EMI Plugs (non-keyed)\nSLPIPB50BSO1EH Straight"
-		(exclude_from_sim no)
-		(at 128.524 70.612 0)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify left)
-		)
-		(uuid "df6a2fc9-1829-4087-a69f-ae190b1068b6")
-	)
 	(text "50mm2\n"
 		(exclude_from_sim no)
 		(at 78.74 86.36 0)
@@ -241,9 +274,9 @@
 		)
 		(uuid "e37b391d-54a3-4d8e-91e8-4996f51af59f")
 	)
-	(text "Shield terminates \nin connector"
+	(text "Shield terminates \nat gland"
 		(exclude_from_sim no)
-		(at 64.77 80.01 0)
+		(at 64.77 84.074 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -275,14 +308,36 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 60.96) (xy 41.91 64.77)
+			(xy 44.196 47.498) (xy 44.196 63.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 			(color 255 155 0 1)
 		)
-		(uuid "7ae69f9d-89a1-4235-9e59-a00b5fd3762e")
+		(uuid "31b71405-5c66-4cc4-83f8-c2dd06502b91")
+	)
+	(wire
+		(pts
+			(xy 41.656 44.704) (xy 41.656 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 155 0 1)
+		)
+		(uuid "3dbad751-ff8a-4755-aec2-c0fdb35ba9f0")
+	)
+	(wire
+		(pts
+			(xy 41.656 44.704) (xy 52.324 44.704)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 155 0 1)
+		)
+		(uuid "44ed7457-0b70-43f9-ad68-b7b3309ff0ca")
 	)
 	(wire
 		(pts
@@ -297,14 +352,14 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 64.77) (xy 44.45 60.96)
+			(xy 44.196 47.498) (xy 52.324 47.498)
 		)
 		(stroke
 			(width 0)
 			(type default)
 			(color 255 155 0 1)
 		)
-		(uuid "8735d4bb-f332-405d-8be9-b82850986998")
+		(uuid "85ca0aff-b358-4aa9-83ca-fd71d0532569")
 	)
 	(wire
 		(pts

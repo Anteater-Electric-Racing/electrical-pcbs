@@ -2256,16 +2256,6 @@
 		)
 		(uuid "0c7a366e-9ad7-406f-b7ee-2cc2c60dc092")
 	)
-	(text "Charger-TS\nInterlock"
-		(exclude_from_sim no)
-		(at 346.71 146.558 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "2281cff2-73bd-4498-a892-c2b14fbd4af1")
-	)
 	(text "IMD"
 		(exclude_from_sim no)
 		(at 121.158 246.634 0)
@@ -2285,6 +2275,16 @@
 			)
 		)
 		(uuid "34e8b010-c228-4142-885f-1db62f460e54")
+	)
+	(text "Interlocks"
+		(exclude_from_sim no)
+		(at 271.272 166.116 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3b8381ce-ffc7-4277-ac7d-01744542b158")
 	)
 	(text "Charger Enclosure"
 		(exclude_from_sim no)
@@ -2356,16 +2356,6 @@
 		)
 		(uuid "787e3286-8291-4783-94f5-bad056243c7e")
 	)
-	(text "Interlocks"
-		(exclude_from_sim no)
-		(at 267.208 216.408 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "7bc59952-a86f-4d56-a749-cd362d986981")
-	)
 	(text "J1772"
 		(exclude_from_sim no)
 		(at 112.014 131.318 0)
@@ -2406,7 +2396,7 @@
 		)
 		(uuid "a3e0066e-e023-423b-bc9a-68fcc252c32c")
 	)
-	(text "Accumulator Enclosure"
+	(text "Battery Enclosure"
 		(exclude_from_sim no)
 		(at 186.182 205.486 0)
 		(effects
@@ -2456,16 +2446,6 @@
 		)
 		(uuid "f32553ba-1a98-4563-8030-15e82037d5e4")
 	)
-	(text "Safety Daisy Chain return since any \ninterlock disconnect must stop charger"
-		(exclude_from_sim no)
-		(at 228.092 188.214 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "fc8152be-e9df-479a-a14b-c891ecc86362")
-	)
 	(junction
 		(at 256.032 131.826)
 		(diameter 0)
@@ -2485,10 +2465,10 @@
 		(uuid "3da7e806-a4fd-4bad-a347-962144832326")
 	)
 	(junction
-		(at 249.682 220.98)
+		(at 249.682 214.122)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4381b036-6ec5-4738-a54c-a958fd96855a")
+		(uuid "42ab5252-1929-440e-ba68-2ba44e56fbdc")
 	)
 	(junction
 		(at 172.974 75.438)
@@ -2590,16 +2570,6 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 107.696) (xy 217.424 107.696)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "03f9cf65-9ace-4cf2-95b5-2235205c98f1")
-	)
-	(wire
-		(pts
 			(xy 114.554 122.428) (xy 120.142 122.428)
 		)
 		(stroke
@@ -2670,16 +2640,6 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 104.648) (xy 199.39 104.648)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1349c279-99e4-4911-a848-86991c094b04")
-	)
-	(wire
-		(pts
 			(xy 217.424 107.696) (xy 253.746 107.696)
 		)
 		(stroke
@@ -2687,6 +2647,16 @@
 			(type default)
 		)
 		(uuid "141f09e2-e9fb-4449-82b5-dbaf4eeb7232")
+	)
+	(wire
+		(pts
+			(xy 348.234 168.91) (xy 275.336 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14cef29c-8ee6-497a-9325-486ea28172bd")
 	)
 	(wire
 		(pts
@@ -2757,26 +2727,6 @@
 			(type default)
 		)
 		(uuid "22816f8d-2015-4327-b9e8-3aa81b4d59bf")
-	)
-	(wire
-		(pts
-			(xy 348.234 220.98) (xy 348.234 161.798)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "23a743b9-09ee-4435-a4cf-4ed168ecbf60")
-	)
-	(wire
-		(pts
-			(xy 209.55 75.438) (xy 209.55 107.696)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "297b4949-7557-4176-a84c-37f9710176ee")
 	)
 	(wire
 		(pts
@@ -2930,6 +2880,16 @@
 	)
 	(wire
 		(pts
+			(xy 249.682 160.782) (xy 249.682 214.122)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48e12c45-2a73-4970-95db-5b0851d6f0e2")
+	)
+	(wire
+		(pts
 			(xy 320.04 153.416) (xy 320.04 157.226)
 		)
 		(stroke
@@ -3000,6 +2960,26 @@
 	)
 	(wire
 		(pts
+			(xy 348.234 151.638) (xy 348.234 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "540ef7a4-d763-40fb-b002-40716a7f72fe")
+	)
+	(wire
+		(pts
+			(xy 185.42 107.696) (xy 185.42 75.438)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d5de1e9-bdfe-4b03-b826-15d35fa62887")
+	)
+	(wire
+		(pts
 			(xy 253.746 107.696) (xy 253.746 111.252)
 		)
 		(stroke
@@ -3017,6 +2997,16 @@
 			(type default)
 		)
 		(uuid "6090fe87-8210-451a-84f5-25714b382d60")
+	)
+	(wire
+		(pts
+			(xy 265.176 214.122) (xy 249.682 214.122)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "621a1fc1-5be4-49b7-b2c0-f33883984a04")
 	)
 	(wire
 		(pts
@@ -3060,7 +3050,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 176.53) (xy 249.682 176.53)
+			(xy 168.91 160.782) (xy 249.682 160.782)
 		)
 		(stroke
 			(width 0)
@@ -3120,6 +3110,16 @@
 	)
 	(wire
 		(pts
+			(xy 185.42 107.696) (xy 217.424 107.696)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "764d8efb-164a-43aa-9429-771bb3d0fef9")
+	)
+	(wire
+		(pts
 			(xy 273.812 106.934) (xy 273.812 111.506)
 		)
 		(stroke
@@ -3130,23 +3130,23 @@
 	)
 	(wire
 		(pts
-			(xy 249.682 220.98) (xy 262.636 220.98)
+			(xy 275.336 168.91) (xy 275.336 170.434)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "795cb586-053a-480c-9bde-77efe05f5219")
+		(uuid "78cde834-af5e-431e-a168-d8fa1bd20e9f")
 	)
 	(wire
 		(pts
-			(xy 185.42 104.648) (xy 185.42 75.438)
+			(xy 249.682 214.122) (xy 249.682 226.314)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7b3bc815-e8a4-473e-957b-02df4c1023e6")
+		(uuid "7cb21cbe-8dc2-4e04-bdb5-3025c17f7a40")
 	)
 	(wire
 		(pts
@@ -3210,16 +3210,6 @@
 	)
 	(wire
 		(pts
-			(xy 249.682 220.98) (xy 249.682 226.314)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8ebc169a-8e38-4016-8072-63753404a1f4")
-	)
-	(wire
-		(pts
 			(xy 161.544 151.638) (xy 164.084 151.638)
 		)
 		(stroke
@@ -3227,16 +3217,6 @@
 			(type default)
 		)
 		(uuid "90605743-87c1-455f-bfab-857a24ea30b7")
-	)
-	(wire
-		(pts
-			(xy 272.796 220.98) (xy 348.234 220.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "92d5f4c5-a5ec-429c-8d32-59f23792af0c")
 	)
 	(wire
 		(pts
@@ -3290,13 +3270,13 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 75.438) (xy 199.39 104.648)
+			(xy 265.176 170.434) (xy 265.176 214.122)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "99458e77-460e-40ee-9605-dc39548d29b8")
+		(uuid "98808c4d-9ac9-4f32-9f54-0eb234f2dd3c")
 	)
 	(wire
 		(pts
@@ -3347,16 +3327,6 @@
 			(type default)
 		)
 		(uuid "a44cd658-1c23-465d-927f-4f7eea3569ab")
-	)
-	(wire
-		(pts
-			(xy 249.682 176.53) (xy 249.682 220.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "abc8c1a7-7d2f-458d-80b2-907ec93bd475")
 	)
 	(wire
 		(pts
@@ -3580,7 +3550,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 176.53) (xy 168.91 155.448)
+			(xy 168.91 160.782) (xy 168.91 155.448)
 		)
 		(stroke
 			(width 0)
@@ -3767,7 +3737,7 @@
 			(uuid "987f4f6e-e11d-46f2-b6b2-8d4f39053ba3")
 		)
 		(instances
-			(project "26 MZ Charging shutdown"
+			(project "Charging shutdown_MZ_2026"
 				(path "/3ff09eae-d3c8-46ca-b652-20f4f82d766c"
 					(reference "CHARGE_CONN_INTERLOCK2")
 					(unit 1)
@@ -3847,91 +3817,9 @@
 			(uuid "6bbab058-1b8f-466f-94fe-c6d73b4cfe36")
 		)
 		(instances
-			(project "26 MZ Charging shutdown"
+			(project "Charging shutdown_MZ_2026"
 				(path "/3ff09eae-d3c8-46ca-b652-20f4f82d766c"
 					(reference "BT1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:Jumper_2_Open")
-		(at 267.716 220.98 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2b1ba45a-2f6d-49ad-8bcd-4239a4e16fae")
-		(property "Reference" "JP4"
-			(at 267.716 214.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Jumper_2_Open"
-			(at 267.716 217.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 267.716 220.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 267.716 220.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Jumper, 2-pole, open"
-			(at 267.716 220.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "515304b0-f856-451b-a8ea-49339acb8888")
-		)
-		(pin "2"
-			(uuid "d15d820c-94f8-482b-95c6-02375e2070a2")
-		)
-		(instances
-			(project "26 MZ Charging shutdown"
-				(path "/3ff09eae-d3c8-46ca-b652-20f4f82d766c"
-					(reference "JP4")
 					(unit 1)
 				)
 			)
@@ -4007,7 +3895,7 @@
 			(uuid "3487b7d5-c665-44f8-9130-ba5068fd9176")
 		)
 		(instances
-			(project "26 MZ Charging shutdown"
+			(project "Charging shutdown_MZ_2026"
 				(path "/3ff09eae-d3c8-46ca-b652-20f4f82d766c"
 					(reference "#PWR015")
 					(unit 1)
@@ -4111,7 +3999,7 @@
 			(uuid "94ae57d5-8d7f-4a1b-8b88-c60634059d2e")
 		)
 		(instances
-			(project "26 MZ Charging shutdown"
+			(project "Charging shutdown_MZ_2026"
 				(path "/3ff09eae-d3c8-46ca-b652-20f4f82d766c"
 					(reference "D2")
 					(unit 1)
@@ -4189,7 +4077,7 @@
 			(uuid "9fb95f47-e420-4001-9d37-6d9356e04039")
 		)
 		(instances
-			(project "26 MZ Charging shutdown"
+			(project "Charging shutdown_MZ_2026"
 				(path "/3ff09eae-d3c8-46ca-b652-20f4f82d766c"
 					(reference "#PWR014")
 					(unit 1)
@@ -4271,7 +4159,7 @@
 			(uuid "06a3c9fb-7b7a-4663-88dc-3deefbd71b3e")
 		)
 		(instances
-			(project "26 MZ Charging shutdown"
+			(project "Charging shutdown_MZ_2026"
 				(path "/3ff09eae-d3c8-46ca-b652-20f4f82d766c"
 					(reference "L1")
 					(unit 1)
@@ -4364,7 +4252,7 @@
 			(uuid "4ff82975-e24e-4597-8947-7f3762d72d88")
 		)
 		(instances
-			(project "26 MZ Charging shutdown"
+			(project "Charging shutdown_MZ_2026"
 				(path "/3ff09eae-d3c8-46ca-b652-20f4f82d766c"
 					(reference "K3")
 					(unit 1)
@@ -4442,91 +4330,9 @@
 			(uuid "3ac80421-610b-4d2a-9abd-61433e53e865")
 		)
 		(instances
-			(project "26 MZ Charging shutdown"
+			(project "Charging shutdown_MZ_2026"
 				(path "/3ff09eae-d3c8-46ca-b652-20f4f82d766c"
 					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:Jumper_2_Open")
-		(at 348.234 156.718 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5f6f12ad-f2a6-4340-b56f-19d66075ceaa")
-		(property "Reference" "JP5"
-			(at 354.584 156.718 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Jumper_2_Open"
-			(at 352.044 156.718 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 348.234 156.718 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 348.234 156.718 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Jumper, 2-pole, open"
-			(at 348.234 156.718 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "020ea085-1b0b-4cc0-afc7-abe4ed075225")
-		)
-		(pin "2"
-			(uuid "4a1a040a-aab8-4d12-91a7-3c882f8521c8")
-		)
-		(instances
-			(project "26 MZ Charging shutdown"
-				(path "/3ff09eae-d3c8-46ca-b652-20f4f82d766c"
-					(reference "JP5")
 					(unit 1)
 				)
 			)
@@ -4602,7 +4408,7 @@
 			(uuid "fc80cb49-9384-412c-9a79-580653310e7c")
 		)
 		(instances
-			(project "26 MZ Charging shutdown"
+			(project "Charging shutdown_MZ_2026"
 				(path "/3ff09eae-d3c8-46ca-b652-20f4f82d766c"
 					(reference "#PWR013")
 					(unit 1)
@@ -4695,7 +4501,7 @@
 			(uuid "539b97a0-63ec-4229-9b7e-700ab023c9b4")
 		)
 		(instances
-			(project "26 MZ Charging shutdown"
+			(project "Charging shutdown_MZ_2026"
 				(path "/3ff09eae-d3c8-46ca-b652-20f4f82d766c"
 					(reference "K2")
 					(unit 1)
@@ -4773,7 +4579,7 @@
 			(uuid "3542ba11-32e1-4716-8934-fcc20d4c4f86")
 		)
 		(instances
-			(project "26 MZ Charging shutdown"
+			(project "Charging shutdown_MZ_2026"
 				(path "/3ff09eae-d3c8-46ca-b652-20f4f82d766c"
 					(reference "#PWR06")
 					(unit 1)
@@ -4851,7 +4657,7 @@
 			(uuid "16561281-5705-4862-980d-3eb0cdad9376")
 		)
 		(instances
-			(project "26 MZ Charging shutdown"
+			(project "Charging shutdown_MZ_2026"
 				(path "/3ff09eae-d3c8-46ca-b652-20f4f82d766c"
 					(reference "#PWR04")
 					(unit 1)
@@ -4933,7 +4739,7 @@
 			(uuid "1c07d526-b2ac-4464-9c7b-274b165187f7")
 		)
 		(instances
-			(project "26 MZ Charging shutdown"
+			(project "Charging shutdown_MZ_2026"
 				(path "/3ff09eae-d3c8-46ca-b652-20f4f82d766c"
 					(reference "RST4")
 					(unit 1)
@@ -5016,7 +4822,7 @@
 			(uuid "aa1dd6de-8b8d-4a58-b5de-bee9b1dda637")
 		)
 		(instances
-			(project "26 MZ Charging shutdown"
+			(project "Charging shutdown_MZ_2026"
 				(path "/3ff09eae-d3c8-46ca-b652-20f4f82d766c"
 					(reference "120Ω11")
 					(unit 1)
@@ -5098,7 +4904,7 @@
 			(uuid "43af23e3-826a-49b0-8e91-6d84da06ada4")
 		)
 		(instances
-			(project "26 MZ Charging shutdown"
+			(project "Charging shutdown_MZ_2026"
 				(path "/3ff09eae-d3c8-46ca-b652-20f4f82d766c"
 					(reference "L2")
 					(unit 1)
@@ -5178,7 +4984,7 @@
 			(uuid "5dcac3f2-2574-4808-afa7-163f63d82e9c")
 		)
 		(instances
-			(project "26 MZ Charging shutdown"
+			(project "Charging shutdown_MZ_2026"
 				(path "/3ff09eae-d3c8-46ca-b652-20f4f82d766c"
 					(reference "RST2")
 					(unit 1)
@@ -5256,7 +5062,7 @@
 			(uuid "286392ae-917f-4ac5-8c3f-4c8432badb26")
 		)
 		(instances
-			(project "26 MZ Charging shutdown"
+			(project "Charging shutdown_MZ_2026"
 				(path "/3ff09eae-d3c8-46ca-b652-20f4f82d766c"
 					(reference "#PWR02")
 					(unit 1)
@@ -5338,7 +5144,7 @@
 			(uuid "3b6b3f90-a747-48c9-9716-014f689460f0")
 		)
 		(instances
-			(project "26 MZ Charging shutdown"
+			(project "Charging shutdown_MZ_2026"
 				(path "/3ff09eae-d3c8-46ca-b652-20f4f82d766c"
 					(reference "L3")
 					(unit 1)
@@ -5418,7 +5224,7 @@
 			(uuid "2601df1b-0ddf-4605-8369-d817880f604c")
 		)
 		(instances
-			(project "26 MZ Charging shutdown"
+			(project "Charging shutdown_MZ_2026"
 				(path "/3ff09eae-d3c8-46ca-b652-20f4f82d766c"
 					(reference "RST3")
 					(unit 1)
@@ -5497,9 +5303,91 @@
 			(uuid "bde3f425-167d-4b96-8f75-37b83d7e2d53")
 		)
 		(instances
-			(project "26 MZ Charging shutdown"
+			(project "Charging shutdown_MZ_2026"
 				(path "/3ff09eae-d3c8-46ca-b652-20f4f82d766c"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:Jumper_2_Open")
+		(at 270.256 170.434 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c781d377-1463-4959-ad06-298f4c991d91")
+		(property "Reference" "JP4"
+			(at 270.256 164.084 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Jumper_2_Open"
+			(at 270.256 166.624 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 270.256 170.434 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 270.256 170.434 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Jumper, 2-pole, open"
+			(at 270.256 170.434 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b3c8ed95-a604-4c21-8372-cbc4661f8486")
+		)
+		(pin "2"
+			(uuid "c64fabd5-f48c-48e5-a01a-c7d51c9c3444")
+		)
+		(instances
+			(project "Charging shutdown_MZ_2026"
+				(path "/3ff09eae-d3c8-46ca-b652-20f4f82d766c"
+					(reference "JP4")
 					(unit 1)
 				)
 			)
@@ -5575,7 +5463,7 @@
 			(uuid "7f7d85cd-7a14-4d8a-a326-a1c552d93023")
 		)
 		(instances
-			(project "26 MZ Charging shutdown"
+			(project "Charging shutdown_MZ_2026"
 				(path "/3ff09eae-d3c8-46ca-b652-20f4f82d766c"
 					(reference "#PWR08")
 					(unit 1)
@@ -5679,7 +5567,7 @@
 			(uuid "c7d2e9a5-5509-4545-b03b-30a69a2dc3a3")
 		)
 		(instances
-			(project "26 MZ Charging shutdown"
+			(project "Charging shutdown_MZ_2026"
 				(path "/3ff09eae-d3c8-46ca-b652-20f4f82d766c"
 					(reference "D3")
 					(unit 1)
@@ -5757,7 +5645,7 @@
 			(uuid "126efe27-02e0-423d-82ea-3628aadc0cc3")
 		)
 		(instances
-			(project "26 MZ Charging shutdown"
+			(project "Charging shutdown_MZ_2026"
 				(path "/3ff09eae-d3c8-46ca-b652-20f4f82d766c"
 					(reference "#PWR011")
 					(unit 1)
@@ -5835,7 +5723,7 @@
 			(uuid "ea8ad6d6-d3bf-42a8-b1bd-082aad120695")
 		)
 		(instances
-			(project "26 MZ Charging shutdown"
+			(project "Charging shutdown_MZ_2026"
 				(path "/3ff09eae-d3c8-46ca-b652-20f4f82d766c"
 					(reference "#PWR07")
 					(unit 1)
@@ -5913,7 +5801,7 @@
 			(uuid "f8ba011b-0dc3-4605-a383-68beb0aed929")
 		)
 		(instances
-			(project "26 MZ Charging shutdown"
+			(project "Charging shutdown_MZ_2026"
 				(path "/3ff09eae-d3c8-46ca-b652-20f4f82d766c"
 					(reference "#PWR019")
 					(unit 1)
@@ -5991,7 +5879,7 @@
 			(uuid "ae58ab59-da5c-47b7-9a1c-cd769c9ecb06")
 		)
 		(instances
-			(project "26 MZ Charging shutdown"
+			(project "Charging shutdown_MZ_2026"
 				(path "/3ff09eae-d3c8-46ca-b652-20f4f82d766c"
 					(reference "#PWR016")
 					(unit 1)
@@ -6069,7 +5957,7 @@
 			(uuid "9c954f6f-be24-42f4-bc4f-8059de7aef20")
 		)
 		(instances
-			(project "26 MZ Charging shutdown"
+			(project "Charging shutdown_MZ_2026"
 				(path "/3ff09eae-d3c8-46ca-b652-20f4f82d766c"
 					(reference "#PWR01")
 					(unit 1)

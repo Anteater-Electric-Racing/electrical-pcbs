@@ -2748,6 +2748,16 @@
 		)
 		(uuid "26c32c7e-b58a-441f-96f5-b4b2f2b9c3b6")
 	)
+	(text "NOTE THIS MUST NOW BE SWAPPED TO 5k from 10k"
+		(exclude_from_sim no)
+		(at 135.255 45.085 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2cb5105a-4140-4221-9889-0320e7741cda")
+	)
 	(text "1.3v at 60v\n9.13v at 420v"
 		(exclude_from_sim no)
 		(at 95.504 145.034 0)
