@@ -1,0 +1,11 @@
+Plotted to 'C:\Users\Karan\Documents\GitHub\Central-Computer-Module\gerbers\ccm-F_Cu.gbr'.
+Plotted to 'C:\Users\Karan\Documents\GitHub\Central-Computer-Module\gerbers\ccm-B_Cu.gbr'.
+Plotted to 'C:\Users\Karan\Documents\GitHub\Central-Computer-Module\gerbers\ccm-F_Paste.gbr'.
+Plotted to 'C:\Users\Karan\Documents\GitHub\Central-Computer-Module\gerbers\ccm-B_Paste.gbr'.
+Plotted to 'C:\Users\Karan\Documents\GitHub\Central-Computer-Module\gerbers\ccm-F_Silkscreen.gbr'.
+Plotted to 'C:\Users\Karan\Documents\GitHub\Central-Computer-Module\gerbers\ccm-B_Silkscreen.gbr'.
+Plotted to 'C:\Users\Karan\Documents\GitHub\Central-Computer-Module\gerbers\ccm-F_Mask.gbr'.
+Plotted to 'C:\Users\Karan\Documents\GitHub\Central-Computer-Module\gerbers\ccm-B_Mask.gbr'.
+Plotted to 'C:\Users\Karan\Documents\GitHub\Central-Computer-Module\gerbers\ccm-Edge_Cuts.gbr'.
+Created Gerber job file 'C:\Users\Karan\Documents\GitHub\Central-Computer-Module\gerbers\ccm-job.gbrjob'.
+Info: Done.
