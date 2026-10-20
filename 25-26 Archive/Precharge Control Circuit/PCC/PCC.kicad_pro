@@ -880,7 +880,7 @@
       "method": 0,
       "sort_order": 0
     },
-    "bom_export_filename": "pcc_v0.2.csv",
+    "bom_export_filename": "C:\\Users\\senev\\Downloads\\PCC.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -1080,6 +1080,12 @@
           "label": "Note",
           "name": "Note",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Field8",
+          "name": "Field8",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -1138,7 +1144,7 @@
         "uuid": "cd50b4df-2796-417a-bb78-7e5b371bc4af"
       }
     ],
-    "used_designators": "F20-26,C29-30,R4,R9-11,R15-16,R82,HS4",
+    "used_designators": "F20-26,C29-30,J7,R4,R9-11,R15-16,R82,HS4",
     "variants": []
   },
   "sheets": [

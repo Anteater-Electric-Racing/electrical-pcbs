@@ -1,0 +1,8 @@
+# Machine-local state written by the Library Manager
+Anteater Parts/appdata/.writer.lock
+Anteater Parts/appdata/pending-transaction.json
+Anteater Parts/appdata/backups/*
+!Anteater Parts/appdata/backups/.gitkeep
+__pycache__/
+*.pyc
+node_modules/
