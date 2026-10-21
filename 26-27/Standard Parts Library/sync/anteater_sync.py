@@ -201,7 +201,7 @@ class Sync:
                 props = {
                     "Component Name": N.title(f"{row['Manufacturer']} {row['MPN']}".strip()),
                     "Library ID": N.text(pid),
-                    "Library Status": N.status(CFG["done_status"]),
+                    "Library Status": N.status(CFG["uploaded_status"]),
                     "Key Specs": N.text(row.get("Description", "")),
                     "Library Sync": N.text(self.snapshot(row)),
                     **{prop: prop_value(prop, row[col]) for col, prop in SYNCED.items() if row[col]},
@@ -226,7 +226,21 @@ class Sync:
         return pages
 
     def snapshot(self, row):
-        return json.dumps({c: row.get(c, "") for c in SYNCED}, separators=(",", ":"))
+        return json.dumps({**{c: row.get(c, "") for c in SYNCED}, "_rev": self.revision(row)},
+                          separators=(",", ":"))
+
+    def revision(self, row):
+        """Fingerprint of the part's catalog entry and CAD files: changes when it needs re-verifying."""
+        import hashlib
+        h = hashlib.sha256(json.dumps({k: v for k, v in sorted(row.items()) if k not in
+                                       ("UpdatedUTC", "NotionCategory")}).encode())
+        folder = self.lib.root / row["AssetFolder"] if row.get("AssetFolder") else None
+        if folder and folder.is_dir():
+            for f in sorted(folder.rglob("*")):
+                if f.is_file():
+                    h.update(f.relative_to(folder).as_posix().encode())
+                    h.update(f.read_bytes())
+        return h.hexdigest()[:16]
 
     def reconcile(self, page, pid, row):
         try:
@@ -246,8 +260,20 @@ class Sync:
             notion_edited = last is None or cur != (last.get(col) or "").strip()
             if cur and notion_edited:
                 conflicts.append(f"• {prop}: Notion had \"{cur}\", library has \"{lib_v}\"")
-        if N.read(page, "Library Status") != CFG["done_status"]:
-            props["Library Status"] = N.status(CFG["done_status"])
+        # In library -> "In library (un-verified)" until a Verifier sets Done in Notion.
+        # A verified part that later changes in the library goes back to un-verified.
+        status = N.read(page, "Library Status")
+        changed_since_verified = (status == CFG["done_status"] and last is not None
+                                  and last.get("_rev") not in (None, self.revision(row)))
+        if status not in (CFG["done_status"], CFG["uploaded_status"]) or changed_since_verified:
+            props["Library Status"] = N.status(CFG["uploaded_status"])
+        if changed_since_verified:
+            self.report.setdefault("reverify", []).append(N.read(page, "Component Name"))
+            verifiers = N.read(page, "Verifier") or []
+            self.notify(page, verifiers + (N.read(page, "Person") or []),
+                        f"This part changed in the KiCad library after it was verified ({self.author}, "
+                        f"{self.commit}), so its status is back to {CFG['uploaded_status']}. "
+                        "Please re-check it in the Library Manager and set it to Done again.")
         snap = self.snapshot(row)
         if newly_linked:
             props["Library ID"] = N.text(pid)

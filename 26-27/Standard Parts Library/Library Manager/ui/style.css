@@ -2002,3 +2002,113 @@ input[type="range"] {
 .board-tag-row input.qty {
   flex: 0 0 76px;
 }
+
+/* ---- Anteater Racing: filter bar + boards overview ---- */
+.filter-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 4px 0 16px;
+}
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+.filter-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #5f6b7a;
+  width: 70px;
+  flex-shrink: 0;
+}
+.chip {
+  border: 1px solid #d5dbe3;
+  background: #fff;
+  color: #2b3a4d;
+  border-radius: 999px;
+  padding: 5px 11px;
+  font-size: 12px;
+  gap: 5px;
+}
+.chip b {
+  font-weight: 600;
+  color: #7a8696;
+  font-size: 11px;
+}
+.chip:hover {
+  border-color: #0a2342;
+}
+.chip.on {
+  background: #0a2342;
+  border-color: #0a2342;
+  color: #fff;
+}
+.chip.on b {
+  color: #ffd302;
+}
+.chip.empty {
+  opacity: 0.55;
+}
+.chip.ghost {
+  border-style: dashed;
+  color: #5f6b7a;
+}
+.chip-select {
+  width: auto;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+.board-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  text-align: left;
+  background: #fff;
+  border: 1px solid #dfe3e9;
+  border-top: 4px solid #0a2342;
+  border-radius: 10px;
+  padding: 16px 18px;
+  color: #22303f;
+}
+.board-card:hover {
+  border-top-color: #ffd302;
+  box-shadow: 0 6px 18px #0a234214;
+}
+.board-card.archived {
+  border-top-color: #b9c3cf;
+  opacity: 0.8;
+}
+.board-card-top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: #0a2342;
+}
+.board-card .season {
+  font-size: 11px;
+  color: #7a8696;
+}
+.board-card strong {
+  font-size: 20px;
+  letter-spacing: -0.4px;
+}
+.board-card-stats {
+  font-size: 13px;
+  color: #3a4a5e;
+}
+.board-card small {
+  font-size: 11px;
+  color: #8a95a3;
+  word-break: break-all;
+}

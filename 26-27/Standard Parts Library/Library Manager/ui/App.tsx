@@ -27,7 +27,7 @@ import ImportDialog from "./ImportDialog";
 import ComponentPreviews from "./ComponentPreviews";
 import CatalogPreviews from "./CatalogPreviews";
 import { Publish } from "./Publish";
-import { addBoardPrompt, BoardTags, BoardView, BoardsState } from "./Boards";
+import { addBoardPrompt, BoardsOverview, BoardTags, BoardView, BoardsState, FilterBar } from "./Boards";
 import teamLogo from "./anteater-logo.png";
 import {
   closeGuard,
@@ -62,7 +62,8 @@ export default function App() {
   // Anteater Racing: board tags
   const [boards, setBoards] = useState<BoardsState | null>(null),
     [boardKey, setBoardKey] = useState(""),
-    [showOldSeasons, setShowOldSeasons] = useState(false);
+    [showOldSeasons, setShowOldSeasons] = useState(false),
+    [boardFilter, setBoardFilter] = useState("");
   const loadBoards = useCallback(() => {
     if (!library || library.recoveryNeeded) return setBoards(null);
     api<BoardsState>("boards").then(setBoards).catch(() => setBoards(null));
@@ -158,6 +159,7 @@ export default function App() {
   const parts = (library?.parts || []).filter(
     (p) =>
       p.Type !== "accessory" &&
+      (!boardFilter || !!boards?.usage[p.ID]?.[boardFilter]) &&
       (!category ||
         p.Category === category ||
         p.Category.startsWith(category + "/")) &&
@@ -261,6 +263,17 @@ export default function App() {
           </span>
         </button>
         <button
+          className={"nav-item " + (view === "boards" || view === "board" ? "active" : "")}
+          onClick={() => {
+            setView("boards");
+            loadBoards();
+          }}
+        >
+          <CircuitBoard size={17} />
+          Boards
+          <span>{boards?.boards.filter((b) => b.season === boards.boards[0]?.season).length || 0}</span>
+        </button>
+        <button
           className={"nav-item " + (view === "setup" ? "active" : "")}
           onClick={() => setView("setup")}
         >
@@ -281,95 +294,6 @@ export default function App() {
           <CloudUpload size={17} />
           Publish to GitHub
         </button>
-        {boards && (
-          <>
-            <div className="nav-label spaced">
-              BOARDS{" "}
-              <button title="Add a board" onClick={() => addBoardPrompt(boards, notify, setBoards)}>
-                <Plus size={15} />
-              </button>
-            </div>
-            <div className="folder-tree board-tree">
-              {boards.boards
-                .filter((b) => showOldSeasons || b.season === boards.boards[0]?.season)
-                .map((b) => (
-                  <button
-                    key={b.key}
-                    className={"folder-item " + (view === "board" && boardKey === b.key ? "active" : "")}
-                    onClick={() => {
-                      setBoardKey(b.key);
-                      setView("board");
-                      loadBoards();
-                    }}
-                  >
-                    <CircuitBoard size={15} />
-                    <span>{b.name}</span>
-                    <small>{b.season}</small>
-                  </button>
-                ))}
-              {boards.boards.some((b) => b.season !== boards.boards[0]?.season) && (
-                <button className="folder-item muted-toggle" onClick={() => setShowOldSeasons(!showOldSeasons)}>
-                  {showOldSeasons ? "Hide older seasons" : "Show older seasons"}
-                </button>
-              )}
-            </div>
-          </>
-        )}
-        <div className="nav-label spaced">
-          FOLDERS{" "}
-          <button
-            title="Create category folder"
-            onClick={async () => {
-              if (!library) return;
-              const name = prompt(
-                "Folder path within the library",
-                "components/",
-              );
-              if (name)
-                try {
-                  setLibrary(
-                    await api("folder", {
-                      path: name,
-                      revision: library.revision,
-                    }),
-                  );
-                } catch (e) {
-                  notify(String(e), true);
-                }
-            }}
-          >
-            <Plus size={15} />
-          </button>
-        </div>
-        <div className="folder-tree">
-          {(library?.categories || [])
-            .filter(
-              (c) =>
-                !/^components\/Connector Accessory(\/|$)/.test(c) ||
-                library?.parts.some(
-                  (p) =>
-                    p.Type !== "accessory" &&
-                    (p.Category === c || p.Category.startsWith(c + "/")),
-                ),
-            )
-            .map((c) => (
-              <button
-                key={c}
-                className={
-                  "folder-item " +
-                  (category === c && view === "catalog" ? "active" : "")
-                }
-                style={{ paddingLeft: 16 + (c.split("/").length - 1) * 13 }}
-                onClick={() => {
-                  setCategory(c);
-                  setView("catalog");
-                }}
-              >
-                <Folder size={15} />
-                <span>{c.split("/").pop()?.replaceAll("_", " ")}</span>
-              </button>
-            ))}
-        </div>
         <div className="sidebar-bottom">
           <div>
             <ShieldCheck size={16} />
@@ -507,6 +431,18 @@ export default function App() {
           <Setup library={library} notify={notify} />
         ) : view === "bom" ? (
           <BOM library={library} notify={notify} />
+        ) : view === "boards" && boards ? (
+          <BoardsOverview
+            boards={boards}
+            library={library}
+            showOld={showOldSeasons}
+            onToggleOld={() => setShowOldSeasons(!showOldSeasons)}
+            onOpen={(key) => {
+              setBoardKey(key);
+              setView("board");
+            }}
+            onAdd={() => addBoardPrompt(boards, notify, setBoards)}
+          />
         ) : view === "board" && boards && boards.boards.some((b) => b.key === boardKey) ? (
           <BoardView
             key={boardKey}
@@ -525,9 +461,14 @@ export default function App() {
               <div>
                 <div className="eyebrow">COMPONENT CATALOG</div>
                 <h1>
-                  {category
-                    ? category.split("/").pop()?.replaceAll("_", " ")
-                    : "All components"}
+                  {[
+                    category ? category.split("/").pop()?.replaceAll("_", " ") : "",
+                    boardFilter
+                      ? (category ? "on " : "Parts on ") +
+                        (boards?.boards.find((x) => x.key === boardFilter)?.name || "") +
+                        " · " + boardFilter.split("/")[0]
+                      : "",
+                  ].filter(Boolean).join(" ") || "All components"}
                   <span className="count">{parts.length}</span>
                 </h1>
                 <p>
@@ -638,6 +579,14 @@ export default function App() {
                 Refresh
               </button>
             </div>
+            <FilterBar
+              library={library}
+              boards={boards}
+              category={category}
+              boardFilter={boardFilter}
+              onCategory={setCategory}
+              onBoard={setBoardFilter}
+            />
             <div
               className={"catalog" + (passiveType ? " passive-catalog" : "")}
             >

@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "boards": {},
+  "usage": {
+    "1724470004": {
+      "26-27/ROC": {
+        "refs": "J1",
+        "qty": 1,
+        "source": "schematic"
+      }
+    }
+  }
+}

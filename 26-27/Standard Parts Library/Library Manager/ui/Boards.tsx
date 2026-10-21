@@ -233,3 +233,149 @@ export function addBoardPrompt(
     })
     .catch((e) => notify(String(e), true));
 }
+
+const CATEGORY_HIDDEN = /^components\/(generic_models|logos|Connector Accessory)(\/|$)/;
+
+export function FilterBar({
+  library,
+  boards,
+  category,
+  boardFilter,
+  onCategory,
+  onBoard,
+}: {
+  library: Library;
+  boards: BoardsState | null;
+  category: string;
+  boardFilter: string;
+  onCategory: (c: string) => void;
+  onBoard: (b: string) => void;
+}) {
+  const [showEmpty, setShowEmpty] = useState(false);
+  const parts = library.parts.filter((p) => p.Type !== "accessory");
+  const count = (c: string) => parts.filter((p) => p.Category === c || p.Category.startsWith(c + "/")).length;
+  const cats = library.categories
+    .filter((c) => c !== "components" && !CATEGORY_HIDDEN.test(c) && c.split("/").length === 2)
+    .map((c) => ({ c, n: count(c) }));
+  const shown = cats.filter((x) => x.n > 0 || showEmpty || x.c === category);
+  const empty = cats.filter((x) => x.n === 0).length;
+  const season = boards?.boards[0]?.season;
+  const current = boards?.boards.filter((b) => b.season === season) || [];
+  const older = boards?.boards.filter((b) => b.season !== season) || [];
+  const tagged = (key: string) => parts.filter((p) => boards?.usage[p.ID]?.[key]).length;
+  return (
+    <div className="filter-bar">
+      <div className="filter-row">
+        <span className="filter-label">Category</span>
+        <button className={"chip " + (!category ? "on" : "")} onClick={() => onCategory("")}>
+          All <b>{parts.length}</b>
+        </button>
+        {shown.map(({ c, n }) => (
+          <button
+            key={c}
+            className={"chip " + (category === c ? "on" : "") + (n ? "" : " empty")}
+            onClick={() => onCategory(category === c ? "" : c)}
+          >
+            {c.split("/").pop()} <b>{n}</b>
+          </button>
+        ))}
+        {empty > 0 && (
+          <button className="chip ghost" onClick={() => setShowEmpty(!showEmpty)}>
+            {showEmpty ? "Hide empty" : `+${empty} empty`}
+          </button>
+        )}
+      </div>
+      {boards && (
+        <div className="filter-row">
+          <span className="filter-label">Board</span>
+          <button className={"chip " + (!boardFilter ? "on" : "")} onClick={() => onBoard("")}>
+            All boards
+          </button>
+          {current.map((b) => (
+            <button
+              key={b.key}
+              className={"chip board " + (boardFilter === b.key ? "on" : "")}
+              onClick={() => onBoard(boardFilter === b.key ? "" : b.key)}
+            >
+              <CircuitBoard size={13} /> {b.name} <b>{tagged(b.key)}</b>
+            </button>
+          ))}
+          {older.length > 0 && (
+            <select
+              className="chip-select"
+              value={older.some((b) => b.key === boardFilter) ? boardFilter : ""}
+              onChange={(e) => onBoard(e.target.value)}
+            >
+              <option value="">Older seasons…</option>
+              {older.map((b) => (
+                <option key={b.key} value={b.key}>{label(b)}</option>
+              ))}
+            </select>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
+export function BoardsOverview({
+  boards,
+  library,
+  showOld,
+  onToggleOld,
+  onOpen,
+  onAdd,
+}: {
+  boards: BoardsState;
+  library: Library;
+  showOld: boolean;
+  onToggleOld: () => void;
+  onOpen: (key: string) => void;
+  onAdd: () => void;
+}) {
+  const season = boards.boards[0]?.season;
+  const list = boards.boards.filter((b) => showOld || b.season === season);
+  const stats = (key: string) => {
+    const lines = library.parts.filter((p) => boards.usage[p.ID]?.[key]);
+    return { parts: lines.length, qty: lines.reduce((n, p) => n + boards.usage[p.ID][key].qty, 0) };
+  };
+  return (
+    <div className="content">
+      <div className="page-heading">
+        <div>
+          <div className="eyebrow">SEASON {season}</div>
+          <h1>Boards <span className="count">{list.length}</span></h1>
+          <p>Every board in the repo. Open one to see its parts, refs and quantities.</p>
+        </div>
+        <div style={{ display: "flex", gap: 8 }}>
+          {boards.boards.some((b) => b.season !== season) && (
+            <button className="secondary" onClick={onToggleOld}>
+              {showOld ? "Hide older seasons" : "Show older seasons"}
+            </button>
+          )}
+          <button className="primary" onClick={onAdd}>
+            <Plus size={16} /> Add board
+          </button>
+        </div>
+      </div>
+      <div className="board-grid">
+        {list.map((b) => {
+          const s = stats(b.key);
+          return (
+            <button key={b.key} className={"board-card" + (b.archived ? " archived" : "")} onClick={() => onOpen(b.key)}>
+              <div className="board-card-top">
+                <CircuitBoard size={20} />
+                <span className="season">{b.season}</span>
+              </div>
+              <strong>{b.name}</strong>
+              <span className="board-card-stats">
+                {s.parts} part{s.parts === 1 ? "" : "s"} · {s.qty} placed
+              </span>
+              <small>{b.project ? b.project.split("/").slice(1).join("/") : "No KiCad project yet"}</small>
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  );
+}

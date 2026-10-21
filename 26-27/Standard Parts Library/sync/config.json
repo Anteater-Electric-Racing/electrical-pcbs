@@ -17,6 +17,7 @@
     "bom_lines_db": ""
   },
   "done_status": "Done (added to KiCad library)",
+  "uploaded_status": "In library (un-verified)",
   "removed_status": "Missing",
   "categories": {
     "_comment": "Library folder under components/ -> Notion PCB Wiki Category option (identical names). Connector Accessory parts never get Notion rows.",

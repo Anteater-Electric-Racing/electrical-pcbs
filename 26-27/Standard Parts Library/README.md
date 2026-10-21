@@ -43,7 +43,8 @@ In KiCad, press **A** and search by part number, manufacturer or description. Th
 7. Check the **Footprint**, **Symbol** and **3D alignment** tabs. In 3D alignment, use the **Top** and **Side** views and the Move/Rotate controls until the model sits on the pads, with pins in the holes and the body flat on the board.
 8. For connectors, add the mating **housing and crimp contacts** as accessories at the bottom, so they appear on the BOM.
 9. Click **Save**.
-10. Open **Publish to GitHub** in the left sidebar, check the description, and click **Publish**. A few minutes later the Notion row turns *Done (added to KiCad library)* and its MPN, manufacturer, datasheet and package are filled in. Then click **Quit manager**.
+10. Open **Publish to GitHub** in the left sidebar, check the description, and click **Publish**. A few minutes later the Notion row turns **In library (un-verified)** and its MPN, manufacturer, datasheet, package and category are filled in. Then click **Quit manager**.
+11. The row's **Verifier** checks the part (symbol, footprint, 3D alignment) and sets the status to **Done (added to KiCad library)** in Notion. If the part is changed in the library later, it goes back to *In library (un-verified)* and the Verifier gets a comment to re-check it.
 
 ### If Publish says someone else changed the same part
 The app shows who it was and has an **Email** button. Agree with them which version is right, then click **Keep my version** or **Keep their version**. Your work is never lost. Edits to *different* parts or different fields are merged automatically, so you won't see this for them.
@@ -51,9 +52,9 @@ The app shows who it was and has an **Email** button. Agree with them which vers
 ### Tagging parts with boards
 
 - **Tag a part:** click it › **Used on boards** › **Add board**. Pick the board, type its refs (e.g. `R1-R4, R7`), and click **Save board tags**. Qty fills in from the refs; type a number to override it. Then **Publish**.
-- **See a board's parts:** click the board under **BOARDS** in the sidebar. You get refs, quantities, a total, and **Export CSV**.
+- **See a board's parts:** open **Boards** in the sidebar and click the board's card, for refs, quantities, a total and **Export CSV**. Or, on **All components**, click a board in the **Board** filter row. The **Category** row filters the same way, and the two combine.
 - **Boards appear automatically:** any KiCad project in a season folder (`26-27/...`), and any board folder in the current season even before it has a project (e.g. `26-27/DASH`). New ones show up when you switch back to the app; boards made on someone else's PC show up after you pull. Tags on a folder-only board move to its KiCad project once one is created inside it. **Update from schematic** fills in that board's tags from the actual schematic, replacing its manual tags. Add a board with no schematic yet with the **+** next to BOARDS.
-- Only the current season shows by default; click **Show older seasons** for past years.
+- Only the current season shows by default. Use **Show older seasons** on the Boards page, or **Older seasons…** in the filter row.
 
 ### Changing or deleting a part
 

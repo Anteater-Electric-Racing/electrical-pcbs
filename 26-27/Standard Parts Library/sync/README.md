@@ -8,7 +8,7 @@
 
 | Source (repo) | Notion result |
 | --- | --- |
-| Each part in `Anteater Parts` | Its PCB Wiki row gets MPN, Manufacturer, Datasheet, Package/Footprint, **Category** (from the part's folder, mapped in `config.json` › `categories`), Library ID, and Library Status = *Done (added to KiCad library)*. If no row matches, a row is created. |
+| Each part in `Anteater Parts` | Its PCB Wiki row gets MPN, Manufacturer, Datasheet, Package/Footprint, **Category** (from the part's folder, mapped in `config.json` › `categories`), Library ID, and Library Status = *In library (un-verified)*. A Verifier sets *Done (added to KiCad library)* in Notion. The sync never overrides that, unless the part's catalog entry or CAD files change afterwards: then it goes back to un-verified and the Verifier is @mentioned. If no row matches, a row is created. |
 | A part removed from the library | Library Status goes back to *Missing* and the row's Person is @mentioned. |
 | Every `*.kicad_pro` in a season folder (`26-27/`, `25-26 Archive/`, later `27-28/`...) | One **Boards** page per board per season |
 | Each board's schematic, exported with `kicad-cli` and expanded with connector accessories | **BOM Lines**: board × part × qty × refs |
