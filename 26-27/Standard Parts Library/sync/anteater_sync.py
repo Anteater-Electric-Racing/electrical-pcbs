@@ -124,7 +124,8 @@ def discover_boards():
 
 def kicad_cli():
     for c in (os.environ.get("KICAD_CLI"), shutil.which("kicad-cli"),
-              r"C:\Program Files\KiCad\10.0\bin\kicad-cli.exe"):
+              r"C:\Program Files\KiCad\10.0\bin\kicad-cli.exe",
+              "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli"):
         if c and Path(c).exists():
             return c
     raise RuntimeError("kicad-cli not found; set KICAD_CLI")

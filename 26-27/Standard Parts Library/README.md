@@ -6,8 +6,8 @@ Parts are managed with the [KiCad Library Manager](https://github.com/TheGabem42
 
 | Folder / file | What it is |
 | --- | --- |
-| `Setup (run once).bat` | One-time setup for each PC |
-| `Open Library Manager.bat` | Opens the app (or use the desktop shortcut that Setup creates) |
+| `Setup (run once).bat` / `.command` | One-time setup for each computer (`.bat` on Windows, `.command` on Mac) |
+| `Open Library Manager.bat` / `.command` | Opens the app (or use the desktop shortcut that Setup creates) |
 | `Anteater Parts/` | The library itself. Edit it only through the app. |
 | `Library Manager/` | The app. Don't edit. |
 
@@ -22,6 +22,10 @@ You need **Windows**, **GitHub Desktop** (or git) with this repo cloned, and an 
    - connect the library to KiCad
    - put an **Anteater Parts Library** shortcut on your desktop
 3. Open KiCad. In the schematic editor, press **A** (Add Symbol) and search for a part, for example `1724470004`. Parts are listed under **Anteater Parts**.
+
+### On a Mac
+
+Same steps, using the `.command` files. Double-click **`Setup (run once).command`**. It installs what's missing with [Homebrew](https://brew.sh) (install Homebrew first if you don't have it) and puts an **Anteater Parts Library** shortcut on your Desktop. The first time, macOS may say the file "can't be opened": right-click it › **Open** › **Open**. Quit KiCad with Cmd+Q when Setup asks.
 
 ## Finding and using a part
 
