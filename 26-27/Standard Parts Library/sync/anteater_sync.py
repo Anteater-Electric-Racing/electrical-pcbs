@@ -369,6 +369,9 @@ def main():
     args = ap.parse_args()
     sys.stdout.reconfigure(encoding="utf-8")
 
+    from manager.anteater_guard import check
+
+    check(REPO / CFG["library"])  # fail loudly (and open an issue in CI) on a conflicted library
     lib = Library(REPO / CFG["library"])
     parts = library_parts(lib)
     boards = [b for b in discover_boards() if not args.season or b["season"] == args.season]

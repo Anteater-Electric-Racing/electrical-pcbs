@@ -23,6 +23,6 @@ fi
 
 if ! python3 "Library Manager/app.py" --library "Anteater Parts"; then
     echo
-    echo "The Library Manager stopped with an error. Has \"Setup (run once).command\" been run on this Mac?"
+    echo "The Library Manager stopped - see the message above. If it isn't clear, run \"Setup (run once).command\" again or message the library owner."
     read -r -p "Press Enter to close"
 fi

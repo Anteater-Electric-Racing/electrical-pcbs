@@ -192,6 +192,9 @@ def publish(lib, message, prefer=None):
     """prefer: None, "mine" or "theirs" for parts both people changed."""
     if prefer not in (None, "mine", "theirs"):
         raise ValueError("Unknown conflict choice")
+    from .anteater_guard import check
+
+    check(lib.root)  # never push a library containing merge-conflict markers
     g = Git(lib)
     if (lib.appdata / ".writer.lock").exists() or (lib.appdata / "pending-transaction.json").exists():
         raise ValueError("Finish or recover the current library edit before publishing")

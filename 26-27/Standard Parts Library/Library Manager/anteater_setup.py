@@ -8,11 +8,17 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from manager import kicad  # noqa: E402
+from manager.anteater_guard import check as check_conflicts  # noqa: E402
 from manager.odbc import check_odbc  # noqa: E402
 from manager.storage import Library  # noqa: E402
 
 
 def main():
+    try:
+        check_conflicts(sys.argv[1])
+    except ValueError as exc:
+        print("ERROR:", exc)
+        return 1
     lib = Library(sys.argv[1])
     switch = "--switch" in sys.argv
     status = kicad.setup_status(lib)

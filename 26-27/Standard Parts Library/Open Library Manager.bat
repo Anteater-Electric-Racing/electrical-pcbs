@@ -30,5 +30,5 @@ exit /b
 
 :crashed
 echo.
-echo The Library Manager stopped with an error. Has "Setup (run once).bat" been run on this PC?
+echo The Library Manager stopped - see the message above. If it isn't clear, run "Setup (run once).bat" again or message the library owner.
 pause
