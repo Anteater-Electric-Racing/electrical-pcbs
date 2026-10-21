@@ -167,6 +167,10 @@ def run(library=None, port=0, open_browser=True, desktop=False, parent_pid=None)
                             )
                         if path == "/api/setup":
                             return self.send(kicad.setup_status(state.lib()))
+                        if path == "/api/delete-plan":  # Anteater Racing addition
+                            from . import anteater_delete
+
+                            return self.send(anteater_delete.plan(state.lib(), query["part"][0]))
                         if path == "/api/publish-status":  # Anteater Racing addition
                             from . import anteater_publish
 
@@ -441,6 +445,12 @@ def run(library=None, port=0, open_browser=True, desktop=False, parent_pid=None)
                         with lib.locked(data.get("revision")):
                             inside(lib.root, name).mkdir(parents=True, exist_ok=True)
                         return self.send(lib.state())
+                    if path == "/api/delete":  # Anteater Racing addition
+                        from . import anteater_delete
+
+                        lib = state.lib()
+                        removed = anteater_delete.delete(lib, data["partID"])
+                        return self.send({"removed": removed, "library": lib.state()})
                     if path == "/api/publish":  # Anteater Racing addition
                         from . import anteater_publish
 

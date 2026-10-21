@@ -48,6 +48,13 @@ In KiCad, press **A** and search by part number, manufacturer or description. Th
 ### If Publish says someone else changed the same part
 The app shows who it was and has an **Email** button. Agree with them which version is right, then click **Keep my version** or **Keep their version**. Your work is never lost. Edits to *different* parts or different fields are merged automatically, so you won't see this for them.
 
+### Changing or deleting a part
+
+- **To fix details or files:** click the part › **Edit component**, change it, **Save**, then **Publish**.
+- **To remove it:** click the part › **Delete component** and confirm. This removes its symbol, footprint, 3D model, and any housings/contacts only it used. Then **Publish**: its Notion row goes back to *Missing*, so it can be re-done (e.g. a different MPN chosen in Notion).
+- You can't delete a part another connector uses as an accessory. Remove it from that connector's accessory list first.
+- Deleted by mistake? Before publishing, ask the library owner. After publishing, it's still in git history.
+
 Resistors and capacitors in standard sizes (0402/0603/0805...) share one model. Use the Resistor/Capacitor view, not a new folder.
 
 ## Rules

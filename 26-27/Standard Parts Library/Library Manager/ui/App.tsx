@@ -15,6 +15,7 @@ import {
   Plus,
   Search,
   Settings2,
+  Trash2,
   ShieldCheck,
   SlidersHorizontal,
   X,
@@ -759,6 +760,43 @@ export default function App() {
             >
               <Settings2 size={16} />
               Edit component
+            </button>
+            <button
+              className="danger"
+              onClick={async () => {
+                try {
+                  const plan = await api(
+                    "delete-plan?part=" + encodeURIComponent(selected.ID),
+                  );
+                  const extra = plan.accessories.length
+                    ? `
+
+Its accessories go too: ${plan.accessories.join(", ")}`
+                    : "";
+                  if (
+                    !window.confirm(
+                      `Delete ${plan.part} from the library?
+
+` +
+                        `This removes its symbol, footprint and 3D model (${plan.files.length} files).${extra}
+
+` +
+                        "A backup is kept, and git history can bring it back. " +
+                        "After you Publish, its Notion row goes back to Missing.",
+                    )
+                  )
+                    return;
+                  const r = await api("delete", { partID: selected.ID });
+                  setLibrary(r.library);
+                  setSelected(null);
+                  notify(`Deleted ${plan.part}. Publish to GitHub to share the change.`);
+                } catch (e) {
+                  notify(String(e), true);
+                }
+              }}
+            >
+              <Trash2 size={16} />
+              Delete component
             </button>
             <h3>Accessory list</h3>
             {selected.recipe?.items.length ? (
