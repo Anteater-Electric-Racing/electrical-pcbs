@@ -167,6 +167,10 @@ def run(library=None, port=0, open_browser=True, desktop=False, parent_pid=None)
                             )
                         if path == "/api/setup":
                             return self.send(kicad.setup_status(state.lib()))
+                        if path == "/api/boards":  # Anteater Racing addition
+                            from . import anteater_boards
+
+                            return self.send(anteater_boards.state(state.lib()))
                         if path == "/api/delete-plan":  # Anteater Racing addition
                             from . import anteater_delete
 
@@ -445,6 +449,16 @@ def run(library=None, port=0, open_browser=True, desktop=False, parent_pid=None)
                         with lib.locked(data.get("revision")):
                             inside(lib.root, name).mkdir(parents=True, exist_ok=True)
                         return self.send(lib.state())
+                    if path.startswith("/api/boards/"):  # Anteater Racing addition
+                        from . import anteater_boards as B
+
+                        lib = state.lib()
+                        if path == "/api/boards/usage":
+                            return self.send(B.set_usage(lib, data["partID"], data.get("entries", [])))
+                        if path == "/api/boards/add":
+                            return self.send(B.add_board(lib, data.get("name"), data.get("season")))
+                        if path == "/api/boards/import":
+                            return self.send(B.import_schematic(lib, data["board"], kicad.cli_path()))
                     if path == "/api/delete":  # Anteater Racing addition
                         from . import anteater_delete
 

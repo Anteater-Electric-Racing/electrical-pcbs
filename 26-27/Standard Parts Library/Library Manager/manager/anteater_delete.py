@@ -5,7 +5,7 @@ folder (symbol, footprint, 3D model, recipe) and any housings/contacts that only
 this component used are removed, and KiCad's generated indexes are rebuilt.
 After Publish, the Notion sync marks the part's PCB Wiki row Missing.
 """
-from .storage import APPDATA, csv_bytes, inside
+from .storage import APPDATA, csv_bytes, inside, json_bytes
 
 
 def plan(lib, part_id):
@@ -57,6 +57,13 @@ def delete(lib, part_id):
     p = plan(lib, part_id)
     keep = [r for r in lib.rows() if r["ID"] not in set(p["ids"])]
     writes = {APPDATA + "/components.csv": csv_bytes(keep), **lib.compiled(keep)}
+    from . import anteater_boards as B
+
+    boards = B.load(lib)
+    if any(i in boards["usage"] for i in p["ids"]):
+        for i in p["ids"]:
+            B.remove_part(boards, i)
+        writes[B.FILE] = json_bytes(boards)
     lib.transaction(writes, lib.revision(), deletes=p["files"])
     # the transaction removes files; tidy the now-empty component folder(s)
     for ident_folder in p["folders"]:

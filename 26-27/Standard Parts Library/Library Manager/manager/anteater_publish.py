@@ -170,6 +170,17 @@ def _resolve(g, prefer=None):
                 continue
             (g.top / path).write_text(merged, encoding="utf-8", newline="")
             g.run("add", "--", path)
+        elif lp == "appdata/boards.json":
+            from .anteater_boards import merge as merge_boards
+
+            stage = lambda n: g.run("show", f":{n}:{path}", check=False).stdout
+            merged, clashes = merge_boards(stage(1), stage(2), stage(3), prefer)
+            if merged is None:
+                unresolved.append(path)
+                clash_ids += [c.split(" on ")[0] for c in clashes]
+                continue
+            (g.top / path).write_text(merged, encoding="utf-8", newline="")
+            g.run("add", "--", path)
         elif lp and lp.startswith(DERIVED):
             # take upstream's copy; it is regenerated from the merged catalog afterwards
             if g.run("checkout", "--ours", "--", path, check=False).returncode:

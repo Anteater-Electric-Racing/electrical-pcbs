@@ -48,6 +48,13 @@ In KiCad, press **A** and search by part number, manufacturer or description. Th
 ### If Publish says someone else changed the same part
 The app shows who it was and has an **Email** button. Agree with them which version is right, then click **Keep my version** or **Keep their version**. Your work is never lost. Edits to *different* parts or different fields are merged automatically, so you won't see this for them.
 
+### Tagging parts with boards
+
+- **Tag a part:** click it › **Used on boards** › **Add board**. Pick the board, type its refs (e.g. `R1-R4, R7`), and click **Save board tags**. Qty fills in from the refs; type a number to override it. Then **Publish**.
+- **See a board's parts:** click the board under **BOARDS** in the sidebar. You get refs, quantities, a total, and **Export CSV**.
+- **Boards with a KiCad project** in a season folder (`26-27/...`) appear automatically. **Update from schematic** fills in that board's tags from the actual schematic, replacing its manual tags. Add a board with no schematic yet with the **+** next to BOARDS.
+- Only the current season shows by default; click **Show older seasons** for past years.
+
 ### Changing or deleting a part
 
 - **To fix details or files:** click the part › **Edit component**, change it, **Save**, then **Publish**.

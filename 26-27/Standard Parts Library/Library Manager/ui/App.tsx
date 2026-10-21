@@ -4,6 +4,7 @@ import {
   Cable,
   Check,
   ChevronRight,
+  CircuitBoard,
   CloudUpload,
   CircleHelp,
   Cpu,
@@ -26,6 +27,7 @@ import ImportDialog from "./ImportDialog";
 import ComponentPreviews from "./ComponentPreviews";
 import CatalogPreviews from "./CatalogPreviews";
 import { Publish } from "./Publish";
+import { addBoardPrompt, BoardTags, BoardView, BoardsState } from "./Boards";
 import teamLogo from "./anteater-logo.png";
 import {
   closeGuard,
@@ -57,6 +59,14 @@ export default function App() {
     [category, setCategory] = useState(""),
     [view, setView] = useState("catalog"),
     [importing, setImporting] = useState(false);
+  // Anteater Racing: board tags
+  const [boards, setBoards] = useState<BoardsState | null>(null),
+    [boardKey, setBoardKey] = useState(""),
+    [showOldSeasons, setShowOldSeasons] = useState(false);
+  useEffect(() => {
+    if (!library || library.recoveryNeeded) return setBoards(null);
+    api<BoardsState>("boards").then(setBoards).catch(() => setBoards(null));
+  }, [library?.revision]);
   const [path, setPath] = useState(""),
     [working, setWorking] = useState(false),
     [selected, setSelected] = useState<Part | null>(null),
@@ -265,6 +275,39 @@ export default function App() {
           <CloudUpload size={17} />
           Publish to GitHub
         </button>
+        {boards && (
+          <>
+            <div className="nav-label spaced">
+              BOARDS{" "}
+              <button title="Add a board" onClick={() => addBoardPrompt(boards, notify, setBoards)}>
+                <Plus size={15} />
+              </button>
+            </div>
+            <div className="folder-tree board-tree">
+              {boards.boards
+                .filter((b) => showOldSeasons || b.season === boards.boards[0]?.season)
+                .map((b) => (
+                  <button
+                    key={b.key}
+                    className={"folder-item " + (view === "board" && boardKey === b.key ? "active" : "")}
+                    onClick={() => {
+                      setBoardKey(b.key);
+                      setView("board");
+                    }}
+                  >
+                    <CircuitBoard size={15} />
+                    <span>{b.name}</span>
+                    <small>{b.season}</small>
+                  </button>
+                ))}
+              {boards.boards.some((b) => b.season !== boards.boards[0]?.season) && (
+                <button className="folder-item muted-toggle" onClick={() => setShowOldSeasons(!showOldSeasons)}>
+                  {showOldSeasons ? "Hide older seasons" : "Show older seasons"}
+                </button>
+              )}
+            </div>
+          </>
+        )}
         <div className="nav-label spaced">
           FOLDERS{" "}
           <button
@@ -457,6 +500,16 @@ export default function App() {
           <Setup library={library} notify={notify} />
         ) : view === "bom" ? (
           <BOM library={library} notify={notify} />
+        ) : view === "board" && boards && boards.boards.some((b) => b.key === boardKey) ? (
+          <BoardView
+            key={boardKey}
+            board={boards.boards.find((b) => b.key === boardKey)!}
+            boards={boards}
+            library={library}
+            notify={notify}
+            onBoards={setBoards}
+            onOpenPart={setSelected}
+          />
         ) : view === "publish" ? (
           <Publish library={library} notify={notify} onLibrary={setLibrary} />
         ) : (
@@ -816,6 +869,9 @@ Its accessories go too: ${plan.accessories.join(", ")}`
               ))
             ) : (
               <p className="muted">No accessories attached.</p>
+            )}
+            {boards && (
+              <BoardTags key={selected.ID} part={selected} boards={boards} notify={notify} onBoards={setBoards} />
             )}
           </section>
         </div>
