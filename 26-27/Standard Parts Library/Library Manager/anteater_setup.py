@@ -25,12 +25,25 @@ def main():
             print("ERROR:", exc)
             return 2 if "Another library is active" in str(exc) else 1
         print("Connected KiCad to", lib.root, "(old KiCad settings backed up as *.bak)")
-    try:
-        result = check_odbc(lib.appdata)
-        print("Database check:", result)
-    except Exception as exc:  # report, but the KiCad registration is already done
-        print("WARNING: database check failed:", exc)
-        return 3
+    # Try the ODBC manager KiCad uses first. On a Mac, KiCad's bundled libodbc can only be
+    # loaded by KiCad itself (missing @rpath), so fall back to Homebrew's unixODBC.
+    managers = [None, "/opt/homebrew/lib/libodbc.2.dylib", "/usr/local/lib/libodbc.2.dylib"]
+    load_errors = []
+    for manager in managers:
+        if manager and not Path(manager).exists():
+            continue
+        try:
+            print("Database check:", check_odbc(lib.appdata, manager=manager))
+            return 0
+        except OSError as exc:  # this ODBC manager couldn't be loaded; try the next one
+            load_errors.append(str(exc).splitlines()[0])
+        except Exception as exc:  # loaded, but the database itself isn't reachable: a real problem
+            print("WARNING: database check failed:", exc)
+            return 3
+    print("NOTE: couldn't load an ODBC manager to double-check the database from here:")
+    for e in load_errors:
+        print("   ", e)
+    print("KiCad is connected; confirm by pressing A in KiCad's schematic editor and searching for a part.")
     return 0
 
 
