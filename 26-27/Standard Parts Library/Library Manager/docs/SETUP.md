@@ -36,16 +36,16 @@ The Homebrew formula `sqliteodbc` provides a SQLite3 ODBC driver. Install the dr
 Add a **user** DSN in `~/.odbc.ini` without replacing other entries:
 
 ```ini
-[VirtusSQLite]
+[AnteaterSQLite]
 Driver=SQLite3
 Description=KiCad component library
 ```
 
-If `VirtusSQLite` already exists, inspect it rather than overwriting it. The library's `.kicad_dbl` supplies the database filename; do not hard-code a development or old library path into the DSN.
+If `AnteaterSQLite` already exists, inspect it rather than overwriting it. The library's `.kicad_dbl` supplies the database filename; do not hard-code a development or old library path into the DSN.
 
 ## SQLite ODBC on Windows
 
-Install a **64-bit SQLite ODBC driver** appropriate for KiCad. In **ODBC Data Sources (64-bit)** → **User DSN** → **Add**, choose that driver and name the DSN **VirtusSQLite**. Preserve unrelated data sources. Platform setup instructions alone are not evidence that this project's native Windows workflow has been tested.
+Install a **64-bit SQLite ODBC driver** appropriate for KiCad. In **ODBC Data Sources (64-bit)** → **User DSN** → **Add**, choose that driver and name the DSN **AnteaterSQLite**. Preserve unrelated data sources. Platform setup instructions alone are not evidence that this project's native Windows workflow has been tested.
 
 ## Verify and connect
 
@@ -54,7 +54,7 @@ Click **Check database connection** in the manager. It reads `appdata/parts.kica
 The connection string remains:
 
 ```text
-DSN=VirtusSQLite;Database=${CWD}/parts.sqlite;
+DSN=AnteaterSQLite;Database=${CWD}/parts.sqlite;
 ```
 
 `MYCO_PARTS_DIR` identifies the selected v2 library's **appdata** folder. It is used for symbol, footprint and model paths, not substituted into the ODBC string. `${CWD}` resolves to the folder containing the database configuration. Paths containing semicolons are rejected because the tested SQLite ODBC connection does not support them reliably.

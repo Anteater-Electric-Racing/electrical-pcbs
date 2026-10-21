@@ -16,14 +16,15 @@ def category_label(category):
     if parts and parts[0].casefold() == "components":
         parts.pop(0)
     if not parts:
-        return "Virtus - Components"
-    words = [re.sub(r"[_-]+", " ", p).strip() for p in parts]
+        return "Anteater - Components"
+    # Anteater Racing: keep hyphens so labels match Notion (e.g. "Diode (NON-LED)")
+    words = [re.sub(r"_+", " ", p).strip() for p in parts]
     words = ["IC" if p.casefold() in {"ic", "ics"} else " ".join(w[:1].upper() + w[1:] for w in p.split()) for p in words]
-    if parts[0].casefold() in {"connector", "connectors"}:
+    if parts[0].casefold() in {"connector", "connectors"} and len(parts) > 1:
         words = words[1:] or ["Connectors"]
         if "connector" not in words[-1].casefold():
             words[-1] += " Connectors"
-    return "Virtus - " + " - ".join(words)
+    return "Anteater - " + " - ".join(words)
 
 
 def footprints(lib, rows, pending, fingerprints):

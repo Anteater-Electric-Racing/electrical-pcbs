@@ -1,0 +1,48 @@
+{
+  "library": "26-27/Standard Parts Library/Anteater Parts",
+  "github_repo": "Anteater-Electric-Racing/electrical-pcbs",
+  "season_folder_regex": "^(\\d\\d-\\d\\d)",
+  "skip_dirs": [
+    ".history",
+    "Standard Parts Library",
+    "node_modules"
+  ],
+  "skip_dir_prefixes": [
+    "_restore_backup",
+    "_autosave"
+  ],
+  "notion": {
+    "parts_db": "7fd7ca48596083678bd801b4752dbde2",
+    "boards_db": "",
+    "bom_lines_db": ""
+  },
+  "done_status": "Done (added to KiCad library)",
+  "removed_status": "Missing",
+  "categories": {
+    "_comment": "Library folder under components/ -> Notion PCB Wiki Category option (identical names). Connector Accessory parts never get Notion rows.",
+    "CAN Controller": "CAN Controller",
+    "CAN Transceiver": "CAN Transceiver",
+    "Capacitor": "Capacitor",
+    "Comparator - Op-Amp": "Comparator - Op-Amp",
+    "Connector": "Connector",
+    "DC-DC Converter": "DC-DC Converter",
+    "Diode": "Diode",
+    "Fuse": "Fuse",
+    "Heat Sink": "Heat Sink",
+    "Inductor": "Inductor",
+    "LED": "LED",
+    "Logic IC": "Logic IC",
+    "MOSFET": "MOSFET",
+    "Microcontroller": "Microcontroller",
+    "Mounting Hole": "Mounting Hole",
+    "Optocoupler": "Optocoupler",
+    "Potentiometer": "Potentiometer",
+    "Regulator": "Regulator",
+    "Relay": "Relay",
+    "Resistor": "Resistor",
+    "Sensor": "Sensor",
+    "Switch": "Switch",
+    "Test Point": "Test Point",
+    "Timer": "Timer"
+  }
+}

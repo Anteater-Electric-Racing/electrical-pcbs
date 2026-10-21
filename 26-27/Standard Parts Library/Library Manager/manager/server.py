@@ -167,6 +167,10 @@ def run(library=None, port=0, open_browser=True, desktop=False, parent_pid=None)
                             )
                         if path == "/api/setup":
                             return self.send(kicad.setup_status(state.lib()))
+                        if path == "/api/publish-status":  # Anteater Racing addition
+                            from . import anteater_publish
+
+                            return self.send(anteater_publish.status(state.lib()))
                         if path == "/api/component-preview":
                             kind = query.get("kind", ["model"])[0]
                             result = component_preview(state.lib(), query["partID"][0], kind)
@@ -437,6 +441,12 @@ def run(library=None, port=0, open_browser=True, desktop=False, parent_pid=None)
                         with lib.locked(data.get("revision")):
                             inside(lib.root, name).mkdir(parents=True, exist_ok=True)
                         return self.send(lib.state())
+                    if path == "/api/publish":  # Anteater Racing addition
+                        from . import anteater_publish
+
+                        result = anteater_publish.publish(state.lib(), data.get("message", ""), data.get("prefer"))
+                        result["library"] = state.lib().state()
+                        return self.send(result)
                     if path == "/api/connect":
                         return self.send(
                             kicad.connect(state.lib(), switch=data.get("switch", False))

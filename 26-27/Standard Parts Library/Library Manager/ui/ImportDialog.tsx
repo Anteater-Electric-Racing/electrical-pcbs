@@ -29,14 +29,12 @@ const icon = (type: string) =>
   );
 const categoryFor = (type: string, _mode: string) =>
   type === "connector"
-    ? "components/connectors"
+    ? "components/Connector"
     : type === "accessory"
-      ? "components/accessories"
+      ? "components/Connector Accessory"
       : ["resistor", "capacitor"].includes(type)
-        ? `components/${type}s`
-        : type === "IC"
-          ? "components/ICs"
-          : "components/other";
+        ? `components/${type[0].toUpperCase()}${type.slice(1)}`
+        : "components/"; // Anteater: IC/other parts must pick a Notion category
 
 type AccessoryItem = {
   partID?: string;
@@ -71,7 +69,7 @@ export default function ImportDialog({
       Package: "0805",
     }),
     [mode, setMode] = useState("generic"),
-    [category, setCategory] = useState("components/resistors"),
+    [category, setCategory] = useState("components/Resistor"),
     [folderName, setFolderName] = useState("");
   const [url, setURL] = useState(""),
     [content, setContent] = useState(""),
@@ -1071,7 +1069,7 @@ export default function ImportDialog({
                       <input
                         list="categories"
                         value={category.replace(/^components\/?/, "")}
-                        placeholder="connectors"
+                        placeholder="pick one, e.g. Regulator"
                         onChange={(e) => {
                           setCategory(
                             "components/" +

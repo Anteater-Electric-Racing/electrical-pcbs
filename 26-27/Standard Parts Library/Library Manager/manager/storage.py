@@ -527,7 +527,15 @@ class Library:
                 f.write(data)
                 f.flush()
                 os.fsync(f.fileno())
-            os.replace(temp, path)
+            try:
+                os.replace(temp, path)
+            except PermissionError:
+                # Anteater Racing (Windows): KiCad keeps the parts database open through
+                # ODBC, and Windows refuses to replace an open file. Write the new
+                # database into the existing file through SQLite's own locking instead.
+                if path.suffix != ".sqlite" or not path.is_file():
+                    raise
+                _overwrite_sqlite(path, data)
         finally:
             if os.path.exists(temp):
                 os.unlink(temp)
@@ -624,7 +632,7 @@ class Library:
             source=dict(
                 type="odbc",
                 timeout_seconds=5,
-                connection_string="DSN=VirtusSQLite;Database=${CWD}/parts.sqlite;",
+                connection_string="DSN=AnteaterSQLite;Database=${CWD}/parts.sqlite;",
             ),
             libraries=libraries,
         )
@@ -686,6 +694,21 @@ class Library:
         }
 
 
+def _overwrite_sqlite(path, data):
+    source = sqlite3.connect(":memory:")
+    target = sqlite3.connect(path, timeout=15)
+    try:
+        source.deserialize(data)
+        source.backup(target)
+    except sqlite3.OperationalError as exc:
+        raise PermissionError(
+            "KiCad is busy reading the parts database; try saving again in a moment"
+        ) from exc
+    finally:
+        target.close()
+        source.close()
+
+
 def create_library(path, install_runtime=False):
     root = Path(path).expanduser().resolve()
     slug(root.name)
@@ -698,11 +721,11 @@ def create_library(path, install_runtime=False):
     root.mkdir(parents=True, exist_ok=True)
     try:
         for name in (
-            "components/connectors",
+            "components/Connector",
             "components/ICs",
-            "components/accessories",
-            "components/resistors",
-            "components/capacitors",
+            "components/Connector Accessory",
+            "components/Resistor",
+            "components/Capacitor",
             "components/logos",
             APPDATA + "/backups",
             APPDATA + "/original-downloads",

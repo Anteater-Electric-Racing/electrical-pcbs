@@ -34,6 +34,13 @@ if (-not $py) {
 }
 Ok ("Python " + (& $py[0] $py[1..9] --version))
 
+if (Get-Command git -ErrorAction SilentlyContinue) {
+    git config --global core.longpaths true   # library paths can exceed Windows' 260-character limit
+    Ok "Git long paths enabled"
+} else {
+    Write-Host "  Git not found: install GitHub Desktop (https://desktop.github.com) to publish parts." -ForegroundColor Yellow
+}
+
 Step 2 "KiCad 10"
 $kicad = "C:\Program Files\KiCad\10.0\bin\kicad.exe"
 if (-not (Test-Path $kicad)) {
@@ -53,10 +60,13 @@ if (-not (Get-OdbcDriver -Name $Driver -Platform 64-bit -ErrorAction SilentlyCon
     if (-not (Get-OdbcDriver -Name $Driver -Platform 64-bit -ErrorAction SilentlyContinue)) { Fail "Driver '$Driver' (64-bit) still not found." }
 }
 Ok "Driver installed"
-if (-not (Get-OdbcDsn -Name VirtusSQLite -DsnType User -Platform 64-bit -ErrorAction SilentlyContinue)) {
-    Add-OdbcDsn -Name VirtusSQLite -DsnType User -Platform 64-bit -DriverName $Driver
+# Use the data source name the library itself asks for, so setup can never disagree with it.
+$dbl = Get-Content (Join-Path $Library "appdata\parts.kicad_dbl") -Raw | ConvertFrom-Json
+$Dsn = if ($dbl.source.connection_string -match 'DSN=([^;]+)') { $Matches[1] } else { "AnteaterSQLite" }
+if (-not (Get-OdbcDsn -Name $Dsn -DsnType User -Platform 64-bit -ErrorAction SilentlyContinue)) {
+    Add-OdbcDsn -Name $Dsn -DsnType User -Platform 64-bit -DriverName $Driver
 }
-Ok "Data source 'VirtusSQLite' ready"
+Ok "Data source '$Dsn' ready"
 
 Step 4 "Connect the library to KiCad"
 while (Get-Process kicad, eeschema, pcbnew -ErrorAction SilentlyContinue) {

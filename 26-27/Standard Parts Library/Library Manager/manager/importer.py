@@ -431,13 +431,19 @@ class ImportSession:
         category = category_path(
             draft.get("category")
             or (
-                "components/connectors"
+                "components/Connector"
                 if row["Type"] == "connector"
                 else "components/ICs"
             )
         )
         if mode == "generic":
-            category = "components/" + row["Type"] + "s"
+            category = "components/" + row["Type"].capitalize()  # Anteater: Resistor / Capacitor
+        elif category.rstrip("/") == "components" or not (lib.root / category).is_dir():
+            # Anteater Racing: categories mirror the Notion PCB Wiki, so only existing folders.
+            raise ValueError(
+                "Choose one of the existing categories (they match Notion's PCB Wiki Category). "
+                "Ask the library owner if a new category is needed."
+            )
         for part in Path(category).parts:
             slug(part)
         # Category directories cannot descend into another component's private folder.
@@ -1062,7 +1068,7 @@ def resolve_inline_accessories(recipe, rows, parent):
                     MPN=mpn,
                     Value=mpn,
                     Type="accessory",
-                    Category="components/accessories",
+                    Category="components/Connector Accessory",
                     CreatedUTC=timestamp(),
                     UpdatedUTC=timestamp(),
                 )

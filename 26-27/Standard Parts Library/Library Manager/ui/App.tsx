@@ -4,11 +4,11 @@ import {
   Cable,
   Check,
   ChevronRight,
+  CloudUpload,
   CircleHelp,
   Cpu,
   Folder,
   FolderOpen,
-  Layers3,
   LibraryBig,
   LoaderCircle,
   Package,
@@ -24,6 +24,8 @@ import { api, Library, Part } from "./api";
 import ImportDialog from "./ImportDialog";
 import ComponentPreviews from "./ComponentPreviews";
 import CatalogPreviews from "./CatalogPreviews";
+import { Publish } from "./Publish";
+import teamLogo from "./anteater-logo.png";
 import {
   closeGuard,
   desktopMessage,
@@ -153,11 +155,11 @@ export default function App() {
       ].some((v) => v?.toLowerCase().includes(search.toLowerCase())),
   );
   const passiveType =
-    category === "components/resistors" ||
-    category.startsWith("components/resistors/")
+    category === "components/Resistor" ||
+    category.startsWith("components/Resistor/")
       ? "resistor"
-      : category === "components/capacitors" ||
-          category.startsWith("components/capacitors/")
+      : category === "components/Capacitor" ||
+          category.startsWith("components/Capacitor/")
         ? "capacitor"
         : "";
   const selectedIndex = selected ? parts.findIndex((part) => part.ID === selected.ID) : -1;
@@ -212,11 +214,9 @@ export default function App() {
     >
       <aside className="sidebar">
         <div className="brand">
-          <div className="brand-icon">
-            <Layers3 size={22} />
-          </div>
+          <img className="brand-logo" src={teamLogo} alt="Anteater Racing" />
           <span>
-            Library<span className="brand-sub">MANAGER</span>
+            Parts Library<span className="brand-sub">ANTEATER RACING</span>
           </span>
         </div>
         <div className="library-pill">
@@ -257,6 +257,13 @@ export default function App() {
           <ArrowDownToLine size={17} />
           BOM export
         </button>
+        <button
+          className={"nav-item " + (view === "publish" ? "active" : "")}
+          onClick={() => setView("publish")}
+        >
+          <CloudUpload size={17} />
+          Publish to GitHub
+        </button>
         <div className="nav-label spaced">
           FOLDERS{" "}
           <button
@@ -287,7 +294,7 @@ export default function App() {
           {(library?.categories || [])
             .filter(
               (c) =>
-                !/^components\/accessories(\/|$)/.test(c) ||
+                !/^components\/Connector Accessory(\/|$)/.test(c) ||
                 library?.parts.some(
                   (p) =>
                     p.Type !== "accessory" &&
@@ -449,6 +456,8 @@ export default function App() {
           <Setup library={library} notify={notify} />
         ) : view === "bom" ? (
           <BOM library={library} notify={notify} />
+        ) : view === "publish" ? (
+          <Publish library={library} notify={notify} onLibrary={setLibrary} />
         ) : (
           <div className="content">
             <div className="page-heading">
@@ -538,13 +547,13 @@ export default function App() {
               <div className="passive-sheet-tabs">
                 <button
                   className={passiveType === "resistor" ? "selected" : ""}
-                  onClick={() => setCategory("components/resistors")}
+                  onClick={() => setCategory("components/Resistor")}
                 >
                   Resistors
                 </button>
                 <button
                   className={passiveType === "capacitor" ? "selected" : ""}
-                  onClick={() => setCategory("components/capacitors")}
+                  onClick={() => setCategory("components/Capacitor")}
                 >
                   Capacitors
                 </button>

@@ -25,7 +25,7 @@ Original downloads are additionally available under `appdata/original-downloads/
 
 After conversion, open the new library and use its KiCad connection page when ready. Existing designs still reference the old library names and need deliberate relinking if they should use the new catalog. Copying a library does not update existing placed instances or establish that old imported electrical/mechanical data is correct.
 
-## Virtus conversion verification — 2026-09-25
+## Anteater conversion verification — 2026-09-25
 
 The user-selected `PCB components` library was copied into its sibling `PCB components - Library Manager`.
 

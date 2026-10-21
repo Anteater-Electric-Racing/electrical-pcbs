@@ -1,6 +1,6 @@
 # Verification record — v0.2 / format v2
 
-Development tests use disposable fixtures and isolated KiCad configuration. The user explicitly authorized conversion of the selected Virtus library; it was copied to a separate sibling. The source library, retired importer and actual machine registrations remain unchanged.
+Development tests use disposable fixtures and isolated KiCad configuration. The user explicitly authorized conversion of the selected Anteater library; it was copied to a separate sibling. The source library, retired importer and actual machine registrations remain unchanged.
 
 ## Verified on this Mac
 
@@ -13,7 +13,7 @@ Development tests use disposable fixtures and isolated KiCad configuration. The 
 - BOM export after that move produced two headers, two housings and one resistor for the synthetic design, without status warnings.
 - Native model transform comparison against KiCad 10.0.1 STEP export still matches within `4e-13` mm. Model transforms retain KiCad's negative Z–Y–X rotation convention.
 - Live supplier checks: the sample plus YAGEO RC0603FR-0710KL and KEMET C0805C104K5RACTU returned exact-part manufacturer specifications. Direct DigiKey fetch returns HTTP403 here; the fallback is explicitly attributed and does not invent price or stock. Other manufacturers can still require copied details/manual input.
-- Virtus conversion: all 45 active catalog IDs preserved; all 453 source files hash-identical. Three passives share legacy CAD with no per-part directories; 42 bespoke component folders and eight logo files are retained. All 90 native KiCad symbol/footprint render jobs passed; the exact generated ODBC library returns all 45 records across seven categories. Detailed results are in the converted library's `appdata/migration/verification.json`.
+- Anteater conversion: all 45 active catalog IDs preserved; all 453 source files hash-identical. Three passives share legacy CAD with no per-part directories; 42 bespoke component folders and eight logo files are retained. All 90 native KiCad symbol/footprint render jobs passed; the exact generated ODBC library returns all 45 records across seven categories. Detailed results are in the converted library's `appdata/migration/verification.json`.
 
 - All 45 converted records also pass read-only edit preparation with their existing KiCad item names and file paths preserved. Existing source pin mismatches, blank manufacturers and one non-URL datasheet reference remain explicit warnings; newly introduced invalid values are rejected. No catalog/CAD edits were committed by this check.
 
@@ -40,7 +40,7 @@ Development tests use disposable fixtures and isolated KiCad configuration. The 
 - The shell executable replaced itself with the Python HTTP service and provided no AppKit reopen handler. A running service was confirmed during the reported Finder “not open anymore” error; the exact historical Finder event was not captured.
 - A universal AppKit launcher now owns the child service, handles reopen events by reopening its existing URL, exits after browser Quit, and displays startup/service errors. Bundle identities are distinct per generated app and retained during refresh. Root resolution remains relative to the clicked bundle. No compiler is required on users' machines.
 - Native LaunchServices test opens a synthetic library from an unrelated directory, opens it three more times, verifies a reopen event and exactly one child, then quits and relaunches successfully. Portable-copy and full suite: 68 tests pass with ResourceWarnings treated as errors. Apple Silicon was exercised; the Intel slice is built but not run on Intel hardware.
-- Applied only launcher files and launcher-generation support to the active Virtus PCB components Lib runtime, with a ZIP backup under its appdata/backups. Verified the real service, repeated open, and byte-identical catalog, CAD, downloads and other protected library files. No KiCad registrations changed; the old PCB library was not modified.
+- Applied only launcher files and launcher-generation support to the active Anteater PCB components Lib runtime, with a ZIP backup under its appdata/backups. Verified the real service, repeated open, and byte-identical catalog, CAD, downloads and other protected library files. No KiCad registrations changed; the old PCB library was not modified.
 
 ## Mac desktop 0.3 — 2026-09-28
 

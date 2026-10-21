@@ -37,7 +37,7 @@ export function Setup({
         <h3>2. SQLite ODBC connection</h3>
         <p>
           Install the matching SQLite ODBC driver and create a user DSN named{" "}
-          <code>VirtusSQLite</code>. The library uses its own relative database
+          <code>AnteaterSQLite</code>. The library uses its own relative database
           path.
         </p>
         <p className="muted">

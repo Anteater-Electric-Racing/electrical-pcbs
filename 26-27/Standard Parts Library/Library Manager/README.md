@@ -41,7 +41,7 @@ Do not rename or move individual CAD files, shared generic model files, or the `
 ## Use the library in KiCad
 
 1. Open **KiCad connection** in the manager.
-2. Install your platform's SQLite ODBC driver and configure the **VirtusSQLite** user DSN. See [setup details](docs/SETUP.md).
+2. Install your platform's SQLite ODBC driver and configure the **AnteaterSQLite** user DSN. See [setup details](docs/SETUP.md).
 3. Click **Check database connection** to query the actual library configuration using the native ODBC manager.
 4. Close KiCad, then click **Connect to KiCad**. The app backs up its changes and preserves unrelated settings.
 5. Reopen KiCad. The database nickname uses your library folder's name. Category names and **SearchPath** contain folder words, for example `Workshop Parts/components/ICs/op amps/LM123`.
