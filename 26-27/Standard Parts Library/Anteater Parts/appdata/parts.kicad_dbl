@@ -12,6 +12,127 @@
   },
   "libraries": [
     {
+      "name": "Anteater - CAN Controller",
+      "table": "cat_95c93a68032d",
+      "key": "ID",
+      "symbols": "Symbol",
+      "footprints": "KiCadFootprint",
+      "fields": [
+        {
+          "column": "LibraryID",
+          "name": "LibraryID",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "PartID",
+          "name": "PartID",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "MPN",
+          "name": "MPN",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Manufacturer",
+          "name": "Manufacturer",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Value",
+          "name": "Value",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Description",
+          "name": "Description",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Datasheet",
+          "name": "Datasheet",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "SearchPath",
+          "name": "SearchPath",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Package",
+          "name": "Package",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Tolerance",
+          "name": "Tolerance",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Voltage_VDC",
+          "name": "Voltage_VDC",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Current_A",
+          "name": "Current_A",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Voltage_V",
+          "name": "Voltage_V",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Power_W",
+          "name": "Power_W",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        }
+      ]
+    },
+    {
       "name": "Anteater - Capacitor",
       "table": "cat_93d15ce4fa9c",
       "key": "ID",
@@ -133,8 +254,371 @@
       ]
     },
     {
+      "name": "Anteater - Comparator - Op-Amp",
+      "table": "cat_02e5b01a9177",
+      "key": "ID",
+      "symbols": "Symbol",
+      "footprints": "KiCadFootprint",
+      "fields": [
+        {
+          "column": "LibraryID",
+          "name": "LibraryID",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "PartID",
+          "name": "PartID",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "MPN",
+          "name": "MPN",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Manufacturer",
+          "name": "Manufacturer",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Value",
+          "name": "Value",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Description",
+          "name": "Description",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Datasheet",
+          "name": "Datasheet",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "SearchPath",
+          "name": "SearchPath",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Package",
+          "name": "Package",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Tolerance",
+          "name": "Tolerance",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Voltage_VDC",
+          "name": "Voltage_VDC",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Current_A",
+          "name": "Current_A",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Voltage_V",
+          "name": "Voltage_V",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Power_W",
+          "name": "Power_W",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        }
+      ]
+    },
+    {
       "name": "Anteater - Connector",
       "table": "cat_c9bdb0eb2af7",
+      "key": "ID",
+      "symbols": "Symbol",
+      "footprints": "KiCadFootprint",
+      "fields": [
+        {
+          "column": "LibraryID",
+          "name": "LibraryID",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "PartID",
+          "name": "PartID",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "MPN",
+          "name": "MPN",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Manufacturer",
+          "name": "Manufacturer",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Value",
+          "name": "Value",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Description",
+          "name": "Description",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Datasheet",
+          "name": "Datasheet",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "SearchPath",
+          "name": "SearchPath",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Package",
+          "name": "Package",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Tolerance",
+          "name": "Tolerance",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Voltage_VDC",
+          "name": "Voltage_VDC",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Current_A",
+          "name": "Current_A",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Voltage_V",
+          "name": "Voltage_V",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Power_W",
+          "name": "Power_W",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        }
+      ]
+    },
+    {
+      "name": "Anteater - DC-DC Converter",
+      "table": "cat_0fe7b4b2a838",
+      "key": "ID",
+      "symbols": "Symbol",
+      "footprints": "KiCadFootprint",
+      "fields": [
+        {
+          "column": "LibraryID",
+          "name": "LibraryID",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "PartID",
+          "name": "PartID",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "MPN",
+          "name": "MPN",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Manufacturer",
+          "name": "Manufacturer",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Value",
+          "name": "Value",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Description",
+          "name": "Description",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Datasheet",
+          "name": "Datasheet",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "SearchPath",
+          "name": "SearchPath",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Package",
+          "name": "Package",
+          "visible_on_add": false,
+          "visible_in_chooser": true,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Tolerance",
+          "name": "Tolerance",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Voltage_VDC",
+          "name": "Voltage_VDC",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Current_A",
+          "name": "Current_A",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Voltage_V",
+          "name": "Voltage_V",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        },
+        {
+          "column": "Power_W",
+          "name": "Power_W",
+          "visible_on_add": false,
+          "visible_in_chooser": false,
+          "show_name": false,
+          "inherit_properties": false
+        }
+      ]
+    },
+    {
+      "name": "Anteater - Diode",
+      "table": "cat_b0ee4c8f3ad5",
       "key": "ID",
       "symbols": "Symbol",
       "footprints": "KiCadFootprint",

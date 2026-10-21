@@ -7,7 +7,6 @@
         "LM_8960b80c09_3b1aa8907438:1724470004": "1724470004"
       }
     },
-<<<<<<< Updated upstream
     "components/Capacitor": {
       "name": "Anteater - Capacitor",
       "items": {
@@ -36,12 +35,12 @@
       "name": "Anteater - DC-DC Converter",
       "items": {
         "LM_8960b80c09_d15a42799447:RB-1212S": "RB-1212S"
-=======
+      }
+    },
     "components/Potentiometer": {
       "name": "Anteater - Potentiometer",
       "items": {
         "LM_8960b80c09_22737214ee46:3224W-1-102E": "3224W-1-102E"
->>>>>>> Stashed changes
       }
     }
   }
