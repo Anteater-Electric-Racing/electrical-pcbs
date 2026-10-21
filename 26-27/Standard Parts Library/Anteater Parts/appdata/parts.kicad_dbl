@@ -8,12 +8,12 @@
   "source": {
     "type": "odbc",
     "timeout_seconds": 5,
-    "connection_string": "DSN=VirtusSQLite;Database=${CWD}/parts.sqlite;"
+    "connection_string": "DSN=AnteaterSQLite;Database=${CWD}/parts.sqlite;"
   },
   "libraries": [
     {
-      "name": "Virtus - Connectors",
-      "table": "cat_ee03e573522b",
+      "name": "Anteater - Connector",
+      "table": "cat_c9bdb0eb2af7",
       "key": "ID",
       "symbols": "Symbol",
       "footprints": "KiCadFootprint",
