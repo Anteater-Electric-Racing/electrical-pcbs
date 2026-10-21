@@ -63,10 +63,16 @@ export default function App() {
   const [boards, setBoards] = useState<BoardsState | null>(null),
     [boardKey, setBoardKey] = useState(""),
     [showOldSeasons, setShowOldSeasons] = useState(false);
-  useEffect(() => {
+  const loadBoards = useCallback(() => {
     if (!library || library.recoveryNeeded) return setBoards(null);
     api<BoardsState>("boards").then(setBoards).catch(() => setBoards(null));
-  }, [library?.revision]);
+  }, [library?.revision, library?.recoveryNeeded]);
+  useEffect(loadBoards, [loadBoards]);
+  useEffect(() => {
+    // new KiCad projects / board folders appear without restarting the app
+    window.addEventListener("focus", loadBoards);
+    return () => window.removeEventListener("focus", loadBoards);
+  }, [loadBoards]);
   const [path, setPath] = useState(""),
     [working, setWorking] = useState(false),
     [selected, setSelected] = useState<Part | null>(null),
@@ -293,6 +299,7 @@ export default function App() {
                     onClick={() => {
                       setBoardKey(b.key);
                       setView("board");
+                      loadBoards();
                     }}
                   >
                     <CircuitBoard size={15} />

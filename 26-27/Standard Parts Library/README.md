@@ -52,7 +52,7 @@ The app shows who it was and has an **Email** button. Agree with them which vers
 
 - **Tag a part:** click it › **Used on boards** › **Add board**. Pick the board, type its refs (e.g. `R1-R4, R7`), and click **Save board tags**. Qty fills in from the refs; type a number to override it. Then **Publish**.
 - **See a board's parts:** click the board under **BOARDS** in the sidebar. You get refs, quantities, a total, and **Export CSV**.
-- **Boards with a KiCad project** in a season folder (`26-27/...`) appear automatically. **Update from schematic** fills in that board's tags from the actual schematic, replacing its manual tags. Add a board with no schematic yet with the **+** next to BOARDS.
+- **Boards appear automatically:** any KiCad project in a season folder (`26-27/...`), and any board folder in the current season even before it has a project (e.g. `26-27/DASH`). New ones show up when you switch back to the app; boards made on someone else's PC show up after you pull. Tags on a folder-only board move to its KiCad project once one is created inside it. **Update from schematic** fills in that board's tags from the actual schematic, replacing its manual tags. Add a board with no schematic yet with the **+** next to BOARDS.
 - Only the current season shows by default; click **Show older seasons** for past years.
 
 ### Changing or deleting a part

@@ -31,7 +31,29 @@ def load(lib):
     return data
 
 
+def aliases(lib):
+    """Tags made on a folder-only board (e.g. 26-27/DASH) follow the KiCad project later
+    created inside that folder (e.g. 26-27/DASHB)."""
+    found = discover(lib)
+    out = {}
+    for b in found.values():
+        old = f"{b['season']}/{b.get('folder_name', '')}"
+        if b["project"] and b.get("folder_name") and old != b["key"] and old not in found:
+            out[old] = b["key"]
+    return out
+
+
+def migrate(lib, data):
+    alias = aliases(lib)
+    if alias:
+        for pid, per_part in data["usage"].items():
+            data["usage"][pid] = {alias.get(k, k): v for k, v in per_part.items()}
+        data["boards"] = {k: v for k, v in data["boards"].items() if k not in alias}
+    return data
+
+
 def save(lib, data):
+    migrate(lib, data)
     data["usage"] = {p: b for p, b in sorted(data["usage"].items()) if b}
     lib.transaction({FILE: json_bytes(data)}, lib.revision())
 
@@ -56,8 +78,17 @@ def discover(lib):
             if key in boards:  # same project name twice in a season: qualify with its folder
                 key = f"{season}/{pro.stem} ({rel[0]})"
             boards[key] = dict(key=key, name=key.split("/", 1)[1], season=season,
-                               project=pro.relative_to(root).as_posix(),
+                               project=pro.relative_to(root).as_posix(), folder_name=rel[0] if len(rel) > 1 else "",
                                archived="archive" in season_dir.name.lower())
+        # A board folder created for this season but with no KiCad project yet (e.g. 26-27/DASH)
+        if "archive" not in season_dir.name.lower():
+            for folder in sorted(p for p in season_dir.iterdir() if p.is_dir()):
+                if folder.name in SKIP or folder.name.startswith((".", "_")):
+                    continue
+                if not any(".history" not in q.parts for q in folder.rglob("*.kicad_pro")):
+                    boards.setdefault(f"{season}/{folder.name}", dict(
+                        key=f"{season}/{folder.name}", name=folder.name, season=season,
+                        project="", folder=folder.relative_to(root).as_posix(), archived=False))
     return boards
 
 
@@ -159,7 +190,7 @@ def remove_part(data, part_id):
 
 
 def state(lib):
-    data = load(lib)
+    data = migrate(lib, load(lib))
     return dict(boards=all_boards(lib, data), usage=data["usage"])
 
 
