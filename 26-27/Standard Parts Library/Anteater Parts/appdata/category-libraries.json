@@ -12,6 +12,30 @@
       "items": {
         "LM_8960b80c09_capacitor:C_0805_2012Metric": "C_0805_2012Metric"
       }
+    },
+    "components/CAN Controller": {
+      "name": "Anteater - CAN Controller",
+      "items": {
+        "LM_8960b80c09_dc0da72f184c:MCP2518FDT-E_SL": "MCP2518FDT-E_SL"
+      }
+    },
+    "components/Diode": {
+      "name": "Anteater - Diode",
+      "items": {
+        "LM_8960b80c09_cc4188f792d2:STPS3L60U": "STPS3L60U"
+      }
+    },
+    "components/Comparator - Op-Amp": {
+      "name": "Anteater - Comparator - Op-Amp",
+      "items": {
+        "LM_8960b80c09_0a62379e5c58:LM2903D": "LM2903D"
+      }
+    },
+    "components/DC-DC Converter": {
+      "name": "Anteater - DC-DC Converter",
+      "items": {
+        "LM_8960b80c09_d15a42799447:RB-1212S": "RB-1212S"
+      }
     }
   }
 }
