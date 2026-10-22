@@ -59,7 +59,8 @@ def norm(s):
 def mpn_tokens(s):
     """'Buck: TPS561201DDCR, LDO: MIC5528' -> {'TPS561201DDCR', 'MIC5528'}"""
     out = set()
-    for tok in re.split(r"[,;\n/]", s or ""):
+    # a "/" inside an MPN (MCP2518FDT-E/SL) is part of it; " / " separates alternatives
+    for tok in re.split(r"[,;\n]|\s/\s", s or ""):
         tok = re.sub(r"^[^:]*:", "", tok).strip()
         if norm(tok):
             out.add(norm(tok))
@@ -172,7 +173,8 @@ class Sync:
         db = CFG["notion"]["parts_db"]
         pages = self.n.query(db)
         by_libid = {N.read(p, "Library ID"): p for p in pages if N.read(p, "Library ID")}
-        by_name = {(N.read(p, "Component Name") or "").strip().lower(): p for p in pages}
+        # rows with no Component Name (blank rows) must never match anything by name
+        by_name = {name: p for p in pages if (name := (N.read(p, "Component Name") or "").strip().lower())}
         by_id = {p["id"].replace("-", ""): p for p in pages}
         unlinked_by_mpn = {}
         for p in pages:
@@ -186,7 +188,7 @@ class Sync:
             if not page:
                 link = explicit_link(row)
                 hexid = re.search(r"[0-9a-f]{32}", link.replace("-", ""))
-                page = (by_id.get(hexid.group(0)) if hexid else None) or by_name.get(link.lower())
+                page = (by_id.get(hexid.group(0)) if hexid else None) or (by_name.get(link.lower()) if link else None)
                 if not page and row.get("AssetFolder"):  # folder named after the Notion row
                     page = by_name.get(row["AssetFolder"].rsplit("/", 1)[-1].strip().lower())
                 if page and N.read(page, "Library ID"):
@@ -251,8 +253,10 @@ class Sync:
         newly_linked = N.read(page, "Library ID") != pid
         for col, prop in SYNCED.items():
             lib_v = (row.get(col) or "").strip()
-            if prop in SELECT_PROPS and not lib_v:
-                continue  # e.g. accessories have no Notion category; don't clear it
+            if not lib_v:
+                continue  # a blank library field never erases what someone entered in Notion
+            if col == "MPN" and norm(lib_v) == norm(N.read(page, prop) or ""):
+                continue  # same part number, punctuation only (library folders can't contain "/")
             cur = (N.read(page, prop) or "").strip()
             if cur == lib_v:
                 continue
@@ -419,7 +423,9 @@ def main():
         # Not configured yet (see sync/README.md): don't fail every push before setup is done.
         print("NOTION_TOKEN is not set; skipping the Notion sync. See sync/README.md for setup.")
         return 0
-    sync = Sync(N.Notion(token, dry_run=args.dry_run), lib, parts, author, commit)
+    # Only the databases listed in config.json "writable_databases" can be touched (PCB Wiki only).
+    sync = Sync(N.Notion(token, dry_run=args.dry_run, writable_databases=CFG["writable_databases"]),
+                lib, parts, author, commit)
     part_pages = sync.n.query(CFG["notion"]["parts_db"]) if args.boards_only else sync.sync_parts()
     if args.boards_only:
         sync.part_page = {N.read(p, "Library ID"): p["id"] for p in part_pages if N.read(p, "Library ID")}
