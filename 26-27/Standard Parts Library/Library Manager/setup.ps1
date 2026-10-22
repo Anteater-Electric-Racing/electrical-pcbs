@@ -42,14 +42,61 @@ if (Get-Command git -ErrorAction SilentlyContinue) {
 }
 
 Step 2 "KiCad 10"
-$kicad = "C:\Program Files\KiCad\10.0\bin\kicad.exe"
-if (-not (Test-Path $kicad)) {
-    if ((Get-Command winget -ErrorAction SilentlyContinue) -and (Ask "KiCad 10 not found. Install it now with winget?")) {
-        winget install --id KiCad.KiCad -e --accept-package-agreements --accept-source-agreements
-    }
-    if (-not (Test-Path $kicad)) { Fail "Install KiCad 10 from https://www.kicad.org/download/windows/ (default location), open it once, close it, then run Setup again." }
+function Test-KiCad10($exe) {
+    # $exe is kicad.exe; kicad-cli.exe sits next to it and reports the version
+    if (-not $exe -or -not (Test-Path $exe)) { return $false }
+    $cli = Join-Path (Split-Path $exe) "kicad-cli.exe"
+    if (-not (Test-Path $cli)) { return $false }
+    try { return [bool]((& $cli version 2>$null) -match '^10\.') } catch { return $false }
 }
-Ok "KiCad 10 found"
+function Find-KiCad {
+    $candidates = @()
+    if ($env:KICAD_CLI) { $candidates += Join-Path (Split-Path $env:KICAD_CLI) "kicad.exe" }
+    $cmd = Get-Command kicad-cli -ErrorAction SilentlyContinue
+    if ($cmd) { $candidates += Join-Path (Split-Path $cmd.Source) "kicad.exe" }
+    # Windows' list of installed programs knows where the installer put it
+    foreach ($key in "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*",
+                     "HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*",
+                     "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*") {
+        Get-ItemProperty $key -ErrorAction SilentlyContinue |
+            Where-Object { $_.DisplayName -like "KiCad*" -and $_.InstallLocation } |
+            ForEach-Object { $candidates += Join-Path $_.InstallLocation "bin\kicad.exe" }
+    }
+    $candidates += "C:\Program Files\KiCad\10.0\bin\kicad.exe"
+    foreach ($c in $candidates) { if (Test-KiCad10 $c) { return $c } }
+    # last resort: look through the usual places people install or unzip it
+    $roots = @($env:ProgramFiles, ${env:ProgramFiles(x86)}, "$env:LOCALAPPDATA\Programs",
+               [Environment]::GetFolderPath("MyDocuments"), [Environment]::GetFolderPath("Desktop"),
+               (Join-Path $env:USERPROFILE "Downloads"), "C:\KiCad") | Where-Object { $_ -and (Test-Path $_) }
+    foreach ($r in $roots) {
+        $hit = Get-ChildItem -Path $r -Filter kicad.exe -Recurse -Depth 5 -ErrorAction SilentlyContinue |
+            Where-Object { $_.DirectoryName -like "*\bin" -and (Test-KiCad10 $_.FullName) } | Select-Object -First 1
+        if ($hit) { return $hit.FullName }
+    }
+    return $null
+}
+Write-Host "  Looking for KiCad 10 (this can take a few seconds)..."
+$kicad = Find-KiCad
+if (-not $kicad) {
+    Write-Host "  KiCad 10 wasn't found automatically."
+    Write-Host "  If it IS installed: drag kicad.exe (in KiCad's 'bin' folder) into this window, then press Enter."
+    $answer = (Read-Host "  If it isn't installed: just press Enter").Trim('"', "'", ' ')
+    if ($answer -and (Test-Path $answer -PathType Container)) { $answer = Join-Path $answer "bin\kicad.exe" }
+    if ($answer -and (Test-KiCad10 $answer)) { $kicad = $answer }
+    elseif ($answer) { Fail "That isn't KiCad 10's kicad.exe (it must be version 10, with kicad-cli.exe next to it)." }
+}
+if (-not $kicad) {
+    if ((Get-Command winget -ErrorAction SilentlyContinue) -and (Ask "Install KiCad 10 now with winget?")) {
+        winget install --id KiCad.KiCad -e --accept-package-agreements --accept-source-agreements
+        $kicad = Find-KiCad
+    }
+    if (-not $kicad) { Fail "Install KiCad 10 from https://www.kicad.org/download/windows/, open it once, close it, then run Setup again." }
+}
+# Remember where it is, so the Library Manager's previews and board tools find it too
+$cliPath = Join-Path (Split-Path $kicad) "kicad-cli.exe"
+[Environment]::SetEnvironmentVariable("KICAD_CLI", $cliPath, "User")
+$env:KICAD_CLI = $cliPath
+Ok "KiCad 10 found: $(Split-Path (Split-Path $kicad))"
 
 Step 3 "SQLite ODBC driver (lets KiCad read the parts database)"
 if (-not (Get-OdbcDriver -Name $Driver -Platform 64-bit -ErrorAction SilentlyContinue)) {

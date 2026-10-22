@@ -91,6 +91,7 @@ In the app, open **BOM export** and copy the generator command. In KiCad's schem
 
 | Problem | Fix |
 | --- | --- |
+| Setup keeps offering to install KiCad, but it's installed | Setup searches Program Files, Documents, Desktop, Downloads and AppData. If KiCad is somewhere else, drag `kicad.exe` (Mac: `KiCad.app`) into the setup window when it asks. It must be KiCad **10**. |
 | Parts don't show up in KiCad | Close KiCad and run `Setup (run once).bat` again. |
 | "Close KiCad before connecting" | Close every KiCad window, including PCB Editor and Schematic Editor. |
 | A part was added but you can't see it | Pull, then restart KiCad. |

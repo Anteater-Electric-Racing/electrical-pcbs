@@ -30,14 +30,46 @@ if command -v git >/dev/null; then ok "Git found"; else
 fi
 
 step 2 "KiCad 10"
-KICAD_APP="/Applications/KiCad/KiCad.app"
-if [[ ! -d "$KICAD_APP" ]]; then
-    if command -v brew >/dev/null && ask "KiCad not found. Install it with Homebrew?"; then
-        brew install --cask kicad
+is_kicad10() { [[ -x "$1/Contents/MacOS/kicad-cli" ]] && "$1/Contents/MacOS/kicad-cli" version 2>/dev/null | grep -q '^10\.'; }
+find_kicad() {
+    local saved="$HOME/.config/anteater-parts/kicad-cli"
+    local c
+    for c in "$( [[ -f "$saved" ]] && dirname "$(dirname "$(dirname "$(cat "$saved")")")" )" \
+             /Applications/KiCad/KiCad.app /Applications/KiCad.app \
+             "$HOME/Applications/KiCad/KiCad.app" "$HOME/Applications/KiCad.app"; do
+        [[ -n "$c" ]] && is_kicad10 "$c" && { echo "$c"; return; }
+    done
+    # Spotlight, then the usual places people drop it
+    while IFS= read -r c; do is_kicad10 "$c" && { echo "$c"; return; }; done < <(
+        mdfind 'kMDItemFSName == "KiCad.app"' 2>/dev/null
+        find "$HOME/Documents" "$HOME/Desktop" "$HOME/Downloads" -maxdepth 5 -name KiCad.app -type d 2>/dev/null)
+}
+echo "  Looking for KiCad 10..."
+KICAD_APP="$(find_kicad)"
+if [[ -z "$KICAD_APP" ]]; then
+    echo "  KiCad 10 wasn't found automatically."
+    echo "  If it IS installed: drag KiCad.app into this window, then press Enter."
+    read -r -p "  If it isn't installed: just press Enter " answer
+    # Terminal pastes a dragged path with escaped spaces and a trailing space
+    answer="$(printf '%s' "$answer" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')"
+    answer="${answer//\\ / }"; answer="${answer#\'}"; answer="${answer%\'}"; answer="${answer%/}"
+    if [[ -n "$answer" ]]; then
+        is_kicad10 "$answer" || fail "That isn't KiCad 10's KiCad.app (it must be version 10)."
+        KICAD_APP="$answer"
     fi
-    [[ -d "$KICAD_APP" ]] || fail "Install KiCad 10 from https://www.kicad.org/download/macos/ (into /Applications/KiCad), open it once, quit, then run Setup again."
 fi
-ok "KiCad found"
+if [[ -z "$KICAD_APP" ]]; then
+    if command -v brew >/dev/null && ask "Install KiCad 10 with Homebrew?"; then
+        brew install --cask kicad
+        KICAD_APP="$(find_kicad)"
+    fi
+    [[ -n "$KICAD_APP" ]] || fail "Install KiCad 10 from https://www.kicad.org/download/macos/, open it once, quit, then run Setup again."
+fi
+# Remember where it is, so the Library Manager's previews and board tools find it too
+mkdir -p "$HOME/.config/anteater-parts"
+echo "$KICAD_APP/Contents/MacOS/kicad-cli" > "$HOME/.config/anteater-parts/kicad-cli"
+export KICAD_CLI="$KICAD_APP/Contents/MacOS/kicad-cli"
+ok "KiCad 10 found: $KICAD_APP"
 
 step 3 "SQLite ODBC driver (lets KiCad read the parts database)"
 if ! command -v brew >/dev/null; then

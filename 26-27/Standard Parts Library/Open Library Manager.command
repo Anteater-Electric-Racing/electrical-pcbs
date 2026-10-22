@@ -21,6 +21,11 @@ if command -v git >/dev/null; then
     echo
 fi
 
+# KiCad may live outside /Applications; Setup saved where it found it
+if [[ -z "$KICAD_CLI" && -f "$HOME/.config/anteater-parts/kicad-cli" ]]; then
+    export KICAD_CLI="$(cat "$HOME/.config/anteater-parts/kicad-cli")"
+fi
+
 if ! python3 "Library Manager/app.py" --library "Anteater Parts"; then
     echo
     echo "The Library Manager stopped - see the message above. If it isn't clear, run \"Setup (run once).command\" again or message the library owner."
