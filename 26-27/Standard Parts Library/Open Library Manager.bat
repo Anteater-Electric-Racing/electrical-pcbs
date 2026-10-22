@@ -9,6 +9,8 @@ if errorlevel 1 goto already_running
 where git >nul 2>nul && (
     echo Getting the latest parts from GitHub...
     git pull --ff-only || echo   Could not update automatically. Use Publish in the app, or pull in GitHub Desktop.
+    rem boards linked from other repos, e.g. 26-27/VCU from OTA-pcb-testing
+    git submodule update --init --recursive >nul 2>nul
     echo.
 )
 

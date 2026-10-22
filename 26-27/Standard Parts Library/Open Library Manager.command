@@ -18,6 +18,8 @@ fi
 if command -v git >/dev/null; then
     echo "Getting the latest parts from GitHub..."
     git pull --ff-only || echo "  Could not update automatically. Use Publish in the app, or pull in GitHub Desktop."
+    # boards linked from other repos, e.g. 26-27/VCU from OTA-pcb-testing
+    git submodule update --init --recursive >/dev/null 2>&1
     echo
 fi
 
