@@ -59,7 +59,14 @@ export default function ImportDialog({
 }) {
   const [session, setSession] = useState<any>(null),
     [busy, setBusy] = useState(""),
-    [error, setError] = useState("");
+    [error, setError] = useState(""),
+    // Anteater Racing: footprint pads with no matching symbol pin (e.g. thermal pads)
+    [padMismatch, setPadMismatch] = useState<{
+      extraPads: string[];
+      missingPads: string[];
+      symbolPins: { number: string; name: string }[];
+    } | null>(null),
+    [padMap, setPadMap] = useState<Record<string, string>>({});
   useEffect(() => {
     closeGuard("editor", { dirty: true, busy: !!busy });
     return () => closeGuard("editor");
@@ -172,9 +179,16 @@ export default function ImportDialog({
     alternative,
     layout,
     pinsConfirmed: confirmed,
+    padMap: Object.fromEntries(
+      Object.entries(padMap).map(([k, v]) => [k, v === "__nc__" ? "" : v]),
+    ),
     transform,
     recipe: { version: 1, items: recipes },
   };
+  useEffect(() => {
+    setPadMismatch(null);
+    setPadMap({});
+  }, [symbolAsset, symbolName, footprintAsset]);
   useEffect(() => {
     if (!session || mode !== "bespoke" || !footprintAsset) return;
     let disposed = false;
@@ -306,7 +320,12 @@ export default function ImportDialog({
     try {
       await fn();
     } catch (e) {
-      setError(String(e));
+      const text = String(e);
+      const at = text.indexOf("PAD_MISMATCH:");
+      if (at >= 0) {
+        setPadMismatch(JSON.parse(text.slice(at + "PAD_MISMATCH:".length)));
+        setError("");
+      } else setError(text);
     } finally {
       setBusy("");
     }
@@ -578,6 +597,75 @@ export default function ImportDialog({
             <span>{error}</span>
             <button onClick={() => setError("")}>
               <X size={16} />
+            </button>
+          </div>
+        )}
+        {padMismatch && (
+          <div className="pad-map">
+            <strong>
+              The footprint has {padMismatch.extraPads.length} pad
+              {padMismatch.extraPads.length === 1 ? "" : "s"} the symbol doesn't
+              ({padMismatch.extraPads.join(", ")}).
+            </strong>
+            <p>
+              These are usually thermal or exposed pads under the part. Check the
+              datasheet's pin table and choose what each one connects to (often
+              GND). Left as they are, they would connect to nothing on the board.
+            </p>
+            <div className="pad-map-all">
+              <span>Set all to</span>
+              <select
+                value=""
+                onChange={(e) => {
+                  const v = e.target.value;
+                  if (v) {
+                    setPadMap(Object.fromEntries(padMismatch.extraPads.map((p) => [p, v])));
+                    setReview(null);
+                  }
+                }}
+              >
+                <option value="">Choose…</option>
+                {padMismatch.symbolPins.map((s) => (
+                  <option key={s.number} value={s.number}>{s.number} · {s.name}</option>
+                ))}
+                <option value="__nc__">Unconnected (mechanical pad)</option>
+              </select>
+            </div>
+            <div className="pad-map-grid">
+              {padMismatch.extraPads.map((pad) => (
+                <label key={pad}>
+                  <span>Pad {pad}</span>
+                  <select
+                    value={padMap[pad] || ""}
+                    onChange={(e) => {
+                      setPadMap({ ...padMap, [pad]: e.target.value });
+                      setReview(null);
+                    }}
+                  >
+                    <option value="">Choose…</option>
+                    {padMismatch.symbolPins.map((s) => (
+                      <option key={s.number} value={s.number}>{s.number} · {s.name}</option>
+                    ))}
+                    <option value="__nc__">Unconnected (mechanical pad)</option>
+                  </select>
+                </label>
+              ))}
+            </div>
+            {padMismatch.missingPads.length > 0 && (
+              <p className="muted">
+                Symbol pins with no pad: {padMismatch.missingPads.join(", ")} (fine
+                if they're no-connect pins).
+              </p>
+            )}
+            <button
+              className="primary"
+              disabled={!!busy || padMismatch.extraPads.some((p) => !padMap[p])}
+              onClick={async () => {
+                setPadMismatch(null);
+                await save();
+              }}
+            >
+              Apply and save
             </button>
           </div>
         )}

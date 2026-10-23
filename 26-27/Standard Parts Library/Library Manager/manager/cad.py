@@ -121,6 +121,17 @@ def symbol_pins(node):
     return result
 
 
+def renumber_pads(text, mapping):
+    """Give footprint pads new numbers, e.g. thermal pads 21-28 -> the GND pin.
+    An empty new number makes the pad unnumbered (mechanical, no net)."""
+    node = parse(text)
+    for pad in children(node, "pad"):
+        old = str(pad[1])
+        if old in mapping:
+            pad[1] = Q(str(mapping[old]))
+    return dump(node) + "\n"
+
+
 def footprint_data(text):
     node = parse(text)
     if node[0] not in ("footprint", "module"):

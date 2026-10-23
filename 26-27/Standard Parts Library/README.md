@@ -93,6 +93,7 @@ In the app, open **BOM export** and copy the generator command. In KiCad's schem
 | Problem | Fix |
 | --- | --- |
 | Setup keeps offering to install KiCad, but it's installed | Setup searches Program Files, Documents, Desktop, Downloads and AppData. If KiCad is somewhere else, drag `kicad.exe` (Mac: `KiCad.app`) into the setup window when it asks. It must be KiCad **10**. |
+| "The footprint has N pads the symbol doesn't" | Common with SnapEDA/Ultra Librarian files: thermal/exposed pads get their own numbers. Look up what they connect to in the datasheet's pin table (usually GND), pick that pin in the panel (or **Set all to**), then **Apply and save**. The app renumbers the pads for you, so you don't need to edit the footprint in KiCad. |
 | Parts don't show up in KiCad | Close KiCad and run `Setup (run once).bat` again. |
 | "Close KiCad before connecting" | Close every KiCad window, including PCB Editor and Schematic Editor. |
 | A part was added but you can't see it | Pull, then restart KiCad. |

@@ -2112,3 +2112,46 @@ input[type="range"] {
   color: #8a95a3;
   word-break: break-all;
 }
+
+/* ---- Anteater Racing: footprint pad mapping ---- */
+.pad-map {
+  flex: none;
+  align-self: stretch;
+  margin: 0 28px 12px;
+  padding: 16px 18px;
+  background: #fff9d6;
+  border: 1px solid #f0d36a;
+  border-radius: 8px;
+  font-size: 13px;
+}
+.pad-map p {
+  margin: 6px 0 10px;
+}
+.pad-map-all {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.pad-map-all select {
+  width: 260px;
+}
+.pad-map-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.pad-map-grid label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.pad-map-grid label span {
+  width: 52px;
+  flex-shrink: 0;
+  font-weight: 600;
+}
+.pad-map > button {
+  width: auto;
+}

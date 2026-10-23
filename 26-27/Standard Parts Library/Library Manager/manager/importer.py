@@ -706,6 +706,11 @@ class ImportSession:
                 footprint_text = self.asset(draft["footprintAsset"], [".kicad_mod"])[
                     "path"
                 ].read_text()
+            pad_map = {str(k): str(v) for k, v in (draft.get("padMap") or {}).items()}
+            if pad_map and footprint_text:
+                # Anteater Racing: pads the intern mapped to symbol pins (or to "unconnected")
+                footprint_text = cad.renumber_pads(footprint_text, pad_map)
+                info["footprint"] = cad.footprint_data(footprint_text)
             shared_symbol = False
             if original is None and passive_template:
                 original = cad.flatten_symbol(
@@ -779,18 +784,31 @@ class ImportSession:
                     )
                     and not draft.get("alternative")
                 )
-                if not unchanged_electrical_cad:
-                    raise ValueError(
-                        "Symbol and footprint pin numbers differ. "
-                        + "Symbol: "
-                        + ", ".join(sorted(numbers, key=cad.numeric_key))
-                        + "; footprint: "
-                        + ", ".join(sorted(pads, key=cad.numeric_key))
-                        + ". Correct the selected files before saving."
+                extra = sorted(pads - numbers, key=cad.numeric_key)
+                missing = sorted(numbers - pads, key=cad.numeric_key)
+                if extra and not unchanged_electrical_cad:
+                    # Anteater Racing: let the intern map the extra pads in the app
+                    # (usually thermal pads -> GND) instead of editing the footprint by hand.
+                    raise ValueError("PAD_MISMATCH:" + json.dumps(dict(
+                        extraPads=extra,
+                        missingPads=missing,
+                        symbolPins=[  # one entry per pin number (units/body styles repeat pins)
+                            {"number": n, "name": name}
+                            for n, name in sorted(
+                                {p["number"]: p["name"] for p in pins if p["number"]}.items(),
+                                key=lambda kv: cad.numeric_key(kv[0]),
+                            )
+                        ],
+                    )))
+                if missing and not extra:
+                    warnings.append(
+                        "Symbol pins with no footprint pad: " + ", ".join(missing) + ". "
+                        "That's fine for no-connect pins; otherwise check the files."
                     )
-                warnings.append(
-                    "Existing symbol/footprint pin-number mismatch preserved. The electrical CAD is unchanged; verify the original part drawing before placement."
-                )
+                elif unchanged_electrical_cad:
+                    warnings.append(
+                        "Existing symbol/footprint pin-number mismatch preserved. The electrical CAD is unchanged; verify the original part drawing before placement."
+                    )
             row["SymbolFile"] = folder + "/symbol.kicad_sym"
             row["FootprintFile"] = (
                 folder + "/footprint.pretty/" + working_name + ".kicad_mod"
