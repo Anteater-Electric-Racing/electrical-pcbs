@@ -4,7 +4,8 @@
     "components/Connector": {
       "name": "Anteater - Connector",
       "items": {
-        "LM_8960b80c09_3b1aa8907438:1724470004": "1724470004"
+        "LM_8960b80c09_3b1aa8907438:1724470004": "1724470004",
+        "LM_8960b80c09_38dff94c6e3c:614004135023": "614004135023"
       }
     },
     "components/Capacitor": {
@@ -28,7 +29,8 @@
     "components/Comparator - Op-Amp": {
       "name": "Anteater - Comparator - Op-Amp",
       "items": {
-        "LM_8960b80c09_0a62379e5c58:LM2903D": "LM2903D"
+        "LM_8960b80c09_0a62379e5c58:LM2903D": "LM2903D",
+        "LM_8960b80c09_3ae32b197ec3:TLV2372IP": "TLV2372IP"
       }
     },
     "components/DC-DC Converter": {
@@ -47,6 +49,19 @@
       "name": "Anteater - MOSFET",
       "items": {
         "LM_8960b80c09_c2d11b6740b4:NTF2955": "NTF2955"
+      }
+    },
+    "components/Relay": {
+      "name": "Anteater - Relay",
+      "items": {
+        "LM_8960b80c09_862fe1ed82f5:G6B-2214P-US_DC12": "G6B-2214P-US_DC12"
+      }
+    },
+    "components/Resistor": {
+      "name": "Anteater - Resistor",
+      "items": {
+        "LM_8960b80c09_c45e224bdcaa:MP925-1": "MP925-1",
+        "LM_8960b80c09_a47979b1b2d9:RTO020F47R00JTE3": "RTO020F47R00JTE3"
       }
     }
   }

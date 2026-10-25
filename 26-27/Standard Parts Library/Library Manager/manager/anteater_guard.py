@@ -14,9 +14,9 @@ BINARY = {".sqlite", ".step", ".stp", ".wrl", ".zip", ".png", ".jpg", ".pdf"}
 
 MESSAGE = (
     "The parts library contains unresolved git merge-conflict markers in:\n{files}\n\n"
-    "This happens when a GitHub Desktop pull hits a conflict and the result is committed.\n"
-    "Don't edit or publish. Close the Library Manager and message the library owner,\n"
-    "who can repair it (all parts on both sides of the conflict can be kept)."
+    "This happens when a GitHub Desktop pull hits a conflict. The launcher usually repairs it\n"
+    "automatically; if you're seeing this, don't edit or publish. Close this window and\n"
+    "message the library owner (all parts on both sides of the conflict can be kept)."
 )
 
 

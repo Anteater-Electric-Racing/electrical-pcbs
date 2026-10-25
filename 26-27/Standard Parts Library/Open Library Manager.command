@@ -15,6 +15,9 @@ if pgrep -f "Library Manager/app.py" >/dev/null; then
     exit 0
 fi
 
+# A GitHub Desktop pull can stop halfway on library files; finish or undo it safely first
+command -v git >/dev/null && python3 "Library Manager/anteater_repair.py" "Anteater Parts"
+
 if command -v git >/dev/null; then
     echo "Getting the latest parts from GitHub..."
     git pull --ff-only || echo "  Could not update automatically. Use Publish in the app, or pull in GitHub Desktop."

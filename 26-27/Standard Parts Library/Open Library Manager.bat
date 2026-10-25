@@ -6,6 +6,12 @@ rem Only one Library Manager may edit the library at a time; two copies corrupt 
 powershell -NoProfile -Command "if (Get-CimInstance Win32_Process -Filter \"Name='python.exe'\" | Where-Object { $_.CommandLine -like '*Library Manager\app.py*' }) { exit 1 }"
 if errorlevel 1 goto already_running
 
+set "PY=py -3"
+where py >nul 2>nul || set "PY=python"
+
+rem A GitHub Desktop pull can stop halfway on library files; finish or undo it safely first
+where git >nul 2>nul && %PY% "%~dp0Library Manager\anteater_repair.py" "%~dp0Anteater Parts"
+
 where git >nul 2>nul && (
     echo Getting the latest parts from GitHub...
     git pull --ff-only || echo   Could not update automatically. Use Publish in the app, or pull in GitHub Desktop.
@@ -14,8 +20,6 @@ where git >nul 2>nul && (
     echo.
 )
 
-set "PY=py -3"
-where py >nul 2>nul || set "PY=python"
 %PY% "%~dp0Library Manager\app.py" --library "%~dp0Anteater Parts"
 if errorlevel 1 goto crashed
 exit /b
