@@ -69,6 +69,12 @@
       "items": {
         "LM_8960b80c09_14d68bb3519b:TLC555IP": "TLC555IP"
       }
+    },
+    "components/CAN Transceiver": {
+      "name": "Anteater - CAN Transceiver",
+      "items": {
+        "LM_8960b80c09_9921044ddebd:TCAN330GD": "TCAN330GD"
+      }
     }
   }
 }
