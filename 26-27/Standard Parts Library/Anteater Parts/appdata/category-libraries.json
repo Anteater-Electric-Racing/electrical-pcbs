@@ -23,7 +23,8 @@
     "components/Diode": {
       "name": "Anteater - Diode",
       "items": {
-        "LM_8960b80c09_cc4188f792d2:STPS3L60U": "STPS3L60U"
+        "LM_8960b80c09_cc4188f792d2:STPS3L60U": "STPS3L60U",
+        "LM_8960b80c09_5bd8e693e534:1N4007W": "1N4007W"
       }
     },
     "components/Comparator - Op-Amp": {
