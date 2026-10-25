@@ -29,7 +29,8 @@
     "components/Comparator - Op-Amp": {
       "name": "Anteater - Comparator - Op-Amp",
       "items": {
-        "LM_8960b80c09_0a62379e5c58:LM2903D": "LM2903D"
+        "LM_8960b80c09_0a62379e5c58:LM2903D": "LM2903D",
+        "LM_8960b80c09_3ae32b197ec3:TLV2372IP": "TLV2372IP"
       }
     },
     "components/DC-DC Converter": {
@@ -49,6 +50,12 @@
       "items": {
         "LM_8960b80c09_c45e224bdcaa:MP925-1": "MP925-1",
         "LM_8960b80c09_a47979b1b2d9:RTO020F47R00JTE3": "RTO020F47R00JTE3"
+      }
+    },
+    "components/Relay": {
+      "name": "Anteater - Relay",
+      "items": {
+        "LM_8960b80c09_862fe1ed82f5:G6B-2214P-US_DC12": "G6B-2214P-US_DC12"
       }
     }
   }
