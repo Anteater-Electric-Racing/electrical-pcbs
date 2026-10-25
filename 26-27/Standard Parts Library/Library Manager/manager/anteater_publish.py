@@ -97,6 +97,11 @@ def status(lib):
         edited = sorted(label(r) for i, r in new.items() if i in old and r != old[i])
     branch = g.out("rev-parse", "--abbrev-ref", "HEAD")
     upstream = g.run("rev-parse", "--abbrev-ref", "@{u}", check=False).stdout.strip()
+    behind = 0
+    if upstream:
+        # see whether teammates have published since the last pull (offline is fine)
+        g.run("fetch", "--quiet", check=False)
+        behind = int(g.out("rev-list", "--count", "HEAD..@{u}") or 0)
     ahead = int(g.out("rev-list", "--count", "@{u}..HEAD")) if upstream else 0
     return dict(
         branch=branch,
@@ -104,6 +109,7 @@ def status(lib):
         user=g.run("config", "user.name", check=False).stdout.strip(),
         dirty=bool(porcelain.strip()),
         ahead=ahead,
+        behind=behind,
         added=added, edited=edited, removed=removed,
         parts=sorted(changed - set(added) - set(removed)),
     )
@@ -236,7 +242,9 @@ def publish(lib, message, prefer=None):
                           env={"GIT_EDITOR": "true"})
         _rebuild(g, lib)  # always: also repairs indexes left stale by an earlier failed attempt
         if g.out("rev-list", "--count", "@{u}..HEAD") == "0":
-            return dict(ok=True, pushed=False, merged=merged_others, message="Nothing new to publish.")
+            return dict(ok=True, pushed=False, merged=merged_others,
+                        message="You're up to date with everyone's parts." if merged_others
+                        else "Nothing new to publish.")
         push = g.run("push", "--quiet", check=False)
         if push.returncode == 0:
             return dict(ok=True, pushed=True, merged=merged_others,

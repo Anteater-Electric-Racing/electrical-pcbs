@@ -9,6 +9,7 @@ type Status = {
   user: string;
   dirty: boolean;
   ahead: number;
+  behind: number;
   added: string[];
   edited: string[];
   removed: string[];
@@ -40,7 +41,8 @@ export function Publish({
   useEffect(() => {
     load();
   }, [library]);
-  const nothing = status && !status.dirty && status.ahead === 0;
+  const nothing = status && !status.dirty && status.ahead === 0 && !status.behind;
+  const onlyDownload = status && !status.dirty && status.ahead === 0 && status.behind > 0;
   const publish = async (prefer?: "mine" | "theirs") => {
     setBusy(true);
     setConflict(null);
@@ -52,7 +54,7 @@ export function Publish({
         notify(r.message, true);
       } else {
         notify(
-          r.merged
+          r.merged && r.pushed
             ? r.message + " Teammates' changes were merged in too."
             : r.message,
         );
@@ -78,13 +80,18 @@ export function Publish({
         <section className="settings-card">
           <h3>Your changes</h3>
           {nothing ? (
-            <p>Everything is already published.</p>
+            <p>Everything is published and you have everyone's latest parts.</p>
           ) : (
             <ul>
               {status.added.map((p) => <li key={"a" + p}>Added {p}</li>)}
               {status.edited.map((p) => <li key={"e" + p}>Edited {p}</li>)}
               {status.removed.map((p) => <li key={"r" + p}>Removed {p}</li>)}
               {status.parts.map((p) => <li key={"f" + p}>Updated files of {p}</li>)}
+              {status.behind > 0 && (
+                <li>
+                  {status.behind} update{status.behind === 1 ? "" : "s"} from teammates to download
+                </li>
+              )}
               {status.ahead > 0 && (
                 <li>{status.ahead} saved commit(s) waiting to be pushed</li>
               )}
@@ -115,7 +122,7 @@ export function Publish({
               onClick={() => publish()}
             >
               <CloudUpload size={17} />
-              {busy ? "Publishing…" : "Publish"}
+              {busy ? (onlyDownload ? "Updating…" : "Publishing…") : onlyDownload ? "Get latest" : "Publish"}
             </button>
             <button className="secondary" disabled={busy} onClick={load}>
               <RefreshCw size={17} />

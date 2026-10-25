@@ -46,6 +46,8 @@ In KiCad, press **A** and search by part number, manufacturer or description. Th
 10. Open **Publish to GitHub** in the left sidebar, check the description, and click **Publish**. A few minutes later the Notion row turns **In library (un-verified)** and its MPN, manufacturer, datasheet, package and category are filled in. Then click **Quit manager**.
 11. The row's **Verifier** checks the part (symbol, footprint, 3D alignment) and sets the status to **Done (added to KiCad library)** in Notion. If the part is changed in the library later, it goes back to *In library (un-verified)* and the Verifier gets a comment to re-check it.
 
+**Getting teammates' new parts:** opening the app pulls them automatically. If the app is already open, the **Publish to GitHub** page shows "N updates from teammates to download" with a **Get latest** button. Never pull the library in GitHub Desktop.
+
 ### If Publish says someone else changed the same part
 The app shows who it was and has an **Email** button. Agree with them which version is right, then click **Keep my version** or **Keep their version**. Your work is never lost. Edits to *different* parts or different fields are merged automatically, so you won't see this for them.
 
