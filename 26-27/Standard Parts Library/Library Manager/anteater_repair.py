@@ -39,6 +39,31 @@ def check_generated(lib):
     return 0
 
 
+def repair_stash_pop(g, lib, unmerged):
+    """GitHub Desktop stashes unsaved work, pulls, then re-applies it; if that clashes,
+    files are left conflicted with no merge in progress (the stash is kept as a backup)."""
+    outside = [p for p in unmerged if g.lib_path(p) is None]
+    if outside:
+        print("Your saved work clashed with files outside the parts library:")
+        for p in outside:
+            print("  -", p)
+        print("Resolve those in GitHub Desktop (or ask the board's owner), then open this again.")
+        return 1
+    print("GitHub Desktop couldn't put your unpublished library changes back after pulling. Repairing it...")
+    unresolved, clash_ids = _resolve(g)  # stage 2 = what was pulled, stage 3 = your changes
+    if unresolved:
+        print("Two people changed the same part (" + ", ".join(sorted(set(clash_ids))) + ").")
+        print("Nothing is lost (GitHub Desktop kept your changes in a stash), but this needs the")
+        print("library owner. Don't commit in GitHub Desktop; send them a screenshot of this window.")
+        return 1
+    g.run("reset", "-q", check=False)  # back to ordinary uncommitted changes, ready for Publish
+    check_generated(Library(lib.root))
+    print("Repaired: your new parts and everyone else's are both kept. Don't commit in GitHub Desktop;")
+    print("open 'Publish to GitHub' in the app and click Publish. (GitHub Desktop's stash is a")
+    print("leftover backup and can be deleted later.)")
+    return 0
+
+
 def main():
     lib = Library(sys.argv[1])
     if "--check-generated" in sys.argv:
@@ -50,10 +75,9 @@ def main():
     rebasing = (git_dir / "rebase-merge").exists() or (git_dir / "rebase-apply").exists()
     unmerged = g.out("diff", "--name-only", "--diff-filter=U").splitlines()
     if not (merging or rebasing):
-        if unmerged:
-            print("Some files are marked as conflicted but no merge is in progress. Message the library owner.")
-            return 1
-        return 0  # the normal case: nothing to repair
+        if not unmerged:
+            return 0  # the normal case: nothing to repair
+        return repair_stash_pop(g, lib, unmerged)
 
     what = "merge" if merging else "rebase"
     outside = [p for p in unmerged if g.lib_path(p) is None]
