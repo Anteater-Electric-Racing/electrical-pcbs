@@ -63,6 +63,12 @@
         "LM_8960b80c09_c45e224bdcaa:MP925-1": "MP925-1",
         "LM_8960b80c09_a47979b1b2d9:RTO020F47R00JTE3": "RTO020F47R00JTE3"
       }
+    },
+    "components/Timer": {
+      "name": "Anteater - Timer",
+      "items": {
+        "LM_8960b80c09_14d68bb3519b:TLC555IP": "TLC555IP"
+      }
     }
   }
 }
