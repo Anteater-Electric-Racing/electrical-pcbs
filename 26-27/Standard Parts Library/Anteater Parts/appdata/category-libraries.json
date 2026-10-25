@@ -42,6 +42,12 @@
       "items": {
         "LM_8960b80c09_22737214ee46:3224W-1-102E": "3224W-1-102E"
       }
+    },
+    "components/MOSFET": {
+      "name": "Anteater - MOSFET",
+      "items": {
+        "LM_8960b80c09_c2d11b6740b4:NTF2955": "NTF2955"
+      }
     }
   }
 }
