@@ -11,6 +11,9 @@ later pull is refused ("you have unmerged files"). The launchers run this first:
   * conflicts in non-library files (e.g. a board schematic) -> left alone, with a message.
 
 Usage: python anteater_repair.py "<library folder>"     (exit 0 = nothing to do or repaired)
+       python anteater_repair.py "<library folder>" --check-generated
+           after pulling: regenerate KiCad's files (parts.sqlite, lib tables) if a bad
+           merge deleted them or left them out of date. Writes only when needed.
 """
 import subprocess
 import sys
@@ -22,8 +25,24 @@ from manager.anteater_publish import Git, _rebuild, _resolve  # noqa: E402
 from manager.storage import Library  # noqa: E402
 
 
+def check_generated(lib):
+    from manager.anteater_guard import conflicted_files
+    from manager.anteater_publish import _same
+
+    if conflicted_files(lib.root):
+        return 0  # the app's own guard explains this case
+    writes = lib.compiled(lib.rows())
+    stale = [k for k, v in writes.items() if not _same(lib.root / k, v)]
+    if stale:
+        lib.transaction(writes, lib.revision())
+        print("Regenerated KiCad's library files (" + ", ".join(Path(k).name for k in stale) + ").")
+    return 0
+
+
 def main():
     lib = Library(sys.argv[1])
+    if "--check-generated" in sys.argv:
+        return check_generated(lib)
     g = Git(lib)
     git_dir = Path(g.out("rev-parse", "--git-dir"))
     git_dir = git_dir if git_dir.is_absolute() else g.top / git_dir

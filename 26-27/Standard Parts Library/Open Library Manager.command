@@ -23,6 +23,8 @@ if command -v git >/dev/null; then
     git pull --ff-only || echo "  Could not update automatically. Use Publish in the app, or pull in GitHub Desktop."
     # boards linked from other repos, e.g. 26-27/VCU from OTA-pcb-testing
     git submodule update --init --recursive >/dev/null 2>&1
+    # a bad merge can delete or stale the parts database; rebuild it if so
+    python3 "Library Manager/anteater_repair.py" "Anteater Parts" --check-generated
     echo
 fi
 

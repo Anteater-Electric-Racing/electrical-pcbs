@@ -17,6 +17,8 @@ where git >nul 2>nul && (
     git pull --ff-only || echo   Could not update automatically. Use Publish in the app, or pull in GitHub Desktop.
     rem boards linked from other repos, e.g. 26-27/VCU from OTA-pcb-testing
     git submodule update --init --recursive >nul 2>nul
+    rem a bad merge can delete or stale the parts database; rebuild it if so
+    %PY% "%~dp0Library Manager\anteater_repair.py" "%~dp0Anteater Parts" --check-generated
     echo.
 )
 
