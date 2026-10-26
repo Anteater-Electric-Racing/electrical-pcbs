@@ -14,6 +14,15 @@ where py >nul 2>nul || set "PY=python"
 rem A GitHub Desktop pull can stop halfway on library files; finish or undo it safely first
 where git >nul 2>nul && %PY% "%~dp0Library Manager\anteater_repair.py" "%~dp0Anteater Parts"
 
+rem Pulling while KiCad is open fails halfway on Windows (KiCad locks parts.sqlite)
+powershell -NoProfile -Command "if (Get-Process kicad,eeschema,pcbnew -ErrorAction SilentlyContinue) { exit 1 }"
+if errorlevel 1 (
+    echo KiCad is open, so the latest parts were NOT downloaded ^(KiCad locks the parts database^).
+    echo Close KiCad and reopen this to get teammates' new parts. Opening the library as it is...
+    echo.
+    goto launch
+)
+
 where git >nul 2>nul && (
     echo Getting the latest parts from GitHub...
     git pull --ff-only || echo   Could not update automatically. Use Publish in the app, or pull in GitHub Desktop.
@@ -24,6 +33,7 @@ where git >nul 2>nul && (
     echo.
 )
 
+:launch
 %PY% "%~dp0Library Manager\app.py" --library "%~dp0Anteater Parts"
 if errorlevel 1 goto crashed
 exit /b

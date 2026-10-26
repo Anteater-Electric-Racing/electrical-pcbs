@@ -232,6 +232,14 @@ def publish(lib, message, prefer=None):
         base = g.out("merge-base", "HEAD", "@{u}")
         merged_others = upstream != base
         if merged_others:
+            from . import kicad
+
+            if os.name == "nt" and kicad.running():
+                # Windows can't replace parts.sqlite while KiCad has it open; git would stop
+                # halfway and leave a half-updated library. Your changes stay committed locally.
+                raise ValueError("Close KiCad first: teammates published new parts, and KiCad keeps the "
+                                 "parts database locked so they can't be merged in while it's open. "
+                                 "Your changes are saved; click Publish again after closing KiCad.")
             r = g.run("rebase", "--autostash", "@{u}", check=False, env={"GIT_EDITOR": "true"})
             while r.returncode:
                 unresolved, clash_ids = _resolve(g, prefer)

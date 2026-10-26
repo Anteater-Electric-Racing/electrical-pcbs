@@ -15,6 +15,7 @@ Usage: python anteater_repair.py "<library folder>"     (exit 0 = nothing to do 
            after pulling: regenerate KiCad's files (parts.sqlite, lib tables) if a bad
            merge deleted them or left them out of date. Writes only when needed.
 """
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -80,6 +81,12 @@ def main():
         return repair_stash_pop(g, lib, unmerged)
 
     what = "merge" if merging else "rebase"
+    from manager import kicad
+
+    if os.name == "nt" and kicad.running():  # macOS can replace open files
+        print(f"A git {what} needs repairing, but KiCad is open and locks the parts database.")
+        print("Close all KiCad windows, then open this again.")
+        return 1
     outside = [p for p in unmerged if g.lib_path(p) is None]
     if outside:
         print(f"A git {what} stopped on files outside the parts library:")
