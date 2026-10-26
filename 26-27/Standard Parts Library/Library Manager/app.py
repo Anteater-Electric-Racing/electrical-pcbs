@@ -1,6 +1,15 @@
 #!/usr/bin/env python3
 """Desktop entry point and KiCad external BOM command."""
 
+import os
+import subprocess
+import sys
+
+# Anteater Racing: KiCad files are UTF-8, but Windows Python reads text as cp1252 by
+# default, garbling symbols with characters like Omega or micro. Re-run in UTF-8 mode.
+if os.name == "nt" and not sys.flags.utf8_mode and __name__ == "__main__":
+    sys.exit(subprocess.call([sys.executable, "-X", "utf8", *sys.argv]))
+
 import argparse
 import json
 

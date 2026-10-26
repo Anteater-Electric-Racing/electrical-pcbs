@@ -1,6 +1,8 @@
 @echo off
 title Anteater Parts Library - close this window or click Quit in the app to stop
 cd /d "%~dp0"
+rem KiCad files are UTF-8; without this Windows Python garbles symbols with characters like Ohm/micro signs
+set "PYTHONUTF8=1"
 
 rem Only one Library Manager may edit the library at a time; two copies corrupt saves.
 powershell -NoProfile -Command "if (Get-CimInstance Win32_Process -Filter \"Name='python.exe'\" | Where-Object { $_.CommandLine -like '*Library Manager\app.py*' }) { exit 1 }"

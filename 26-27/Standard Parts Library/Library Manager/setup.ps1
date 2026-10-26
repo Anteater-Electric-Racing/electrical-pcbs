@@ -1,5 +1,6 @@
 # One-time setup for the Anteater Racing parts library. Run through "Setup (run once).bat".
 $ErrorActionPreference = "Stop"
+$env:PYTHONUTF8 = "1"   # KiCad files are UTF-8; Windows Python defaults to cp1252
 $Here    = Split-Path -Parent $MyInvocation.MyCommand.Path
 $Root    = Split-Path -Parent $Here
 $Library = Join-Path $Root "Anteater Parts"
