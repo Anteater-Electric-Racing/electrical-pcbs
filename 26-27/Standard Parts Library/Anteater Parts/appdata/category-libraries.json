@@ -5,7 +5,8 @@
       "name": "Anteater - Connector",
       "items": {
         "LM_8960b80c09_3b1aa8907438:1724470004": "1724470004",
-        "LM_8960b80c09_38dff94c6e3c:614004135023": "614004135023"
+        "LM_8960b80c09_38dff94c6e3c:614004135023": "614004135023",
+        "LM_8960b80c09_17a09dc2645c:776280-1": "776280-1"
       }
     },
     "components/Capacitor": {
@@ -83,13 +84,21 @@
     "components/Regulator": {
       "name": "Anteater - Regulator",
       "items": {
-        "LM_8960b80c09_62d0439f7dcf:TPSM63606RDLR": "TPSM63606RDLR"
+        "LM_8960b80c09_62d0439f7dcf:TPSM63606RDLR": "TPSM63606RDLR",
+        "LM_8960b80c09_e1c066a53daf:MIC5528-3.3YMT-TR": "MIC5528-3.3YMT-TR",
+        "LM_8960b80c09_1952aefc88b3:TPS561201DDCR": "TPS561201DDCR"
       }
     },
     "components/Microcontroller": {
       "name": "Anteater - Microcontroller",
       "items": {
         "LM_8960b80c09_31231cf68467:Adafruit_Feather_ESP32S3_5323": "Adafruit_Feather_ESP32S3_5323"
+      }
+    },
+    "components/Switch": {
+      "name": "Anteater - Switch",
+      "items": {
+        "LM_8960b80c09_1f5631896eca:KMR241G LFS": "KMR241G LFS"
       }
     }
   }
