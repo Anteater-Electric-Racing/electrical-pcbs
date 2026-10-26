@@ -85,6 +85,12 @@
       "items": {
         "LM_8960b80c09_62d0439f7dcf:TPSM63606RDLR": "TPSM63606RDLR"
       }
+    },
+    "components/Microcontroller": {
+      "name": "Anteater - Microcontroller",
+      "items": {
+        "LM_8960b80c09_31231cf68467:Adafruit_Feather_ESP32S3_5323": "Adafruit_Feather_ESP32S3_5323"
+      }
     }
   }
 }
