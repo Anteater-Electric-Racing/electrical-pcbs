@@ -55,7 +55,8 @@
     "components/Relay": {
       "name": "Anteater - Relay",
       "items": {
-        "LM_8960b80c09_862fe1ed82f5:G6B-2214P-US_DC12": "G6B-2214P-US_DC12"
+        "LM_8960b80c09_862fe1ed82f5:G6B-2214P-US_DC12": "G6B-2214P-US_DC12",
+        "LM_8960b80c09_147050c5e2e0:R81C335": "R81C335"
       }
     },
     "components/Resistor": {
