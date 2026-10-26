@@ -2155,3 +2155,37 @@ input[type="range"] {
 .pad-map > button {
   width: auto;
 }
+
+/* ---- Anteater Racing: category picker in "What are you adding?" ---- */
+.type-grid:has(.category-group) {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.category-group-label {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #5f6b7a;
+  margin-bottom: 6px;
+}
+.category-group-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(118px, 1fr));
+  gap: 6px;
+}
+.type-grid .category-group-items button {
+  padding: 10px 6px;
+  text-transform: none;
+  font-size: 11.5px;
+  text-align: center;
+  line-height: 1.2;
+}
+.type-grid .category-group-items button.selected {
+  border-color: #0a2342;
+  background: #fff9d6;
+  color: #0a2342;
+  font-weight: 600;
+}

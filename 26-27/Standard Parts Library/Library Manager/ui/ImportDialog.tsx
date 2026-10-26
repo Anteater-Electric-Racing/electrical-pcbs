@@ -36,6 +36,32 @@ const categoryFor = (type: string, _mode: string) =>
         ? `components/${type[0].toUpperCase()}${type.slice(1)}`
         : "components/"; // Anteater: IC/other parts must pick a Notion category
 
+// Anteater Racing: "What are you adding?" lists the real categories (= Notion PCB Wiki
+// Category) and picks the importer mode each one needs behind the scenes.
+const CATEGORY_GROUPS: [string, [string, string][]][] = [
+  ["Passives", [["Resistor", "resistor"], ["Capacitor", "capacitor"], ["Inductor", "other"], ["Potentiometer", "other"]]],
+  ["Connectors", [["Connector", "connector"]]],
+  ["Chips & modules", [["Regulator", "IC"], ["DC-DC Converter", "IC"], ["Microcontroller", "IC"], ["CAN Controller", "IC"],
+    ["CAN Transceiver", "IC"], ["Comparator - Op-Amp", "IC"], ["Logic IC", "IC"], ["Timer", "IC"], ["Optocoupler", "IC"], ["Sensor", "IC"]]],
+  ["Discretes & hardware", [["Diode", "other"], ["LED", "other"], ["MOSFET", "other"], ["Fuse", "other"], ["Relay", "other"],
+    ["Switch", "other"], ["Test Point", "other"], ["Mounting Hole", "other"], ["Heat Sink", "other"]]],
+];
+function categoryGroups(existing: string[]) {
+  const known = new Set(CATEGORY_GROUPS.flatMap(([, items]) => items.map(([f]) => f)));
+  const extra = existing
+    .filter((c) => c.split("/").length === 2)
+    .map((c) => c.split("/")[1])
+    .filter((f) => !known.has(f) && !/^(generic_models|logos|Connector Accessory)$/i.test(f));
+  const groups = CATEGORY_GROUPS.map(
+    ([g, items]) =>
+      [g, items.filter(([f]) => existing.includes("components/" + f)).map(([folder, type]) => ({ folder, type }))] as const,
+  );
+  return [
+    ...groups,
+    ...(extra.length ? [["Other categories", extra.map((folder) => ({ folder, type: "other" }))] as const] : []),
+  ].filter(([, items]) => items.length) as [string, { folder: string; type: string }[]][];
+}
+
 type AccessoryItem = {
   partID?: string;
   manufacturer: string;
@@ -848,37 +874,44 @@ export default function ImportDialog({
             <>
               <h3>What are you adding?</h3>
               <div className="type-grid">
-                {["resistor", "capacitor", "connector", "IC", "other"].map(
-                  (t) => (
-                    <button
-                      key={t}
-                      className={part.Type === t ? "selected" : ""}
-                      onClick={() => {
-                        explicitType.current = true;
-                        const m =
-                          t === "accessory"
-                            ? "accessory"
-                            : ["resistor", "capacitor"].includes(t)
+                {categoryGroups(library.categories).map(([group, items]) => (
+                  <div className="category-group" key={group}>
+                    <span className="category-group-label">{group}</span>
+                    <div className="category-group-items">
+                      {items.map(({ folder, type: t }) => (
+                        <button
+                          key={folder}
+                          className={
+                            category === "components/" + folder ||
+                            category.startsWith("components/" + folder + "/")
+                              ? "selected"
+                              : ""
+                          }
+                          onClick={() => {
+                            explicitType.current = true;
+                            const m = ["resistor", "capacitor"].includes(t)
                               ? "generic"
                               : "bespoke";
-                        setPart((p) => ({
-                          ...p,
-                          Type: t,
-                          Package: ["resistor", "capacitor"].includes(t)
-                            ? "0805"
-                            : "",
-                        }));
-                        setReview(null);
-                        setMode(m);
-                        setCategory(categoryFor(t, m));
-                        setAlternative(false);
-                      }}
-                    >
-                      {icon(t)}
-                      {t}
-                    </button>
-                  ),
-                )}
+                            setPart((p) => ({
+                              ...p,
+                              Type: t,
+                              Package: ["resistor", "capacitor"].includes(t)
+                                ? "0805"
+                                : "",
+                            }));
+                            setReview(null);
+                            setMode(m);
+                            setCategory("components/" + folder);
+                            setAlternative(false);
+                          }}
+                        >
+                          {icon(t)}
+                          {folder}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                ))}
               </div>
               {part.Type === "IC" && (
                 <label className="field">
