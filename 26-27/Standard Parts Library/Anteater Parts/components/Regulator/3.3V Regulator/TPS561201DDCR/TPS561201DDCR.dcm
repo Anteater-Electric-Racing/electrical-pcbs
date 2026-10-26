@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TPS561201DDCR
+D 4.5V to 17V Input, 1A Synchronous Step-Down Voltage Regulator in 6-pin SOT-23
+K
+F http://www.ti.com/lit/gpn/tps561201
+$ENDCMP
+#
+#End Doc Library
