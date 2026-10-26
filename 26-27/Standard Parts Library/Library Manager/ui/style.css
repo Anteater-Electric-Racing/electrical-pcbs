@@ -2189,3 +2189,35 @@ input[type="range"] {
   color: #0a2342;
   font-weight: 600;
 }
+
+/* ---- Anteater Racing: un-imported part folders ---- */
+.raw-folders {
+  background: #fff9d6;
+  border: 1px solid #f0d36a;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 0 0 14px;
+  font-size: 13px;
+}
+.raw-folders ul {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.raw-folders li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid #efe3a8;
+  border-radius: 6px;
+  padding: 6px 6px 6px 12px;
+}
+.raw-folders li small {
+  color: #6b7686;
+  margin-left: 6px;
+}

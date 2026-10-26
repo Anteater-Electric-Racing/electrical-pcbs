@@ -167,6 +167,17 @@ def run(library=None, port=0, open_browser=True, desktop=False, parent_pid=None)
                             )
                         if path == "/api/setup":
                             return self.send(kicad.setup_status(state.lib()))
+                        if path == "/api/raw-folders":  # Anteater Racing addition
+                            from . import anteater_rawfolders as R
+
+                            return self.send(R.find(state.lib()))
+                        if path == "/api/raw-folders/file":  # Anteater Racing addition
+                            from . import anteater_rawfolders as R
+
+                            return self.send(
+                                R.read_file(state.lib(), query["folder"][0], query["name"][0]),
+                                content_type="application/octet-stream",
+                            )
                         if path == "/api/boards":  # Anteater Racing addition
                             from . import anteater_boards
 
@@ -449,6 +460,12 @@ def run(library=None, port=0, open_browser=True, desktop=False, parent_pid=None)
                         with lib.locked(data.get("revision")):
                             inside(lib.root, name).mkdir(parents=True, exist_ok=True)
                         return self.send(lib.state())
+                    if path == "/api/raw-folders/remove":  # Anteater Racing addition
+                        from . import anteater_rawfolders as R
+
+                        lib = state.lib()
+                        result = R.remove(lib, data["folder"])
+                        return self.send(dict(result, library=lib.state()))
                     if path.startswith("/api/boards/"):  # Anteater Racing addition
                         from . import anteater_boards as B
 

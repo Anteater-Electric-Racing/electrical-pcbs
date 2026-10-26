@@ -46,6 +46,11 @@ const CATEGORY_GROUPS: [string, [string, string][]][] = [
   ["Discretes & hardware", [["Diode", "other"], ["LED", "other"], ["MOSFET", "other"], ["Fuse", "other"], ["Relay", "other"],
     ["Switch", "other"], ["Test Point", "other"], ["Mounting Hole", "other"], ["Heat Sink", "other"]]],
 ];
+export function typeForCategory(folder: string) {
+  for (const [, items] of CATEGORY_GROUPS)
+    for (const [f, t] of items) if (f === folder) return t;
+  return "other";
+}
 function categoryGroups(existing: string[]) {
   const known = new Set(CATEGORY_GROUPS.flatMap(([, items]) => items.map(([f]) => f)));
   const extra = existing
@@ -74,12 +79,14 @@ export default function ImportDialog({
   library,
   editingID,
   initialEntries = [],
+  initialCategory = "",
   onClose,
   onSave,
 }: {
   library: Library;
   editingID: string;
   initialEntries?: UploadEntry[];
+  initialCategory?: string;
   onClose: () => void;
   onSave: (l: Library) => void;
 }) {
@@ -273,6 +280,16 @@ export default function ImportDialog({
     lastEnter.current = 0;
   }, [draftKey]);
   useEffect(() => {
+    if (session && initialCategory && !uploadedInitial.current) {
+      // Anteater Racing: importing an un-imported folder; pre-select its category tile
+      const folder = initialCategory.replace(/^components\//, "").split("/")[0];
+      const t = typeForCategory(folder);
+      const m = ["resistor", "capacitor"].includes(t) ? "generic" : "bespoke";
+      explicitType.current = true;
+      setPart((p) => ({ ...p, Type: t, Package: m === "generic" ? "0805" : "" }));
+      setMode(m);
+      setCategory("components/" + folder);
+    }
     if (!session || uploadedInitial.current || !initialEntries.length) return;
     uploadedInitial.current = true;
     void upload(initialEntries);
