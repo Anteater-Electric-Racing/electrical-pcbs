@@ -70,6 +70,7 @@ Resistors and capacitors in standard sizes (0402/0603/0805...) share one model. 
 
 ## Rules
 
+- **You can keep KiCad open** while adding parts, publishing and getting teammates' parts. Each PC builds its own parts database (`appdata/parts.sqlite`, not in git), so git never has to replace the file KiCad keeps open. Restart KiCad, or reopen the symbol chooser, to see new parts.
 - **Publish right after you save.** Don't leave changes sitting on your PC.
 - **The library is the source of truth.** In Notion, edit only the planning columns (Key Specs, Person, Verifier, Notes...). The sync overwrites MPN, Manufacturer, Datasheet and Package/Footprint from the library, and comments on the row to tell you when it does. To change those values, edit the part in the app and publish.
 - Only change the library through the app. Don't rename or move files inside `Anteater Parts/` by hand. You may move a *whole* component folder to another category, then click **Refresh** in the app.

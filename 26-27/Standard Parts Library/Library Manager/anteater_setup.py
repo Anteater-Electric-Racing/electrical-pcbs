@@ -20,6 +20,11 @@ def main():
         print("ERROR:", exc)
         return 1
     lib = Library(sys.argv[1])
+    # parts.sqlite isn't in git (KiCad keeps it open); build this PC's copy from the catalog
+    from anteater_repair import check_generated
+
+    check_generated(lib)
+    lib = Library(sys.argv[1])
     switch = "--switch" in sys.argv
     status = kicad.setup_status(lib)
     if status["connected"]:

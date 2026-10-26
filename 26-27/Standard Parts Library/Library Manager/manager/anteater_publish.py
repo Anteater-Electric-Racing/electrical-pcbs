@@ -25,6 +25,10 @@ DERIVED = (
     "appdata/generated/",
 )
 CATALOG = "appdata/components.csv"
+# Files KiCad keeps open while it runs. Windows can't replace them then, so a git update
+# that changes one must wait for KiCad to close. parts.sqlite is generated locally (not in
+# git) so normally nothing here changes; this covers older history that still tracked it.
+KICAD_LOCKED = {"appdata/parts.sqlite"}
 
 
 class Git:
@@ -234,9 +238,11 @@ def publish(lib, message, prefer=None):
         if merged_others:
             from . import kicad
 
-            if os.name == "nt" and kicad.running():
-                # Windows can't replace parts.sqlite while KiCad has it open; git would stop
-                # halfway and leave a half-updated library. Your changes stay committed locally.
+            locked = [p for p in g.out("diff", "--name-only", "HEAD", upstream).splitlines()
+                      if g.lib_path(p) in KICAD_LOCKED]
+            if os.name == "nt" and locked and kicad.running():
+                # Windows can't replace a file KiCad has open; git would stop halfway and leave
+                # a half-updated library. Your changes stay committed locally.
                 raise ValueError("Close KiCad first: teammates published new parts, and KiCad keeps the "
                                  "parts database locked so they can't be merged in while it's open. "
                                  "Your changes are saved; click Publish again after closing KiCad.")

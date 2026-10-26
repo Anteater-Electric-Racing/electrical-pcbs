@@ -14,24 +14,16 @@ where py >nul 2>nul || set "PY=python"
 rem A GitHub Desktop pull can stop halfway on library files; finish or undo it safely first
 where git >nul 2>nul && %PY% "%~dp0Library Manager\anteater_repair.py" "%~dp0Anteater Parts"
 
-rem Pulling while KiCad is open fails halfway on Windows (KiCad locks parts.sqlite)
-powershell -NoProfile -Command "if (Get-Process kicad,eeschema,pcbnew -ErrorAction SilentlyContinue) { exit 1 }"
-if errorlevel 1 (
-    echo KiCad is open, so the latest parts were NOT downloaded ^(KiCad locks the parts database^).
-    echo Close KiCad and reopen this to get teammates' new parts. Opening the library as it is...
-    echo.
-    goto launch
-)
-
+rem Get teammates' parts. Works with KiCad open: the parts database KiCad keeps open is
+rem rebuilt locally instead of being replaced by git (only skipped if an update would replace it)
 where git >nul 2>nul && (
-    echo Getting the latest parts from GitHub...
-    git pull --ff-only || echo   Could not update automatically. Use Publish in the app, or pull in GitHub Desktop.
+    %PY% "%~dp0Library Manager\anteater_repair.py" "%~dp0Anteater Parts" --pull
     rem boards linked from other repos, e.g. 26-27/VCU from OTA-pcb-testing
     git submodule update --init --recursive >nul 2>nul
-    rem a bad merge can delete or stale the parts database; rebuild it if so
-    %PY% "%~dp0Library Manager\anteater_repair.py" "%~dp0Anteater Parts" --check-generated
     echo.
 )
+rem rebuild the local parts database if it's missing or out of date
+%PY% "%~dp0Library Manager\anteater_repair.py" "%~dp0Anteater Parts" --check-generated
 
 :launch
 %PY% "%~dp0Library Manager\app.py" --library "%~dp0Anteater Parts"

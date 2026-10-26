@@ -6,3 +6,7 @@ Anteater Parts/appdata/backups/*
 __pycache__/
 *.pyc
 node_modules/
+
+# Generated locally from appdata/components.csv by the Library Manager (launcher, Publish,
+# Setup). KiCad keeps it open, so it must not be in git: Windows cannot replace an open file.
+Anteater Parts/appdata/parts.sqlite
