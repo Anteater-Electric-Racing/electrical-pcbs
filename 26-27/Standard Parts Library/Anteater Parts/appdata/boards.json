@@ -8,6 +8,13 @@
         "qty": 1,
         "source": "schematic"
       }
+    },
+    "3224W-1-102E": {
+      "26-27/ROC": {
+        "refs": "VR1",
+        "qty": 1,
+        "source": "schematic"
+      }
     }
   }
 }
