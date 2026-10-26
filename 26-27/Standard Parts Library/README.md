@@ -37,7 +37,7 @@ In KiCad, press **A** and search by part number, manufacturer or description. Th
 2. Double-click **Anteater Parts Library** on your desktop. The app opens in your browser. Keep the black window open while you work.
 3. Click **Add component**.
 4. Drag in the part's files: a ZIP from SnapEDA, Ultra Librarian or the manufacturer, or a `.kicad_sym`, a `.kicad_mod` and a `.step`.
-5. Choose the type: **Connector**, **IC**, **Resistor**, **Capacitor** or **Other**. Then set **Category** to the part's Notion *Category* (Regulator, MOSFET, LED...). The categories are the same list as the Notion PCB Wiki. Tip: if you set **Component folder name** to the Notion row's *Component Name* (e.g. `TVS Diode - CAN`), the part links to that row automatically.
+5. Under **What are you adding?**, click the part's category (Regulator, MOSFET, LED...). It's the same list as the Notion PCB Wiki *Category*, and the app picks the right import mode for you. Tip: if you set **Component folder name** to the Notion row's *Component Name* (e.g. `TVS Diode - CAN`), the part links to that row automatically.
 6. Fill in **Manufacturer**, **Part number** (MPN), **Description** and **Online datasheet**. Pasting a DigiKey/Mouser URL usually fails because those sites block it, so type the details in.
    In **Notes**, start with `Notion: <Component Name>;` using the row name from step 1, for example `Notion: Connector (Internal);`. This links the part to that row. You can skip it if the Notion row already has the same MPN.
 7. Check the **Footprint**, **Symbol** and **3D alignment** tabs. In 3D alignment, use the **Top** and **Side** views and the Move/Rotate controls until the model sits on the pads, with pins in the holes and the body flat on the board.
