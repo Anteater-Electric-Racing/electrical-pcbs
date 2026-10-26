@@ -64,7 +64,8 @@
       "name": "Anteater - Resistor",
       "items": {
         "LM_8960b80c09_c45e224bdcaa:MP925-1": "MP925-1",
-        "LM_8960b80c09_a47979b1b2d9:RTO020F47R00JTE3": "RTO020F47R00JTE3"
+        "LM_8960b80c09_a47979b1b2d9:RTO020F47R00JTE3": "RTO020F47R00JTE3",
+        "LM_8960b80c09_resistor:R_0805_2012Metric": "R_0805_2012Metric"
       }
     },
     "components/Timer": {
@@ -77,6 +78,12 @@
       "name": "Anteater - CAN Transceiver",
       "items": {
         "LM_8960b80c09_9921044ddebd:TCAN330GD": "TCAN330GD"
+      }
+    },
+    "components/Regulator": {
+      "name": "Anteater - Regulator",
+      "items": {
+        "LM_8960b80c09_62d0439f7dcf:TPSM63606RDLR": "TPSM63606RDLR"
       }
     }
   }
