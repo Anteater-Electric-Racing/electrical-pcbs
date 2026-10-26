@@ -987,6 +987,7 @@ export default function ImportDialog({
                     onClick={() => {
                       setMode("generic");
                       setCategory(categoryFor(part.Type, "generic"));
+                      setPart((p) => ({ ...p, Package: p.Package || "0805" }));
                       setReview(null);
                     }}
                   >
@@ -997,6 +998,9 @@ export default function ImportDialog({
                     onClick={() => {
                       setMode("bespoke");
                       setCategory(categoryFor(part.Type, "bespoke"));
+                      // Anteater Racing: the shared-model default (0805) isn't this part's package
+                      // (e.g. TO-220 power resistors); make the intern enter the real one
+                      setPart((p) => ({ ...p, Package: p.Package === "0805" ? "" : p.Package }));
                       setReview(null);
                     }}
                   >
