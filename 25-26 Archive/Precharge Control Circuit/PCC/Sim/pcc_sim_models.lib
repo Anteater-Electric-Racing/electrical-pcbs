@@ -1,0 +1,74 @@
+* PCC precharge/discharge simulation models (ngspice)
+* Behavioral models built from the part datasheets. Values marked TUNE
+* are not on the datasheet and are estimates.
+
+* ----------------------------------------------------------------------
+* K1: Rincon RH3-12V, SPDT HV relay (datasheet REV B)
+*   coil 80 ohm, pick-up 8 V max (100 mA), drop-out 0.5-5 V (6-62 mA)
+*   operate 6 ms max, release 6 ms max, contact R 20 mohm max
+* Contacts follow coil CURRENT, so dropout includes the
+* L/R decay through the flyback diode, plus the mechanical delay.
+*   pins: A1 A2 = coil, COM = 11, NC = 12, NO = 14
+* ----------------------------------------------------------------------
+.subckt RELAY_SPDT A1 A2 COM NC NO
+Rcoil A1 n1 80
+* coil inductance is not on the datasheet  (TUNE)
+Lcoil n1 n2 100m
+Vsense n2 A2 0
+* pick-up <= 100 mA, drop-out 6-62 mA: one smooth threshold at 65 mA
+* (a hysteresis switch here chatters at small time steps)
+Bdet det 0 V = 5 + 5*tanh((I(Vsense)-65m)/2m)
+* 6 ms operate / release: RC crossing 5 V at tau*ln2
+Rdly det cd 8.66k
+Cdly cd 0 1u
+S1 COM NO cd 0 SWNO
+S2 COM NC cd 0 SWNC
+.model SWNO sw vt=5 vh=0.1 ron=20m roff=100Meg
+.model SWNC sw vt=5 vh=0.1 ron=100Meg roff=20m
+.ends RELAY_SPDT
+
+* ----------------------------------------------------------------------
+* AIR: Rincon REC45B1JA, SPST-NO HV contactor, integrated PWM economizer
+*   coil "J": 9-36 V, pick-up 9 V max, drop-out 6 V min
+*   inrush 3.8 A max for 130 ms max (3.2 ohm coil), hold 0.17 A at 12 V
+*   operate 25 ms max, release 10 ms max, contact R 0.15 mohm typ
+* The economizer electronics are modeled as a current draw, not an
+* inductor: inrush = V/3.2 for 130 ms, then constant 2.04 W hold.
+*   pins: A1 A2 = coil, COM = 13, NO = 14
+* ----------------------------------------------------------------------
+.subckt AIR A1 A2 COM NO
+Rleak A1 A2 10k
+* economizer under-voltage lockout: on above 9 V, off below 6 V
+Vrail rail 0 10
+Evin vin 0 A1 A2 1
+S0 rail pw vin 0 SWUV
+Rpw pw 0 1k
+.model SWUV sw vt=7.5 vh=1.5 ron=1 roff=1G
+Epw pwb 0 pw 0 1
+* 130 ms inrush timer, reset whenever the coil drops out
+Rtm pwb tmr 187.5k
+Ctm tmr 0 1u
+Stm tmr 0 0 pwb SWRST
+.model SWRST sw vt=-5 vh=0.1 ron=10 roff=1G
+Bcoil A1 A2 I = (V(pwb)/10) * (V(tmr) < 5 ? V(A1,A2)/3.2 : 2.04/max(V(A1,A2),6))
+* contacts: 25 ms operate, 10 ms release
+* charge through Rop (tau 36 ms); discharge also through Drel + Rrel (tau 14 ms)
+Rop pwb cd 36.1k
+Drel cd nrel DREL
+Rrel nrel pwb 24k
+.model DREL D(is=1e-14)
+Ccd cd 0 1u
+S1 COM NO cd 0 SWC
+.model SWC sw vt=5 vh=0.1 ron=1m roff=100Meg
+.ends AIR
+
+* ----------------------------------------------------------------------
+* IRLZ44N, logic-level N-MOSFET, 55 V / 47 A
+* Generic VDMOS fit (Vth ~1.8 V, Rds(on) ~25 mohm at Vgs = 3.3-5 V,
+* Ciss ~1.7 nF, 55 V body-diode breakdown). Replace with Infineon's
+* model for accurate switching edges.
+*   pins: D G S
+* ----------------------------------------------------------------------
+.model IRLZ44N VDMOS(Vto=1.8 Kp=50 Lambda=0.003 Rd=8m Rs=6m Rg=3
++ Cgdmax=1.5n Cgdmin=60p A=0.5 Cgs=1.6n
++ Is=2e-12 N=1 Cjo=1.1n Vj=0.8 M=0.5 Tt=80n Bv=55)
