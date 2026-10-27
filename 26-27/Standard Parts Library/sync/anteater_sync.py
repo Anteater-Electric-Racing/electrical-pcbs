@@ -376,15 +376,12 @@ INFO_FILE = "appdata/notion-info.json"
 
 
 def notion_info(pages, part_page):
-    """Library ID -> the PCB Wiki planning fields the Library Manager shows on each part
-    (who added it, what it replaces). The sync commits this file so the app needs no token."""
-    by_id = {p["id"]: p for p in pages}
-    info = {}
-    for pid, page_id in sorted(part_page.items()):
-        page = by_id.get(page_id)
-        if not page:
-            continue
-        info[pid] = {
+    """The PCB Wiki planning fields the Library Manager shows on each part (who added it,
+    what it replaces). "parts": by library ID for linked parts; "rows": every named row, so
+    the app can follow a part's 'Notion: <Component Name>' note before the next sync links it.
+    The sync commits this file so the app needs no Notion token."""
+    def fields(page):
+        return {
             "row": N.read(page, "Component Name") or "",
             "url": page.get("url", ""),
             "addedBy": N.people_names(page, "Person"),
@@ -393,7 +390,10 @@ def notion_info(pages, part_page):
             "boards": N.read(page, "Relevant Boards") or "",
             "status": N.read(page, "Library Status") or "",
         }
-    return info
+    by_id = {p["id"]: p for p in pages}
+    parts = {pid: fields(by_id[page_id]) for pid, page_id in sorted(part_page.items()) if page_id in by_id}
+    rows = {name.lower(): fields(p) for p in pages if (name := (N.read(p, "Component Name") or "").strip())}
+    return {"parts": parts, "rows": rows}
 
 
 def write_notion_info(lib, info):

@@ -1,189 +1,611 @@
 {
-  "1724470004": {
-    "addedBy": [
-      "Jacie Salonga"
-    ],
-    "boards": "",
-    "replaces": "Molex Mini-Fit Jr 2/4/6/12/14/20 pin - all boards",
-    "row": "Connector (Internal)",
-    "status": "In library (un-verified)",
-    "url": "https://www.notion.so/3f07ca4859608157b669daee88c82582",
-    "verifier": []
+  "parts": {
+    "1724470004": {
+      "addedBy": [
+        "Jacie Salonga"
+      ],
+      "boards": "",
+      "replaces": "Molex Mini-Fit Jr 2/4/6/12/14/20 pin - all boards",
+      "row": "Connector (Internal)",
+      "status": "In library (un-verified)",
+      "url": "https://www.notion.so/3f07ca4859608157b669daee88c82582",
+      "verifier": []
+    },
+    "1N4007W": {
+      "addedBy": [
+        "Stanley Luo"
+      ],
+      "boards": "",
+      "replaces": "1N4007 (DO-41 THT) - PCC",
+      "row": "Rectifier Diode",
+      "status": "In library (un-verified)",
+      "url": "https://www.notion.so/3f07ca48596081faa998c32fcbfdfb95",
+      "verifier": []
+    },
+    "3224W-1-102E": {
+      "addedBy": [
+        "Jason Ngo"
+      ],
+      "boards": "",
+      "replaces": "Bourns 3296Y (THT) - PCC, Safety",
+      "row": "Trimmer Potentiometer",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca48596081548b4bfbe604ccf3f5",
+      "verifier": []
+    },
+    "776280-1": {
+      "addedBy": [
+        "Andy Li"
+      ],
+      "boards": "",
+      "replaces": "Mini-Fit Jr headers (being replaced)",
+      "row": "Connector (External) - Automotive PCB Header",
+      "status": "In library (un-verified)",
+      "url": "https://www.notion.so/3f07ca48596081e69c9dec9efdd793c6",
+      "verifier": []
+    },
+    "GCM21BR71H105KA03L": {
+      "addedBy": [
+        "Stanley Luo"
+      ],
+      "boards": "",
+      "replaces": "Mixed 0805/0603 - all boards",
+      "row": "Capacitor - General SMD MLCC",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca485960814684a2ff70a00796c0",
+      "verifier": []
+    },
+    "IRLZ44NPBF": {
+      "addedBy": [
+        "Vincent G. Sablan"
+      ],
+      "boards": "",
+      "replaces": "IRLZ44N, IRLIZ44N, IRLZ34N (TO-220) - PCC, Safety, CCM",
+      "row": "NMOS - Power",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca48596081988f8cd1b22682bdb4",
+      "verifier": []
+    },
+    "KMR241G LFS": {
+      "addedBy": [
+        "Andy Li"
+      ],
+      "boards": "",
+      "replaces": "Generic 6mm THT pushbutton - Safety",
+      "row": "Tactile Switch",
+      "status": "In library (un-verified)",
+      "url": "https://www.notion.so/3f07ca4859608161a698fc9c19641962",
+      "verifier": []
+    },
+    "LM2903D": {
+      "addedBy": [
+        "Justin Z. Jung"
+      ],
+      "boards": "",
+      "replaces": "LM393 (DIP-8, x3) - Safety",
+      "row": "Comparator",
+      "status": "Filled table (un-verified)",
+      "url": "https://www.notion.so/3f07ca48596081f39227dc89ff1c5ac2",
+      "verifier": []
+    },
+    "MCP2518FDT-E_SL": {
+      "addedBy": [
+        "Justin Z. Jung"
+      ],
+      "boards": "",
+      "replaces": "None (Teensy 4.1 had 3 built-in CAN controllers)",
+      "row": "CAN Controller (SPI)",
+      "status": "In library (un-verified)",
+      "url": "https://www.notion.so/3f07ca485960813e809bc029a1698b07",
+      "verifier": []
+    },
+    "MIC5528-3.3YMT-TR": {
+      "addedBy": [
+        "Andy Li"
+      ],
+      "boards": "",
+      "replaces": "None (Teensy had onboard regulator)",
+      "row": "3.3V Regulator",
+      "status": "In library (un-verified)",
+      "url": "https://www.notion.so/3f07ca4859608166bf61e8f22d35230a",
+      "verifier": []
+    },
+    "NTF2955": {
+      "addedBy": [
+        "Stanley Luo"
+      ],
+      "boards": "",
+      "replaces": "IRF9540 (TO-220F) - Safety",
+      "row": "PMOS - Power",
+      "status": "In library (un-verified)",
+      "url": "https://www.notion.so/3f07ca48596081da9214f799fc9cc742",
+      "verifier": []
+    },
+    "RC0805FR-07220KL": {
+      "addedBy": [
+        "Andy Li"
+      ],
+      "boards": "",
+      "replaces": "Mixed 0805/0603, many vendors - all boards",
+      "row": "Resistor - General SMD",
+      "status": "In library (un-verified)",
+      "url": "https://www.notion.so/3f07ca48596081b6911cd86e17dfab1f",
+      "verifier": []
+    },
+    "RCV0805750KFKEA": {
+      "addedBy": [
+        "Jason Ngo"
+      ],
+      "boards": "",
+      "replaces": "510k 0805 (x15) - PCC",
+      "row": "Resistor - HV Divider",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca48596081d18681e7414007e1f1",
+      "verifier": []
+    },
+    "STPS3L60U": {
+      "addedBy": [
+        "Justin Z. Jung"
+      ],
+      "boards": "",
+      "replaces": "SS34 (SMA) - CCM",
+      "row": "Schottky Diode - Power",
+      "status": "In library (un-verified)",
+      "url": "https://www.notion.so/3f07ca48596081fd8239c8f0a430fdea",
+      "verifier": []
+    },
+    "TCAN330GD": {
+      "addedBy": [
+        "Vincent G. Sablan"
+      ],
+      "boards": "",
+      "replaces": "SN65HVD230 (SOIC-8) - PCC, CCM",
+      "row": "CAN Transceiver",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca4859608159a852e9ad31d03ac9",
+      "verifier": []
+    },
+    "TLC555IP": {
+      "addedBy": [
+        "Vincent G. Sablan"
+      ],
+      "boards": "",
+      "replaces": "LM555 (DIP-8) - PCC, Safety",
+      "row": "555 Timer",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca48596081e29772e51c16102e76",
+      "verifier": []
+    },
+    "TLV2372IP": {
+      "addedBy": [
+        "Rishi Reddy Theegala"
+      ],
+      "boards": "",
+      "replaces": "TLV2372 (DIP-8) - PCC",
+      "row": "Op-Amp",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca48596081dd82b9c83d480757a0",
+      "verifier": []
+    },
+    "TPSM63606RDLR": {
+      "addedBy": [
+        "Jason Ngo"
+      ],
+      "boards": "",
+      "replaces": "Murata OKX-T/5-D12N-C (module) - Safety",
+      "row": "DCDC 12V to 5V",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca4859608140996cd2b3883d85b8",
+      "verifier": []
+    }
   },
-  "1N4007W": {
-    "addedBy": [
-      "Stanley Luo"
-    ],
-    "boards": "",
-    "replaces": "1N4007 (DO-41 THT) - PCC",
-    "row": "Rectifier Diode",
-    "status": "In library (un-verified)",
-    "url": "https://www.notion.so/3f07ca48596081faa998c32fcbfdfb95",
-    "verifier": []
-  },
-  "3224W-1-102E": {
-    "addedBy": [
-      "Jason Ngo"
-    ],
-    "boards": "",
-    "replaces": "Bourns 3296Y (THT) - PCC, Safety",
-    "row": "Trimmer Potentiometer",
-    "status": "Missing",
-    "url": "https://www.notion.so/3f07ca48596081548b4bfbe604ccf3f5",
-    "verifier": []
-  },
-  "776280-1": {
-    "addedBy": [
-      "Andy Li"
-    ],
-    "boards": "",
-    "replaces": "Mini-Fit Jr headers (being replaced)",
-    "row": "Connector (External) - Automotive PCB Header",
-    "status": "In library (un-verified)",
-    "url": "https://www.notion.so/3f07ca48596081e69c9dec9efdd793c6",
-    "verifier": []
-  },
-  "GCM21BR71H105KA03L": {
-    "addedBy": [
-      "Stanley Luo"
-    ],
-    "boards": "",
-    "replaces": "Mixed 0805/0603 - all boards",
-    "row": "Capacitor - General SMD MLCC",
-    "status": "Missing",
-    "url": "https://www.notion.so/3f07ca485960814684a2ff70a00796c0",
-    "verifier": []
-  },
-  "IRLZ44NPBF": {
-    "addedBy": [
-      "Vincent G. Sablan"
-    ],
-    "boards": "",
-    "replaces": "IRLZ44N, IRLIZ44N, IRLZ34N (TO-220) - PCC, Safety, CCM",
-    "row": "NMOS - Power",
-    "status": "Missing",
-    "url": "https://www.notion.so/3f07ca48596081988f8cd1b22682bdb4",
-    "verifier": []
-  },
-  "KMR241G LFS": {
-    "addedBy": [
-      "Andy Li"
-    ],
-    "boards": "",
-    "replaces": "Generic 6mm THT pushbutton - Safety",
-    "row": "Tactile Switch",
-    "status": "In library (un-verified)",
-    "url": "https://www.notion.so/3f07ca4859608161a698fc9c19641962",
-    "verifier": []
-  },
-  "LM2903D": {
-    "addedBy": [
-      "Justin Z. Jung"
-    ],
-    "boards": "",
-    "replaces": "LM393 (DIP-8, x3) - Safety",
-    "row": "Comparator",
-    "status": "Filled table (un-verified)",
-    "url": "https://www.notion.so/3f07ca48596081f39227dc89ff1c5ac2",
-    "verifier": []
-  },
-  "MCP2518FDT-E_SL": {
-    "addedBy": [
-      "Justin Z. Jung"
-    ],
-    "boards": "",
-    "replaces": "None (Teensy 4.1 had 3 built-in CAN controllers)",
-    "row": "CAN Controller (SPI)",
-    "status": "In library (un-verified)",
-    "url": "https://www.notion.so/3f07ca485960813e809bc029a1698b07",
-    "verifier": []
-  },
-  "MIC5528-3.3YMT-TR": {
-    "addedBy": [
-      "Andy Li"
-    ],
-    "boards": "",
-    "replaces": "None (Teensy had onboard regulator)",
-    "row": "3.3V Regulator",
-    "status": "In library (un-verified)",
-    "url": "https://www.notion.so/3f07ca4859608166bf61e8f22d35230a",
-    "verifier": []
-  },
-  "NTF2955": {
-    "addedBy": [
-      "Stanley Luo"
-    ],
-    "boards": "",
-    "replaces": "IRF9540 (TO-220F) - Safety",
-    "row": "PMOS - Power",
-    "status": "In library (un-verified)",
-    "url": "https://www.notion.so/3f07ca48596081da9214f799fc9cc742",
-    "verifier": []
-  },
-  "RC0805FR-07220KL": {
-    "addedBy": [
-      "Andy Li"
-    ],
-    "boards": "",
-    "replaces": "Mixed 0805/0603, many vendors - all boards",
-    "row": "Resistor - General SMD",
-    "status": "In library (un-verified)",
-    "url": "https://www.notion.so/3f07ca48596081b6911cd86e17dfab1f",
-    "verifier": []
-  },
-  "RCV0805750KFKEA": {
-    "addedBy": [
-      "Jason Ngo"
-    ],
-    "boards": "",
-    "replaces": "510k 0805 (x15) - PCC",
-    "row": "Resistor - HV Divider",
-    "status": "Missing",
-    "url": "https://www.notion.so/3f07ca48596081d18681e7414007e1f1",
-    "verifier": []
-  },
-  "STPS3L60U": {
-    "addedBy": [
-      "Justin Z. Jung"
-    ],
-    "boards": "",
-    "replaces": "SS34 (SMA) - CCM",
-    "row": "Schottky Diode - Power",
-    "status": "In library (un-verified)",
-    "url": "https://www.notion.so/3f07ca48596081fd8239c8f0a430fdea",
-    "verifier": []
-  },
-  "TCAN330GD": {
-    "addedBy": [
-      "Vincent G. Sablan"
-    ],
-    "boards": "",
-    "replaces": "SN65HVD230 (SOIC-8) - PCC, CCM",
-    "row": "CAN Transceiver",
-    "status": "Missing",
-    "url": "https://www.notion.so/3f07ca4859608159a852e9ad31d03ac9",
-    "verifier": []
-  },
-  "TLC555IP": {
-    "addedBy": [
-      "Vincent G. Sablan"
-    ],
-    "boards": "",
-    "replaces": "LM555 (DIP-8) - PCC, Safety",
-    "row": "555 Timer",
-    "status": "Missing",
-    "url": "https://www.notion.so/3f07ca48596081e29772e51c16102e76",
-    "verifier": []
-  },
-  "TPSM63606RDLR": {
-    "addedBy": [
-      "Jason Ngo"
-    ],
-    "boards": "",
-    "replaces": "Murata OKX-T/5-D12N-C (module) - Safety",
-    "row": "DCDC 12V to 5V",
-    "status": "Missing",
-    "url": "https://www.notion.so/3f07ca4859608140996cd2b3883d85b8",
-    "verifier": []
+  "rows": {
+    "3.3v regulator": {
+      "addedBy": [
+        "Andy Li"
+      ],
+      "boards": "",
+      "replaces": "None (Teensy had onboard regulator)",
+      "row": "3.3V Regulator",
+      "status": "In library (un-verified)",
+      "url": "https://www.notion.so/3f07ca4859608166bf61e8f22d35230a",
+      "verifier": []
+    },
+    "555 timer": {
+      "addedBy": [
+        "Vincent G. Sablan"
+      ],
+      "boards": "",
+      "replaces": "LM555 (DIP-8) - PCC, Safety",
+      "row": "555 Timer",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca48596081e29772e51c16102e76",
+      "verifier": []
+    },
+    "5v ldo": {
+      "addedBy": [
+        "Rami Imad Sousou"
+      ],
+      "boards": "",
+      "replaces": "LM1117T-5.0 (TO-220) PCC, LM1117DT-5.0 (DPAK) CCM, LT1084-5.0 (TO-220) Safety",
+      "row": "5V LDO",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca4859608183adf9f0025f88c263",
+      "verifier": []
+    },
+    "can controller (spi)": {
+      "addedBy": [
+        "Justin Z. Jung"
+      ],
+      "boards": "",
+      "replaces": "None (Teensy 4.1 had 3 built-in CAN controllers)",
+      "row": "CAN Controller (SPI)",
+      "status": "In library (un-verified)",
+      "url": "https://www.notion.so/3f07ca485960813e809bc029a1698b07",
+      "verifier": []
+    },
+    "can transceiver": {
+      "addedBy": [
+        "Vincent G. Sablan"
+      ],
+      "boards": "",
+      "replaces": "SN65HVD230 (SOIC-8) - PCC, CCM",
+      "row": "CAN Transceiver",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca4859608159a852e9ad31d03ac9",
+      "verifier": []
+    },
+    "capacitor - bulk electrolytic/polymer": {
+      "addedBy": [
+        "Rami Imad Sousou"
+      ],
+      "boards": "",
+      "replaces": "TDK 330uF radial THT 12.5mm - Safety",
+      "row": "Capacitor - Bulk Electrolytic/Polymer",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca485960814f9460e741544a15a4",
+      "verifier": []
+    },
+    "capacitor - bulk mlcc": {
+      "addedBy": [
+        "Kevin Kwok"
+      ],
+      "boards": "",
+      "replaces": "TDK 22uF 2220 (x6) - Safety",
+      "row": "Capacitor - Bulk MLCC",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca48596081c280fbe0a1f14cb027",
+      "verifier": []
+    },
+    "capacitor - general smd mlcc": {
+      "addedBy": [
+        "Stanley Luo"
+      ],
+      "boards": "",
+      "replaces": "Mixed 0805/0603 - all boards",
+      "row": "Capacitor - General SMD MLCC",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca485960814684a2ff70a00796c0",
+      "verifier": []
+    },
+    "cmos logic gates": {
+      "addedBy": [
+        "Jacie Salonga"
+      ],
+      "boards": "",
+      "replaces": "CD4071 OR, CD4081 AND, CD40106 Schmitt inverter (DIP-14) - Safety",
+      "row": "CMOS Logic Gates",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca48596081b692e0fcdc22872330",
+      "verifier": []
+    },
+    "comparator": {
+      "addedBy": [
+        "Justin Z. Jung"
+      ],
+      "boards": "",
+      "replaces": "LM393 (DIP-8, x3) - Safety",
+      "row": "Comparator",
+      "status": "Filled table (un-verified)",
+      "url": "https://www.notion.so/3f07ca48596081f39227dc89ff1c5ac2",
+      "verifier": []
+    },
+    "connector (external) - automotive pcb header": {
+      "addedBy": [
+        "Andy Li"
+      ],
+      "boards": "",
+      "replaces": "Mini-Fit Jr headers (being replaced)",
+      "row": "Connector (External) - Automotive PCB Header",
+      "status": "In library (un-verified)",
+      "url": "https://www.notion.so/3f07ca48596081e69c9dec9efdd793c6",
+      "verifier": []
+    },
+    "connector (internal)": {
+      "addedBy": [
+        "Jacie Salonga"
+      ],
+      "boards": "",
+      "replaces": "Molex Mini-Fit Jr 2/4/6/12/14/20 pin - all boards",
+      "row": "Connector (Internal)",
+      "status": "In library (un-verified)",
+      "url": "https://www.notion.so/3f07ca4859608157b669daee88c82582",
+      "verifier": []
+    },
+    "dcdc 12v to 5v": {
+      "addedBy": [
+        "Jason Ngo"
+      ],
+      "boards": "",
+      "replaces": "Murata OKX-T/5-D12N-C (module) - Safety",
+      "row": "DCDC 12V to 5V",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca4859608140996cd2b3883d85b8",
+      "verifier": []
+    },
+    "dcdc 24v to 12v": {
+      "addedBy": [
+        "Rami Imad Sousou"
+      ],
+      "boards": "",
+      "replaces": "TDK-Lambda I7A24080A033V-0C3-R (module) - Safety",
+      "row": "DCDC 24V to 12V",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca48596081fa955af92d2af2e628",
+      "verifier": []
+    },
+    "esp32-s3 module": {
+      "addedBy": [
+        "Jason Ngo"
+      ],
+      "boards": "",
+      "replaces": "Teensy 4.1 (socketed module) - CCM",
+      "row": "ESP32-S3 Module",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca48596081ef819bf097ab8e5ac4",
+      "verifier": []
+    },
+    "fuse holder - blade": {
+      "addedBy": [
+        "Taran Joseph Merwin"
+      ],
+      "boards": "",
+      "replaces": "Keystone 3522-2 (x12) Safety, 5x20 fuse blocks (x11) PCC",
+      "row": "Fuse Holder - Blade",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca48596081d4b5cce39dee0f4ca6",
+      "verifier": []
+    },
+    "isolated dcdc": {
+      "addedBy": [
+        "Justin Z. Jung"
+      ],
+      "boards": "",
+      "replaces": "Mean Well SPAN02A-12 (x4) - PCC",
+      "row": "Isolated DCDC",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca48596081f98d60e897fdcbe4c1",
+      "verifier": []
+    },
+    "led - indicator": {
+      "addedBy": [
+        "Rami Imad Sousou"
+      ],
+      "boards": "",
+      "replaces": "5mm THT LEDs (PCC, Safety), Kingbright APTD2012 0805 (Safety)",
+      "row": "LED - Indicator",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca48596081e791fef3deade5ec89",
+      "verifier": []
+    },
+    "nmos - power": {
+      "addedBy": [
+        "Vincent G. Sablan"
+      ],
+      "boards": "",
+      "replaces": "IRLZ44N, IRLIZ44N, IRLZ34N (TO-220) - PCC, Safety, CCM",
+      "row": "NMOS - Power",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca48596081988f8cd1b22682bdb4",
+      "verifier": []
+    },
+    "nmos - signal": {
+      "addedBy": [
+        "Taran Joseph Merwin"
+      ],
+      "boards": "",
+      "replaces": "SI2304 (SOT-23) - PCC",
+      "row": "NMOS - Signal",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca4859608175817bc3db144aaa6d",
+      "verifier": []
+    },
+    "op-amp": {
+      "addedBy": [
+        "Rishi Reddy Theegala"
+      ],
+      "boards": "",
+      "replaces": "TLV2372 (DIP-8) - PCC",
+      "row": "Op-Amp",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca48596081dd82b9c83d480757a0",
+      "verifier": []
+    },
+    "optocoupler": {
+      "addedBy": [
+        "Kevin Kwok"
+      ],
+      "boards": "",
+      "replaces": "4N35 (DIP-6, x3) - PCC",
+      "row": "Optocoupler",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca4859608173be0fef4b89d27ef8",
+      "verifier": []
+    },
+    "pmos - power": {
+      "addedBy": [
+        "Stanley Luo"
+      ],
+      "boards": "",
+      "replaces": "IRF9540 (TO-220F) - Safety",
+      "row": "PMOS - Power",
+      "status": "In library (un-verified)",
+      "url": "https://www.notion.so/3f07ca48596081da9214f799fc9cc742",
+      "verifier": []
+    },
+    "rectifier diode": {
+      "addedBy": [
+        "Stanley Luo"
+      ],
+      "boards": "",
+      "replaces": "1N4007 (DO-41 THT) - PCC",
+      "row": "Rectifier Diode",
+      "status": "In library (un-verified)",
+      "url": "https://www.notion.so/3f07ca48596081faa998c32fcbfdfb95",
+      "verifier": []
+    },
+    "relay - signal / sdc": {
+      "addedBy": [
+        "Rishi Reddy Theegala"
+      ],
+      "boards": "",
+      "replaces": "Omron G6B-2214P DPST (x3) Safety, SPDT relay PCC",
+      "row": "Relay - Signal / SDC",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca48596081ae8cd4d5d64bbe20d8",
+      "verifier": []
+    },
+    "resistor - current shunt": {
+      "addedBy": [
+        "Jacie Salonga"
+      ],
+      "boards": "",
+      "replaces": "0.3R 2512 (Stackpole CSRN) - PCC",
+      "row": "Resistor - Current Shunt",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca4859608169b0b2d97a1ce1bfa6",
+      "verifier": []
+    },
+    "resistor - general smd": {
+      "addedBy": [
+        "Andy Li"
+      ],
+      "boards": "",
+      "replaces": "Mixed 0805/0603, many vendors - all boards",
+      "row": "Resistor - General SMD",
+      "status": "In library (un-verified)",
+      "url": "https://www.notion.so/3f07ca48596081b6911cd86e17dfab1f",
+      "verifier": []
+    },
+    "resistor - hv divider": {
+      "addedBy": [
+        "Jason Ngo"
+      ],
+      "boards": "",
+      "replaces": "510k 0805 (x15) - PCC",
+      "row": "Resistor - HV Divider",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca48596081d18681e7414007e1f1",
+      "verifier": []
+    },
+    "resistor - power (precharge/discharge)": {
+      "addedBy": [
+        "Rishi Reddy Theegala"
+      ],
+      "boards": "",
+      "replaces": "Caddock MP925, Vishay RTO20 (TO-220) - PCC",
+      "row": "Resistor - Power (Precharge/Discharge)",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca485960815dab01c3e005693f3a",
+      "verifier": []
+    },
+    "schottky diode - power": {
+      "addedBy": [
+        "Justin Z. Jung"
+      ],
+      "boards": "",
+      "replaces": "SS34 (SMA) - CCM",
+      "row": "Schottky Diode - Power",
+      "status": "In library (un-verified)",
+      "url": "https://www.notion.so/3f07ca48596081fd8239c8f0a430fdea",
+      "verifier": []
+    },
+    "schottky diode - small signal": {
+      "addedBy": [
+        "Jacie Salonga"
+      ],
+      "boards": "",
+      "replaces": "Bourns CD0603-B0240R (0603) - Safety",
+      "row": "Schottky Diode - Small Signal",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca485960813c8de8e8e7e2197c47",
+      "verifier": []
+    },
+    "tactile switch": {
+      "addedBy": [
+        "Andy Li"
+      ],
+      "boards": "",
+      "replaces": "Generic 6mm THT pushbutton - Safety",
+      "row": "Tactile Switch",
+      "status": "In library (un-verified)",
+      "url": "https://www.notion.so/3f07ca4859608161a698fc9c19641962",
+      "verifier": []
+    },
+    "test point": {
+      "addedBy": [
+        "Taran Joseph Merwin"
+      ],
+      "boards": "",
+      "replaces": "None (no test points on previous boards)",
+      "row": "Test Point",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca4859608144b612d268b279f656",
+      "verifier": []
+    },
+    "trimmer potentiometer": {
+      "addedBy": [
+        "Jason Ngo"
+      ],
+      "boards": "",
+      "replaces": "Bourns 3296Y (THT) - PCC, Safety",
+      "row": "Trimmer Potentiometer",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca48596081548b4bfbe604ccf3f5",
+      "verifier": []
+    },
+    "tvs diode - can": {
+      "addedBy": [
+        "Kevin Kwok"
+      ],
+      "boards": "",
+      "replaces": "TI ESD562-Q1 (SOT-23) - PCC",
+      "row": "TVS Diode - CAN",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca48596081d39447ef72f0558c78",
+      "verifier": []
+    },
+    "tvs diode - lv power input": {
+      "addedBy": [
+        "Kevin Kwok"
+      ],
+      "boards": "",
+      "replaces": "None (new)",
+      "row": "TVS Diode - LV Power Input",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca4859608149bb66cdaf6044b16b",
+      "verifier": []
+    },
+    "usb-c receptacle": {
+      "addedBy": [
+        "Rishi Reddy Theegala"
+      ],
+      "boards": "",
+      "replaces": "Wurth 614004135023 USB-A vertical (THT) - Safety",
+      "row": "USB-C Receptacle",
+      "status": "Missing",
+      "url": "https://www.notion.so/3f07ca48596081f8bd01f959de036c32",
+      "verifier": []
+    }
   }
 }

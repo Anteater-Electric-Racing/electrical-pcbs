@@ -48,7 +48,7 @@ export function NotionInfo({ partID }: { partID: string }) {
       ) : (
         <p className="muted">
           Not linked to a PCB Wiki row yet. Edit the part and start its Notes with{" "}
-          <code>Notion: &lt;Component Name&gt;;</code>, then Publish. It fills in after the next sync.
+          <code>Notion: &lt;Component Name&gt;;</code>, then Save. It shows up here right away.
         </p>
       )}
     </section>
