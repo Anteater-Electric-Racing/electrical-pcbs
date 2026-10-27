@@ -118,6 +118,20 @@ export default function App() {
       setLoading(false);
     }
   }, []);
+  // Refresh button: download teammates' published parts first, then reload
+  const [pulling, setPulling] = useState(false);
+  const pullAndRefresh = async () => {
+    setPulling(true);
+    try {
+      const r = await api("pull", {});
+      if (r.library) setLibrary(r.library);
+      if (r.message) setNotice({ text: r.message, error: false });
+    } catch (e) {
+      setNotice({ text: String(e), error: true });
+    } finally {
+      setPulling(false);
+    }
+  };
   useEffect(() => {
     refresh();
   }, [refresh]);
@@ -602,9 +616,10 @@ export default function App() {
                 />
                 <kbd>⌘F</kbd>
               </div>
-              <button className="secondary" onClick={refresh}>
+              <button className="secondary" onClick={pullAndRefresh} disabled={pulling}
+                title="Get teammates' published parts from GitHub and reload">
                 <SlidersHorizontal size={16} />
-                Refresh
+                {pulling ? "Updating…" : "Refresh"}
               </button>
             </div>
             {rawFolders.length > 0 && (

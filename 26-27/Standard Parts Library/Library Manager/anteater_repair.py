@@ -26,40 +26,16 @@ from manager.anteater_publish import Git, _rebuild, _resolve  # noqa: E402
 from manager.storage import Library  # noqa: E402
 
 
-def touches_locked_files(g, frm, to):
-    """Files KiCad keeps open (Windows can't replace them while it runs) that an update would change."""
-    from manager.anteater_publish import KICAD_LOCKED
-
-    changed = g.out("diff", "--name-only", frm, to).splitlines()
-    return [p for p in changed if g.lib_path(p) in KICAD_LOCKED]
-
-
 def safe_pull(lib):
     """Launcher pull: get teammates' parts, even with KiCad open, unless the update would
     have to replace a file KiCad holds open (then skip it rather than half-pull)."""
-    g = Git(lib)
-    if not g.run("rev-parse", "--abbrev-ref", "@{u}", check=False).stdout.strip():
-        return 0
-    print("Getting the latest parts from GitHub...")
-    if g.run("fetch", "--quiet", check=False).returncode:
-        print("  Couldn't reach GitHub; opening the library as it is.")
-        return 0
-    if g.out("rev-list", "--count", "HEAD..@{u}") == "0":
-        print("  Already up to date.")
-        return check_generated(Library(lib.root))
-    from manager import kicad
+    from manager.anteater_publish import get_latest
 
-    if os.name == "nt" and kicad.running() and touches_locked_files(g, "HEAD", "@{u}"):
-        print("  KiCad is open, and this update changes the parts database file KiCad keeps open.")
-        print("  Close KiCad and reopen this to get it. Opening the library as it is...")
-        return 0
-    r = g.run("pull", "--ff-only", "--quiet", check=False)
-    if r.returncode:
-        print("  Could not update automatically. Use Publish in the app (it merges for you).")
-        return 0
-    check_generated(Library(lib.root))  # rebuild the local parts database for the new parts
-    print("  Updated.")
-    return 0
+    print("Getting the latest parts from GitHub...")
+    message = get_latest(lib)["message"]
+    if message:
+        print("  " + message)
+    return check_generated(Library(lib.root))
 
 
 def check_generated(lib):

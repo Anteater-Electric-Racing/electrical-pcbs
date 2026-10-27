@@ -482,6 +482,12 @@ def run(library=None, port=0, open_browser=True, desktop=False, parent_pid=None)
                         lib = state.lib()
                         removed = anteater_delete.delete(lib, data["partID"])
                         return self.send({"removed": removed, "library": lib.state()})
+                    if path == "/api/pull":  # Anteater Racing addition: Refresh gets teammates' parts
+                        from . import anteater_publish
+
+                        result = anteater_publish.get_latest(state.lib())
+                        result["library"] = state.lib().state()
+                        return self.send(result)
                     if path == "/api/publish":  # Anteater Racing addition
                         from . import anteater_publish
 
