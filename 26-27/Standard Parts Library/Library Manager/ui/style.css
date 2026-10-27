@@ -1981,7 +1981,8 @@ input[type="range"] {
   font-weight: 600;
   background: #f4f6f9;
 }
-.board-tags h3 {
+.board-tags h3,
+.notion-info h3 {
   display: flex;
   align-items: center;
   gap: 6px;
@@ -2220,4 +2221,14 @@ input[type="range"] {
 .raw-folders li small {
   color: #6b7686;
   margin-left: 6px;
+}
+
+/* ---- Anteater Racing: Notion history at the bottom of a part ---- */
+.notion-info {
+  margin-top: 8px;
+  padding-top: 4px;
+  border-top: 1px solid #e3e7ee;
+}
+.notion-info code {
+  font-size: 12px;
 }

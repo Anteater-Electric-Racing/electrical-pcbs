@@ -372,6 +372,40 @@ class Sync:
                 self.n.update(page["id"], {"Status": N.select("Removed")}, label=key)
 
 
+INFO_FILE = "appdata/notion-info.json"
+
+
+def notion_info(pages, part_page):
+    """Library ID -> the PCB Wiki planning fields the Library Manager shows on each part
+    (who added it, what it replaces). The sync commits this file so the app needs no token."""
+    by_id = {p["id"]: p for p in pages}
+    info = {}
+    for pid, page_id in sorted(part_page.items()):
+        page = by_id.get(page_id)
+        if not page:
+            continue
+        info[pid] = {
+            "row": N.read(page, "Component Name") or "",
+            "url": page.get("url", ""),
+            "addedBy": N.people_names(page, "Person"),
+            "verifier": N.people_names(page, "Verifier"),
+            "replaces": (N.read(page, "Previous Component") or "").strip(),
+            "boards": N.read(page, "Relevant Boards") or "",
+            "status": N.read(page, "Library Status") or "",
+        }
+    return info
+
+
+def write_notion_info(lib, info):
+    """Write the file only when it changed, so the workflow commits only real changes."""
+    data = json.dumps(info, indent=2, ensure_ascii=False, sort_keys=True) + "\n"
+    path = lib.root / INFO_FILE
+    if not path.exists() or path.read_bytes() != data.encode("utf-8"):
+        path.write_bytes(data.encode("utf-8"))
+        return True
+    return False
+
+
 def summary(report, boards):
     out = ["## Parts library → Notion sync", ""]
     out.append(f"Parts: {report['linked']} newly linked, {report['created']} created, "
@@ -430,6 +464,8 @@ def main():
     if args.boards_only:
         sync.part_page = {N.read(p, "Library ID"): p["id"] for p in part_pages if N.read(p, "Library ID")}
     sync.sync_boards(boards, boms, part_pages)
+    if not args.dry_run and write_notion_info(lib, notion_info(part_pages, sync.part_page)):
+        print(f"Updated {INFO_FILE} (the workflow commits it)")
 
     text = summary(sync.report, boards)
     print(text)

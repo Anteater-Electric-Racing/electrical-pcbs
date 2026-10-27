@@ -186,6 +186,10 @@ def run(library=None, port=0, open_browser=True, desktop=False, parent_pid=None)
                             from . import anteater_delete
 
                             return self.send(anteater_delete.plan(state.lib(), query["part"][0]))
+                        if path == "/api/notion-info":  # Anteater Racing addition: written by the Notion sync
+                            f = state.lib().appdata / "notion-info.json"
+                            info = json.loads(f.read_text(encoding="utf-8")) if f.is_file() else {}
+                            return self.send({"info": info.get(query["part"][0])})
                         if path == "/api/publish-status":  # Anteater Racing addition
                             from . import anteater_publish
 

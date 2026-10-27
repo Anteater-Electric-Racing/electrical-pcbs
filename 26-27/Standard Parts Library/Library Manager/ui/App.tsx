@@ -27,6 +27,7 @@ import ImportDialog from "./ImportDialog";
 import ComponentPreviews from "./ComponentPreviews";
 import CatalogPreviews from "./CatalogPreviews";
 import { Publish } from "./Publish";
+import { NotionInfo } from "./NotionInfo";
 import { addBoardPrompt, BoardsOverview, BoardTags, BoardView, BoardsState, FilterBar } from "./Boards";
 import teamLogo from "./anteater-logo.png";
 import {
@@ -906,6 +907,7 @@ Its accessories go too: ${plan.accessories.join(", ")}`
             {boards && (
               <BoardTags key={selected.ID} part={selected} boards={boards} notify={notify} onBoards={setBoards} />
             )}
+            <NotionInfo key={"notion-" + selected.ID} partID={selected.ID} />
           </section>
         </div>
       )}

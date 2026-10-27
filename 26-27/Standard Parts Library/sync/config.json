@@ -20,7 +20,7 @@
     "7fd7ca48596083678bd801b4752dbde2"
   ],
   "_writable_comment": "The sync refuses to read or write any Notion database not listed here. PCB Wiki only.",
-  "done_status": "Done (added to KiCad library)",
+  "done_status": "Done (approved and in library)",
   "uploaded_status": "In library (un-verified)",
   "removed_status": "Missing",
   "categories": {

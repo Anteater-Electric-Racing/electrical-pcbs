@@ -26,7 +26,7 @@ concurrency:
   cancel-in-progress: false
 
 permissions:
-  contents: read
+  contents: write   # commits appdata/notion-info.json (who added each part, what it replaces)
   issues: write
 
 jobs:
@@ -55,6 +55,19 @@ jobs:
           mkdir -p "$HOME"
           cd "26-27/Standard Parts Library/sync"
           python3 anteater_sync.py ${{ inputs.dry_run && '--dry-run' || '' }}
+      - name: Commit the Notion info shown in the Library Manager
+        if: ${{ !inputs.dry_run }}
+        run: |
+          f="26-27/Standard Parts Library/Anteater Parts/appdata/notion-info.json"
+          [ -f "$f" ] || exit 0
+          git add "$f"
+          git diff --cached --quiet && exit 0
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com"             commit -m "Update part info from Notion (added by, replaces)"
+          for i in 1 2 3; do
+            git pull --rebase --quiet origin "${GITHUB_REF_NAME:-main}" && git push --quiet origin HEAD:"${GITHUB_REF_NAME:-main}" && exit 0
+            sleep 5
+          done
+          exit 1
       - name: Open an issue if the sync failed
         if: failure() && github.event_name != 'workflow_dispatch'
         uses: actions/github-script@v7

@@ -44,7 +44,7 @@ In KiCad, press **A** and search by part number, manufacturer or description. Th
 8. For connectors, add the mating **housing and crimp contacts** as accessories at the bottom, so they appear on the BOM.
 9. Click **Save**.
 10. Open **Publish to GitHub** in the left sidebar, check the description, and click **Publish**. A few minutes later the Notion row turns **In library (un-verified)** and its MPN, manufacturer, datasheet, package and category are filled in. Then click **Quit manager**.
-11. The row's **Verifier** checks the part (symbol, footprint, 3D alignment) and sets the status to **Done (added to KiCad library)** in Notion. If the part is changed in the library later, it goes back to *In library (un-verified)* and the Verifier gets a comment to re-check it.
+11. The row's **Verifier** checks the part (symbol, footprint, 3D alignment) and sets the status to **Done (approved and in library)** in Notion. If the part is changed in the library later, it goes back to *In library (un-verified)* and the Verifier gets a comment to re-check it.
 
 **Getting teammates' new parts:** opening the app pulls them automatically. If the app is already open, click **Refresh** on All components (or **Get latest** on the Publish page). If you have unpublished changes, it tells you to **Publish** instead, which merges theirs and yours. Never pull the library in GitHub Desktop.
 
@@ -58,6 +58,10 @@ The app shows who it was and has an **Email** button. Agree with them which vers
 - **Boards appear automatically:** any KiCad project in a season folder (`26-27/...`), and any board folder in the current season even before it has a project (e.g. `26-27/DASH`). New ones show up when you switch back to the app; boards made on someone else's PC show up after you pull. Tags on a folder-only board move to its KiCad project once one is created inside it. **Update from schematic** fills in that board's tags from the actual schematic, replacing its manual tags. Add a board with no schematic yet with the **+** next to BOARDS.
 - **`26-27/VCU` is a link (git submodule) to the [OTA-pcb-testing](https://github.com/Anteater-Electric-Racing/OTA-pcb-testing) repo.** The launcher downloads its files, or run `git submodule update --init` yourself. To change the VCU board, commit in the OTA-pcb-testing repo (GitHub Desktop lists it as its own repository). Then, to make `electrical-pcbs` point at the new version, run `git submodule update --remote 26-27/VCU` and commit the updated link.
 - Only the current season shows by default. Use **Show older seasons** on the Boards page, or **Older seasons…** in the filter row.
+
+### Who added a part, and what it replaces
+
+Click a part and scroll to **History (from Notion)** at the bottom. It shows the PCB Wiki row's **Person** (added by) and **Previous Component** (what it replaces), plus **Relevant Boards** and **Verifier** when they're set, with a link to the row. To change these, edit the row in Notion. The sync copies them into the library (`appdata/notion-info.json`), so they show up after the next sync and Refresh.
 
 ### Changing or deleting a part
 

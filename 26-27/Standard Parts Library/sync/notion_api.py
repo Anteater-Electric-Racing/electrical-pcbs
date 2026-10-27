@@ -120,6 +120,12 @@ def plain_rt(s): return {"type": "text", "text": {"content": s[:2000]}}
 
 
 # ---- property readers --------------------------------------------------------
+def people_names(page, name):
+    """Names in a people property (needs the connection's "Read user information" capability)."""
+    p = page.get("properties", {}).get(name) or {}
+    return [u.get("name") or "(unknown)" for u in p.get("people", [])]
+
+
 def read(page, name):
     """Plain value of a property: str for text-like, list for people/relation."""
     p = page.get("properties", {}).get(name)
