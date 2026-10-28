@@ -15,6 +15,9 @@ echo "Anteater Racing - Parts Library setup (Mac)"
 
 # Homebrew lives in different places on Apple Silicon and Intel Macs
 for b in /opt/homebrew/bin /usr/local/bin; do [[ -x "$b/brew" ]] && PATH="$b:$PATH"; done
+# GitHub Desktop ships its own git; use it if there is no working git (no Xcode tools)
+GHD="/Applications/GitHub Desktop.app/Contents/Resources/app/git/bin"
+git --version >/dev/null 2>&1 || { [[ -x "$GHD/git" ]] && PATH="$GHD:$PATH"; }
 
 step 1 "Python 3.11 or newer"
 py_ok() { command -v python3 >/dev/null && python3 -c 'import sys; sys.exit(sys.version_info < (3, 11))'; }

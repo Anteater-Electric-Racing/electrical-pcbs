@@ -105,6 +105,7 @@ In the app, open **BOM export** and copy the generator command. In KiCad's schem
 | "Close KiCad before connecting" | Close every KiCad window, including PCB Editor and Schematic Editor. |
 | A part was added but you can't see it | Pull, then restart KiCad. |
 | The app window closes immediately | Run Setup again. If it still fails, open `Open Library Manager.bat` from a terminal and send the error to the library owner. |
+| "Git is not installed" but GitHub Desktop is | Update this folder (GitHub Desktop › Fetch/Pull once), then reopen the app. Newer versions use GitHub Desktop's built-in git. |
 | Publish says "Git doesn't know who you are" | GitHub Desktop › File › Options › Git: set your name and email. |
 | Publish says push failed | Sign in to GitHub in GitHub Desktop, then try again. |
 | Notion row didn't turn Done | Check the GitHub **Actions** tab for a failed *Parts library → Notion sync* run, or check that your Notes have `Notion: <exact Component Name>;`. |

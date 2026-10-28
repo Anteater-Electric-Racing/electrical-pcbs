@@ -10,7 +10,6 @@ local commit is kept and the rebase is aborted.
 import csv
 import io
 import os
-import shutil
 import subprocess
 from pathlib import Path
 
@@ -33,7 +32,9 @@ KICAD_LOCKED = {"appdata/parts.sqlite"}
 
 class Git:
     def __init__(self, lib):
-        if not shutil.which("git"):
+        from .anteater_git import ensure_git
+
+        if not ensure_git():
             raise ValueError("Git is not installed. Install GitHub Desktop or Git for Windows, then reopen the manager.")
         self.lib = lib
         top = self.run("rev-parse", "--show-toplevel", cwd=lib.root, check=False)

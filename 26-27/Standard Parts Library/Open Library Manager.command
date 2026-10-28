@@ -3,6 +3,9 @@
 # (Windows users: use "Open Library Manager.bat" instead.)
 cd "$(dirname "$0")" || exit 1
 for b in /opt/homebrew/bin /usr/local/bin; do [[ -d "$b" ]] && PATH="$b:$PATH"; done
+# GitHub Desktop ships its own git; use it if there is no working git (no Xcode tools)
+GHD="/Applications/GitHub Desktop.app/Contents/Resources/app/git/bin"
+git --version >/dev/null 2>&1 || { [[ -x "$GHD/git" ]] && PATH="$GHD:$PATH"; }
 
 # Only one Library Manager may edit the library at a time; two copies corrupt saves.
 if pgrep -f "Library Manager/app.py" >/dev/null; then

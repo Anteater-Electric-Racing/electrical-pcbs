@@ -10,11 +10,11 @@ discovered automatically, keyed by season + name so next year's boards stay sepa
 """
 import json
 import re
-import shutil
 import subprocess
 import tempfile
 from pathlib import Path
 
+from .anteater_git import ensure_git
 from .storage import APPDATA, json_bytes
 
 FILE = APPDATA + "/boards.json"
@@ -60,7 +60,7 @@ def save(lib, data):
 
 def repo_root(lib):
     r = subprocess.run(["git", "rev-parse", "--show-toplevel"], cwd=lib.root,
-                       capture_output=True, text=True) if shutil.which("git") else None
+                       capture_output=True, text=True) if ensure_git() else None
     return Path(r.stdout.strip()) if r and r.returncode == 0 else lib.root.parents[2]
 
 

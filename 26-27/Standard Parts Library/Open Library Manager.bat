@@ -11,6 +11,10 @@ if errorlevel 1 goto already_running
 set "PY=py -3"
 where py >nul 2>nul || set "PY=python"
 
+rem GitHub Desktop ships its own git but doesn't put it on PATH; use it if there's no other git
+where git >nul 2>nul || for /d %%D in ("%LOCALAPPDATA%\GitHubDesktop\app-*") do if exist "%%D\resources\app\git\cmd\git.exe" set "PATH=%%D\resources\app\git\cmd;%PATH%"
+where git >nul 2>nul || if exist "%ProgramFiles%\Git\cmd\git.exe" set "PATH=%ProgramFiles%\Git\cmd;%PATH%"
+
 rem A GitHub Desktop pull can stop halfway on library files; finish or undo it safely first
 where git >nul 2>nul && %PY% "%~dp0Library Manager\anteater_repair.py" "%~dp0Anteater Parts"
 
