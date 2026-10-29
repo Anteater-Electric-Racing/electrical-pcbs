@@ -103,6 +103,10 @@ def discover_boards():
             rel_parts = pro.relative_to(season_dir).parts
             if any(d in CFG["skip_dirs"] or d.startswith(tuple(CFG["skip_dir_prefixes"])) for d in rel_parts[:-1]):
                 continue
+            # a board folder with a kicad/ subfolder (e.g. 26-27/DCDC) only counts the projects in it
+            if len(rel_parts) > 2 and rel_parts[1].lower() != "kicad" and any(
+                    p.is_dir() and p.name.lower() == "kicad" for p in (season_dir / rel_parts[0]).iterdir()):
+                continue
             rel = "/".join(rel_parts)
             boards.append(dict(
                 key=f"{season}/{rel}",  # stable when "26-27" is renamed to "26-27 Archive"

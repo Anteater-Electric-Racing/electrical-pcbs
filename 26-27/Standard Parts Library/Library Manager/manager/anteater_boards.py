@@ -64,6 +64,14 @@ def repo_root(lib):
     return Path(r.stdout.strip()) if r and r.returncode == 0 else lib.root.parents[2]
 
 
+def outside_kicad_dir(season_dir, rel):
+    """A board folder with a kicad/ subfolder (e.g. 26-27/DCDC, a whole repo with docs and
+    test boards) only counts the projects inside kicad/."""
+    if len(rel) < 3 or rel[1].lower() == "kicad":
+        return False
+    return any(p.is_dir() and p.name.lower() == "kicad" for p in (season_dir / rel[0]).iterdir())
+
+
 def discover(lib):
     """KiCad projects in season folders -> {key: board}."""
     boards = {}
@@ -72,7 +80,7 @@ def discover(lib):
         season = SEASON.match(season_dir.name).group(1)
         for pro in sorted(season_dir.rglob("*.kicad_pro")):
             rel = pro.relative_to(season_dir).parts
-            if any(d in SKIP or d.startswith("_") for d in rel[:-1]):
+            if any(d in SKIP or d.startswith("_") for d in rel[:-1]) or outside_kicad_dir(season_dir, rel):
                 continue
             key = f"{season}/{pro.stem}"
             if key in boards:  # same project name twice in a season: qualify with its folder
