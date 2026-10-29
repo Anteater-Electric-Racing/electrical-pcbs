@@ -52,7 +52,8 @@
       "name": "Anteater - MOSFET",
       "items": {
         "LM_8960b80c09_c2d11b6740b4:NTF2955": "NTF2955",
-        "LM_8960b80c09_1c5ef3831f8a:IRLZ44NPBF": "IRLZ44NPBF"
+        "LM_8960b80c09_1c5ef3831f8a:IRLZ44NPBF": "IRLZ44NPBF",
+        "LM_8960b80c09_9415ef0f8417:IRLR2905TRPBF": "IRLR2905TRPBF"
       }
     },
     "components/Relay": {
