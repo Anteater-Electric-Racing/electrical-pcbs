@@ -40,6 +40,7 @@ In KiCad, press **A** and search by part number, manufacturer or description. Th
 5. Under **What are you adding?**, click the part's category (Regulator, MOSFET, LED...). It's the same list as the Notion PCB Wiki *Category*, and the app picks the right import mode for you. Tip: if you set **Component folder name** to the Notion row's *Component Name* (e.g. `TVS Diode - CAN`), the part links to that row automatically.
 6. Fill in **Manufacturer**, **Part number** (MPN), **Description** and **Online datasheet**. Pasting a DigiKey/Mouser URL usually fails because those sites block it, so type the details in.
    In **Notes**, start with `Notion: <Component Name>;` using the row name from step 1, for example `Notion: Connector (Internal);`. This links the part to that row. You can skip it if the Notion row already has the same MPN.
+   To add a picture to the notes (a pinout, wiring diagram or photo), click **Add image** under Notes, or paste a screenshot into the Notes box. It shows as `[image: ...]` in the text and as a picture when someone clicks the part. PNG, JPG, GIF or WebP, up to 5 MB.
 7. Check the **Footprint**, **Symbol** and **3D alignment** tabs. In 3D alignment, use the **Top** and **Side** views and the Move/Rotate controls until the model sits on the pads, with pins in the holes and the body flat on the board.
 8. For connectors, add the mating **housing and crimp contacts** as accessories at the bottom, so they appear on the BOM.
 9. Click **Save**.

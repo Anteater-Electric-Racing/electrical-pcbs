@@ -1982,6 +1982,7 @@ input[type="range"] {
   background: #f4f6f9;
 }
 .board-tags h3,
+.notes-view h3,
 .notion-info h3 {
   display: flex;
   align-items: center;
@@ -2231,4 +2232,52 @@ input[type="range"] {
 }
 .notion-info code {
   font-size: 12px;
+}
+/* Anteater Racing addition: pictures in Notes */
+.notes-view {
+  margin-bottom: 16px;
+}
+.notes-view p {
+  white-space: pre-wrap;
+}
+.note-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-top: 8px;
+}
+.note-images figure {
+  position: relative;
+  margin: 0;
+}
+.note-images img {
+  display: block;
+  max-width: 100%;
+  max-height: 160px;
+  border: 1px solid #e3e7ee;
+  border-radius: 6px;
+  background: #fff;
+}
+.notes-field .note-images img {
+  max-height: 72px;
+}
+.note-images figure button {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid #e3e7ee;
+  background: #fff;
+  cursor: pointer;
+}
+.notes-field .error-text {
+  display: block;
+  margin-top: 6px;
+  color: #b42318;
 }

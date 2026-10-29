@@ -18,6 +18,7 @@ import ModelViewer from "./ModelViewer";
 import { closeGuard, readClipboard } from "./desktop";
 
 import { Field } from "./fields";
+import { NotesField } from "./NoteImages";
 import { droppedFiles, UploadEntry } from "./files";
 const icon = (type: string) =>
   type === "connector" ? (
@@ -1148,11 +1149,7 @@ export default function ImportDialog({
                   onChange={(v) => partSet("Reference", v)}
                 />
               </div>
-              <Field
-                label="Notes"
-                value={part.Notes}
-                onChange={(v) => partSet("Notes", v)}
-              />
+              <NotesField value={part.Notes} onChange={(v) => partSet("Notes", v)} />
               {["resistor", "capacitor"].includes(part.Type) && (
                 <div className="fields two">
                   <Field

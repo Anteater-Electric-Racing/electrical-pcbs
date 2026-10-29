@@ -190,6 +190,11 @@ def run(library=None, port=0, open_browser=True, desktop=False, parent_pid=None)
                             from .anteater_notion import part_info
 
                             return self.send({"info": part_info(state.lib(), query["part"][0])})
+                        if path == "/api/note-image":  # Anteater Racing addition: pictures in Notes
+                            from . import anteater_noteimages
+
+                            body, kind = anteater_noteimages.read(state.lib(), query["name"][0])
+                            return self.send(body, content_type=kind)
                         if path == "/api/publish-status":  # Anteater Racing addition
                             from . import anteater_publish
 
@@ -480,6 +485,11 @@ def run(library=None, port=0, open_browser=True, desktop=False, parent_pid=None)
                             return self.send(B.add_board(lib, data.get("name"), data.get("season")))
                         if path == "/api/boards/import":
                             return self.send(B.import_schematic(lib, data["board"], kicad.cli_path()))
+                    if path == "/api/note-image":  # Anteater Racing addition: pictures in Notes
+                        from . import anteater_noteimages
+
+                        data = base64.b64decode(data["data"], validate=True)
+                        return self.send({"name": anteater_noteimages.save(state.lib(), data)})
                     if path == "/api/delete":  # Anteater Racing addition
                         from . import anteater_delete
 

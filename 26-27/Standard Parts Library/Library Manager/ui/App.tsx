@@ -28,6 +28,7 @@ import ComponentPreviews from "./ComponentPreviews";
 import CatalogPreviews from "./CatalogPreviews";
 import { Publish } from "./Publish";
 import { NotionInfo } from "./NotionInfo";
+import { NotesView } from "./NoteImages";
 import { addBoardPrompt, BoardsOverview, BoardTags, BoardView, BoardsState, FilterBar } from "./Boards";
 import teamLogo from "./anteater-logo.png";
 import {
@@ -827,6 +828,7 @@ export default function App() {
                   </div>
                 ))}
             </dl>
+            <NotesView notes={selected.Notes} />
             {selected.Datasheet && (
               <a
                 className="secondary"
