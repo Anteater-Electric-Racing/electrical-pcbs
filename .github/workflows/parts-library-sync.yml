@@ -51,8 +51,9 @@ jobs:
           KICAD_CLI: kicad-cli
           HOME: /tmp/home   # kicad-cli wants a writable config dir
         run: |
-          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          # HOME must exist before git config --global, or git exits 255 ("could not lock config file")
           mkdir -p "$HOME"
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
           cd "26-27/Standard Parts Library/sync"
           python3 anteater_sync.py ${{ inputs.dry_run && '--dry-run' || '' }}
       - name: Commit the Notion info shown in the Library Manager
@@ -62,7 +63,7 @@ jobs:
           [ -f "$f" ] || exit 0
           git add "$f"
           git diff --cached --quiet && exit 0
-          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com"             commit -m "Update part info from Notion (added by, replaces)"
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "Update part info from Notion (added by, replaces)"
           for i in 1 2 3; do
             git pull --rebase --quiet origin "${GITHUB_REF_NAME:-main}" && git push --quiet origin HEAD:"${GITHUB_REF_NAME:-main}" && exit 0
             sleep 5
@@ -73,10 +74,16 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            const author = context.payload.head_commit?.author?.username;
-            await github.rest.issues.create({
-              owner: context.repo.owner, repo: context.repo.repo,
-              title: `Parts library sync failed (${context.sha.slice(0, 8)})`,
-              body: `The Notion sync failed after this push. Log: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
-              assignees: author ? [author] : [],
-            });
+            // one open issue for all failures (a comment per failure), not a new issue every run
+            const repo = { owner: context.repo.owner, repo: context.repo.repo };
+            const log = `${context.serverUrl}/${repo.owner}/${repo.repo}/actions/runs/${context.runId}`;
+            const body = `The Notion sync failed (${context.eventName}, ${context.sha.slice(0, 8)}). Log: ${log}`;
+            const open = await github.paginate(github.rest.issues.listForRepo, { ...repo, state: "open", per_page: 100 });
+            const existing = open.find((i) => !i.pull_request && i.title.startsWith("Parts library sync"));
+            if (existing) {
+              await github.rest.issues.createComment({ ...repo, issue_number: existing.number, body });
+            } else {
+              const author = context.payload.head_commit?.author?.username;
+              await github.rest.issues.create({ ...repo, title: "Parts library sync is failing", body,
+                assignees: author ? [author] : [] });
+            }

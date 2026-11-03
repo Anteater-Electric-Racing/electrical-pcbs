@@ -10,7 +10,7 @@ from pathlib import Path
 
 MARKER = re.compile(rb"^(<<<<<<< |=======\r?$|>>>>>>> )", re.MULTILINE)
 SKIP_DIRS = {"backups", "original-downloads", "generic_models"}
-BINARY = {".sqlite", ".step", ".stp", ".wrl", ".zip", ".png", ".jpg", ".pdf"}
+BINARY = {".sqlite", ".step", ".stp", ".wrl", ".zip", ".png", ".jpg", ".gif", ".webp", ".pdf"}
 
 MESSAGE = (
     "The parts library contains unresolved git merge-conflict markers in:\n{files}\n\n"

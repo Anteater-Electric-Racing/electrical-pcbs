@@ -31,22 +31,25 @@ export function NotesField({ value, onChange }: { value: string; onChange: (v: s
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const images = noteImages(value);
+  const latest = useRef(value);
+  latest.current = value; // text typed while an upload is running must not be lost
 
   async function add(files: Blob[]) {
     if (!files.length) return;
     setBusy(true);
     setError("");
-    let notes = value || "";
     try {
       for (const file of files) {
         const { name } = await api<{ name: string }>("note-image", { data: await base64(file) });
-        if (!noteImages(notes).includes(name))
-          notes = (notes.trim() ? notes.trim().replace(/;?$/, "; ") : "") + `[image: ${name}]`;
+        const notes = latest.current || "";
+        if (!noteImages(notes).includes(name)) {
+          latest.current = (notes.trim() ? notes.trim().replace(/;?$/, "; ") : "") + `[image: ${name}]`;
+          onChange(latest.current);
+        }
       }
     } catch (e) {
       setError(String(e));
     }
-    onChange(notes);
     setBusy(false);
   }
 
