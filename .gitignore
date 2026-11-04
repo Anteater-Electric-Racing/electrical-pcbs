@@ -1,0 +1,3 @@
+# KiCad lock files: committing them makes KiCad say the board is open on everyone else's PC
+~*.lck
+*.lck
