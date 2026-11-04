@@ -429,7 +429,7 @@
         "uuid": "19cb6025-5afe-4cbe-82f8-7b7ab9da466c"
       }
     ],
-    "used_designators": "U1",
+    "used_designators": "U1-9,D1-16,#PWR1-29,Q1-9,R1-32,K1-3,C1-15,SW1-3,RV1",
     "variants": []
   },
   "sheets": [
@@ -440,6 +440,34 @@
     [
       "5bec6c9c-58a5-48e1-a034-a07c8c60681b",
       "RCCM"
+    ],
+    [
+      "82463a24-1cbe-48d9-b1a9-86a7a119fb6d",
+      "LED"
+    ],
+    [
+      "2db4eff8-90db-475d-917d-2c67746f9aa1",
+      "TSSI_555"
+    ],
+    [
+      "d6562e8c-afd4-4d2d-b123-f8f32d2da48f",
+      "RTML_555"
+    ],
+    [
+      "1aefbb2c-500e-477f-a207-e2390cd85fb7",
+      "LATCH"
+    ],
+    [
+      "f2e1123d-240d-417e-9e0e-408cde66ee50",
+      "RTM"
+    ],
+    [
+      "f49d5f0c-1e32-4172-aa61-73274f070842",
+      "DCDC_CONVERTER"
+    ],
+    [
+      "a9782e61-1464-46dd-8bb3-3338bd1716d9",
+      "BSPD"
     ]
   ],
   "text_variables": {},
