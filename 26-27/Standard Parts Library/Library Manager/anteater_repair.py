@@ -22,6 +22,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+from manager.anteater_git import native_path  # noqa: E402
 from manager.anteater_publish import Git, _rebuild, _resolve  # noqa: E402
 from manager.storage import Library  # noqa: E402
 
@@ -84,7 +85,7 @@ def main():
     if "--pull" in sys.argv:
         return safe_pull(lib)
     g = Git(lib)
-    git_dir = Path(g.out("rev-parse", "--git-dir"))
+    git_dir = native_path(g.out("rev-parse", "--git-dir"))
     git_dir = git_dir if git_dir.is_absolute() else g.top / git_dir
     merging = (git_dir / "MERGE_HEAD").exists()
     rebasing = (git_dir / "rebase-merge").exists() or (git_dir / "rebase-apply").exists()

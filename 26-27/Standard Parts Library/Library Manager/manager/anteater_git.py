@@ -6,8 +6,10 @@ for this process, so every `git` call (publish, pull, boards) works.
 """
 import glob
 import os
+import re
 import shutil
 import sys
+from pathlib import Path
 
 
 def _candidates():
@@ -25,6 +27,17 @@ def _candidates():
         yield os.path.expanduser("~/Applications/GitHub Desktop.app/Contents/Resources/app/git/bin/git")
         yield "/opt/homebrew/bin/git"
         yield "/usr/local/bin/git"
+
+
+def native_path(path):
+    """A path printed by git, as a Path this Python can use. MSYS2/Cygwin git on Windows
+    prints /c/Users/... or /cygdrive/c/Users/..., which Python would read as C:\\c\\Users."""
+    path = path.strip()
+    if os.name == "nt":
+        m = re.match(r"^/(?:cygdrive/|mnt/)?([a-zA-Z])(/.*)?$", path)
+        if m:
+            path = f"{m.group(1).upper()}:{m.group(2) or '/'}"
+    return Path(path)
 
 
 def ensure_git():

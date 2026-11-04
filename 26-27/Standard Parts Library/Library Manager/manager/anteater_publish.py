@@ -32,7 +32,7 @@ KICAD_LOCKED = {"appdata/parts.sqlite"}
 
 class Git:
     def __init__(self, lib):
-        from .anteater_git import ensure_git
+        from .anteater_git import ensure_git, native_path
 
         if not ensure_git():
             raise ValueError("Git is not installed. Install GitHub Desktop or Git for Windows, then reopen the manager.")
@@ -40,7 +40,7 @@ class Git:
         top = self.run("rev-parse", "--show-toplevel", cwd=lib.root, check=False)
         if top.returncode:
             raise ValueError("This library is not inside a git repository")
-        self.top = Path(top.stdout.strip())
+        self.top = native_path(top.stdout)
         self.rel = lib.root.resolve().relative_to(self.top.resolve()).as_posix()
 
     def run(self, *args, cwd=None, check=True, env=None):

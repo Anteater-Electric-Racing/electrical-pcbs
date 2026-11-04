@@ -14,7 +14,7 @@ import subprocess
 import tempfile
 from pathlib import Path
 
-from .anteater_git import ensure_git
+from .anteater_git import ensure_git, native_path
 from .storage import APPDATA, json_bytes
 
 FILE = APPDATA + "/boards.json"
@@ -61,7 +61,7 @@ def save(lib, data):
 def repo_root(lib):
     r = subprocess.run(["git", "rev-parse", "--show-toplevel"], cwd=lib.root,
                        capture_output=True, text=True) if ensure_git() else None
-    return Path(r.stdout.strip()) if r and r.returncode == 0 else lib.root.parents[2]
+    return native_path(r.stdout) if r and r.returncode == 0 else lib.root.parents[2]
 
 
 def outside_kicad_dir(season_dir, rel):
