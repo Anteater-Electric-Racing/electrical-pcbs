@@ -13,7 +13,8 @@
     "components/Capacitor": {
       "name": "Anteater - Capacitor",
       "items": {
-        "LM_8960b80c09_capacitor:C_0805_2012Metric": "C_0805_2012Metric"
+        "LM_8960b80c09_capacitor:C_0805_2012Metric": "C_0805_2012Metric",
+        "LM_8960b80c09_00d94e8adbb2:50TPV330M10X10.5": "50TPV330M10X10.5"
       }
     },
     "components/CAN Controller": {
@@ -26,7 +27,9 @@
       "name": "Anteater - Diode",
       "items": {
         "LM_8960b80c09_cc4188f792d2:STPS3L60U": "STPS3L60U",
-        "LM_8960b80c09_5bd8e693e534:1N4007W": "1N4007W"
+        "LM_8960b80c09_5bd8e693e534:1N4007W": "1N4007W",
+        "LM_8960b80c09_9c2637978085:SMAJ15A": "SMAJ15A",
+        "LM_8960b80c09_0513a803cae3:ESD562DBZRQ1": "ESD562DBZRQ1"
       }
     },
     "components/Comparator - Op-Amp": {
@@ -102,6 +105,12 @@
       "name": "Anteater - Switch",
       "items": {
         "LM_8960b80c09_1f5631896eca:KMR241G LFS": "KMR241G LFS"
+      }
+    },
+    "components/Optocoupler": {
+      "name": "Anteater - Optocoupler",
+      "items": {
+        "LM_8960b80c09_6060aa530bb8:VO617A-3X016": "VO617A-3X016"
       }
     }
   }
