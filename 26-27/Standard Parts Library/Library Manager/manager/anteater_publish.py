@@ -44,12 +44,29 @@ class Git:
         self.rel = lib.root.resolve().relative_to(self.top.resolve()).as_posix()
 
     def run(self, *args, cwd=None, check=True, env=None):
+        if any("@{u}" in a for a in args):
+            # MSYS2/Cygwin git expands {...} in its arguments itself, turning @{u} into @u.
+            # Name the upstream branch explicitly instead (refs/remotes/origin/main).
+            up = self.upstream_ref()
+            if up:
+                args = tuple(a.replace("@{u}", up) for a in args)
         r = subprocess.run(["git", *args], cwd=cwd or self.top, capture_output=True, text=True,
                            encoding="utf-8", errors="replace",
-                           env={**os.environ, "GIT_TERMINAL_PROMPT": "0", **(env or {})})
+                           env={**os.environ, "GIT_TERMINAL_PROMPT": "0",
+                                # no wildcard expansion either (keeps any other MSYS/CYGWIN options)
+                                "MSYS": (os.environ.get("MSYS", "") + " noglob").strip(),
+                                "CYGWIN": (os.environ.get("CYGWIN", "") + " noglob").strip(),
+                                **(env or {})})
         if check and r.returncode:
             raise ValueError(f"git {args[0]} failed: {(r.stderr or r.stdout).strip()[-600:]}")
         return r
+
+    def upstream_ref(self):
+        """Full name of the current branch's upstream (refs/remotes/origin/main), or ""."""
+        head = self.run("symbolic-ref", "-q", "HEAD", check=False).stdout.strip()
+        if not head:
+            return ""
+        return self.run("for-each-ref", "--format=%(upstream)", head, check=False).stdout.strip()
 
     def out(self, *args):
         return self.run(*args).stdout.strip()
