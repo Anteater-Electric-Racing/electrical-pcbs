@@ -116,7 +116,8 @@
     "components/Logic IC": {
       "name": "Anteater - Logic IC",
       "items": {
-        "LM_8960b80c09_b0cb96507780:ADS1115IDGST": "ADS1115IDGST"
+        "LM_8960b80c09_b0cb96507780:ADS1115IDGST": "ADS1115IDGST",
+        "LM_8960b80c09_80d0a316cf60:ADS1115IDGSR": "ADS1115IDGSR"
       }
     }
   }
