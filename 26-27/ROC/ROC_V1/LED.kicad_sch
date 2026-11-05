@@ -394,64 +394,37 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Anteater Parts:NTF2955"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "Anteater Parts:TLC555ID"
 			(pin_names
-				(offset 0)
+				(offset 0.254)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Q"
-				(at 5.08 1.27 0)
+			(property "Reference" "U"
+				(at 33.02 10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "NTF2955"
-				(at 5.08 -1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Anteater - MOSFET:NTF2955"
-				(at 5.08 2.54 0)
+			(property "Value" "TLC555ID"
+				(at 33.02 7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
 				)
 			)
-			(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/ntf2955-d.pdf"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
+			(property "Footprint" "Anteater - Timer:TLC555ID"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -459,33 +432,24 @@
 				(effects
 					(font
 						(size 1.27 1.27)
+						(italic yes)
 					)
 				)
 			)
-			(property "Sim.Device" "PMOS"
-				(at 0 -17.145 0)
+			(property "Datasheet" "https://www.ti.com/lit/gpn/tlc555"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
+						(italic yes)
 					)
 				)
 			)
-			(property "Sim.Type" "VDMOS"
-				(at 0 -19.05 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Pins" "1=D 2=G 3=S"
-				(at 0 -15.24 0)
+			(property "Description" ""
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -506,7 +470,7 @@
 					)
 				)
 			)
-			(property "PartID" "NTF2955"
+			(property "PartID" "TLC555ID"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -517,7 +481,7 @@
 					)
 				)
 			)
-			(property "MPN" "NTF2955"
+			(property "MPN" "TLC555ID"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -528,7 +492,7 @@
 					)
 				)
 			)
-			(property "Manufacturer" "Onsemi"
+			(property "Manufacturer" "Texas Instruments"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -539,7 +503,7 @@
 					)
 				)
 			)
-			(property "SearchPath" "Anteater Parts/components/MOSFET/NTF2955"
+			(property "SearchPath" "Anteater Parts/components/Timer/TLC555ID"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -550,7 +514,7 @@
 					)
 				)
 			)
-			(property "Package" ""
+			(property "Package" "8-SOIC"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -616,7 +580,17 @@
 					)
 				)
 			)
-			(property "ki_keywords" "transistor PMOS P-MOS P-MOSFET simulation"
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "TLC555ID"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -627,7 +601,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Anteater{space}-{space}MOSFET:NTF2955"
+			(property "ki_fp_filters" "Anteater{space}-{space}Timer:TLC555ID"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -638,13 +612,13 @@
 					)
 				)
 			)
-			(symbol "NTF2955_0_1"
+			(symbol "TLC555ID_0_1"
 				(polyline
 					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
+						(xy 7.62 5.08) (xy 7.62 -12.7)
 					)
 					(stroke
-						(width 0.254)
+						(width 0.127)
 						(type default)
 					)
 					(fill
@@ -653,10 +627,10 @@
 				)
 				(polyline
 					(pts
-						(xy 0.254 0) (xy -2.54 0)
+						(xy 7.62 -12.7) (xy 58.42 -12.7)
 					)
 					(stroke
-						(width 0)
+						(width 0.127)
 						(type default)
 					)
 					(fill
@@ -665,10 +639,10 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
+						(xy 58.42 5.08) (xy 7.62 5.08)
 					)
 					(stroke
-						(width 0.254)
+						(width 0.127)
 						(type default)
 					)
 					(fill
@@ -677,139 +651,20 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 1.778) (xy 3.302 1.778) (xy 3.302 -1.778) (xy 0.762 -1.778)
+						(xy 58.42 -12.7) (xy 58.42 5.08)
 					)
 					(stroke
-						(width 0)
+						(width 0.127)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 0) (xy 1.27 0.381) (xy 1.27 -0.381) (xy 2.286 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.794 -0.508) (xy 2.921 -0.381) (xy 3.683 -0.381) (xy 3.81 -0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 -0.381) (xy 2.921 0.254) (xy 3.683 0.254) (xy 3.302 -0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "NTF2955_1_1"
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
+				(pin power_in line
+					(at 0 0 0)
+					(length 7.62)
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -824,10 +679,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G"
+				(pin unspecified line
+					(at 0 -2.54 0)
+					(length 7.62)
+					(name "TRIG"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -842,10 +697,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
+				(pin output line
+					(at 0 -5.08 0)
+					(length 7.62)
+					(name "OUT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -853,6 +708,251 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -7.62 0)
+					(length 7.62)
+					(name "RESET"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 66.04 -7.62 180)
+					(length 7.62)
+					(name "CONT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 66.04 -5.08 180)
+					(length 7.62)
+					(name "THRES"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 66.04 -2.54 180)
+					(length 7.62)
+					(name "DISCH"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 66.04 0 180)
+					(length 7.62)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1647,19 +1747,76 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "TSSI_RED flashes at 2.5 to 5 Hz \n"
+	(rectangle
+		(start 13.97 13.462)
+		(end 272.542 75.692)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "18ad0a2a-5e9b-435b-b42a-82b2b42fd1fb")
+	)
+	(rectangle
+		(start 13.97 75.692)
+		(end 153.416 197.612)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "6a1fd555-b82a-4132-88c3-47e317c8df62")
+	)
+	(text "RTML_LED oscillates at 0.6 to 1.3 3 Hz \n\n"
 		(exclude_from_sim no)
-		(at 114.808 65.786 0)
+		(at 92.202 101.092 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "05dc0afb-be22-4802-bf3a-408915828dfc")
+		(uuid "075d748c-5126-4014-a67e-521c477f5fd3")
+	)
+	(text "LOGIC"
+		(exclude_from_sim no)
+		(at 57.15 91.948 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left)
+		)
+		(uuid "106fbddf-31a8-4ec6-bd2d-93aaa41867d6")
+	)
+	(text "LED"
+		(exclude_from_sim no)
+		(at 43.942 172.974 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left)
+		)
+		(uuid "10f200c6-639c-446f-80fa-bb065f017038")
+	)
+	(text "LED"
+		(exclude_from_sim no)
+		(at 185.166 33.02 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left)
+		)
+		(uuid "1d4f75ed-3488-4b94-b592-afb5f4119579")
 	)
 	(text "BMS IMD FAULT Normally high, NMOS CLOSED\n\n"
 		(exclude_from_sim no)
-		(at 65.532 22.098 0)
+		(at 99.06 19.304 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1667,133 +1824,274 @@
 		)
 		(uuid "265f0884-929b-4cb0-8fea-590eebcf5fd4")
 	)
-	(text "maybe can map tssi LED to BMS and IMD LED ??\n"
+	(text "RTM_555_OUT about 4.9 V when high 0.1 V when low"
 		(exclude_from_sim no)
-		(at 157.734 140.208 0)
+		(at 70.104 139.446 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left)
 		)
-		(uuid "6a98160b-82a5-4e10-b0dd-5f85b3fcc0db")
+		(uuid "5d55aaea-01fb-4288-88e3-b17fb93fb0a9")
 	)
 	(text "BMS_IMD_FAULT\nHIGH -> NMOS Closed, 555 RESET LOW - RED LED OFF, GREEN LED ON \nLOW  -> NMOS open, 555 RESET HIGH - RED LED OSCILALTES, GREEN LED OFF\n\nRTM \nHIGH-> NMOS closed, 555 RESET LOW  - AMBER LIGHT OFF \nLOW -> NMOS open, 555 RESET HIGH - AMBER LIGHT OSCILLATES\n "
 		(exclude_from_sim no)
-		(at 55.88 81.026 0)
+		(at 16.002 77.47 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left)
 		)
 		(uuid "74140594-22dc-4d28-8c19-4e8ec140fcae")
 	)
-	(text "can change pmos to nmos now since digital ??\n"
+	(text "oscillates at 0.793 Hz \nduty cycle 50%\n\n"
 		(exclude_from_sim no)
-		(at 155.702 147.32 0)
+		(at 93.472 118.872 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "7ae92685-6a92-4c31-b7ed-ce63623db64b")
+		(uuid "873cf341-187d-4631-a541-daeebf013784")
 	)
-	(text "RTML_LED oscillates at 0.6 to 1.3 3 Hz \n"
+	(text "Frequency 3.006 Hx \nDuty cycle 50% \n"
 		(exclude_from_sim no)
-		(at 86.614 130.81 0)
+		(at 127.508 42.672 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "e84715ac-beee-4398-a443-0d4316894a21")
+		(uuid "8872d7a1-f937-4237-9850-87212d3cc460")
+	)
+	(text "RTML"
+		(exclude_from_sim no)
+		(at 128.524 81.788 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+			(justify left)
+		)
+		(uuid "91773fce-0e8e-4445-8ad0-a9bc481f9c2e")
+	)
+	(text "TSSI\n"
+		(exclude_from_sim no)
+		(at 145.288 72.136 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+			(justify left)
+		)
+		(uuid "9f0e4c98-8fa9-4316-9429-9229e5bc6fd0")
+	)
+	(text "FAULT\nLIGHTS"
+		(exclude_from_sim no)
+		(at 161.29 85.344 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+			(justify left)
+		)
+		(uuid "c8220827-ae62-49da-9722-843b78ded316")
+	)
+	(text "INPUTS\nLAMP_CHECK\nBMS_IMD_FAULT (TSSI)\nRTM (RTML)\nBMS_LED\nIMD_LED\nBSPD_LED\n"
+		(exclude_from_sim no)
+		(at 155.194 147.828 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left)
+		)
+		(uuid "d0c42408-a562-4cdf-8033-c6fafaa722da")
+	)
+	(text "TSSI_555_OUT, when high about 4.9 V, low about 0.1 V no gate drive needed\n"
+		(exclude_from_sim no)
+		(at 130.556 61.468 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e4bac123-4b65-445e-b184-8af0c25c59ef")
+	)
+	(text "LOGIC"
+		(exclude_from_sim no)
+		(at 42.418 19.05 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left)
+		)
+		(uuid "f51cb405-9aad-4882-9350-4304aa89ad92")
 	)
 	(junction
-		(at 266.7 80.01)
+		(at 86.36 35.56)
+		(diameter 0)
+		(color 0 0 255 1)
+		(uuid "0b2825dc-ed77-4516-bec7-a28895a16c50")
+	)
+	(junction
+		(at 72.39 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "06a40585-032f-4e04-b0ab-242b743d936f")
+		(uuid "1cc47512-26a3-4928-9122-3fa928308c7c")
 	)
 	(junction
-		(at 232.41 144.78)
+		(at 57.15 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0a974e57-67a6-46be-b47a-b5824df76f15")
+		(uuid "1ef96516-6cb4-4d48-a13e-118b5812f086")
 	)
 	(junction
-		(at 232.41 102.87)
+		(at 201.93 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "371b39e0-0c4a-4070-829a-c801f0993212")
+		(uuid "2c4cf391-7198-4258-bf5a-aeec70023004")
 	)
 	(junction
-		(at 266.7 102.87)
+		(at 234.95 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3e3b172d-07f1-4a07-ab06-fed14b1298b2")
+		(uuid "3608d6bf-c6a3-4f2b-a4f0-5228bad8a4a5")
 	)
 	(junction
-		(at 49.022 25.654)
+		(at 91.44 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "478529c7-9619-4d9f-85c1-98f242ba2583")
+	)
+	(junction
+		(at 91.44 27.94)
+		(diameter 0)
+		(color 0 0 255 1)
+		(uuid "5060442e-6a07-4cb2-88d3-31b5e21bb10e")
+	)
+	(junction
+		(at 82.55 22.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "54af5bab-f18c-4e2a-9b6d-9d934d56148f")
 	)
 	(junction
-		(at 240.03 58.42)
+		(at 266.7 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6ac736a5-24f5-4bfa-b25e-d951d0d03561")
+		(uuid "5ce0ce39-67f1-45a8-a054-0830c257f272")
 	)
 	(junction
-		(at 238.76 80.01)
+		(at 62.23 175.26)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7f99da97-1212-4eb3-8ab5-e1236d6f1f2d")
+		(uuid "9b3106de-98c8-4b9a-af93-8fbd0c09cd8e")
 	)
 	(junction
-		(at 232.41 123.19)
+		(at 55.88 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "808e721c-1342-40c5-86de-f4bac2aefa59")
+		(uuid "a14c4ca6-90cd-4322-9f0c-66572bae51a2")
 	)
 	(junction
-		(at 240.03 38.1)
+		(at 74.93 160.02)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "88a6e08c-0932-4364-8079-61b13a777c7f")
+		(uuid "a3036c84-529d-46ff-a418-85d5faef70a5")
 	)
 	(junction
-		(at 266.7 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "88f433f1-d806-4a73-9fa3-252e2e6f7c0a")
-	)
-	(junction
-		(at 41.402 25.654)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9a710536-3697-48a0-a58c-bb36a66629e7")
-	)
-	(junction
-		(at 266.7 123.19)
+		(at 266.7 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a833ad10-f20f-4ddf-8f9e-3b68e7ac799f")
 	)
 	(junction
-		(at 29.21 114.3)
+		(at 238.76 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b1fea56a-2e45-47bc-906f-9bd87bdbaf35")
+	)
+	(junction
+		(at 57.15 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bc74d4e8-f24c-474e-8760-59d6f8f34c1c")
+	)
+	(junction
+		(at 49.53 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c131ae4f-c445-44e3-a4d9-ee5f5fbc075a")
+	)
+	(junction
+		(at 209.55 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d1a1d744-e9f4-4c86-a0d1-9fd65886dbf2")
+	)
+	(junction
+		(at 52.07 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d20cc4a8-5fd2-4257-a426-483154bac9e0")
+	)
+	(junction
+		(at 36.83 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d475a785-7533-44ad-ab65-f55c956f6605")
 	)
 	(junction
-		(at 266.7 58.42)
+		(at 91.44 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ff79388c-cc63-4f50-891b-c6932c89a93e")
+		(uuid "d4e95249-79af-4e86-a844-207f23a40f89")
+	)
+	(junction
+		(at 57.15 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d700b4a6-c4b4-42e9-8656-9e6b8b7f68d1")
+	)
+	(junction
+		(at 234.95 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e0642a53-9b18-4da0-9e26-a3279c8c8c33")
+	)
+	(junction
+		(at 234.95 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e1a04877-d7ff-445a-8817-fc99dca47280")
+	)
+	(junction
+		(at 82.55 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f6ed2b82-f4d0-4703-86b7-56276278457e")
+	)
+	(junction
+		(at 201.93 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb159251-d3e2-477c-b671-f2ba4e656c08")
+	)
+	(no_connect
+		(at 161.29 40.64)
+		(uuid "8997ebb5-6e3b-447e-94c0-9738995de568")
+	)
+	(no_connect
+		(at 127 116.84)
+		(uuid "9ce174dd-d481-42d2-8507-ccb45a3efdee")
 	)
 	(wire
 		(pts
-			(xy 27.432 23.114) (xy 27.432 25.654)
+			(xy 60.96 20.32) (xy 60.96 22.86)
 		)
 		(stroke
 			(width 0)
@@ -1803,7 +2101,27 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 69.85) (xy 220.98 72.39)
+			(xy 218.44 109.22) (xy 234.95 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "010d2418-ce75-4a9a-9bdb-ab90a93f5122")
+	)
+	(wire
+		(pts
+			(xy 91.44 38.1) (xy 95.25 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "013f8f7b-2487-425e-b061-d284440c6d5a")
+	)
+	(wire
+		(pts
+			(xy 74.93 160.02) (xy 74.93 165.1)
 		)
 		(stroke
 			(width 0)
@@ -1813,7 +2131,17 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 114.3) (xy 29.21 119.38)
+			(xy 161.29 45.72) (xy 161.29 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03d05459-a121-4f74-82dc-5fd57732c3aa")
+	)
+	(wire
+		(pts
+			(xy 36.83 113.03) (xy 36.83 118.11)
 		)
 		(stroke
 			(width 0)
@@ -1823,27 +2151,17 @@
 	)
 	(wire
 		(pts
-			(xy 70.104 95.758) (xy 70.104 102.108)
+			(xy 72.39 48.26) (xy 87.63 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "115b7d98-647b-4e5e-adac-8fb3f176b0d5")
+		(uuid "12098022-7613-4e14-a409-dd5eab4b390c")
 	)
 	(wire
 		(pts
-			(xy 147.32 72.39) (xy 143.51 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "12eb47c7-fbe5-40e5-bae9-7ed8433b1436")
-	)
-	(wire
-		(pts
-			(xy 217.17 123.19) (xy 209.55 123.19)
+			(xy 229.87 119.38) (xy 226.06 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1853,7 +2171,57 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 144.78) (xy 232.41 144.78)
+			(xy 115.57 154.94) (xy 115.57 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "151cbb31-9d26-4101-a34c-c2b9895f6fb0")
+	)
+	(wire
+		(pts
+			(xy 64.77 31.75) (xy 82.55 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15bf9983-160e-4df4-9bca-62dfb7ab6b34")
+	)
+	(wire
+		(pts
+			(xy 243.84 83.82) (xy 245.11 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "196bc8e1-9760-4c05-a2b3-89d42d554dd1")
+	)
+	(wire
+		(pts
+			(xy 59.69 121.92) (xy 59.69 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ca4d83e-4b39-4396-976c-29bf637b8747")
+	)
+	(wire
+		(pts
+			(xy 207.01 25.4) (xy 209.55 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ced3d6d-ee3c-44bb-8b4f-41b02a6c5982")
+	)
+	(wire
+		(pts
+			(xy 240.03 153.67) (xy 247.65 153.67)
 		)
 		(stroke
 			(width 0)
@@ -1863,27 +2231,47 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 80.01) (xy 248.92 80.01)
+			(xy 91.44 54.61) (xy 125.73 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "22881b27-734d-48c6-8393-19a038ffa744")
+		(uuid "22d96b4c-9121-4eaf-b6ae-fc9e07b91b4b")
 	)
 	(wire
 		(pts
-			(xy 234.95 49.53) (xy 240.03 49.53)
+			(xy 127 97.79) (xy 127 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "235b533a-78d6-40ed-87e9-0eb1d47a2582")
+		(uuid "2313bc4e-4c40-4e4e-ad62-15e81998cd92")
 	)
 	(wire
 		(pts
-			(xy 207.01 38.1) (xy 207.01 44.45)
+			(xy 57.15 43.18) (xy 55.88 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "241fbd06-6d77-4578-97fd-97eaa9a946d7")
+	)
+	(wire
+		(pts
+			(xy 234.95 109.22) (xy 236.22 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24f81d40-cf2a-4442-b7d1-6a6de0f4e470")
+	)
+	(wire
+		(pts
+			(xy 196.85 39.37) (xy 196.85 45.72)
 		)
 		(stroke
 			(width 0)
@@ -1893,37 +2281,98 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 111.76) (xy 232.41 111.76)
+			(xy 52.07 102.87) (xy 130.81 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "282e4e54-54f7-4f35-a443-46d673b7c49c")
+		(uuid "2592dae7-fbd8-4c0b-b534-550e7a39a05c")
 	)
 	(wire
 		(pts
-			(xy 143.51 95.25) (xy 143.51 101.6)
+			(xy 219.71 25.4) (xy 220.98 25.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2df9464a-5b14-4392-908b-a6beb6bda6ac")
+		(uuid "261d0b08-b17f-453e-9a5a-17580b8ac703")
 	)
 	(wire
 		(pts
-			(xy 41.402 25.654) (xy 41.402 40.894)
+			(xy 127 119.38) (xy 130.81 119.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "302990e8-6298-4f08-b7be-5e01f6fe5fec")
+		(uuid "2aae74e4-f71d-4756-b4ee-cf00a5ae53e3")
 	)
 	(wire
 		(pts
-			(xy 254 38.1) (xy 256.54 38.1)
+			(xy 78.74 43.18) (xy 95.25 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e531eab-0495-4271-acee-2962b355c187")
+	)
+	(wire
+		(pts
+			(xy 234.95 83.82) (xy 236.22 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e963f98-99be-4b9b-9d55-a5eee13ada38")
+	)
+	(wire
+		(pts
+			(xy 130.81 121.92) (xy 127 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f8381c1-3585-4eaa-bcb1-f405af43a402")
+	)
+	(wire
+		(pts
+			(xy 72.39 31.75) (xy 72.39 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30e021ec-0ccf-40d5-8ce6-62521a5f5143")
+	)
+	(wire
+		(pts
+			(xy 196.85 25.4) (xy 199.39 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "313378de-1225-419f-a568-ce628bf4e7ac")
+	)
+	(wire
+		(pts
+			(xy 91.44 27.94) (xy 91.44 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 255 1)
+		)
+		(uuid "3240d990-09d6-4f91-b88f-1462ce186959")
+	)
+	(wire
+		(pts
+			(xy 226.06 39.37) (xy 228.6 39.37)
 		)
 		(stroke
 			(width 0)
@@ -1933,7 +2382,57 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 129.54) (xy 29.21 134.62)
+			(xy 55.88 39.37) (xy 55.88 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33b5996a-e7a4-47ab-a16f-adf1000f691f")
+	)
+	(wire
+		(pts
+			(xy 57.15 102.87) (xy 57.15 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "359c1763-4388-4aa7-835b-0c8ea22b30ef")
+	)
+	(wire
+		(pts
+			(xy 130.81 130.81) (xy 130.81 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36363490-c639-4f55-a540-45e30e2d8bcb")
+	)
+	(wire
+		(pts
+			(xy 45.72 129.54) (xy 45.72 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36c5687c-5ec5-4e76-9291-a303a4f4dd04")
+	)
+	(wire
+		(pts
+			(xy 52.07 102.87) (xy 52.07 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37e26031-b15a-4a5d-9e1c-bcff31b56044")
+	)
+	(wire
+		(pts
+			(xy 36.83 128.27) (xy 36.83 133.35)
 		)
 		(stroke
 			(width 0)
@@ -1943,27 +2442,28 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 92.71) (xy 238.76 87.63)
+			(xy 165.1 43.18) (xy 161.29 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 255 1)
+		)
+		(uuid "3bdd242c-c3e4-4b7c-95fa-916aa51caceb")
+	)
+	(wire
+		(pts
+			(xy 87.63 48.26) (xy 87.63 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3a0c32c6-1686-4225-9627-b531ee2fdde2")
+		(uuid "3d70d1d4-6074-4c79-9f87-129ec92bc0f4")
 	)
 	(wire
 		(pts
-			(xy 234.95 69.85) (xy 240.03 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3ce16f1c-20a1-45d0-b951-b4416618fb3e")
-	)
-	(wire
-		(pts
-			(xy 264.16 38.1) (xy 266.7 38.1)
+			(xy 236.22 39.37) (xy 238.76 39.37)
 		)
 		(stroke
 			(width 0)
@@ -1973,17 +2473,48 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 92.71) (xy 238.76 92.71)
+			(xy 91.44 27.94) (xy 165.1 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 255 1)
+		)
+		(uuid "408d6bb3-ac0b-4628-a0c3-5f1eb7e820ae")
+	)
+	(wire
+		(pts
+			(xy 91.44 36.83) (xy 91.44 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3f834f37-0922-4512-bd20-26ccab9a30b6")
+		(uuid "40f96644-cdb6-471e-8a3a-b977c81747fe")
 	)
 	(wire
 		(pts
-			(xy 29.21 114.3) (xy 39.37 114.3)
+			(xy 91.44 38.1) (xy 91.44 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4177f701-5f02-4f47-a8a3-83c902662347")
+	)
+	(wire
+		(pts
+			(xy 53.34 57.15) (xy 55.88 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42f76172-1825-4611-8e5f-035a873258e9")
+	)
+	(wire
+		(pts
+			(xy 36.83 113.03) (xy 41.91 113.03)
 		)
 		(stroke
 			(width 0)
@@ -1993,7 +2524,17 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 38.1) (xy 207.01 38.1)
+			(xy 115.57 172.72) (xy 110.49 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "473e7aaf-fd91-4c91-b3b0-ffbb6f54fd29")
+	)
+	(wire
+		(pts
+			(xy 204.47 39.37) (xy 196.85 39.37)
 		)
 		(stroke
 			(width 0)
@@ -2003,7 +2544,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 123.19) (xy 232.41 123.19)
+			(xy 240.03 119.38) (xy 247.65 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2013,7 +2554,17 @@
 	)
 	(wire
 		(pts
-			(xy 49.022 25.654) (xy 49.022 53.594)
+			(xy 52.07 116.84) (xy 60.96 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f35a229-97cc-4ddf-8d3c-409207e19420")
+	)
+	(wire
+		(pts
+			(xy 82.55 22.86) (xy 82.55 31.75)
 		)
 		(stroke
 			(width 0)
@@ -2023,7 +2574,17 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 38.1) (xy 246.38 38.1)
+			(xy 274.32 93.98) (xy 266.7 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50457c46-41f3-419d-b87b-17d910c7fbb2")
+	)
+	(wire
+		(pts
+			(xy 214.63 39.37) (xy 218.44 39.37)
 		)
 		(stroke
 			(width 0)
@@ -2033,27 +2594,7 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 26.67) (xy 219.71 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "535dd99b-b7a5-4136-88fb-9aa491b19de2")
-	)
-	(wire
-		(pts
-			(xy 201.93 137.16) (xy 223.52 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a83b795-ce8c-4018-be84-5938dbcdb0d0")
-	)
-	(wire
-		(pts
-			(xy 255.27 58.42) (xy 257.81 58.42)
+			(xy 227.33 59.69) (xy 229.87 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2063,7 +2604,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 26.67) (xy 219.71 30.48)
+			(xy 209.55 25.4) (xy 209.55 31.75)
 		)
 		(stroke
 			(width 0)
@@ -2073,7 +2614,28 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 80.01) (xy 256.54 80.01)
+			(xy 86.36 27.94) (xy 91.44 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 255 1)
+		)
+		(uuid "6108751a-952f-48e2-8e80-6ded3300b96b")
+	)
+	(wire
+		(pts
+			(xy 78.74 49.53) (xy 78.74 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "631b3e57-f7f9-40a4-aeaf-491bc0a387b7")
+	)
+	(wire
+		(pts
+			(xy 102.87 172.72) (xy 100.33 172.72)
 		)
 		(stroke
 			(width 0)
@@ -2083,37 +2645,27 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 123.19) (xy 266.7 144.78)
+			(xy 243.84 109.22) (xy 245.11 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "66b82df2-dada-449f-95a3-6dd95ac8f972")
+		(uuid "67dbf7bf-79a0-42ac-836f-d49251d23d03")
 	)
 	(wire
 		(pts
-			(xy 200.66 95.25) (xy 220.98 95.25)
+			(xy 64.77 38.1) (xy 64.77 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6ad98986-4c73-420b-8a07-b6e55e7e5d17")
+		(uuid "6c492a25-1bfb-4ebe-8e22-5df99db8debd")
 	)
 	(wire
 		(pts
-			(xy 49.022 53.594) (xy 68.072 53.594)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6cf5f458-b8e6-487d-aec0-ed1db8d52084")
-	)
-	(wire
-		(pts
-			(xy 208.28 80.01) (xy 208.28 86.36)
+			(xy 62.23 172.72) (xy 62.23 175.26)
 		)
 		(stroke
 			(width 0)
@@ -2123,7 +2675,17 @@
 	)
 	(wire
 		(pts
-			(xy 27.432 25.654) (xy 33.782 25.654)
+			(xy 86.36 160.02) (xy 90.17 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fe25a4c-a1df-4ad5-af1a-07d12063a5d8")
+	)
+	(wire
+		(pts
+			(xy 60.96 22.86) (xy 67.31 22.86)
 		)
 		(stroke
 			(width 0)
@@ -2133,17 +2695,17 @@
 	)
 	(wire
 		(pts
-			(xy 92.202 35.814) (xy 92.202 39.624)
+			(xy 93.98 130.81) (xy 130.81 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "754e3e1a-d18c-4794-b9b8-b646149c00a0")
+		(uuid "7585ae8b-6624-4c84-8c51-bf615b9439e3")
 	)
 	(wire
 		(pts
-			(xy 255.27 102.87) (xy 259.08 102.87)
+			(xy 255.27 93.98) (xy 259.08 93.98)
 		)
 		(stroke
 			(width 0)
@@ -2153,7 +2715,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 144.78) (xy 210.82 151.13)
+			(xy 226.06 153.67) (xy 226.06 160.02)
 		)
 		(stroke
 			(width 0)
@@ -2163,47 +2725,37 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 72.39) (xy 143.51 85.09)
+			(xy 201.93 109.22) (xy 210.82 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7fb73641-c507-4e60-a5fb-5539a7b65ec6")
+		(uuid "7e814cca-4784-41e5-84b2-e85a43e529e1")
 	)
 	(wire
 		(pts
-			(xy 232.41 111.76) (xy 232.41 110.49)
+			(xy 68.58 160.02) (xy 74.93 160.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "84e8aa00-319a-4022-8d8f-6e8672676bc8")
+		(uuid "7fa543b7-7768-4a78-916b-7dd42ad98a51")
 	)
 	(wire
 		(pts
-			(xy 238.76 58.42) (xy 240.03 58.42)
+			(xy 57.15 130.81) (xy 57.15 135.89)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "852db496-32b8-40ad-bbbc-ea4b033ca6a3")
+		(uuid "82594fcf-b02e-43a6-b2cc-aa4ca33dcb0a")
 	)
 	(wire
 		(pts
-			(xy 226.06 133.35) (xy 232.41 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "867dd924-3221-4133-b8bc-b5192bb3d17a")
-	)
-	(wire
-		(pts
-			(xy 226.06 102.87) (xy 232.41 102.87)
+			(xy 240.03 93.98) (xy 247.65 93.98)
 		)
 		(stroke
 			(width 0)
@@ -2213,37 +2765,67 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 102.87) (xy 247.65 102.87)
+			(xy 74.93 160.02) (xy 78.74 160.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "896ed00f-55f5-49b5-8a4d-565b2d0b718c")
+		(uuid "87c6b6d6-6efa-4344-9ea3-3c0a275a48f1")
 	)
 	(wire
 		(pts
-			(xy 201.93 115.57) (xy 222.25 115.57)
+			(xy 55.88 29.21) (xy 55.88 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8bda53fa-e35d-4586-9710-59d8fa927b17")
+		(uuid "8afd1773-d5ad-4429-9bd9-7fc76a19c912")
 	)
 	(wire
 		(pts
-			(xy 266.7 33.02) (xy 266.7 102.87)
+			(xy 201.93 83.82) (xy 201.93 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "90d9f7f4-884f-47df-a188-d8dd153ca169")
+		(uuid "8d571d6d-5b2d-4b80-a0f8-04024c49b548")
 	)
 	(wire
 		(pts
-			(xy 208.28 102.87) (xy 208.28 109.22)
+			(xy 41.91 127) (xy 59.69 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d816ae8-c6cf-4f95-8b31-f926c522cda6")
+	)
+	(wire
+		(pts
+			(xy 191.77 105.41) (xy 201.93 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9334f0de-b62e-4fd3-894c-7819415e4b8b")
+	)
+	(wire
+		(pts
+			(xy 87.63 45.72) (xy 95.25 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9414e2ca-9568-43b3-a2ad-0ec4d7a64604")
+	)
+	(wire
+		(pts
+			(xy 226.06 93.98) (xy 226.06 100.33)
 		)
 		(stroke
 			(width 0)
@@ -2253,27 +2835,38 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 156.21) (xy 232.41 152.4)
+			(xy 165.1 27.94) (xy 165.1 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 255 1)
+		)
+		(uuid "967db414-47cf-4e77-a75f-a35f61864240")
+	)
+	(wire
+		(pts
+			(xy 57.15 113.03) (xy 57.15 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "98ecc6dc-3edb-4d77-9dac-b38975ebf4e7")
+		(uuid "96a74da3-ad6c-4fb9-9ebb-5aa8eeef359f")
 	)
 	(wire
 		(pts
-			(xy 240.03 69.85) (xy 240.03 66.04)
+			(xy 57.15 114.3) (xy 57.15 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9ad28fbd-96da-4250-9ac1-4184e2f6ca6e")
+		(uuid "99a5d1d9-423c-4b52-8d78-fe753179733a")
 	)
 	(wire
 		(pts
-			(xy 29.21 101.6) (xy 29.21 104.14)
+			(xy 36.83 100.33) (xy 36.83 102.87)
 		)
 		(stroke
 			(width 0)
@@ -2283,7 +2876,17 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 123.19) (xy 259.08 123.19)
+			(xy 60.96 121.92) (xy 59.69 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ca04ab6-e4fa-49fa-871b-8225de31daa0")
+	)
+	(wire
+		(pts
+			(xy 255.27 119.38) (xy 259.08 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2293,7 +2896,17 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 144.78) (xy 259.08 144.78)
+			(xy 64.77 48.26) (xy 64.77 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f5b30b7-f7d2-4639-9374-63778c2886ff")
+	)
+	(wire
+		(pts
+			(xy 255.27 153.67) (xy 259.08 153.67)
 		)
 		(stroke
 			(width 0)
@@ -2303,27 +2916,68 @@
 	)
 	(wire
 		(pts
-			(xy 57.404 124.968) (xy 57.404 136.398)
+			(xy 234.95 142.24) (xy 236.22 142.24)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a1c9c21d-29a2-4b4d-b172-5b1644a05d92")
+		(uuid "a1083249-0f4b-48ae-88e3-5890f509fa63")
 	)
 	(wire
 		(pts
-			(xy 266.7 102.87) (xy 266.7 123.19)
+			(xy 274.32 82.55) (xy 274.32 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a365ff83-e042-4467-a4ce-9b3c93a6e40c")
+		(uuid "a13d32c6-6929-4c8e-a24a-54e4dfd053ff")
 	)
 	(wire
 		(pts
-			(xy 265.43 58.42) (xy 266.7 58.42)
+			(xy 49.53 110.49) (xy 49.53 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5e6887c-99c2-4efd-aeb9-53df862882e5")
+	)
+	(wire
+		(pts
+			(xy 55.88 43.18) (xy 55.88 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a792d053-5340-4563-9215-be5ec384f7fb")
+	)
+	(wire
+		(pts
+			(xy 52.07 29.21) (xy 55.88 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7ea913f-7b1d-4e62-8935-a8addf99e893")
+	)
+	(wire
+		(pts
+			(xy 86.36 40.64) (xy 86.36 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 255 1)
+		)
+		(uuid "aa141f5d-4fcc-4961-ade6-314745a4b266")
+	)
+	(wire
+		(pts
+			(xy 237.49 59.69) (xy 238.76 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2333,7 +2987,17 @@
 	)
 	(wire
 		(pts
-			(xy 41.402 25.654) (xy 87.122 25.654)
+			(xy 243.84 142.24) (xy 245.11 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab29b451-02a3-49b5-a4cf-fc2af6368136")
+	)
+	(wire
+		(pts
+			(xy 74.93 22.86) (xy 120.65 22.86)
 		)
 		(stroke
 			(width 0)
@@ -2343,27 +3007,68 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 144.78) (xy 247.65 144.78)
+			(xy 234.95 142.24) (xy 234.95 146.05)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b5902837-e674-4855-bf97-d11570472395")
+		(uuid "b0fcf527-efb5-4cb0-bb1d-29b2ac29cd3e")
 	)
 	(wire
 		(pts
-			(xy 232.41 133.35) (xy 232.41 130.81)
+			(xy 238.76 34.29) (xy 238.76 39.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b8ceadbb-6758-4e3b-ab4c-0602898d7950")
+		(uuid "b3a77097-a640-4575-b388-28129253fb36")
 	)
 	(wire
 		(pts
-			(xy 215.9 102.87) (xy 208.28 102.87)
+			(xy 57.15 130.81) (xy 86.36 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b47a51e9-1943-4aac-95e8-63690db682b6")
+	)
+	(wire
+		(pts
+			(xy 209.55 25.4) (xy 212.09 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b783759e-e562-42ec-9847-c52c97cd59fa")
+	)
+	(wire
+		(pts
+			(xy 86.36 35.56) (xy 86.36 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 255 1)
+		)
+		(uuid "b9cdc97b-440a-445a-8963-643848be2e43")
+	)
+	(wire
+		(pts
+			(xy 238.76 39.37) (xy 238.76 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdc5394a-255f-4cd2-ac27-805a7d4aa0e1")
+	)
+	(wire
+		(pts
+			(xy 229.87 93.98) (xy 226.06 93.98)
 		)
 		(stroke
 			(width 0)
@@ -2373,7 +3078,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 80.01) (xy 208.28 80.01)
+			(xy 69.85 172.72) (xy 62.23 172.72)
 		)
 		(stroke
 			(width 0)
@@ -2383,27 +3088,57 @@
 	)
 	(wire
 		(pts
-			(xy 91.694 113.538) (xy 104.394 113.538)
+			(xy 41.91 113.03) (xy 41.91 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cdeb4d80-c143-47eb-b592-585bd14b093f")
+		(uuid "cdb2d067-f75b-4126-8e4c-bf2070b7c4fc")
 	)
 	(wire
 		(pts
-			(xy 226.06 156.21) (xy 232.41 156.21)
+			(xy 161.29 24.13) (xy 161.29 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cf21f9aa-b1ce-46a3-ab33-a119b9dca721")
+		(uuid "d1593cb2-516d-4de2-b598-6880d520b708")
 	)
 	(wire
 		(pts
-			(xy 29.21 111.76) (xy 29.21 114.3)
+			(xy 201.93 142.24) (xy 210.82 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5827b07-61a5-4905-9b55-3b4758ee5db1")
+	)
+	(wire
+		(pts
+			(xy 234.95 83.82) (xy 234.95 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7f6c2b3-000e-4451-a0c8-91f77db07be1")
+	)
+	(wire
+		(pts
+			(xy 218.44 83.82) (xy 234.95 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d81e3271-a276-469d-92a1-2d93b2fa489d")
+	)
+	(wire
+		(pts
+			(xy 36.83 110.49) (xy 36.83 113.03)
 		)
 		(stroke
 			(width 0)
@@ -2413,17 +3148,17 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 123.19) (xy 247.65 123.19)
+			(xy 55.88 57.15) (xy 55.88 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d9a0a468-0666-4c56-92a1-dab90ad7d4dd")
+		(uuid "d9a0ee22-2bcc-4bea-81fa-074da21eb36b")
 	)
 	(wire
 		(pts
-			(xy 226.06 80.01) (xy 238.76 80.01)
+			(xy 80.01 172.72) (xy 92.71 172.72)
 		)
 		(stroke
 			(width 0)
@@ -2433,7 +3168,48 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 69.85) (xy 220.98 69.85)
+			(xy 210.82 83.82) (xy 201.93 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9da78f1-f880-4bd5-855c-85990debe9ba")
+	)
+	(wire
+		(pts
+			(xy 82.55 35.56) (xy 86.36 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 255 1)
+		)
+		(uuid "dafb8f42-7763-4e04-b6e2-3dadfb4e284d")
+	)
+	(wire
+		(pts
+			(xy 201.93 109.22) (xy 201.93 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db43ea25-d30c-4020-8c59-73a6fea8301a")
+	)
+	(wire
+		(pts
+			(xy 49.53 118.11) (xy 49.53 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e08f6335-1a99-401d-be51-82152f68fa7c")
+	)
+	(wire
+		(pts
+			(xy 57.15 160.02) (xy 60.96 160.02)
 		)
 		(stroke
 			(width 0)
@@ -2443,7 +3219,27 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 123.19) (xy 209.55 129.54)
+			(xy 130.81 119.38) (xy 130.81 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e11d5451-0ad7-4da2-ac71-aa72769a07b4")
+	)
+	(wire
+		(pts
+			(xy 57.15 114.3) (xy 60.96 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2bb1fc5-d782-463e-96ac-be3a8c2f9195")
+	)
+	(wire
+		(pts
+			(xy 226.06 119.38) (xy 226.06 125.73)
 		)
 		(stroke
 			(width 0)
@@ -2453,47 +3249,57 @@
 	)
 	(wire
 		(pts
-			(xy 113.792 53.594) (xy 118.872 53.594)
+			(xy 62.23 179.07) (xy 62.23 175.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "eba20fe0-3237-4ed9-918c-b9b3cc046a29")
+		(uuid "ead47679-9ddd-43c2-9b16-f1297f7abbc3")
 	)
 	(wire
 		(pts
-			(xy 240.03 49.53) (xy 240.03 45.72)
+			(xy 161.29 54.61) (xy 133.35 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ed669649-b808-496e-bc4d-f8095a5ca8e8")
+		(uuid "f1026dbf-9747-4f1f-9267-3ff9085c7aa8")
 	)
 	(wire
 		(pts
-			(xy 84.582 62.484) (xy 84.582 67.564)
+			(xy 49.53 109.22) (xy 52.07 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "efc41cc2-9ff0-4441-bd02-c1947ba26768")
+		(uuid "f590f6fb-225c-4456-827f-ee9233aa0ae6")
 	)
 	(wire
 		(pts
-			(xy 41.402 51.054) (xy 41.402 58.674)
+			(xy 45.72 119.38) (xy 60.96 119.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f0989f00-5990-4a27-9266-41f7873f01f7")
+		(uuid "f9c64d39-cfc0-42f5-95f5-9c1bce7cc4f1")
 	)
 	(wire
 		(pts
-			(xy 240.03 58.42) (xy 247.65 58.42)
+			(xy 234.95 109.22) (xy 234.95 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9fc2429-facf-45fb-a28f-a5c5d521052e")
+	)
+	(wire
+		(pts
+			(xy 210.82 59.69) (xy 219.71 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2503,7 +3309,17 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 144.78) (xy 210.82 144.78)
+			(xy 266.7 93.98) (xy 266.7 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa55484c-7f4c-404c-9833-345d22d83011")
+	)
+	(wire
+		(pts
+			(xy 229.87 153.67) (xy 226.06 153.67)
 		)
 		(stroke
 			(width 0)
@@ -2511,177 +3327,40 @@
 		)
 		(uuid "fa5b3d5d-0923-4f75-bfd7-b4149b601773")
 	)
-	(global_label "LAMP_IN"
-		(shape input)
-		(at 234.95 69.85 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
+	(wire
+		(pts
+			(xy 218.44 142.24) (xy 234.95 142.24)
 		)
-		(uuid "04289e7e-43b7-4186-a2a0-a71dbe9814eb")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 224.2238 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
+		(stroke
+			(width 0)
+			(type default)
 		)
+		(uuid "fb5f0f5a-4356-4adf-9bbb-af8d1274c109")
 	)
-	(global_label "IMD_LED"
-		(shape input)
-		(at 201.93 115.57 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
+	(wire
+		(pts
+			(xy 95.25 40.64) (xy 86.36 40.64)
 		)
-		(uuid "23683b13-a987-45c3-aa27-9e5c9312d1a8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 191.2039 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 255 1)
 		)
+		(uuid "fd85f4d6-9140-4642-90b9-73609191d3df")
 	)
-	(global_label "RTML_LED555OUT"
-		(shape input)
-		(at 104.394 113.538 0)
-		(fields_autoplaced yes)
+	(label "pin 2 & 6"
+		(at 99.06 27.94 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify left bottom)
 		)
-		(uuid "26e02e2b-3de9-4eeb-b0a9-e637fdf65b46")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 123.7681 113.538 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "RED_LED555OUT"
-		(shape input)
-		(at 118.872 53.594 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2ebdd16b-7e3b-45cb-b1c6-906879fc3418")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 137.218 53.594 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
+		(uuid "4a0b155a-482b-4087-bf07-140bdfa034fa")
 	)
 	(global_label "RTM_555_OUT"
 		(shape input)
-		(at 91.694 113.538 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "392006ab-52e5-451c-9a61-de93416c2bb6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 75.8275 113.538 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "RTML_LED555OUT"
-		(shape input)
-		(at 212.09 69.85 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4884d49b-b8ab-412c-b994-cfd4b4264a90")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 192.7159 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "LAMP_IN"
-		(shape input)
-		(at 226.06 133.35 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4bf8abce-2b1c-4162-97a9-458d480f00fd")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 215.3338 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "RTM_RESET"
-		(shape input)
-		(at 39.37 114.3 0)
+		(at 90.17 160.02 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2689,9 +3368,9 @@
 			)
 			(justify left)
 		)
-		(uuid "5415c1d3-3d3f-4e3a-aa17-51f3785ec87b")
+		(uuid "097115ee-e942-47ca-8055-5c2a2f2b2862")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 52.7569 114.3 0)
+			(at 106.0365 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2703,9 +3382,9 @@
 			)
 		)
 	)
-	(global_label "RTM_VDD"
+	(global_label "LAMP_CHECK"
 		(shape input)
-		(at 70.104 102.108 270)
+		(at 196.85 25.4 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2713,129 +3392,9 @@
 			)
 			(justify right)
 		)
-		(uuid "5696de3e-0ec8-4df9-baff-decfd6690f33")
+		(uuid "21eaf1bf-de4c-49e8-81a7-09aa1712af84")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 70.104 113.3784 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "TSSI_RESET"
-		(shape input)
-		(at 68.072 53.594 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5e2264b4-5c23-4d7d-91e4-b4c9b0d21204")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 81.7613 53.594 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "BMS_IMD_FAULT"
-		(shape input)
-		(at 33.782 45.974 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "60852997-9566-4f7d-abab-7f238a327687")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 16.1011 45.974 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "LAMP_IN"
-		(shape input)
-		(at 236.22 92.71 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "64fc1bc0-caa3-4fb3-9021-f14e0e0ece4f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 225.4938 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "LAMP_IN"
-		(shape input)
-		(at 147.32 72.39 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "72682b48-6b46-4bf9-91a4-51d273113fd0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 158.0462 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "RED_LED555OUT"
-		(shape input)
-		(at 209.55 26.67 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8645cc53-5287-4e0c-8542-4b7f103fec7f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 191.204 26.67 0)
+			(at 181.7696 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2849,79 +3408,7 @@
 	)
 	(global_label "TSSI_555_OUT"
 		(shape input)
-		(at 113.792 53.594 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "884523ad-ef70-41a3-9452-40ed4e004dd8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 97.6231 53.594 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "LAMP_IN"
-		(shape input)
-		(at 226.06 111.76 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "990c8bd2-4e26-4b28-bc27-a5dfcf2f30e2")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 215.3338 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "LAMP_IN"
-		(shape input)
-		(at 234.95 49.53 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9d587ffc-d326-4716-ae0e-5b2b4a952677")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 224.2238 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "RTM_GROUND"
-		(shape input)
-		(at 57.404 124.968 90)
+		(at 220.98 25.4 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2929,9 +3416,9 @@
 			)
 			(justify left)
 		)
-		(uuid "a7784f11-d3cc-4758-aef4-4801f2ec861e")
+		(uuid "23031bb1-24f3-4342-a635-0017a3dc47dd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 57.404 109.5247 90)
+			(at 237.1489 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2943,9 +3430,33 @@
 			)
 		)
 	)
-	(global_label "BMS_LED"
+	(global_label "IMD_LED"
 		(shape input)
-		(at 200.66 95.25 180)
+		(at 245.11 109.22 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "23683b13-a987-45c3-aa27-9e5c9312d1a8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 255.8361 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "LAMP_CHECK"
+		(shape input)
+		(at 191.77 105.41 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2953,9 +3464,9 @@
 			)
 			(justify right)
 		)
-		(uuid "aea9fa48-38a3-4f9f-9698-156b2dd7394f")
+		(uuid "2def2eb3-8836-49df-bf27-f0a321177777")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 189.3292 95.25 0)
+			(at 176.6896 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2967,9 +3478,57 @@
 			)
 		)
 	)
+	(global_label "BMS_IMD_FAULT"
+		(shape input)
+		(at 52.07 29.21 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "60852997-9566-4f7d-abab-7f238a327687")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 34.3891 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "BMS_LED"
+		(shape input)
+		(at 245.11 83.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "aea9fa48-38a3-4f9f-9698-156b2dd7394f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 256.4408 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "GREEN LED"
 		(shape input)
-		(at 87.122 25.654 0)
+		(at 120.65 22.86 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2979,7 +3538,7 @@
 		)
 		(uuid "b056ff50-e5c8-429e-b97a-2e9adc0c9c39")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 100.6904 25.654 0)
+			(at 134.2184 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2991,19 +3550,19 @@
 			)
 		)
 	)
-	(global_label "TSSI_GROUND"
+	(global_label "RTM_555_OUT"
 		(shape input)
-		(at 84.582 62.484 90)
+		(at 45.72 129.54 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "c99ceff6-709f-467d-ab02-a8ffbecf6703")
+		(uuid "b0f6f028-5799-4af2-8ae3-55dcb6a1e4d6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 84.582 46.7383 90)
+			(at 45.72 145.4065 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3011,13 +3570,13 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 	)
 	(global_label "GREEN LED"
 		(shape input)
-		(at 238.76 58.42 180)
+		(at 210.82 59.69 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3027,7 +3586,7 @@
 		)
 		(uuid "ca12714d-2579-4e89-8ed9-90ca98a2be71")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 225.1916 58.42 0)
+			(at 197.2516 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3041,7 +3600,7 @@
 	)
 	(global_label "LAMP_CHECK"
 		(shape input)
-		(at 135.89 90.17 180)
+		(at 57.15 160.02 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3049,9 +3608,33 @@
 			)
 			(justify right)
 		)
-		(uuid "d8fee446-9c69-4e03-83e3-3fc1c9dbf3e5")
+		(uuid "cce69261-ad8e-41bc-aaef-2a5d5540ea1b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 120.8096 90.17 0)
+			(at 42.0696 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "LAMP_CHECK"
+		(shape input)
+		(at 53.34 57.15 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "df2bc089-0347-49cd-80a0-92755ff4e8a7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 38.2596 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3065,17 +3648,17 @@
 	)
 	(global_label "BSPD_LED"
 		(shape input)
-		(at 201.93 137.16 180)
+		(at 245.11 142.24 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "e2dabf7a-e9ac-49ab-8499-ba5bfc8606e2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 189.5106 137.16 0)
+			(at 257.5294 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3083,13 +3666,13 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 	)
 	(global_label "RTM"
 		(shape input)
-		(at 21.59 124.46 180)
+		(at 29.21 123.19 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3099,7 +3682,7 @@
 		)
 		(uuid "e8f522cb-b715-4cc7-8c4c-35c217acebef")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 14.9158 124.46 0)
+			(at 22.5358 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3111,9 +3694,9 @@
 			)
 		)
 	)
-	(global_label "LAMP_IN"
+	(global_label "TSSI_555_OUT"
 		(shape input)
-		(at 226.06 156.21 180)
+		(at 78.74 49.53 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3121,33 +3704,9 @@
 			)
 			(justify right)
 		)
-		(uuid "edded19a-2c6c-491b-8054-75c33069fd6a")
+		(uuid "e8fcc491-4012-4824-85d1-2ad2a66532d3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 215.3338 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "TSSI_VDD"
-		(shape input)
-		(at 92.202 39.624 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "fdaaa864-9bf0-47f7-8f14-88437057ee50")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 92.202 51.1968 90)
+			(at 78.74 65.6989 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3160,8 +3719,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Anteater Parts:IRLR2905TRPBF")
-		(at 140.97 90.17 0)
+		(lib_id "Anteater Parts:TLC555ID")
+		(at 60.96 114.3 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3170,54 +3729,54 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "048e3611-6633-49f7-9bbd-ffc82ba98818")
-		(property "Reference" "Q3"
-			(at 146.05 90.1699 0)
+		(uuid "0d76b3e9-d9ee-4f13-93ce-49ad5723a409")
+		(property "Reference" "U11"
+			(at 93.98 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "IRLR2905TRPBF"
-			(at 146.05 91.44 0)
+		(property "Value" "TLC555ID"
+			(at 93.98 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "Anteater - Timer:TLC555ID"
+			(at 60.96 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(italic yes)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Anteater - MOSFET:IRLR2905TRPBF"
-			(at 140.97 90.17 0)
+		(property "Datasheet" "https://www.ti.com/lit/gpn/tlc555"
+			(at 60.96 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-IRLR2905-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a40153560183181c03"
-			(at 140.97 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
+					(italic yes)
 				)
 			)
 		)
 		(property "Description" ""
-			(at 140.97 90.17 0)
+			(at 60.96 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3228,7 +3787,7 @@
 			)
 		)
 		(property "LibraryID" "8960b80c-0994-46e9-89d6-a2b7e069ec47"
-			(at 140.97 90.17 0)
+			(at 60.96 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3238,8 +3797,8 @@
 				)
 			)
 		)
-		(property "PartID" "IRLR2905TRPBF"
-			(at 140.97 90.17 0)
+		(property "PartID" "TLC555ID"
+			(at 60.96 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3249,8 +3808,8 @@
 				)
 			)
 		)
-		(property "MPN" "IRLR2905TRPBF"
-			(at 140.97 90.17 0)
+		(property "MPN" "TLC555ID"
+			(at 60.96 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3260,8 +3819,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Infineon Technologies"
-			(at 140.97 90.17 0)
+		(property "Manufacturer" "Texas Instruments"
+			(at 60.96 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3271,8 +3830,8 @@
 				)
 			)
 		)
-		(property "SearchPath" "Anteater Parts/components/MOSFET/IRLR2905TRPBF"
-			(at 140.97 90.17 0)
+		(property "SearchPath" "Anteater Parts/components/Timer/TLC555ID"
+			(at 60.96 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3282,247 +3841,8 @@
 				)
 			)
 		)
-		(property "Package" ""
-			(at 140.97 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" ""
-			(at 140.97 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage_VDC" ""
-			(at 140.97 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Current_A" ""
-			(at 140.97 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage_V" ""
-			(at 140.97 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power_W" ""
-			(at 140.97 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "ddec16d5-6783-40bd-854d-c07ce831a3df")
-		)
-		(pin "1"
-			(uuid "770b9219-e04b-4ba4-ab94-e7de28c14714")
-		)
-		(pin "3"
-			(uuid "c3cd1c88-0008-432d-82be-a466bb100811")
-		)
-		(instances
-			(project "ROC_V1"
-				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "Q3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Anteater Parts:NTF2955")
-		(at 223.52 142.24 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0de00f8a-155d-40b8-8c56-bb877677cec2")
-		(property "Reference" "Q8"
-			(at 223.52 148.59 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NTF2955"
-			(at 222.25 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Anteater - MOSFET:NTF2955"
-			(at 226.06 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/ntf2955-d.pdf"
-			(at 210.82 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 223.52 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "PMOS"
-			(at 206.375 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 204.47 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 208.28 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LibraryID" "8960b80c-0994-46e9-89d6-a2b7e069ec47"
-			(at 223.52 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PartID" "NTF2955"
-			(at 223.52 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "NTF2955"
-			(at 223.52 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Onsemi"
-			(at 223.52 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SearchPath" "Anteater Parts/components/MOSFET/NTF2955"
-			(at 223.52 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" ""
-			(at 223.52 142.24 0)
+		(property "Package" "8-SOIC"
+			(at 60.96 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3533,7 +3853,7 @@
 			)
 		)
 		(property "Tolerance" ""
-			(at 223.52 142.24 0)
+			(at 60.96 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3544,7 +3864,7 @@
 			)
 		)
 		(property "Voltage_VDC" ""
-			(at 223.52 142.24 0)
+			(at 60.96 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3555,7 +3875,7 @@
 			)
 		)
 		(property "Current_A" ""
-			(at 223.52 142.24 0)
+			(at 60.96 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3566,7 +3886,7 @@
 			)
 		)
 		(property "Voltage_V" ""
-			(at 223.52 142.24 0)
+			(at 60.96 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3577,7 +3897,7 @@
 			)
 		)
 		(property "Power_W" ""
-			(at 223.52 142.24 0)
+			(at 60.96 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3587,19 +3907,34 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "a3b03a36-4e3c-4385-b099-2c85a1e0e409")
+		(pin "7"
+			(uuid "88dacfcf-23ce-4be1-9394-cfd65da09e79")
+		)
+		(pin "6"
+			(uuid "32425eeb-48a1-4ee8-bb91-fb4e708a360f")
+		)
+		(pin "8"
+			(uuid "c0bfbd9b-4af1-4291-9e72-e254c8f4d51e")
+		)
+		(pin "5"
+			(uuid "2f854ecf-fb27-4467-b726-5c60a9bc134d")
 		)
 		(pin "2"
-			(uuid "0c57334f-3de1-4073-b3a7-adda37210d64")
+			(uuid "2b20523e-ec5e-429d-ad7b-c7bf04781f07")
+		)
+		(pin "1"
+			(uuid "c2284997-8007-4cde-8ceb-7b560b25dc32")
+		)
+		(pin "4"
+			(uuid "3ae9d448-9c43-4135-8261-b0029fb4b2f5")
 		)
 		(pin "3"
-			(uuid "2a4ae4f0-a4e8-4a7e-88e6-deb7b0afbb43")
+			(uuid "915911f0-7bc6-4665-8a6c-c7ecc7182423")
 		)
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "Q8")
+					(reference "U11")
 					(unit 1)
 				)
 			)
@@ -3607,7 +3942,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 84.582 67.564 0)
+		(at 91.44 62.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3618,7 +3953,7 @@
 		(fields_autoplaced yes)
 		(uuid "0f1ca1d9-d8dd-4636-8020-cf8a405c4c94")
 		(property "Reference" "#PWR011"
-			(at 84.582 73.914 0)
+			(at 91.44 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3629,7 +3964,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 84.582 72.644 0)
+			(at 91.44 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3639,7 +3974,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 84.582 67.564 0)
+			(at 91.44 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3650,7 +3985,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 84.582 67.564 0)
+			(at 91.44 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3661,7 +3996,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 84.582 67.564 0)
+			(at 91.44 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3685,7 +4020,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 29.21 107.95 180)
+		(at 36.83 106.68 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3696,7 +4031,7 @@
 		(fields_autoplaced yes)
 		(uuid "1dd10a3b-bf43-4d0b-8009-6999139f27b7")
 		(property "Reference" "R2"
-			(at 31.75 106.6799 0)
+			(at 39.37 105.4099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3707,7 +4042,7 @@
 			)
 		)
 		(property "Value" "R"
-			(at 31.75 109.2199 0)
+			(at 39.37 107.9499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3718,7 +4053,7 @@
 			)
 		)
 		(property "Footprint" "Anteater - Resistor:R_0805_2012Metric"
-			(at 30.988 107.95 90)
+			(at 38.608 106.68 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3729,7 +4064,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 29.21 107.95 0)
+			(at 36.83 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3740,7 +4075,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 29.21 107.95 0)
+			(at 36.83 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3766,8 +4101,434 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D")
+		(at 214.63 109.22 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1ffc3de6-305f-4267-ace6-95b16b06b02f")
+		(property "Reference" "D24"
+			(at 214.63 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 214.63 105.41 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Anteater - Timer:TLC555ID"
+			(at 214.63 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode"
+			(at 214.63 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 214.63 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 214.63 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "99c386a8-5a01-47a7-8bea-db3659761cd1")
+		)
+		(pin "2"
+			(uuid "e716e6cb-f654-4784-9500-c7bfbf609a03")
+		)
+		(instances
+			(project "ROC_V1"
+				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
+					(reference "D24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Anteater Parts:TLC555ID")
+		(at 95.25 38.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "217766f9-a6ff-432f-8000-01188e7f61b7")
+		(property "Reference" "U10"
+			(at 128.27 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "TLC555ID"
+			(at 128.27 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "Anteater - Timer:TLC555ID"
+			(at 95.25 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/gpn/tlc555"
+			(at 95.25 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 95.25 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LibraryID" "8960b80c-0994-46e9-89d6-a2b7e069ec47"
+			(at 95.25 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartID" "TLC555ID"
+			(at 95.25 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TLC555ID"
+			(at 95.25 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 95.25 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SearchPath" "Anteater Parts/components/Timer/TLC555ID"
+			(at 95.25 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "8-SOIC"
+			(at 95.25 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" ""
+			(at 95.25 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage_VDC" ""
+			(at 95.25 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Current_A" ""
+			(at 95.25 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage_V" ""
+			(at 95.25 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power_W" ""
+			(at 95.25 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "7"
+			(uuid "d2726023-fc31-4bb4-9d9d-5fbbc4843509")
+		)
+		(pin "6"
+			(uuid "3d7fe8bb-949a-4ee0-9a50-1448228e9d60")
+		)
+		(pin "8"
+			(uuid "359c03e9-f0e5-4e41-9572-a207759e8f10")
+		)
+		(pin "5"
+			(uuid "bc53f403-398b-4250-bedd-f3e0da13b3a0")
+		)
+		(pin "2"
+			(uuid "30c0ceb4-b3bb-4a26-875b-6854f0a05c5b")
+		)
+		(pin "1"
+			(uuid "651fdba3-ac6f-4299-b611-a96801b80a41")
+		)
+		(pin "4"
+			(uuid "0f2f821d-b26c-45a7-8f2b-26607ae4bbae")
+		)
+		(pin "3"
+			(uuid "01db9ea3-c599-401d-9d98-ced30ded98d4")
+		)
+		(instances
+			(project "ROC_V1"
+				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
+					(reference "U10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 64.77 160.02 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2298e2ce-9d58-4acd-9560-52fd6caf4f42")
+		(property "Reference" "D22"
+			(at 64.77 153.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 64.77 156.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Anteater - Timer:TLC555ID"
+			(at 64.77 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode"
+			(at 64.77 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 64.77 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 64.77 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "aaa20e89-3e7a-43ff-89a7-187da3a7c7b4")
+		)
+		(pin "2"
+			(uuid "6d0d5a6c-ace7-4b6c-ba12-e1685884ce89")
+		)
+		(instances
+			(project "ROC_V1"
+				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
+					(reference "D22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Anteater Parts:IRLR2905TRPBF")
-		(at 38.862 45.974 0)
+		(at 62.23 43.18 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3778,7 +4539,7 @@
 		(fields_autoplaced yes)
 		(uuid "235e7c7a-1d93-468e-b2de-05382b5d1b82")
 		(property "Reference" "Q1"
-			(at 43.942 45.9739 0)
+			(at 67.31 43.1799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3789,7 +4550,7 @@
 			)
 		)
 		(property "Value" "IRLR2905TRPBF"
-			(at 43.942 47.244 0)
+			(at 67.31 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3801,7 +4562,7 @@
 			)
 		)
 		(property "Footprint" "Anteater - MOSFET:IRLR2905TRPBF"
-			(at 38.862 45.974 0)
+			(at 62.23 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3812,7 +4573,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-IRLR2905-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a40153560183181c03"
-			(at 38.862 45.974 0)
+			(at 62.23 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3823,7 +4584,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 38.862 45.974 0)
+			(at 62.23 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3834,7 +4595,7 @@
 			)
 		)
 		(property "LibraryID" "8960b80c-0994-46e9-89d6-a2b7e069ec47"
-			(at 38.862 45.974 0)
+			(at 62.23 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3845,7 +4606,7 @@
 			)
 		)
 		(property "PartID" "IRLR2905TRPBF"
-			(at 38.862 45.974 0)
+			(at 62.23 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3856,7 +4617,7 @@
 			)
 		)
 		(property "MPN" "IRLR2905TRPBF"
-			(at 38.862 45.974 0)
+			(at 62.23 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3867,7 +4628,7 @@
 			)
 		)
 		(property "Manufacturer" "Infineon Technologies"
-			(at 38.862 45.974 0)
+			(at 62.23 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3878,7 +4639,7 @@
 			)
 		)
 		(property "SearchPath" "Anteater Parts/components/MOSFET/IRLR2905TRPBF"
-			(at 38.862 45.974 0)
+			(at 62.23 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3889,7 +4650,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 38.862 45.974 0)
+			(at 62.23 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3900,7 +4661,7 @@
 			)
 		)
 		(property "Tolerance" ""
-			(at 38.862 45.974 0)
+			(at 62.23 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3911,7 +4672,7 @@
 			)
 		)
 		(property "Voltage_VDC" ""
-			(at 38.862 45.974 0)
+			(at 62.23 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3922,7 +4683,7 @@
 			)
 		)
 		(property "Current_A" ""
-			(at 38.862 45.974 0)
+			(at 62.23 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3933,7 +4694,7 @@
 			)
 		)
 		(property "Voltage_V" ""
-			(at 38.862 45.974 0)
+			(at 62.23 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3944,7 +4705,7 @@
 			)
 		)
 		(property "Power_W" ""
-			(at 38.862 45.974 0)
+			(at 62.23 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3974,7 +4735,7 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 240.03 62.23 90)
+		(at 82.55 160.02 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3983,31 +4744,29 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "30b9dab6-8f96-4b69-a79f-af2252b3a9a8")
-		(property "Reference" "D4"
-			(at 242.57 60.9599 90)
+		(uuid "2b26b289-bc09-4ed3-b990-b845a3526f68")
+		(property "Reference" "D23"
+			(at 82.55 153.67 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Value" "D"
-			(at 242.57 63.4999 90)
+			(at 82.55 156.21 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "Anteater - Timer:TLC555ID"
-			(at 240.03 62.23 0)
+			(at 82.55 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4018,7 +4777,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 240.03 62.23 0)
+			(at 82.55 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4029,7 +4788,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 240.03 62.23 0)
+			(at 82.55 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4040,7 +4799,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 240.03 62.23 0)
+			(at 82.55 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4051,7 +4810,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 240.03 62.23 0)
+			(at 82.55 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4062,15 +4821,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "ef1c0c17-fed2-4b9f-a581-bc44543d591b")
+			(uuid "96e7f56a-74f1-43d5-b585-b38aec33b560")
 		)
 		(pin "2"
-			(uuid "72f967d7-dd2f-4518-90aa-6a12099d7679")
+			(uuid "ec6a55ef-bd4d-4ff8-8f92-aa8d9d851e1e")
 		)
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "D4")
+					(reference "D23")
 					(unit 1)
 				)
 			)
@@ -4078,7 +4837,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 262.89 144.78 270)
+		(at 262.89 153.67 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4089,7 +4848,7 @@
 		(fields_autoplaced yes)
 		(uuid "342775eb-98bc-4e03-984f-5584d807917d")
 		(property "Reference" "R8"
-			(at 262.89 138.43 90)
+			(at 262.89 147.32 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4099,7 +4858,7 @@
 			)
 		)
 		(property "Value" "R"
-			(at 262.89 140.97 90)
+			(at 262.89 149.86 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4109,7 +4868,7 @@
 			)
 		)
 		(property "Footprint" "Anteater - Resistor:R_0805_2012Metric"
-			(at 262.89 143.002 90)
+			(at 262.89 151.892 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4120,7 +4879,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 262.89 144.78 0)
+			(at 262.89 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4131,7 +4890,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 262.89 144.78 0)
+			(at 262.89 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4157,8 +4916,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 261.62 58.42 270)
+		(lib_id "Device:C")
+		(at 57.15 109.22 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4167,29 +4926,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "359c1f80-32f6-4f22-9293-238b23155b37")
-		(property "Reference" "R4"
-			(at 261.62 52.07 90)
+		(uuid "35874db6-c367-4efe-a2a9-be2648ac7673")
+		(property "Reference" "C18"
+			(at 60.96 107.9499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "R"
-			(at 261.62 54.61 90)
+		(property "Value" "100 uF"
+			(at 60.96 110.4899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Anteater - Resistor:R_0805_2012Metric"
-			(at 261.62 56.642 90)
+		(property "Footprint" ""
+			(at 58.1152 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4200,7 +4961,87 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 261.62 58.42 0)
+			(at 57.15 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 57.15 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fa15b524-a235-4891-823a-ad9b13a26d96")
+		)
+		(pin "2"
+			(uuid "3ef837bb-17b2-48b3-9441-309326cbddba")
+		)
+		(instances
+			(project "ROC_V1"
+				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
+					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 233.68 59.69 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "359c1f80-32f6-4f22-9293-238b23155b37")
+		(property "Reference" "R4"
+			(at 233.68 53.34 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 233.68 55.88 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Anteater - Resistor:R_0805_2012Metric"
+			(at 233.68 57.912 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 233.68 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4211,7 +5052,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 261.62 58.42 0)
+			(at 233.68 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4237,8 +5078,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
-		(at 238.76 83.82 90)
+		(lib_id "Device:R")
+		(at 49.53 114.3 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4246,32 +5087,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "36d21a4d-4635-4309-9d24-2545491d1c57")
-		(property "Reference" "D6"
-			(at 241.3 82.5499 90)
+		(uuid "379d1530-6f7d-41cc-9a2b-0837ad9b0b3c")
+		(property "Reference" "R37"
+			(at 42.926 112.522 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Value" "D"
-			(at 241.3 85.0899 90)
+		(property "Value" "9.1k"
+			(at 42.926 115.062 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Anteater - Timer:TLC555ID"
-			(at 238.76 83.82 0)
+		(property "Footprint" ""
+			(at 47.752 114.3 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4282,7 +5122,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 238.76 83.82 0)
+			(at 49.53 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4292,30 +5132,8 @@
 				)
 			)
 		)
-		(property "Description" "Diode"
-			(at 238.76 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 238.76 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 238.76 83.82 0)
+		(property "Description" "Resistor"
+			(at 49.53 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4326,15 +5144,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "75883e11-8bac-453f-ab99-6cc4f9d09740")
+			(uuid "3ca08d67-a977-4865-be22-335d4d5b0d39")
 		)
 		(pin "2"
-			(uuid "c24f2821-cd2d-455c-bff1-3cb5312a9246")
+			(uuid "7efa7524-2553-4e60-ba17-734157ecb32f")
 		)
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "D6")
+					(reference "R37")
 					(unit 1)
 				)
 			)
@@ -4342,7 +5160,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 29.21 134.62 0)
+		(at 36.83 133.35 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4353,7 +5171,7 @@
 		(fields_autoplaced yes)
 		(uuid "3949073d-4ec4-47e0-9621-5e8438b01445")
 		(property "Reference" "#PWR08"
-			(at 29.21 140.97 0)
+			(at 36.83 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4364,7 +5182,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 29.21 139.7 0)
+			(at 36.83 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4374,7 +5192,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 29.21 134.62 0)
+			(at 36.83 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4385,7 +5203,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 29.21 134.62 0)
+			(at 36.83 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4396,7 +5214,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 29.21 134.62 0)
+			(at 36.83 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4420,7 +5238,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 27.432 23.114 0)
+		(at 60.96 20.32 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4431,7 +5249,7 @@
 		(fields_autoplaced yes)
 		(uuid "3c9ddc21-a1a6-4a4e-9414-8a3d8e85e932")
 		(property "Reference" "#PWR01"
-			(at 27.432 26.924 0)
+			(at 60.96 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4441,18 +5259,19 @@
 				)
 			)
 		)
-		(property "Value" "GLV"
-			(at 27.432 18.034 0)
+		(property "Value" "12V"
+			(at 62.738 19.0499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 27.432 23.114 0)
+			(at 60.96 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4463,7 +5282,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 27.432 23.114 0)
+			(at 60.96 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4474,7 +5293,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 27.432 23.114 0)
+			(at 60.96 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4498,7 +5317,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 266.7 33.02 0)
+		(at 238.76 34.29 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4509,7 +5328,7 @@
 		(fields_autoplaced yes)
 		(uuid "3f2a6b99-e2e0-4c92-af83-2d68d9020fdf")
 		(property "Reference" "#PWR03"
-			(at 266.7 36.83 0)
+			(at 238.76 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4519,18 +5338,19 @@
 				)
 			)
 		)
-		(property "Value" "GLV"
-			(at 266.7 27.94 0)
+		(property "Value" "12V"
+			(at 241.3 33.0199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 266.7 33.02 0)
+			(at 238.76 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4541,7 +5361,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 266.7 33.02 0)
+			(at 238.76 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4552,7 +5372,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 266.7 33.02 0)
+			(at 238.76 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4576,7 +5396,7 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 232.41 127 90)
+		(at 240.03 109.22 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4587,29 +5407,27 @@
 		(fields_autoplaced yes)
 		(uuid "4133c846-f39f-445b-9946-cf7035db800a")
 		(property "Reference" "D11"
-			(at 234.95 125.7299 90)
+			(at 240.03 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Value" "D"
-			(at 234.95 128.2699 90)
+			(at 240.03 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "Anteater - Timer:TLC555ID"
-			(at 232.41 127 0)
+			(at 240.03 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4620,7 +5438,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 232.41 127 0)
+			(at 240.03 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4631,7 +5449,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 232.41 127 0)
+			(at 240.03 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4642,7 +5460,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 232.41 127 0)
+			(at 240.03 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4653,7 +5471,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 232.41 127 0)
+			(at 240.03 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4680,7 +5498,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 29.21 101.6 0)
+		(at 36.83 100.33 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4691,7 +5509,7 @@
 		(fields_autoplaced yes)
 		(uuid "444b51c8-0124-4900-ad67-bef2186b02a4")
 		(property "Reference" "#PWR06"
-			(at 29.21 105.41 0)
+			(at 36.83 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4701,18 +5519,19 @@
 				)
 			)
 		)
-		(property "Value" "GLV"
-			(at 29.21 96.52 0)
+		(property "Value" "12V"
+			(at 39.37 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 29.21 101.6 0)
+			(at 36.83 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4723,7 +5542,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 29.21 101.6 0)
+			(at 36.83 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4734,7 +5553,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 29.21 101.6 0)
+			(at 36.83 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4757,8 +5576,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 143.51 101.6 0)
+		(lib_id "power:+5V")
+		(at 115.57 154.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4767,9 +5586,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "444c0977-1aec-4d3a-ae69-8db233bcb700")
+		(uuid "44f09965-de5d-4b6e-a214-27c946e9240d")
 		(property "Reference" "#PWR05"
-			(at 143.51 107.95 0)
+			(at 115.57 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4779,18 +5598,19 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 143.51 106.68 0)
+		(property "Value" "12V"
+			(at 118.11 153.6699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 101.6 0)
+			(at 115.57 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4801,7 +5621,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 101.6 0)
+			(at 115.57 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4811,8 +5631,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 143.51 101.6 0)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 115.57 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4823,7 +5643,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "544913e8-67fc-4130-bd5e-6e8a7a8a6b18")
+			(uuid "90de9ccb-f878-4233-bc39-ca8ded37777e")
 		)
 		(instances
 			(project "ROC_V1"
@@ -4835,8 +5655,214 @@
 		)
 	)
 	(symbol
+		(lib_id "Anteater Parts:IRLR2905TRPBF")
+		(at 234.95 116.84 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4e8fa1f2-35bb-44e1-a4da-3b153f8ef24f")
+		(property "Reference" "Q7"
+			(at 234.95 123.19 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IRLR2905TRPBF"
+			(at 233.68 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Anteater - MOSFET:IRLR2905TRPBF"
+			(at 234.95 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-IRLR2905-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a40153560183181c03"
+			(at 234.95 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 234.95 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LibraryID" "8960b80c-0994-46e9-89d6-a2b7e069ec47"
+			(at 234.95 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartID" "IRLR2905TRPBF"
+			(at 234.95 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "IRLR2905TRPBF"
+			(at 234.95 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Infineon Technologies"
+			(at 234.95 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SearchPath" "Anteater Parts/components/MOSFET/IRLR2905TRPBF"
+			(at 234.95 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 234.95 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" ""
+			(at 234.95 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage_VDC" ""
+			(at 234.95 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Current_A" ""
+			(at 234.95 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage_V" ""
+			(at 234.95 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power_W" ""
+			(at 234.95 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "dbcda9ca-85f8-490d-92c1-89bd774a61c6")
+		)
+		(pin "1"
+			(uuid "0013a7d1-edb9-43e7-a876-7a65dbea3857")
+		)
+		(pin "3"
+			(uuid "c3c7bfd5-3e33-41ba-b4cb-75239b8f51e4")
+		)
+		(instances
+			(project "ROC_V1"
+				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
+					(reference "Q7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D")
-		(at 232.41 106.68 90)
+		(at 240.03 83.82 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4847,29 +5873,27 @@
 		(fields_autoplaced yes)
 		(uuid "5262d1e0-f4b8-4003-a615-3a5a4bae698b")
 		(property "Reference" "D10"
-			(at 234.95 105.4099 90)
+			(at 240.03 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Value" "D"
-			(at 234.95 107.9499 90)
+			(at 240.03 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "Anteater - Timer:TLC555ID"
-			(at 232.41 106.68 0)
+			(at 240.03 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4880,7 +5904,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 232.41 106.68 0)
+			(at 240.03 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4891,7 +5915,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 232.41 106.68 0)
+			(at 240.03 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4902,7 +5926,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 232.41 106.68 0)
+			(at 240.03 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4913,7 +5937,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 232.41 106.68 0)
+			(at 240.03 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4939,8 +5963,214 @@
 		)
 	)
 	(symbol
+		(lib_id "Anteater Parts:IRLR2905TRPBF")
+		(at 234.95 151.13 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "55019579-0f24-499a-a891-1f2eb697bf76")
+		(property "Reference" "Q8"
+			(at 234.95 157.48 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IRLR2905TRPBF"
+			(at 233.68 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Anteater - MOSFET:IRLR2905TRPBF"
+			(at 234.95 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-IRLR2905-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a40153560183181c03"
+			(at 234.95 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 234.95 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LibraryID" "8960b80c-0994-46e9-89d6-a2b7e069ec47"
+			(at 234.95 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartID" "IRLR2905TRPBF"
+			(at 234.95 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "IRLR2905TRPBF"
+			(at 234.95 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Infineon Technologies"
+			(at 234.95 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SearchPath" "Anteater Parts/components/MOSFET/IRLR2905TRPBF"
+			(at 234.95 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 234.95 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" ""
+			(at 234.95 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage_VDC" ""
+			(at 234.95 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Current_A" ""
+			(at 234.95 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage_V" ""
+			(at 234.95 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power_W" ""
+			(at 234.95 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a54c09b7-765e-4f3e-a014-10f22f51f7f1")
+		)
+		(pin "1"
+			(uuid "d0861694-4389-4518-a20b-89d9d82222af")
+		)
+		(pin "3"
+			(uuid "4ba39a19-94cf-48d0-aa7c-dd7790aea46c")
+		)
+		(instances
+			(project "ROC_V1"
+				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
+					(reference "Q8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
-		(at 37.592 25.654 270)
+		(at 71.12 22.86 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4951,7 +6181,7 @@
 		(fields_autoplaced yes)
 		(uuid "575ed966-19a6-4768-98fd-bcb350c3d723")
 		(property "Reference" "R1"
-			(at 37.592 19.304 90)
+			(at 71.12 16.51 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4961,7 +6191,7 @@
 			)
 		)
 		(property "Value" "R"
-			(at 37.592 21.844 90)
+			(at 71.12 19.05 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4971,7 +6201,7 @@
 			)
 		)
 		(property "Footprint" "Anteater - Resistor:R_0805_2012Metric"
-			(at 37.592 23.876 90)
+			(at 71.12 21.082 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4982,7 +6212,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 37.592 25.654 0)
+			(at 71.12 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4993,7 +6223,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 37.592 25.654 0)
+			(at 71.12 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5020,7 +6250,7 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 232.41 148.59 90)
+		(at 55.88 35.56 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5029,9 +6259,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "64642d25-9f8a-4dc6-9f7c-213f12f36f10")
-		(property "Reference" "D12"
-			(at 234.95 147.3199 90)
+		(uuid "5f60d9f3-30b6-4e0a-b68f-aec815724704")
+		(property "Reference" "D20"
+			(at 58.42 34.2899 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5042,7 +6272,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 234.95 149.8599 90)
+			(at 58.42 36.8299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5053,7 +6283,7 @@
 			)
 		)
 		(property "Footprint" "Anteater - Timer:TLC555ID"
-			(at 232.41 148.59 0)
+			(at 55.88 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5064,7 +6294,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 232.41 148.59 0)
+			(at 55.88 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5075,7 +6305,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 232.41 148.59 0)
+			(at 55.88 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5086,7 +6316,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 232.41 148.59 0)
+			(at 55.88 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5097,7 +6327,109 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 232.41 148.59 0)
+			(at 55.88 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1950c43a-a5cd-4eb7-934b-d295b221c600")
+		)
+		(pin "2"
+			(uuid "139f4ab0-ff4a-43bb-af27-bd6b8a9a0082")
+		)
+		(instances
+			(project "ROC_V1"
+				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
+					(reference "D20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 240.03 142.24 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "64642d25-9f8a-4dc6-9f7c-213f12f36f10")
+		(property "Reference" "D12"
+			(at 240.03 135.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 240.03 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Anteater - Timer:TLC555ID"
+			(at 240.03 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode"
+			(at 240.03 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 240.03 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 240.03 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5124,7 +6456,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 250.19 38.1 0)
+		(at 222.25 39.37 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5135,7 +6467,7 @@
 		(fields_autoplaced yes)
 		(uuid "6bf7c00d-1d4d-4282-b666-cc96cc6efd8a")
 		(property "Reference" "D1"
-			(at 248.6025 31.75 0)
+			(at 220.6625 33.02 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5145,7 +6477,7 @@
 			)
 		)
 		(property "Value" "TSSI RED"
-			(at 248.6025 34.29 0)
+			(at 220.6625 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5155,7 +6487,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 250.19 38.1 0)
+			(at 222.25 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5166,7 +6498,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 250.19 38.1 0)
+			(at 222.25 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5177,7 +6509,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 250.19 38.1 0)
+			(at 222.25 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5188,7 +6520,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 250.19 38.1 0)
+			(at 222.25 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5215,7 +6547,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 210.82 151.13 0)
+		(at 226.06 160.02 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5226,7 +6558,7 @@
 		(fields_autoplaced yes)
 		(uuid "75bc0dfc-50e5-4970-b6a6-3559d65aa6ac")
 		(property "Reference" "#PWR015"
-			(at 210.82 157.48 0)
+			(at 226.06 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5237,7 +6569,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 210.82 156.21 0)
+			(at 226.06 165.1 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5247,7 +6579,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 210.82 151.13 0)
+			(at 226.06 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5258,7 +6590,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 210.82 151.13 0)
+			(at 226.06 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5269,7 +6601,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 210.82 151.13 0)
+			(at 226.06 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5293,7 +6625,7 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 240.03 41.91 90)
+		(at 215.9 25.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5304,29 +6636,27 @@
 		(fields_autoplaced yes)
 		(uuid "7ad6da64-952c-475a-b07d-fb9319b7dc82")
 		(property "Reference" "D5"
-			(at 242.57 40.6399 90)
+			(at 215.9 19.05 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Value" "D"
-			(at 242.57 43.1799 90)
+			(at 215.9 21.59 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "Anteater - Timer:TLC555ID"
-			(at 240.03 41.91 0)
+			(at 215.9 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5337,7 +6667,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 240.03 41.91 0)
+			(at 215.9 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5348,7 +6678,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 240.03 41.91 0)
+			(at 215.9 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5359,7 +6689,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 240.03 41.91 0)
+			(at 215.9 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5370,7 +6700,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 240.03 41.91 0)
+			(at 215.9 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5396,8 +6726,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 92.202 35.814 0)
+		(lib_id "Device:C")
+		(at 129.54 54.61 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5405,11 +6735,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7e585322-4ef0-452a-a3ad-3b6776fb5b2e")
-		(property "Reference" "#PWR010"
-			(at 92.202 39.624 0)
-			(hide yes)
+		(uuid "7c628e91-eeb4-42d1-8fd4-76ac313a9b11")
+		(property "Reference" "C17"
+			(at 132.588 55.88 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5418,8 +6746,8 @@
 				)
 			)
 		)
-		(property "Value" "+5V"
-			(at 92.202 30.734 0)
+		(property "Value" "0.01 uF"
+			(at 132.588 58.42 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5428,8 +6756,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 92.202 35.814 0)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 133.35 53.6448 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5440,7 +6768,88 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.202 35.814 0)
+			(at 129.54 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 129.54 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c5ff97c5-96c2-42fd-b325-a47f332d58cc")
+		)
+		(pin "2"
+			(uuid "3d5f2963-b5c4-4e65-9d89-4987e1c8b7b7")
+		)
+		(instances
+			(project "ROC_V1"
+				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
+					(reference "C17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 161.29 24.13 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e585322-4ef0-452a-a3ad-3b6776fb5b2e")
+		(property "Reference" "#PWR010"
+			(at 161.29 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 161.29 19.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.29 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5451,7 +6860,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 92.202 35.814 0)
+			(at 161.29 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5474,8 +6883,89 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 82.55 39.37 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7f3b29e4-8271-4ed5-8da5-6ba154d97907")
+		(property "Reference" "R36"
+			(at 76.708 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "24k"
+			(at 76.708 40.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.772 39.37 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 82.55 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 82.55 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "42889f19-520c-44e3-ab3c-b4cb8f38dc69")
+		)
+		(pin "2"
+			(uuid "932e5a7b-0aa3-42ad-9748-ae1ac83cfe82")
+		)
+		(instances
+			(project "ROC_V1"
+				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
+					(reference "R36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Anteater Parts:IRLR2905TRPBF")
-		(at 220.98 77.47 270)
+		(at 74.93 170.18 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5486,7 +6976,7 @@
 		(fields_autoplaced yes)
 		(uuid "80d4d1c2-7e97-4585-941e-86eb006c1727")
 		(property "Reference" "Q5"
-			(at 220.98 83.82 90)
+			(at 74.93 176.53 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5496,7 +6986,7 @@
 			)
 		)
 		(property "Value" "IRLR2905TRPBF"
-			(at 219.71 82.55 0)
+			(at 73.66 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5508,7 +6998,7 @@
 			)
 		)
 		(property "Footprint" "Anteater - MOSFET:IRLR2905TRPBF"
-			(at 220.98 77.47 0)
+			(at 74.93 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5519,7 +7009,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-IRLR2905-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a40153560183181c03"
-			(at 220.98 77.47 0)
+			(at 74.93 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5530,7 +7020,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 220.98 77.47 0)
+			(at 74.93 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5541,7 +7031,7 @@
 			)
 		)
 		(property "LibraryID" "8960b80c-0994-46e9-89d6-a2b7e069ec47"
-			(at 220.98 77.47 0)
+			(at 74.93 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5552,7 +7042,7 @@
 			)
 		)
 		(property "PartID" "IRLR2905TRPBF"
-			(at 220.98 77.47 0)
+			(at 74.93 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5563,7 +7053,7 @@
 			)
 		)
 		(property "MPN" "IRLR2905TRPBF"
-			(at 220.98 77.47 0)
+			(at 74.93 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5574,7 +7064,7 @@
 			)
 		)
 		(property "Manufacturer" "Infineon Technologies"
-			(at 220.98 77.47 0)
+			(at 74.93 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5585,7 +7075,7 @@
 			)
 		)
 		(property "SearchPath" "Anteater Parts/components/MOSFET/IRLR2905TRPBF"
-			(at 220.98 77.47 0)
+			(at 74.93 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5596,7 +7086,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 220.98 77.47 0)
+			(at 74.93 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5607,7 +7097,7 @@
 			)
 		)
 		(property "Tolerance" ""
-			(at 220.98 77.47 0)
+			(at 74.93 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5618,7 +7108,7 @@
 			)
 		)
 		(property "Voltage_VDC" ""
-			(at 220.98 77.47 0)
+			(at 74.93 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5629,7 +7119,7 @@
 			)
 		)
 		(property "Current_A" ""
-			(at 220.98 77.47 0)
+			(at 74.93 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5640,7 +7130,7 @@
 			)
 		)
 		(property "Voltage_V" ""
-			(at 220.98 77.47 0)
+			(at 74.93 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5651,7 +7141,7 @@
 			)
 		)
 		(property "Power_W" ""
-			(at 220.98 77.47 0)
+			(at 74.93 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5681,7 +7171,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 252.73 80.01 0)
+		(at 96.52 172.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5692,7 +7182,7 @@
 		(fields_autoplaced yes)
 		(uuid "81133d02-0678-43d3-a7ca-b0a3b2082c77")
 		(property "Reference" "D3"
-			(at 251.1425 73.66 0)
+			(at 94.9325 166.37 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5702,7 +7192,7 @@
 			)
 		)
 		(property "Value" "RTML AMBER"
-			(at 251.1425 76.2 0)
+			(at 94.9325 168.91 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5712,7 +7202,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 252.73 80.01 0)
+			(at 96.52 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5723,7 +7213,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 252.73 80.01 0)
+			(at 96.52 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5734,7 +7224,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 252.73 80.01 0)
+			(at 96.52 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5745,7 +7235,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 252.73 80.01 0)
+			(at 96.52 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5772,7 +7262,7 @@
 	)
 	(symbol
 		(lib_id "Anteater Parts:IRLR2905TRPBF")
-		(at 219.71 35.56 270)
+		(at 209.55 36.83 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5782,7 +7272,7 @@
 		(dnp no)
 		(uuid "8138ddac-da02-44b7-8db4-bf65ca30c182")
 		(property "Reference" "Q2"
-			(at 219.7101 40.64 90)
+			(at 209.5501 41.91 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5793,7 +7283,7 @@
 			)
 		)
 		(property "Value" "IRLR2905TRPBF"
-			(at 218.44 40.64 0)
+			(at 208.28 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5805,7 +7295,7 @@
 			)
 		)
 		(property "Footprint" "Anteater - MOSFET:IRLR2905TRPBF"
-			(at 219.71 35.56 0)
+			(at 209.55 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5816,7 +7306,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-IRLR2905-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a40153560183181c03"
-			(at 219.71 35.56 0)
+			(at 209.55 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5827,7 +7317,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 219.71 35.56 0)
+			(at 209.55 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5838,7 +7328,7 @@
 			)
 		)
 		(property "LibraryID" "8960b80c-0994-46e9-89d6-a2b7e069ec47"
-			(at 219.71 35.56 0)
+			(at 209.55 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5849,7 +7339,7 @@
 			)
 		)
 		(property "PartID" "IRLR2905TRPBF"
-			(at 219.71 35.56 0)
+			(at 209.55 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5860,7 +7350,7 @@
 			)
 		)
 		(property "MPN" "IRLR2905TRPBF"
-			(at 219.71 35.56 0)
+			(at 209.55 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5871,7 +7361,7 @@
 			)
 		)
 		(property "Manufacturer" "Infineon Technologies"
-			(at 219.71 35.56 0)
+			(at 209.55 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5882,7 +7372,7 @@
 			)
 		)
 		(property "SearchPath" "Anteater Parts/components/MOSFET/IRLR2905TRPBF"
-			(at 219.71 35.56 0)
+			(at 209.55 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5893,7 +7383,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 219.71 35.56 0)
+			(at 209.55 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5904,7 +7394,7 @@
 			)
 		)
 		(property "Tolerance" ""
-			(at 219.71 35.56 0)
+			(at 209.55 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5915,7 +7405,7 @@
 			)
 		)
 		(property "Voltage_VDC" ""
-			(at 219.71 35.56 0)
+			(at 209.55 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5926,7 +7416,7 @@
 			)
 		)
 		(property "Current_A" ""
-			(at 219.71 35.56 0)
+			(at 209.55 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5937,7 +7427,7 @@
 			)
 		)
 		(property "Voltage_V" ""
-			(at 219.71 35.56 0)
+			(at 209.55 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5948,7 +7438,7 @@
 			)
 		)
 		(property "Power_W" ""
-			(at 219.71 35.56 0)
+			(at 209.55 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5978,7 +7468,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 208.28 109.22 0)
+		(at 226.06 100.33 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5989,7 +7479,7 @@
 		(fields_autoplaced yes)
 		(uuid "8e95edfe-9630-4bb2-a37c-ffdcec963b85")
 		(property "Reference" "#PWR013"
-			(at 208.28 115.57 0)
+			(at 226.06 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6000,7 +7490,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 208.28 114.3 0)
+			(at 226.06 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6010,7 +7500,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 208.28 109.22 0)
+			(at 226.06 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6021,7 +7511,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 208.28 109.22 0)
+			(at 226.06 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6032,7 +7522,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 208.28 109.22 0)
+			(at 226.06 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6056,7 +7546,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 70.104 95.758 0)
+		(at 127 97.79 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6067,7 +7557,7 @@
 		(fields_autoplaced yes)
 		(uuid "936a1c66-8d11-4914-93d6-6372489faac5")
 		(property "Reference" "#PWR04"
-			(at 70.104 99.568 0)
+			(at 127 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6078,7 +7568,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 70.104 90.678 0)
+			(at 127 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6088,7 +7578,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 70.104 95.758 0)
+			(at 127 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6099,7 +7589,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 70.104 95.758 0)
+			(at 127 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6110,7 +7600,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 70.104 95.758 0)
+			(at 127 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6134,7 +7624,7 @@
 	)
 	(symbol
 		(lib_id "Anteater Parts:IRLR2905TRPBF")
-		(at 26.67 124.46 0)
+		(at 34.29 123.19 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6142,10 +7632,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "95443092-4b04-47b4-ac5c-67cf4bb7401d")
 		(property "Reference" "Q4"
-			(at 31.75 124.4599 0)
+			(at 30.734 126.746 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6156,7 +7645,7 @@
 			)
 		)
 		(property "Value" "IRLR2905TRPBF"
-			(at 31.75 125.73 0)
+			(at 39.37 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6168,7 +7657,7 @@
 			)
 		)
 		(property "Footprint" "Anteater - MOSFET:IRLR2905TRPBF"
-			(at 26.67 124.46 0)
+			(at 34.29 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6179,7 +7668,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-IRLR2905-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a40153560183181c03"
-			(at 26.67 124.46 0)
+			(at 34.29 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6190,7 +7679,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 26.67 124.46 0)
+			(at 34.29 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6201,7 +7690,7 @@
 			)
 		)
 		(property "LibraryID" "8960b80c-0994-46e9-89d6-a2b7e069ec47"
-			(at 26.67 124.46 0)
+			(at 34.29 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6212,7 +7701,7 @@
 			)
 		)
 		(property "PartID" "IRLR2905TRPBF"
-			(at 26.67 124.46 0)
+			(at 34.29 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6223,7 +7712,7 @@
 			)
 		)
 		(property "MPN" "IRLR2905TRPBF"
-			(at 26.67 124.46 0)
+			(at 34.29 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6234,7 +7723,7 @@
 			)
 		)
 		(property "Manufacturer" "Infineon Technologies"
-			(at 26.67 124.46 0)
+			(at 34.29 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6245,7 +7734,7 @@
 			)
 		)
 		(property "SearchPath" "Anteater Parts/components/MOSFET/IRLR2905TRPBF"
-			(at 26.67 124.46 0)
+			(at 34.29 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6256,7 +7745,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 26.67 124.46 0)
+			(at 34.29 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6267,7 +7756,7 @@
 			)
 		)
 		(property "Tolerance" ""
-			(at 26.67 124.46 0)
+			(at 34.29 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6278,7 +7767,7 @@
 			)
 		)
 		(property "Voltage_VDC" ""
-			(at 26.67 124.46 0)
+			(at 34.29 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6289,7 +7778,7 @@
 			)
 		)
 		(property "Current_A" ""
-			(at 26.67 124.46 0)
+			(at 34.29 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6300,7 +7789,7 @@
 			)
 		)
 		(property "Voltage_V" ""
-			(at 26.67 124.46 0)
+			(at 34.29 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6311,7 +7800,7 @@
 			)
 		)
 		(property "Power_W" ""
-			(at 26.67 124.46 0)
+			(at 34.29 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6341,7 +7830,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 209.55 129.54 0)
+		(at 226.06 125.73 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6352,7 +7841,7 @@
 		(fields_autoplaced yes)
 		(uuid "9afb298f-51d3-4e4f-bf13-ac63509082f2")
 		(property "Reference" "#PWR014"
-			(at 209.55 135.89 0)
+			(at 226.06 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6363,7 +7852,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 209.55 134.62 0)
+			(at 226.06 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6373,7 +7862,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 209.55 129.54 0)
+			(at 226.06 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6384,7 +7873,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 209.55 129.54 0)
+			(at 226.06 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6395,7 +7884,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 209.55 129.54 0)
+			(at 226.06 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6418,8 +7907,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 251.46 102.87 0)
+		(lib_id "Device:D")
+		(at 214.63 83.82 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6428,9 +7917,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a9e26252-d416-4d9e-8d14-95b86b4f1130")
-		(property "Reference" "D7"
-			(at 249.8725 96.52 0)
+		(uuid "9fc43840-82fb-4b20-bd1e-b8e86c601fcc")
+		(property "Reference" "D25"
+			(at 214.63 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6439,8 +7928,8 @@
 				)
 			)
 		)
-		(property "Value" "BMS_FAULT_LED"
-			(at 249.8725 99.06 0)
+		(property "Value" "D"
+			(at 214.63 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6449,8 +7938,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 251.46 102.87 0)
+		(property "Footprint" "Anteater - Timer:TLC555ID"
+			(at 214.63 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6461,7 +7950,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 251.46 102.87 0)
+			(at 214.63 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6471,8 +7960,19 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode"
-			(at 251.46 102.87 0)
+		(property "Description" "Diode"
+			(at 214.63 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 214.63 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6483,7 +7983,199 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 251.46 102.87 0)
+			(at 214.63 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "38e8a06b-d7ed-4557-9dfd-226f515ce5f0")
+		)
+		(pin "2"
+			(uuid "61fd1597-bdc5-4a3d-9761-7bc3b2c0937a")
+		)
+		(instances
+			(project "ROC_V1"
+				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
+					(reference "D25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 214.63 142.24 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a69b0304-fbe2-4078-87d6-afaab669ea49")
+		(property "Reference" "D26"
+			(at 214.63 135.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 214.63 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Anteater - Timer:TLC555ID"
+			(at 214.63 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode"
+			(at 214.63 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 214.63 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 214.63 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "25de6666-383a-4465-8391-509af9875f3c")
+		)
+		(pin "2"
+			(uuid "7458729f-5aa8-4bc7-9595-8db4d496ee6d")
+		)
+		(instances
+			(project "ROC_V1"
+				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
+					(reference "D26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 251.46 93.98 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a9e26252-d416-4d9e-8d14-95b86b4f1130")
+		(property "Reference" "D7"
+			(at 250.952 97.282 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BMS_FAULT_LED"
+			(at 250.952 99.822 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 251.46 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 251.46 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 251.46 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 251.46 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6509,8 +8201,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Anteater Parts:NTF2955")
-		(at 220.98 100.33 270)
+		(lib_id "Device:D")
+		(at 55.88 50.8 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6519,20 +8211,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ace7a0ed-1683-427e-9441-0cb8a71f2b88")
-		(property "Reference" "Q6"
-			(at 220.98 106.68 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NTF2955"
-			(at 219.71 105.41 0)
-			(hide yes)
+		(uuid "aa041094-2ce0-486b-acf4-4d75a833f779")
+		(property "Reference" "D21"
+			(at 58.42 49.5299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6542,246 +8223,19 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Anteater - MOSFET:NTF2955"
-			(at 223.52 105.41 0)
-			(hide yes)
+		(property "Value" "D"
+			(at 58.42 52.0699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/ntf2955-d.pdf"
-			(at 208.28 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 220.98 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "PMOS"
-			(at 203.835 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 201.93 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 205.74 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LibraryID" "8960b80c-0994-46e9-89d6-a2b7e069ec47"
-			(at 220.98 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PartID" "NTF2955"
-			(at 220.98 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "NTF2955"
-			(at 220.98 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Onsemi"
-			(at 220.98 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SearchPath" "Anteater Parts/components/MOSFET/NTF2955"
-			(at 220.98 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" ""
-			(at 220.98 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" ""
-			(at 220.98 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage_VDC" ""
-			(at 220.98 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Current_A" ""
-			(at 220.98 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage_V" ""
-			(at 220.98 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power_W" ""
-			(at 220.98 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9b27e215-ce35-40d2-b1a1-5f2e4da8787f")
-		)
-		(pin "2"
-			(uuid "e20427db-e9a3-4370-815f-9b042358ffe8")
-		)
-		(pin "3"
-			(uuid "41718c64-a9b7-476f-ac85-b878bc748929")
-		)
-		(instances
-			(project "ROC_V1"
-				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "Q6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 41.402 58.674 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ad5b4eff-5313-494f-a9aa-b189b2c21c1a")
-		(property "Reference" "#PWR02"
-			(at 41.402 65.024 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 41.402 63.754 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 41.402 58.674 0)
+		(property "Footprint" "Anteater - Timer:TLC555ID"
+			(at 55.88 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6792,7 +8246,110 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 41.402 58.674 0)
+			(at 55.88 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode"
+			(at 55.88 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 55.88 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 55.88 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c46868b4-e87d-4c99-94df-f84c4ec9a882")
+		)
+		(pin "2"
+			(uuid "00417478-3795-4d03-9d1e-d0493e78d0ef")
+		)
+		(instances
+			(project "ROC_V1"
+				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
+					(reference "D21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 64.77 62.23 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ad5b4eff-5313-494f-a9aa-b189b2c21c1a")
+		(property "Reference" "#PWR02"
+			(at 64.77 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 64.77 67.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.77 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6803,7 +8360,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 41.402 58.674 0)
+			(at 64.77 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6826,8 +8383,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 262.89 102.87 270)
+		(lib_id "Device:C")
+		(at 91.44 33.02 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6836,29 +8393,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ba16c7a6-bcc1-4e8b-a301-81c39315fd57")
-		(property "Reference" "R6"
-			(at 262.89 96.52 90)
+		(uuid "b28f33e5-7467-442c-bfbf-cd805baa055c")
+		(property "Reference" "C16"
+			(at 95.25 31.7499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "R"
-			(at 262.89 99.06 90)
+		(property "Value" "10 uF"
+			(at 95.25 34.2899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Anteater - Resistor:R_0805_2012Metric"
-			(at 262.89 101.092 90)
+		(property "Footprint" ""
+			(at 92.4052 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6869,7 +8428,87 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 262.89 102.87 0)
+			(at 91.44 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 91.44 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1c5820bf-8148-4cb5-a87c-c856c2270ed5")
+		)
+		(pin "2"
+			(uuid "7cf0ea59-c453-4bc3-b777-cd94d25c7d13")
+		)
+		(instances
+			(project "ROC_V1"
+				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
+					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 262.89 93.98 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ba16c7a6-bcc1-4e8b-a301-81c39315fd57")
+		(property "Reference" "R6"
+			(at 262.89 87.63 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 262.89 90.17 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Anteater - Resistor:R_0805_2012Metric"
+			(at 262.89 92.202 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 262.89 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6880,7 +8519,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 262.89 102.87 0)
+			(at 262.89 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6907,7 +8546,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 262.89 123.19 270)
+		(at 262.89 119.38 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6918,7 +8557,7 @@
 		(fields_autoplaced yes)
 		(uuid "c1558b2f-8f4b-4e49-8207-97c66383cb88")
 		(property "Reference" "R7"
-			(at 262.89 116.84 90)
+			(at 262.89 113.03 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6928,7 +8567,7 @@
 			)
 		)
 		(property "Value" "R"
-			(at 262.89 119.38 90)
+			(at 262.89 115.57 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6938,7 +8577,7 @@
 			)
 		)
 		(property "Footprint" "Anteater - Resistor:R_0805_2012Metric"
-			(at 262.89 121.412 90)
+			(at 262.89 117.602 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6949,7 +8588,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 262.89 123.19 0)
+			(at 262.89 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6960,7 +8599,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 262.89 123.19 0)
+			(at 262.89 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6987,7 +8626,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 57.404 136.398 0)
+		(at 57.15 135.89 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6998,7 +8637,7 @@
 		(fields_autoplaced yes)
 		(uuid "c61128cf-148b-4e66-a4d2-5cc31cb2bb74")
 		(property "Reference" "#PWR09"
-			(at 57.404 142.748 0)
+			(at 57.15 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7009,7 +8648,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 57.404 141.478 0)
+			(at 57.15 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7019,7 +8658,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 57.404 136.398 0)
+			(at 57.15 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7030,7 +8669,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.404 136.398 0)
+			(at 57.15 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7041,7 +8680,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 57.404 136.398 0)
+			(at 57.15 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7065,7 +8704,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 251.46 123.19 0)
+		(at 251.46 119.38 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7073,10 +8712,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c72fdddc-1401-4a99-a526-ba188a2b9ef6")
 		(property "Reference" "D8"
-			(at 249.8725 116.84 0)
+			(at 250.952 122.936 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7086,7 +8724,7 @@
 			)
 		)
 		(property "Value" "IMD_FAULT_LED"
-			(at 249.8725 119.38 0)
+			(at 250.952 125.476 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7096,7 +8734,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 251.46 123.19 0)
+			(at 251.46 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7107,7 +8745,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 251.46 123.19 0)
+			(at 251.46 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7118,7 +8756,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 251.46 123.19 0)
+			(at 251.46 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7129,7 +8767,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 251.46 123.19 0)
+			(at 251.46 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7156,7 +8794,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 251.46 58.42 0)
+		(at 223.52 59.69 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7167,7 +8805,7 @@
 		(fields_autoplaced yes)
 		(uuid "c88cd6ab-d9c8-48bd-bb22-6f213e77f4dc")
 		(property "Reference" "D2"
-			(at 249.8725 52.07 0)
+			(at 221.9325 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7177,7 +8815,7 @@
 			)
 		)
 		(property "Value" "TSSI GREEN"
-			(at 249.8725 54.61 0)
+			(at 221.9325 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7187,7 +8825,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 251.46 58.42 0)
+			(at 223.52 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7198,7 +8836,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 251.46 58.42 0)
+			(at 223.52 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7209,7 +8847,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 251.46 58.42 0)
+			(at 223.52 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7220,7 +8858,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 251.46 58.42 0)
+			(at 223.52 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7247,7 +8885,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 251.46 144.78 0)
+		(at 251.46 153.67 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7255,10 +8893,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "cb380a6b-23d5-4cc8-b81f-44c27ce7efb8")
 		(property "Reference" "D9"
-			(at 249.8725 138.43 0)
+			(at 251.206 156.718 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7268,7 +8905,7 @@
 			)
 		)
 		(property "Value" "BSPD_FAULT_LED"
-			(at 249.8725 140.97 0)
+			(at 251.206 159.258 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7278,7 +8915,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 251.46 144.78 0)
+			(at 251.46 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7289,7 +8926,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 251.46 144.78 0)
+			(at 251.46 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7300,7 +8937,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 251.46 144.78 0)
+			(at 251.46 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7311,7 +8948,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 251.46 144.78 0)
+			(at 251.46 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7338,7 +8975,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 208.28 86.36 0)
+		(at 62.23 175.26 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7349,7 +8986,7 @@
 		(fields_autoplaced yes)
 		(uuid "cf9d8cd0-b3c5-42b7-9b37-2daa9ccd0cbf")
 		(property "Reference" "#PWR07"
-			(at 208.28 92.71 0)
+			(at 62.23 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7360,7 +8997,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 208.28 91.44 0)
+			(at 62.23 180.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7370,7 +9007,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 208.28 86.36 0)
+			(at 62.23 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7381,7 +9018,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 208.28 86.36 0)
+			(at 62.23 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7392,7 +9029,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 208.28 86.36 0)
+			(at 62.23 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7415,8 +9052,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 207.01 44.45 0)
+		(lib_id "power:+5V")
+		(at 274.32 82.55 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7425,9 +9062,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "dbd46e05-39ed-4d9c-b174-c8e3f75867e9")
-		(property "Reference" "#PWR012"
-			(at 207.01 50.8 0)
+		(uuid "d0a12c52-a288-4b8f-80d5-429663036973")
+		(property "Reference" "#PWR031"
+			(at 274.32 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7437,18 +9074,19 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 207.01 49.53 0)
+		(property "Value" "12V"
+			(at 276.86 81.2799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 207.01 44.45 0)
+			(at 274.32 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7459,7 +9097,85 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 207.01 44.45 0)
+			(at 274.32 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 274.32 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "20e9d23c-29ce-43ff-94bd-9b935b80fa4f")
+		)
+		(instances
+			(project "ROC_V1"
+				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 196.85 45.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dbd46e05-39ed-4d9c-b174-c8e3f75867e9")
+		(property "Reference" "#PWR012"
+			(at 196.85 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 196.85 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 196.85 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 196.85 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7470,7 +9186,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 207.01 44.45 0)
+			(at 196.85 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7493,247 +9209,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Anteater Parts:NTF2955")
-		(at 222.25 120.65 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dea52cff-8f28-4f21-8239-661fb3dd1957")
-		(property "Reference" "Q7"
-			(at 222.25 127 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NTF2955"
-			(at 220.98 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Anteater - MOSFET:NTF2955"
-			(at 224.79 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/ntf2955-d.pdf"
-			(at 209.55 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 222.25 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "PMOS"
-			(at 205.105 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 203.2 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 207.01 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LibraryID" "8960b80c-0994-46e9-89d6-a2b7e069ec47"
-			(at 222.25 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PartID" "NTF2955"
-			(at 222.25 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "NTF2955"
-			(at 222.25 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Onsemi"
-			(at 222.25 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SearchPath" "Anteater Parts/components/MOSFET/NTF2955"
-			(at 222.25 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" ""
-			(at 222.25 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" ""
-			(at 222.25 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage_VDC" ""
-			(at 222.25 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Current_A" ""
-			(at 222.25 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage_V" ""
-			(at 222.25 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power_W" ""
-			(at 222.25 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8a586c9f-1d05-4e9f-9485-d06c66f964e2")
-		)
-		(pin "2"
-			(uuid "8f652c83-3110-48fd-8b04-099edc99c1b1")
-		)
-		(pin "3"
-			(uuid "706abda3-92cc-432c-842f-37b0720624bd")
-		)
-		(instances
-			(project "ROC_V1"
-				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "Q7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
-		(at 260.35 38.1 270)
+		(at 232.41 39.37 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7744,7 +9221,7 @@
 		(fields_autoplaced yes)
 		(uuid "e75eef2f-224f-492b-8f04-54cb845028f6")
 		(property "Reference" "R3"
-			(at 260.35 31.75 90)
+			(at 232.41 33.02 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7754,7 +9231,7 @@
 			)
 		)
 		(property "Value" "R"
-			(at 260.35 34.29 90)
+			(at 232.41 35.56 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7764,7 +9241,7 @@
 			)
 		)
 		(property "Footprint" "Anteater - Resistor:R_0805_2012Metric"
-			(at 260.35 36.322 90)
+			(at 232.41 37.592 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7775,7 +9252,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 260.35 38.1 0)
+			(at 232.41 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7786,7 +9263,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 260.35 38.1 0)
+			(at 232.41 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7812,8 +9289,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 262.89 80.01 270)
+		(lib_id "Anteater Parts:IRLR2905TRPBF")
+		(at 234.95 91.44 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7822,9 +9299,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ee36d2ea-2176-47cb-8b83-533fb5491cd1")
-		(property "Reference" "R5"
-			(at 262.89 73.66 90)
+		(uuid "e7a07c37-b4e0-4609-a98f-f555d2cfc7f6")
+		(property "Reference" "Q6"
+			(at 234.95 97.79 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7833,8 +9310,21 @@
 				)
 			)
 		)
-		(property "Value" "R"
-			(at 262.89 76.2 90)
+		(property "Value" "IRLR2905TRPBF"
+			(at 233.68 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Anteater - MOSFET:IRLR2905TRPBF"
+			(at 234.95 91.44 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7843,8 +9333,201 @@
 				)
 			)
 		)
-		(property "Footprint" "Anteater - Resistor:R_0805_2012Metric"
-			(at 262.89 78.232 90)
+		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-IRLR2905-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a40153560183181c03"
+			(at 234.95 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 234.95 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LibraryID" "8960b80c-0994-46e9-89d6-a2b7e069ec47"
+			(at 234.95 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartID" "IRLR2905TRPBF"
+			(at 234.95 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "IRLR2905TRPBF"
+			(at 234.95 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Infineon Technologies"
+			(at 234.95 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SearchPath" "Anteater Parts/components/MOSFET/IRLR2905TRPBF"
+			(at 234.95 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 234.95 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" ""
+			(at 234.95 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage_VDC" ""
+			(at 234.95 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Current_A" ""
+			(at 234.95 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage_V" ""
+			(at 234.95 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power_W" ""
+			(at 234.95 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c30f6ad6-e8eb-45bc-9b7a-eb34d3d3cce8")
+		)
+		(pin "1"
+			(uuid "d804b134-8058-4ba9-91da-c1f00f979f13")
+		)
+		(pin "3"
+			(uuid "77c76a0a-1719-47dc-b9bc-5cb740370a32")
+		)
+		(instances
+			(project "ROC_V1"
+				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
+					(reference "Q6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 203.2 25.4 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ed21e26c-89b9-4bd8-99f8-2b0cc38b92f0")
+		(property "Reference" "D19"
+			(at 203.2 19.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 203.2 21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Anteater - Timer:TLC555ID"
+			(at 203.2 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7855,7 +9538,109 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 262.89 80.01 0)
+			(at 203.2 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode"
+			(at 203.2 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 203.2 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 203.2 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "79ad34a3-b82c-41f3-9918-c53bbafa6a7d")
+		)
+		(pin "2"
+			(uuid "878e5c2a-8d6c-4240-855f-ab46f4ec81c0")
+		)
+		(instances
+			(project "ROC_V1"
+				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
+					(reference "D19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 106.68 172.72 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ee36d2ea-2176-47cb-8b83-533fb5491cd1")
+		(property "Reference" "R5"
+			(at 106.68 166.37 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 106.68 168.91 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Anteater - Resistor:R_0805_2012Metric"
+			(at 106.68 170.942 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7866,7 +9651,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 262.89 80.01 0)
+			(at 106.68 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7891,93 +9676,81 @@
 			)
 		)
 	)
-	(sheet
-		(at 65.532 37.084)
-		(size 48.514 26.67)
+	(symbol
+		(lib_id "Device:C")
+		(at 90.17 130.81 90)
+		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "2db4eff8-90db-475d-917d-2c67746f9aa1")
-		(property "Sheetname" "TSSI_555"
-			(at 76.454 43.434 0)
+		(uuid "f3fa49af-5595-4ad6-830b-d0804a7bcc4d")
+		(property "Reference" "C19"
+			(at 93.472 132.588 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "TSSI_555.kicad_sch"
-			(at 65.532 64.3386 0)
+		(property "Value" "0.01 uF"
+			(at 93.472 135.128 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 			)
+		)
+		(property "Footprint" ""
+			(at 93.98 129.8448 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 90.17 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 90.17 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9ae25fdf-51f0-4cc5-bc81-90c8b0b2baf9")
+		)
+		(pin "2"
+			(uuid "fc44ba88-8378-4066-b8ab-3f61ba277ebf")
 		)
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(page "4")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 39.116 100.33)
-		(size 53.594 27.178)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "d6562e8c-afd4-4d2d-b123-f8f32d2da48f")
-		(property "Sheetname" "RTML_555"
-			(at 39.116 99.6184 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "RTML_555.kicad_sch"
-			(at 39.116 128.0926 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "ROC_V1"
-				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(page "5")
+					(reference "C19")
+					(unit 1)
 				)
 			)
 		)
