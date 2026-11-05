@@ -112,6 +112,12 @@
       "items": {
         "LM_8960b80c09_6060aa530bb8:VO617A-3X016": "VO617A-3X016"
       }
+    },
+    "components/Logic IC": {
+      "name": "Anteater - Logic IC",
+      "items": {
+        "LM_8960b80c09_b0cb96507780:ADS1115IDGST": "ADS1115IDGST"
+      }
     }
   }
 }
