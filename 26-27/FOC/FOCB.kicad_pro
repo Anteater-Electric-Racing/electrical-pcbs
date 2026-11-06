@@ -768,13 +768,17 @@
         "uuid": "b4fe6619-b5b7-4a4a-8013-ac1e600a1b83"
       }
     ],
-    "used_designators": "U1-4,1,R1-4,R6-7,R10-29,D1,#PWR1-7,C1-4",
+    "used_designators": "U1-12,Q4-7,1,R1-41,J1-6,#PWR1-30,#PWR38-39,D1,C1-19",
     "variants": []
   },
   "sheets": [
     [
       "b4fe6619-b5b7-4a4a-8013-ac1e600a1b83",
       "FOCB"
+    ],
+    [
+      "ea0d75f9-1585-47b0-95db-0bba02aa41fe",
+      "Power Distribution"
     ]
   ],
   "text_variables": {},
