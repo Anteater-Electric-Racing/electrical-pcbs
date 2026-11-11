@@ -42,7 +42,8 @@
     "components/DC-DC Converter": {
       "name": "Anteater - DC-DC Converter",
       "items": {
-        "LM_8960b80c09_d15a42799447:RB-1212S": "RB-1212S"
+        "LM_8960b80c09_d15a42799447:RB-1212S": "RB-1212S",
+        "LM_8960b80c09_f6411c4e2d6e:OKL2-T-6-W12N-C": "OKL2-T-6-W12N-C"
       }
     },
     "components/Potentiometer": {
