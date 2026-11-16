@@ -2215,16 +2215,6 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 87.63) (xy 232.41 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "26eaf443-15e0-4a6d-9052-52c028e6f141")
-	)
-	(wire
-		(pts
 			(xy 129.54 130.81) (xy 129.54 121.92)
 		)
 		(stroke
@@ -2285,7 +2275,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 87.63) (xy 223.52 87.63)
+			(xy 222.25 87.63) (xy 232.41 87.63)
 		)
 		(stroke
 			(width 0)
@@ -2463,16 +2453,6 @@
 			(type default)
 		)
 		(uuid "695847e9-deb9-44ad-ab4e-91163e7f608b")
-	)
-	(wire
-		(pts
-			(xy 231.14 113.03) (xy 232.41 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6a32e7e6-bbfe-4caf-a9e8-51a3a9c3e2cc")
 	)
 	(wire
 		(pts
@@ -2893,7 +2873,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 113.03) (xy 223.52 113.03)
+			(xy 222.25 113.03) (xy 232.41 113.03)
 		)
 		(stroke
 			(width 0)
@@ -3033,7 +3013,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 139.7) (xy 223.52 139.7)
+			(xy 222.25 139.7) (xy 232.41 139.7)
 		)
 		(stroke
 			(width 0)
@@ -3090,16 +3070,6 @@
 			(type default)
 		)
 		(uuid "e700afc9-061d-4e43-aabf-e5dda0890547")
-	)
-	(wire
-		(pts
-			(xy 231.14 139.7) (xy 232.41 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0694384-a74a-4de2-8614-273c46662d77")
 	)
 	(wire
 		(pts
@@ -4603,108 +4573,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
-		(at 227.33 113.03 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "210c3a25-7358-436b-9548-b4f3053d81f9")
-		(property "Reference" "D11"
-			(at 227.33 106.68 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D"
-			(at 227.33 109.22 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Anteater - Timer:TLC555ID"
-			(at 227.33 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 227.33 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Diode"
-			(at 227.33 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 227.33 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 227.33 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d7c23fa9-e31c-425f-bde7-1371dd56668b")
-		)
-		(pin "2"
-			(uuid "0cf8df2e-0522-4da4-8bc1-19b89897cdd0")
-		)
-		(instances
-			(project "ROC_V1"
-				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "D11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Anteater Parts:TLC555ID")
 		(at 59.69 114.3 0)
 		(unit 1)
@@ -5322,108 +5190,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
-		(at 227.33 87.63 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4670e583-c3cf-4ccd-b67c-9a02786b5cad")
-		(property "Reference" "D10"
-			(at 227.33 81.28 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D"
-			(at 227.33 83.82 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Anteater - Timer:TLC555ID"
-			(at 227.33 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 227.33 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Diode"
-			(at 227.33 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 227.33 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 227.33 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a6edf48d-7bad-45e4-aed8-595a3cc267bf")
-		)
-		(pin "2"
-			(uuid "d9b78ad7-0091-495a-8d49-0130e2d35f8d")
-		)
-		(instances
-			(project "ROC_V1"
-				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "D10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 60.96 175.26 0)
 		(unit 1)
@@ -5718,108 +5484,6 @@
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
 					(reference "U10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D")
-		(at 227.33 139.7 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4d2b75f3-5282-4def-b5a9-28cb3fd71fa7")
-		(property "Reference" "D12"
-			(at 227.33 133.35 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D"
-			(at 227.33 135.89 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Anteater - Timer:TLC555ID"
-			(at 227.33 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 227.33 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Diode"
-			(at 227.33 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 227.33 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 227.33 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e0c1d17c-b236-4ea9-8bcf-bd8463972590")
-		)
-		(pin "2"
-			(uuid "1f6de3ec-36b2-47f0-a3ba-bc2fd83eae78")
-		)
-		(instances
-			(project "ROC_V1"
-				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "D12")
 					(unit 1)
 				)
 			)
