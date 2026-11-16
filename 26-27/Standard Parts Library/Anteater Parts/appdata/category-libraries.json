@@ -7,7 +7,11 @@
         "LM_8960b80c09_3b1aa8907438:1724470004": "1724470004",
         "LM_8960b80c09_38dff94c6e3c:614004135023": "614004135023",
         "LM_8960b80c09_17a09dc2645c:776280-1": "776280-1",
-        "LM_8960b80c09_89dded96cfa0:USB4235-03-C": "USB4235-03-C"
+        "LM_8960b80c09_89dded96cfa0:USB4235-03-C": "USB4235-03-C",
+        "LM_8960b80c09_63699f27acfd:0039281023": "0039281023",
+        "LM_8960b80c09_74bcbb0ec6f7:0039281063": "0039281063",
+        "LM_8960b80c09_a68a9ab40a17:PH2-06-UA": "PH2-06-UA",
+        "LM_8960b80c09_7dad41ec78a3:UJ20-C-H-G-SMT-4-P16-TR": "UJ20-C-H-G-SMT-4-P16-TR"
       }
     },
     "components/Capacitor": {
@@ -20,7 +24,8 @@
     "components/CAN Controller": {
       "name": "Anteater - CAN Controller",
       "items": {
-        "LM_8960b80c09_dc0da72f184c:MCP2518FDT-E_SL": "MCP2518FDT-E_SL"
+        "LM_8960b80c09_dc0da72f184c:MCP2518FDT-E_SL": "MCP2518FDT-E_SL",
+        "LM_8960b80c09_26def9d2c7b8:MCP2518FDT-E-QBB": "MCP2518FDT-E-QBB"
       }
     },
     "components/Diode": {
@@ -29,14 +34,16 @@
         "LM_8960b80c09_cc4188f792d2:STPS3L60U": "STPS3L60U",
         "LM_8960b80c09_5bd8e693e534:1N4007W": "1N4007W",
         "LM_8960b80c09_9c2637978085:SMAJ15A": "SMAJ15A",
-        "LM_8960b80c09_0513a803cae3:ESD562DBZRQ1": "ESD562DBZRQ1"
+        "LM_8960b80c09_0513a803cae3:ESD562DBZRQ1": "ESD562DBZRQ1",
+        "LM_8960b80c09_bbe3b69728c0:USBLC6-2SC6": "USBLC6-2SC6"
       }
     },
     "components/Comparator - Op-Amp": {
       "name": "Anteater - Comparator - Op-Amp",
       "items": {
         "LM_8960b80c09_0a62379e5c58:LM2903D": "LM2903D",
-        "LM_8960b80c09_3ae32b197ec3:TLV2372IP": "TLV2372IP"
+        "LM_8960b80c09_3ae32b197ec3:TLV2372IP": "TLV2372IP",
+        "LM_8960b80c09_d5935a34bbe5:MCP6001T-I-OT": "MCP6001T-I-OT"
       }
     },
     "components/DC-DC Converter": {
@@ -86,7 +93,8 @@
       "name": "Anteater - CAN Transceiver",
       "items": {
         "LM_8960b80c09_9921044ddebd:TCAN330GD": "TCAN330GD",
-        "LM_8960b80c09_810610dcf4ba:ISO1044BD": "ISO1044BD"
+        "LM_8960b80c09_810610dcf4ba:ISO1044BD": "ISO1044BD",
+        "LM_8960b80c09_316172c1ce04:TCAN3413DR": "TCAN3413DR"
       }
     },
     "components/Regulator": {
@@ -94,19 +102,23 @@
       "items": {
         "LM_8960b80c09_62d0439f7dcf:TPSM63606RDLR": "TPSM63606RDLR",
         "LM_8960b80c09_e1c066a53daf:MIC5528-3.3YMT-TR": "MIC5528-3.3YMT-TR",
-        "LM_8960b80c09_1952aefc88b3:TPS561201DDCR": "TPS561201DDCR"
+        "LM_8960b80c09_1952aefc88b3:TPS561201DDCR": "TPS561201DDCR",
+        "LM_8960b80c09_490a94499a77:AP2112K-3.3TRG1": "AP2112K-3.3TRG1",
+        "LM_8960b80c09_da04a3c25f67:NCP1117ST50T3G": "NCP1117ST50T3G"
       }
     },
     "components/Microcontroller": {
       "name": "Anteater - Microcontroller",
       "items": {
-        "LM_8960b80c09_31231cf68467:Adafruit_Feather_ESP32S3_5323": "Adafruit_Feather_ESP32S3_5323"
+        "LM_8960b80c09_31231cf68467:Adafruit_Feather_ESP32S3_5323": "Adafruit_Feather_ESP32S3_5323",
+        "LM_8960b80c09_5931e3588917:ESP32-S3-WROOM-1-N8": "ESP32-S3-WROOM-1-N8"
       }
     },
     "components/Switch": {
       "name": "Anteater - Switch",
       "items": {
-        "LM_8960b80c09_1f5631896eca:KMR241G LFS": "KMR241G LFS"
+        "LM_8960b80c09_1f5631896eca:KMR241G LFS": "KMR241G LFS",
+        "LM_8960b80c09_bd5d0a60ac3b:MJTP1250": "MJTP1250"
       }
     },
     "components/Optocoupler": {
