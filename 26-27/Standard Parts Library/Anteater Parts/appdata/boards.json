@@ -2,6 +2,20 @@
   "version": 1,
   "boards": {},
   "usage": {
+    "0039281023": {
+      "26-27/VCU": {
+        "refs": "J5",
+        "qty": 1,
+        "source": "manual"
+      }
+    },
+    "0039281063": {
+      "26-27/VCU": {
+        "refs": "J2",
+        "qty": 1,
+        "source": "manual"
+      }
+    },
     "1724470004": {
       "26-27/ROC": {
         "refs": "J1",
@@ -14,6 +28,153 @@
         "refs": "VR1",
         "qty": 1,
         "source": "schematic"
+      }
+    },
+    "AP2112K-3.3TRG1": {
+      "26-27/VCU": {
+        "refs": "U8",
+        "qty": 1,
+        "source": "manual"
+      }
+    },
+    "C0805C103K5RACTU": {
+      "26-27/VCU": {
+        "refs": "C3",
+        "qty": 1,
+        "source": "manual"
+      }
+    },
+    "C0805C104K5RACTU": {
+      "26-27/VCU": {
+        "refs": "C1, C2, C4-C6, C9, C12-C14, C17",
+        "qty": 10,
+        "source": "manual"
+      }
+    },
+    "C0805C106K4PACTU": {
+      "26-27/VCU": {
+        "refs": "C7, C10, C11",
+        "qty": 3,
+        "source": "manual"
+      }
+    },
+    "C0805C270J5GACTU": {
+      "26-27/VCU": {
+        "refs": "C15, C16",
+        "qty": 2,
+        "source": "manual"
+      }
+    },
+    "CRCW080520K0FKEA": {
+      "26-27/VCU": {
+        "refs": "R11, R13",
+        "qty": 2,
+        "source": "manual"
+      }
+    },
+    "CRCW08055K10FKEA": {
+      "26-27/VCU": {
+        "refs": "R6, R7",
+        "qty": 2,
+        "source": "manual"
+      }
+    },
+    "CRCW080560R4FKEAHP": {
+      "26-27/VCU": {
+        "refs": "R3, R16, R25, R28",
+        "qty": 4,
+        "source": "manual"
+      }
+    },
+    "ESP32-S3-WROOM-1-N8": {
+      "26-27/VCU": {
+        "refs": "U1",
+        "qty": 1,
+        "source": "manual"
+      }
+    },
+    "GCM21BR71H105KA03L": {
+      "26-27/VCU": {
+        "refs": "C8",
+        "qty": 1,
+        "source": "manual"
+      }
+    },
+    "MCP2518FDT-E-QBB": {
+      "26-27/VCU": {
+        "refs": "U5",
+        "qty": 1,
+        "source": "manual"
+      }
+    },
+    "MCP6001T-I-OT": {
+      "26-27/VCU": {
+        "refs": "U6",
+        "qty": 1,
+        "source": "manual"
+      }
+    },
+    "MJTP1250": {
+      "26-27/VCU": {
+        "refs": "SW2, SW3",
+        "qty": 2,
+        "source": "manual"
+      }
+    },
+    "PH2-06-UA": {
+      "26-27/VCU": {
+        "refs": "J1",
+        "qty": 1,
+        "source": "manual"
+      }
+    },
+    "RC0805FR-07100RL": {
+      "26-27/VCU": {
+        "refs": "R15",
+        "qty": 1,
+        "source": "manual"
+      }
+    },
+    "RC0805FR-0710KL": {
+      "26-27/VCU": {
+        "refs": "R4, R5, R26, R27",
+        "qty": 4,
+        "source": "manual"
+      }
+    },
+    "RC0805FR-0711KL": {
+      "26-27/VCU": {
+        "refs": "R10, R12",
+        "qty": 2,
+        "source": "manual"
+      }
+    },
+    "RC0805FR-071KL": {
+      "26-27/VCU": {
+        "refs": "R14",
+        "qty": 1,
+        "source": "manual"
+      }
+    },
+    "TCAN3413DR": {
+      "26-27/VCU": {
+        "refs": "U7",
+        "qty": 1,
+        "source": "manual"
+      }
+    },
+    "UJ20-C-H-G-SMT-4-P16-TR": {
+      "26-27/VCU": {
+        "refs": "J4",
+        "qty": 1,
+        "source": "manual"
+      }
+    },
+    "USBLC6-2SC6": {
+      "26-27/VCU": {
+        "refs": "U4",
+        "qty": 1,
+        "source": "manual"
       }
     }
   }
