@@ -429,7 +429,7 @@
         "uuid": "19cb6025-5afe-4cbe-82f8-7b7ab9da466c"
       }
     ],
-    "used_designators": "U1-11,D1-26,#PWR1-31,Q1-13,R1-37,K1-3,C1-19,SW1-3,RV1",
+    "used_designators": "D1-5,D7-15,D17-20,D22-23,#PWR1-3,#PWR5-9,#PWR11-23,#PWR30-75,C1-4,C14-25,R1-13,R19-68,J1,TH1-2,U1-3,U10-21,Y1,Q1-2,Q4-8,Q10,K1-3,SW1-3,R_Bypass1-2,VR1-4",
     "variants": []
   },
   "sheets": [
@@ -438,20 +438,12 @@
       "Root"
     ],
     [
-      "5bec6c9c-58a5-48e1-a034-a07c8c60681b",
-      "RCCM"
-    ],
-    [
       "82463a24-1cbe-48d9-b1a9-86a7a119fb6d",
       "LED"
     ],
     [
       "1aefbb2c-500e-477f-a207-e2390cd85fb7",
       "LATCH"
-    ],
-    [
-      "f2e1123d-240d-417e-9e0e-408cde66ee50",
-      "RTM"
     ],
     [
       "f49d5f0c-1e32-4172-aa61-73274f070842",
