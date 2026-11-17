@@ -1520,9 +1520,9 @@
 		)
 		(uuid "3b72f543-4360-40bd-923e-163e3892c746")
 	)
-	(text "SIMILAR DESIGN AS LAST YEARS\n"
+	(text "SIMILAR DESIGN AS LAST YEARS,\n\noutput dependent on latch state\n\n"
 		(exclude_from_sim no)
-		(at 217.17 159.258 0)
+		(at 197.104 160.02 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -1530,6 +1530,18 @@
 			(justify left)
 		)
 		(uuid "3f17073f-e15d-44fc-a498-2ef0438dfac9")
+	)
+	(text "BMS and BSPD fault are normally low, HIGH when fault\n\nIMD is normally high and low when fault\n"
+		(exclude_from_sim no)
+		(at 215.392 109.728 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "56dc5c1f-8ecd-4fcd-83df-6b0e1a9bc8df")
 	)
 	(text "BMS\n"
 		(exclude_from_sim no)
@@ -1546,7 +1558,7 @@
 		(at 67.818 110.49 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 2.54 2.54)
 			)
 		)
 		(uuid "956793d5-ef05-4466-9927-c93fb7dd3a83")

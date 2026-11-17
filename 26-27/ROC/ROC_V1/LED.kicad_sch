@@ -1793,6 +1793,18 @@
 		)
 		(uuid "23b198ac-c3e7-4986-b597-090e9b2e8b8b")
 	)
+	(text "lamp check ensures led stays on \n"
+		(exclude_from_sim no)
+		(at 41.402 154.686 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "299af642-5878-42b4-b74b-746e7dd6e9c4")
+	)
 	(text "LED"
 		(exclude_from_sim no)
 		(at 183.896 33.02 0)
@@ -1814,6 +1826,18 @@
 			(justify left)
 		)
 		(uuid "3b99f265-8279-468a-a173-28edf9755b21")
+	)
+	(text "lamp check ensures led stays on \n"
+		(exclude_from_sim no)
+		(at 181.102 20.066 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "3e745b1c-d34c-4f3e-9b99-23fc9fe14649")
 	)
 	(text "LED"
 		(exclude_from_sim no)
@@ -1952,7 +1976,7 @@
 	(junction
 		(at 85.09 35.56)
 		(diameter 0)
-		(color 0 0 255 1)
+		(color 0 132 0 1)
 		(uuid "45c5d7fe-0a64-4527-a1b6-bb696fd4c50e")
 	)
 	(junction
@@ -1988,7 +2012,7 @@
 	(junction
 		(at 90.17 27.94)
 		(diameter 0)
-		(color 0 0 255 1)
+		(color 0 132 0 1)
 		(uuid "6d601ee6-8ae9-4c0c-83b2-02fb88194e97")
 	)
 	(junction
@@ -2290,7 +2314,7 @@
 		(stroke
 			(width 0)
 			(type default)
-			(color 0 0 255 1)
+			(color 0 132 0 1)
 		)
 		(uuid "3c063700-7a9a-46fa-b5e5-0f2c1587cfbe")
 	)
@@ -2461,7 +2485,7 @@
 		(stroke
 			(width 0)
 			(type default)
-			(color 0 0 255 1)
+			(color 0 132 0 1)
 		)
 		(uuid "6a380ff4-a66b-41d2-9f60-969afbf32eac")
 	)
@@ -2492,7 +2516,7 @@
 		(stroke
 			(width 0)
 			(type default)
-			(color 0 0 255 1)
+			(color 0 132 0 1)
 		)
 		(uuid "705da941-7a7c-4680-a614-54ddd6c3c137")
 	)
@@ -2673,7 +2697,7 @@
 		(stroke
 			(width 0)
 			(type default)
-			(color 0 0 255 1)
+			(color 0 132 0 1)
 		)
 		(uuid "8c911a07-29e7-4c20-a4a9-0ebb8f879620")
 	)
@@ -2684,7 +2708,7 @@
 		(stroke
 			(width 0)
 			(type default)
-			(color 0 0 255 1)
+			(color 0 132 0 1)
 		)
 		(uuid "8d5b82bd-7c77-478f-bb97-70e10c05dbbe")
 	)
@@ -2715,7 +2739,7 @@
 		(stroke
 			(width 0)
 			(type default)
-			(color 0 0 255 1)
+			(color 0 132 0 1)
 		)
 		(uuid "95ca447c-bf96-4dd5-a428-756306e43e43")
 	)
@@ -2796,7 +2820,7 @@
 		(stroke
 			(width 0)
 			(type default)
-			(color 0 0 255 1)
+			(color 0 132 0 1)
 		)
 		(uuid "b4650f3b-5d7a-45bf-9e0f-396cc3e14f1a")
 	)
@@ -2867,7 +2891,7 @@
 		(stroke
 			(width 0)
 			(type default)
-			(color 0 0 255 1)
+			(color 0 132 0 1)
 		)
 		(uuid "c641b268-0e17-4c12-97e4-e58c3192b6a2")
 	)
@@ -3108,7 +3132,7 @@
 		(stroke
 			(width 0)
 			(type default)
-			(color 0 0 255 1)
+			(color 0 132 0 1)
 		)
 		(uuid "fbdf430e-6101-4898-83dc-22d64a972b96")
 	)
