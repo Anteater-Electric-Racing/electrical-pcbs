@@ -1883,16 +1883,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 125.73) (xy 123.19 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3e65b2f4-b5d6-4274-a364-ee350e0e28df")
-	)
-	(wire
-		(pts
 			(xy 139.7 36.83) (xy 139.7 59.69)
 		)
 		(stroke
@@ -2243,6 +2233,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 125.73) (xy 123.19 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab9163de-d909-4bfe-81d0-48dd76ca621f")
+	)
+	(wire
+		(pts
 			(xy 86.36 86.36) (xy 102.87 86.36)
 		)
 		(stroke
@@ -2390,6 +2390,16 @@
 			(type default)
 		)
 		(uuid "d3c5e4b0-a37c-4706-8351-2f1033daffd4")
+	)
+	(wire
+		(pts
+			(xy 123.19 138.43) (xy 123.19 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3c66757-6f3a-450d-9d63-eb65871a5827")
 	)
 	(wire
 		(pts
@@ -2800,6 +2810,28 @@
 				(justify left)
 			)
 		)
+	)
+	(hierarchical_label "HVMS+"
+		(shape input)
+		(at 123.19 138.43 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a1243ff9-f713-40ca-97a2-238b22778de0")
+	)
+	(hierarchical_label "HVMS-"
+		(shape input)
+		(at 123.19 133.35 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fccfe5e7-3cc7-4db9-a2ab-80897757a1cc")
 	)
 	(symbol
 		(lib_id "Device:D")
