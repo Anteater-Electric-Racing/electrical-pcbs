@@ -52,7 +52,8 @@
       "items": {
         "LM_8960b80c09_d15a42799447:RB-1212S": "RB-1212S",
         "LM_8960b80c09_f6411c4e2d6e:OKL2-T-6-W12N-C": "OKL2-T-6-W12N-C",
-        "LM_8960b80c09_91a5f9007c75:LT1084CT-5-PBF": "LT1084CT-5-PBF"
+        "LM_8960b80c09_91a5f9007c75:LT1084CT-5-PBF": "LT1084CT-5-PBF",
+        "LM_8960b80c09_280147afead2:TMR 3-1211WI": "TMR 3-1211WI"
       }
     },
     "components/Potentiometer": {
