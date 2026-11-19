@@ -43,7 +43,8 @@
       "items": {
         "LM_8960b80c09_0a62379e5c58:LM2903D": "LM2903D",
         "LM_8960b80c09_3ae32b197ec3:TLV2372IP": "TLV2372IP",
-        "LM_8960b80c09_d5935a34bbe5:MCP6001T-I-OT": "MCP6001T-I-OT"
+        "LM_8960b80c09_d5935a34bbe5:MCP6001T-I-OT": "MCP6001T-I-OT",
+        "LM_8960b80c09_cd2af068af86:TLV2371": "TLV2371"
       }
     },
     "components/DC-DC Converter": {
