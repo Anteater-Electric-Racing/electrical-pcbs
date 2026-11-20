@@ -824,12 +824,6 @@
         },
         {
           "group_by": false,
-          "label": "Height",
-          "name": "HEIGHT",
-          "show": false
-        },
-        {
-          "group_by": false,
           "label": "IPC",
           "name": "IPC",
           "show": false
@@ -1181,6 +1175,12 @@
           "label": "D_MIN",
           "name": "D_MIN",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Height",
+          "name": "Height",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -1231,13 +1231,17 @@
         "uuid": "b4fe6619-b5b7-4a4a-8013-ac1e600a1b83"
       }
     ],
-    "used_designators": "U1-6,U10,U12,1,1,IC1,R1-8,R10-29,R42-43,#PWR1-7,#PWR20,#PWR22-23,#PWR25-26,#PWR34-35,D1,C1-6,C22-24",
+    "used_designators": "U1-6,U10-21,PS1-2,1,IC1-2,R1-8,R10-29,R42-60,#PWR1-10,#PWR20,#PWR22-23,#PWR25-26,#PWR30,#PWR33-37,#PWR40-42,#PWR51-72,D1,D20,C1-6,C11-12,C22-35,L1,Q10,R_Bypass1-2,VR1-4,Y1-3",
     "variants": []
   },
   "sheets": [
     [
       "b4fe6619-b5b7-4a4a-8013-ac1e600a1b83",
       "FOCB"
+    ],
+    [
+      "c3171342-6ccc-4b3a-a5b0-79cfa02a1c34",
+      "BSPD"
     ]
   ],
   "text_variables": {},

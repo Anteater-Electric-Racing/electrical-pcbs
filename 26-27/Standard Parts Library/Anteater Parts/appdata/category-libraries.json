@@ -52,7 +52,9 @@
       "items": {
         "LM_8960b80c09_d15a42799447:RB-1212S": "RB-1212S",
         "LM_8960b80c09_f6411c4e2d6e:OKL2-T-6-W12N-C": "OKL2-T-6-W12N-C",
-        "LM_8960b80c09_91a5f9007c75:LT1084CT-5-PBF": "LT1084CT-5-PBF"
+        "LM_8960b80c09_91a5f9007c75:LT1084CT-5-PBF": "LT1084CT-5-PBF",
+        "LM_8960b80c09_280147afead2:TMR 3-1211WI": "TMR 3-1211WI",
+        "LM_8960b80c09_82dacbc406d5:I7A24080A033V-0C0-R": "I7A24080A033V-0C0-R"
       }
     },
     "components/Potentiometer": {
@@ -88,7 +90,8 @@
       "name": "Anteater - Timer",
       "items": {
         "LM_8960b80c09_14d68bb3519b:TLC555IP": "TLC555IP",
-        "LM_8960b80c09_a192e9fd6582:TLC555ID": "TLC555ID"
+        "LM_8960b80c09_a192e9fd6582:TLC555ID": "TLC555ID",
+        "LM_8960b80c09_c0ce13482009:SiT8008BI-33-33S-40.000000": "SiT8008BI-33-33S-40.000000"
       }
     },
     "components/CAN Transceiver": {
