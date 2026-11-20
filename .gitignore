@@ -1,3 +1,7 @@
 # KiCad lock files: committing them makes KiCad say the board is open on everyone else's PC
 ~*.lck
 *.lck
+# KiCad 'restore from history' backups: they move board files out of place
+_restore_backup_*/
+# KiCad local history (its own git repo per project)
+.history/
