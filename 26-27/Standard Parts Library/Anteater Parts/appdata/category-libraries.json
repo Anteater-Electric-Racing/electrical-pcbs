@@ -89,7 +89,8 @@
       "name": "Anteater - Timer",
       "items": {
         "LM_8960b80c09_14d68bb3519b:TLC555IP": "TLC555IP",
-        "LM_8960b80c09_a192e9fd6582:TLC555ID": "TLC555ID"
+        "LM_8960b80c09_a192e9fd6582:TLC555ID": "TLC555ID",
+        "LM_8960b80c09_c0ce13482009:SiT8008BI-33-33S-40.000000": "SiT8008BI-33-33S-40.000000"
       }
     },
     "components/CAN Transceiver": {
