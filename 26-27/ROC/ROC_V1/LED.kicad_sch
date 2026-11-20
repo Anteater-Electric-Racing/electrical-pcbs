@@ -1863,7 +1863,7 @@
 	)
 	(text "lamp check ensures led stays on \n"
 		(exclude_from_sim no)
-		(at 41.402 155.956 0)
+		(at 41.91 166.37 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1935,6 +1935,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "59a068d7-8b0e-440e-a4b0-060e9b9cd355")
+	)
+	(junction
+		(at 44.45 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5a7e926c-6980-49f9-a5b7-60d8293ae888")
 	)
 	(junction
 		(at 213.36 124.46)
@@ -2031,6 +2037,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c6895396-9397-4461-b06a-115bc17a3e61")
+	)
+	(junction
+		(at 55.88 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c87360af-8842-4055-82d5-5829d8c086f7")
 	)
 	(junction
 		(at 85.09 36.83)
@@ -2132,7 +2144,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 130.81) (xy 44.45 120.65)
+			(xy 44.45 142.24) (xy 44.45 139.7)
 		)
 		(stroke
 			(width 0)
@@ -2623,6 +2635,26 @@
 	)
 	(wire
 		(pts
+			(xy 55.88 139.7) (xy 55.88 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79d193c1-937c-4474-aaca-178e03ae7eed")
+	)
+	(wire
+		(pts
+			(xy 54.61 139.7) (xy 55.88 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ba8a4fb-43e9-46d5-a360-5b1b8d6567d3")
+	)
+	(wire
+		(pts
 			(xy 203.2 40.64) (xy 195.58 40.64)
 		)
 		(stroke
@@ -2710,6 +2742,16 @@
 			(type default)
 		)
 		(uuid "868949eb-7897-411c-a271-e04ae602006e")
+	)
+	(wire
+		(pts
+			(xy 44.45 130.81) (xy 44.45 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a1ec505-3c76-4fd6-88f1-84e6994fec7e")
 	)
 	(wire
 		(pts
@@ -2845,7 +2887,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 44.45) (xy 77.47 58.42)
+			(xy 77.47 44.45) (xy 77.47 49.53)
 		)
 		(stroke
 			(width 0)
@@ -2926,6 +2968,16 @@
 	)
 	(wire
 		(pts
+			(xy 77.47 57.15) (xy 77.47 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab3dfa9b-cb68-423e-b0be-d202fd78b7d9")
+	)
+	(wire
+		(pts
 			(xy 208.28 124.46) (xy 213.36 124.46)
 		)
 		(stroke
@@ -2946,7 +2998,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 132.08) (xy 55.88 137.16)
+			(xy 55.88 132.08) (xy 55.88 139.7)
 		)
 		(stroke
 			(width 0)
@@ -3178,6 +3230,16 @@
 	)
 	(wire
 		(pts
+			(xy 44.45 139.7) (xy 46.99 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd9e5ba9-f2fc-4def-aa8a-af86d017b01f")
+	)
+	(wire
+		(pts
 			(xy 63.5 33.02) (xy 71.12 33.02)
 		)
 		(stroke
@@ -3195,6 +3257,16 @@
 			(type default)
 		)
 		(uuid "e026b99d-44ba-4bcd-9a89-a54b8162b305")
+	)
+	(wire
+		(pts
+			(xy 44.45 139.7) (xy 44.45 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e46e0159-5d26-4c58-a136-94dab333c19a")
 	)
 	(wire
 		(pts
@@ -3340,7 +3412,7 @@
 		(uuid "605949e7-ac49-4be2-bc4e-fa428cf67a4c")
 	)
 	(label "RTM_555_OUT"
-		(at 44.45 130.81 270)
+		(at 44.45 142.24 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4040,6 +4112,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 77.47 53.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0ea1d32a-f571-48a4-8ede-b460f5cfe580")
+		(property "Reference" "R21"
+			(at 80.01 52.0699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "27k"
+			(at 80.01 54.6099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 75.692 53.34 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 77.47 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "61e288f1-3645-4948-be8a-0e451005a7d7")
+		)
+		(pin "2"
+			(uuid "afb88fe2-66ef-42b7-a46b-b8497a677e9d")
+		)
+		(instances
+			(project "ROC_V1"
+				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
+					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+12V")
 		(at 125.73 99.06 0)
 		(unit 1)
@@ -4129,7 +4283,7 @@
 		(dnp no)
 		(uuid "12a4d399-5d5e-45c3-b45c-4502f51b0b97")
 		(property "Reference" "R47"
-			(at 81.788 53.34 90)
+			(at 82.296 61.468 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4140,7 +4294,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 81.788 55.88 90)
+			(at 82.296 64.008 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5746,6 +5900,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 44.45 134.62 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "74db93da-b010-465a-8ecb-486b33f9662c")
+		(property "Reference" "R22"
+			(at 46.99 133.3499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "27k"
+			(at 46.99 135.8899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 42.672 134.62 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 44.45 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "16d028ce-fdb0-4107-a99a-cdd038747611")
+		)
+		(pin "2"
+			(uuid "bae07654-4326-4bc0-ad9f-e2d301eebbe3")
+		)
+		(instances
+			(project "ROC_V1"
+				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
+					(reference "R22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Anteater Parts:TLC555ID")
 		(at 59.69 115.57 0)
 		(unit 1)
@@ -6800,7 +7036,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 55.88 137.16 0)
+		(at 55.88 146.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6811,7 +7047,7 @@
 		(fields_autoplaced yes)
 		(uuid "9d5cff10-30c8-46a1-b2fc-cced22bde689")
 		(property "Reference" "#PWR09"
-			(at 55.88 143.51 0)
+			(at 55.88 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6822,7 +7058,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 55.88 142.24 0)
+			(at 55.88 151.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6832,7 +7068,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 55.88 137.16 0)
+			(at 55.88 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6843,7 +7079,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 137.16 0)
+			(at 55.88 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6854,7 +7090,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 55.88 137.16 0)
+			(at 55.88 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8382,6 +8618,87 @@
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 50.8 139.7 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f532bdd5-6ce9-4e30-9299-f3523123a3f7")
+		(property "Reference" "R48"
+			(at 49.276 142.748 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 49.276 145.288 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 137.922 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 50.8 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "59733e6e-d8a8-4aad-accf-607ec080b1c4")
+		)
+		(pin "2"
+			(uuid "479728b4-f5e9-4aaa-8033-9b91b3343cec")
+		)
+		(instances
+			(project "ROC_V1"
+				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
+					(reference "R48")
 					(unit 1)
 				)
 			)

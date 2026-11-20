@@ -6139,7 +6139,7 @@
 	)
 	(text "master switched and reset buttons\n"
 		(exclude_from_sim no)
-		(at 447.548 378.968 0)
+		(at 440.182 378.46 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8174,7 +8174,7 @@
 		(uuid "251ef98a-1a3b-4d0d-a86b-09b83fdfff37")
 	)
 	(label "LVMS-"
-		(at 462.28 393.7 90)
+		(at 469.9 392.43 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8204,7 +8204,7 @@
 		(uuid "3e67e0b9-af68-45a4-a218-790db4c27b8a")
 	)
 	(label "LVMS+"
-		(at 458.47 393.7 90)
+		(at 466.09 392.43 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9898,6 +9898,17 @@
 			)
 		)
 	)
+	(hierarchical_label "GLV_MP +"
+		(shape input)
+		(at 422.91 383.54 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "067023f7-6beb-4504-bb43-4d8eb43b478c")
+	)
 	(hierarchical_label "TSSI RED -"
 		(shape input)
 		(at 452.12 353.06 270)
@@ -9921,9 +9932,9 @@
 		)
 		(uuid "19cff71f-341e-42cf-85f0-418287b34251")
 	)
-	(hierarchical_label "BMS_RESET"
+	(hierarchical_label "BMS_RESET -"
 		(shape input)
-		(at 430.53 384.81 270)
+		(at 430.53 383.54 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9958,7 +9969,7 @@
 	)
 	(hierarchical_label "HVMS-"
 		(shape input)
-		(at 445.77 392.43 90)
+		(at 453.39 391.16 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10000,6 +10011,17 @@
 		)
 		(uuid "466310fa-885b-47a7-acc3-82d0fe142461")
 	)
+	(hierarchical_label "BSPD_RESET +"
+		(shape input)
+		(at 436.88 383.54 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "49fae222-90ce-4e0f-a996-96632cc6e553")
+	)
 	(hierarchical_label "BMS_FAULT_LED -"
 		(shape input)
 		(at 414.02 350.52 270)
@@ -10035,9 +10057,9 @@
 		)
 		(uuid "5ca20b47-f86e-49b3-9a23-0af714d2ceca")
 	)
-	(hierarchical_label "IMD_RESET"
+	(hierarchical_label "IMD_RESET -"
 		(shape input)
-		(at 439.42 384.81 270)
+		(at 447.04 383.54 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10048,7 +10070,7 @@
 	)
 	(hierarchical_label "HVMS+"
 		(shape input)
-		(at 450.85 392.43 90)
+		(at 458.47 391.16 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10080,9 +10102,9 @@
 		)
 		(uuid "9b73156a-5e8a-4bc3-a901-c56f4437f17e")
 	)
-	(hierarchical_label "BSPD_RESET"
+	(hierarchical_label "BSPD_RESET -"
 		(shape input)
-		(at 435.61 384.81 270)
+		(at 439.42 383.54 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10136,6 +10158,50 @@
 			(justify right)
 		)
 		(uuid "b6f68600-2c65-4698-a94f-d06541cfa41e")
+	)
+	(hierarchical_label "GLV_MP -"
+		(shape input)
+		(at 420.37 383.54 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cb2f582e-7c46-4788-bff5-3264fa232461")
+	)
+	(hierarchical_label "BMS_RESET +"
+		(shape input)
+		(at 427.99 383.54 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d7679e6d-8e7d-4c21-98fe-9360696df0a0")
+	)
+	(hierarchical_label "IMD_RESET +"
+		(shape input)
+		(at 444.5 383.54 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e0542bd7-f5ff-4f1a-ae69-0e74f82ac106")
+	)
+	(hierarchical_label "TS_MP"
+		(shape input)
+		(at 416.56 383.54 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e162d3cb-9bee-444b-999e-a1847712ea3c")
 	)
 	(symbol
 		(lib_id "Device:Crystal")
