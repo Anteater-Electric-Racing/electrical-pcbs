@@ -6499,6 +6499,16 @@
 		)
 		(uuid "8035b562-7675-4298-8fa2-c032a00b41b8")
 	)
+	(text "RTM comes from HV Board\n"
+		(exclude_from_sim no)
+		(at 69.85 171.958 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "81204b5a-8be3-4457-9f42-b16721db5721")
+	)
 	(text "Adafruit ESP32-S3 Feather (5323)"
 		(exclude_from_sim no)
 		(at 77.216 23.368 0)
@@ -7312,16 +7322,6 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 156.21) (xy 48.26 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3cc374c9-96ce-428a-b08f-754830c9678c")
-	)
-	(wire
-		(pts
 			(xy 237.49 238.76) (xy 222.25 238.76)
 		)
 		(stroke
@@ -7452,16 +7452,6 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 140.97) (xy 48.26 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f5c66dc-eea6-4f5f-9b5c-b0c5aade8801")
-	)
-	(wire
-		(pts
 			(xy 204.47 219.71) (xy 209.55 219.71)
 		)
 		(stroke
@@ -7479,16 +7469,6 @@
 			(type default)
 		)
 		(uuid "5371f4dd-2d5b-4984-8c6f-a3bef1fe6334")
-	)
-	(wire
-		(pts
-			(xy 36.83 151.13) (xy 48.26 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53981699-4031-4317-a0e7-03c8e9d054b9")
 	)
 	(wire
 		(pts
@@ -7682,16 +7662,6 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 146.05) (xy 48.26 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d7766c9-af3c-4f2c-a4b3-bc868f88d96f")
-	)
-	(wire
-		(pts
 			(xy 307.34 57.15) (xy 316.23 57.15)
 		)
 		(stroke
@@ -7809,16 +7779,6 @@
 			(type default)
 		)
 		(uuid "81934d03-4fb9-4749-b6e4-329b39aeb5fb")
-	)
-	(wire
-		(pts
-			(xy 38.1 161.29) (xy 48.26 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "851f73fe-6e5d-4c31-9e9c-e90472b73319")
 	)
 	(wire
 		(pts
@@ -7999,16 +7959,6 @@
 			(type default)
 		)
 		(uuid "a1b81eeb-ed43-497b-9439-3fb8ffec60ed")
-	)
-	(wire
-		(pts
-			(xy 36.83 166.37) (xy 48.26 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a486dea7-5686-4162-8482-487c0f82134d")
 	)
 	(wire
 		(pts
@@ -9130,78 +9080,6 @@
 		)
 		(uuid "fe08a92d-cf39-4f43-95ee-9d1b8fc95238")
 	)
-	(global_label "BMS_IMD_FAULT"
-		(shape input)
-		(at 48.26 146.05 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "19398fd5-530e-4c6b-81f2-adae6eb221c4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 65.9409 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "BMS_IMD_FAULT"
-		(shape input)
-		(at 36.83 146.05 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1bf1b3bd-0947-4bb9-859a-96a6f1a11e63")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 19.1491 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "BSPD_LED"
-		(shape input)
-		(at 48.26 161.29 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "30a95873-41e8-492a-845f-480a88b9f6d6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 60.6794 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "BRAKE 1"
 		(shape input)
 		(at 50.8 53.34 180)
@@ -9226,102 +9104,6 @@
 			)
 		)
 	)
-	(global_label "LAMP_CHECK"
-		(shape input)
-		(at 36.83 140.97 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "42a854be-db07-4061-abb3-35bda0dc934f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 21.7496 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "BMS_LED"
-		(shape input)
-		(at 50.8 83.82 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "48ba47f9-fc77-42ae-86bd-4f432689b937")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.4692 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "IMD_LED"
-		(shape input)
-		(at 48.26 156.21 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4f086bd1-1dc8-4b4c-9b6b-dc00062546e3")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 58.9861 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "IMD_LED"
-		(shape input)
-		(at 88.9 38.1 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5053af30-6c1b-4e37-a45d-6dbc17e3042f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 99.6261 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "BRAKE -"
 		(shape input)
 		(at 189.23 256.54 270)
@@ -9343,150 +9125,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-	)
-	(global_label "RTM"
-		(shape input)
-		(at 36.83 166.37 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "74585c21-12b9-4153-a667-08c6f450fdab")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 30.1558 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "BSPD_LED"
-		(shape input)
-		(at 38.1 161.29 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "77d41464-613d-4b09-b7e6-42b8e0c6ceb6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 25.6806 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "BSPD_LED"
-		(shape input)
-		(at 88.9 43.18 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7a31aab7-4c96-4420-9c7f-bc5da08b8ca3")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 101.3194 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "BMS_LED"
-		(shape input)
-		(at 48.26 151.13 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "843d563b-421e-4e12-9972-16edae3301b6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 59.5908 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "LAMP_CHECK"
-		(shape input)
-		(at 88.9 33.02 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "933d3e8e-7605-4a5b-9f9e-5548559d1976")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 103.9804 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "LAMP_CHECK"
-		(shape input)
-		(at 48.26 140.97 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9cf0919e-9829-4d4c-8e3f-30dd1a5911bf")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 63.3404 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 	)
@@ -9538,102 +9176,6 @@
 			)
 		)
 	)
-	(global_label "3.3V"
-		(shape input)
-		(at 123.19 99.06 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "bafd69c5-0f57-484d-a521-bbbfd9aef240")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 130.2876 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "IMD_LED"
-		(shape input)
-		(at 36.83 156.21 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e50bd5e8-40e9-4f4c-bb80-dbc60a786023")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 26.1039 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "RTM"
-		(shape input)
-		(at 48.26 166.37 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e63c64b6-9c18-4c74-97b0-b3b1e71f0b17")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 54.9342 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "BMS_LED"
-		(shape input)
-		(at 36.83 151.13 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f2558ee2-07c6-4c41-ae94-de2191626ea6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 25.4992 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(hierarchical_label "GLV_MP +"
 		(shape input)
 		(at 101.6 256.54 270)
@@ -9655,6 +9197,17 @@
 			(justify right)
 		)
 		(uuid "086d7997-57f6-4cb9-addb-ff1d25b4f4ef")
+	)
+	(hierarchical_label "IMD_LED"
+		(shape input)
+		(at 88.9 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "11c810a8-dc02-4542-8c23-971dd7eb79a7")
 	)
 	(hierarchical_label "TSSI RED -"
 		(shape input)
@@ -9860,6 +9413,17 @@
 		)
 		(uuid "9b73156a-5e8a-4bc3-a901-c56f4437f17e")
 	)
+	(hierarchical_label "BSPD_LED"
+		(shape input)
+		(at 88.9 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9c210e24-813d-408a-919b-85a67a072b89")
+	)
 	(hierarchical_label "BSPD_RESET -"
 		(shape input)
 		(at 118.11 256.54 270)
@@ -9905,6 +9469,17 @@
 			(justify right)
 		)
 		(uuid "b3052ce8-05e2-4188-a7a3-f7aea61537f0")
+	)
+	(hierarchical_label "BMS_LED"
+		(shape input)
+		(at 50.8 83.82 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b3f4ffae-adcf-406f-80bb-3aa0c0545901")
 	)
 	(hierarchical_label "TSSI_GREEN +"
 		(shape input)
@@ -9993,6 +9568,17 @@
 			(justify left)
 		)
 		(uuid "e52b2003-d075-40dc-8842-3b020af32f11")
+	)
+	(hierarchical_label "LAMP_CHECK"
+		(shape input)
+		(at 88.9 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e81577ff-20a0-4b60-9229-7cfcc84493e3")
 	)
 	(hierarchical_label "IMD_FAULT_SIGNAL"
 		(shape input)
@@ -11659,6 +11245,85 @@
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c"
 					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 123.19 99.06 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3d083678-a1bd-49ac-a59c-a6fee79d51ad")
+		(property "Reference" "#PWR061"
+			(at 119.38 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 127 99.0599 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 123.19 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "233511f4-0509-44bd-b3c3-99ae102af45a")
+		)
+		(instances
+			(project "ROC_V1"
+				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c"
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -18740,7 +18405,7 @@
 		)
 	)
 	(sheet
-		(at 47.752 137.16)
+		(at 23.622 135.89)
 		(size 41.148 32.258)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18755,7 +18420,7 @@
 		)
 		(uuid "82463a24-1cbe-48d9-b1a9-86a7a119fb6d")
 		(property "Sheetname" "LED"
-			(at 48.514 136.144 0)
+			(at 24.384 134.874 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18768,7 +18433,7 @@
 			)
 		)
 		(property "Sheetfile" "LED.kicad_sch"
-			(at 47.752 170.0026 0)
+			(at 23.622 168.7326 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18776,6 +18441,186 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "BMS_FAULT_LED +" input
+			(at 64.77 154.94 0)
+			(uuid "668db2ba-f59a-4256-9e3a-a83709d7d583")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BMS_FAULT_LED -" input
+			(at 64.77 156.21 0)
+			(uuid "a66d32a6-6f93-4e33-be6f-2e0b1a1a1c61")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BMS_LED" input
+			(at 23.622 154.94 180)
+			(uuid "5a2b1831-b80e-4c90-9c04-f6bf7b837ec0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BSPD_FAULT_LED +" input
+			(at 64.77 165.1 0)
+			(uuid "d65b628c-757d-4108-8917-be8c1c3765ca")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BSPD_FAULT_LED -" input
+			(at 64.77 166.37 0)
+			(uuid "5485bc7d-58eb-4c17-abbf-9ec6f668835c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BSPD_LED" input
+			(at 23.622 166.37 180)
+			(uuid "6365e7f8-85e9-42f2-bd43-9dff9e359c99")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IMD_FAULT_LED +" input
+			(at 64.77 160.02 0)
+			(uuid "ee64f106-fd42-4b08-a84b-69d435b13c6e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "IMD_FAULT_LED -" input
+			(at 64.77 161.29 0)
+			(uuid "8cfd0327-8671-4097-a91e-49b347ced40a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "IMD_LED" input
+			(at 23.622 160.02 180)
+			(uuid "7533312f-fcf4-4139-9646-2f4662926136")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LAMP_CHECK" input
+			(at 23.622 140.97 180)
+			(uuid "a370ba69-5ddd-4940-85bb-76a9406d5926")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RTM" input
+			(at 23.622 137.16 180)
+			(uuid "716cd8c0-b6d6-419a-8f2c-d73fd6e59b33")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RTML AMBER +" input
+			(at 64.77 137.16 0)
+			(uuid "c4c5a761-241f-46af-97be-f5f5de0e946d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RTML AMBER -" input
+			(at 64.77 138.43 0)
+			(uuid "89611d28-09c8-44cf-8377-cc39f831ae57")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TSSI" input
+			(at 23.622 146.05 180)
+			(uuid "143040cd-415e-4759-9f2a-22d453b30e69")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "TSSI RED +" input
+			(at 64.77 147.32 0)
+			(uuid "253fbb63-218c-4c89-893b-c07d1aed66be")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TSSI RED -" input
+			(at 64.77 148.59 0)
+			(uuid "db8549af-5109-41c1-b76f-364377a86e80")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TSSI_GREEN +" input
+			(at 64.77 143.51 0)
+			(uuid "5804a852-ea2e-468c-ab90-a0169e64e174")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TSSI_GREEN -" input
+			(at 64.77 144.78 0)
+			(uuid "4ad026dc-7107-47d6-88dc-d62020b68a7b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
