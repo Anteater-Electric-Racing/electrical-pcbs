@@ -1883,7 +1883,7 @@
 	)
 	(text "OR GATE "
 		(exclude_from_sim no)
-		(at 207.518 36.068 0)
+		(at 210.058 37.338 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -3784,8 +3784,8 @@
 		)
 		(uuid "e8edd42e-6142-4272-a084-8f051f6add57")
 	)
-	(hierarchical_label "TSSI RED +"
-		(shape input)
+	(hierarchical_label "TSSI_RED+"
+		(shape output)
 		(at 262.89 40.64 90)
 		(effects
 			(font
@@ -3796,8 +3796,8 @@
 		)
 		(uuid "095ef091-4231-4c28-ae24-942c0f2a4fd8")
 	)
-	(hierarchical_label "TSSI_GREEN +"
-		(shape input)
+	(hierarchical_label "TSSI_GREEN+"
+		(shape output)
 		(at 262.89 60.96 90)
 		(effects
 			(font
@@ -3829,8 +3829,8 @@
 		)
 		(uuid "109ccf5e-1674-48d9-b530-35f50f0d3941")
 	)
-	(hierarchical_label "RTML AMBER +"
-		(shape input)
+	(hierarchical_label "RTML_AMBER+"
+		(shape output)
 		(at 110.49 176.53 270)
 		(effects
 			(font
@@ -3841,8 +3841,8 @@
 		)
 		(uuid "2de9736d-2638-4af5-8c8b-5a2bd0edc7b0")
 	)
-	(hierarchical_label "BSPD_FAULT_LED +"
-		(shape input)
+	(hierarchical_label "BSPD_FAULT_LED+"
+		(shape output)
 		(at 237.49 140.97 270)
 		(effects
 			(font
@@ -3885,8 +3885,8 @@
 		)
 		(uuid "4b1569c8-6de4-41fd-bbdd-3808102b13a8")
 	)
-	(hierarchical_label "TSSI RED -"
-		(shape input)
+	(hierarchical_label "TSSI_RED-"
+		(shape output)
 		(at 218.44 54.61 180)
 		(effects
 			(font
@@ -3897,8 +3897,8 @@
 		)
 		(uuid "5909e20d-9e4c-4c7c-8df3-8958e245ea07")
 	)
-	(hierarchical_label "BMS_FAULT_LED +"
-		(shape input)
+	(hierarchical_label "BMS_FAULT_LED+"
+		(shape output)
 		(at 237.49 92.71 270)
 		(effects
 			(font
@@ -3919,8 +3919,8 @@
 		)
 		(uuid "78e7d8be-20af-451c-bd7d-40e086ae0bca")
 	)
-	(hierarchical_label "TSSI_GREEN -"
-		(shape input)
+	(hierarchical_label "TSSI_GREEN-"
+		(shape output)
 		(at 218.44 59.69 180)
 		(effects
 			(font
@@ -3941,8 +3941,8 @@
 		)
 		(uuid "9b56203a-1267-407e-a300-71d4ab8a66a3")
 	)
-	(hierarchical_label "IMD_FAULT_LED +"
-		(shape input)
+	(hierarchical_label "IMD_FAULT_LED+"
+		(shape output)
 		(at 237.49 118.11 270)
 		(effects
 			(font
@@ -3974,8 +3974,8 @@
 		)
 		(uuid "ba6bdca5-d310-49fd-ba68-27c0a9b24b6b")
 	)
-	(hierarchical_label "BSPD_FAULT_LED -"
-		(shape input)
+	(hierarchical_label "BSPD_FAULT_LED-"
+		(shape output)
 		(at 274.32 115.57 180)
 		(effects
 			(font
@@ -3985,8 +3985,8 @@
 		)
 		(uuid "cb21d7d1-4cbe-4e78-961e-09e3a35d2310")
 	)
-	(hierarchical_label "IMD_FAULT_LED -"
-		(shape input)
+	(hierarchical_label "IMD_FAULT_LED-"
+		(shape output)
 		(at 274.32 110.49 180)
 		(effects
 			(font
@@ -3996,8 +3996,8 @@
 		)
 		(uuid "d7281fcd-8065-4cc0-8806-d2eb9347d29d")
 	)
-	(hierarchical_label "RTML AMBER -"
-		(shape input)
+	(hierarchical_label "RTML_AMBER-"
+		(shape output)
 		(at 135.89 181.61 180)
 		(effects
 			(font
@@ -4008,8 +4008,8 @@
 		)
 		(uuid "ec7bfd99-b8bb-4c71-972b-753655bd8fc4")
 	)
-	(hierarchical_label "BMS_FAULT_LED -"
-		(shape input)
+	(hierarchical_label "BMS_FAULT_LED-"
+		(shape output)
 		(at 274.32 105.41 180)
 		(effects
 			(font
@@ -4031,7 +4031,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "032db45e-e513-4b17-b7b9-c65f4b4095f0")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR044"
 			(at 63.5 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -4091,7 +4091,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "#PWR02")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -4109,7 +4109,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0ae47e2d-3754-4635-b3b5-b40dfe5fac25")
-		(property "Reference" "C18"
+		(property "Reference" "C19"
 			(at 59.69 109.2199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4131,7 +4131,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 56.8452 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -4173,7 +4173,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "C18")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -4191,7 +4191,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0bd96f8e-21a4-490a-baaa-574dbe1c5d94")
-		(property "Reference" "R4"
+		(property "Reference" "R25"
 			(at 273.05 54.61 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4211,7 +4211,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Anteater - Resistor:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 273.05 59.182 90)
 			(hide yes)
 			(show_name no)
@@ -4253,7 +4253,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "R4")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -4271,7 +4271,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0d8a9f9f-e3b0-4733-b2c1-81f1d2abdded")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR052"
 			(at 208.28 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -4331,7 +4331,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "#PWR014")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -4349,7 +4349,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0ea1d32a-f571-48a4-8ede-b460f5cfe580")
-		(property "Reference" "R21"
+		(property "Reference" "R23"
 			(at 80.01 52.0699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4371,7 +4371,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 75.692 53.34 90)
 			(hide yes)
 			(show_name no)
@@ -4413,7 +4413,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "R21")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -4430,7 +4430,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0ee64308-4f02-4a00-8789-d0566e38514f")
-		(property "Reference" "R28"
+		(property "Reference" "R19"
 			(at 241.3 39.37 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4450,7 +4450,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 241.3 35.052 90)
 			(hide yes)
 			(show_name no)
@@ -4492,7 +4492,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "R28")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -4510,7 +4510,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0fd62a78-7ec8-4f57-a85a-424bcfbcd656")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR048"
 			(at 125.73 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -4570,7 +4570,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "#PWR025")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -4587,7 +4587,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "12a4d399-5d5e-45c3-b45c-4502f51b0b97")
-		(property "Reference" "R47"
+		(property "Reference" "R24"
 			(at 82.296 61.468 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4609,7 +4609,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 83.82 56.642 90)
 			(hide yes)
 			(show_name no)
@@ -4651,7 +4651,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "R47")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -4669,7 +4669,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "17a4b1ab-6e14-4290-947c-4e2875442591")
-		(property "Reference" "#PWR062"
+		(property "Reference" "#PWR056"
 			(at 88.9 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -4729,7 +4729,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "#PWR062")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -4747,7 +4747,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "29167371-d79c-402d-873a-95cdd21a8a41")
-		(property "Reference" "R14"
+		(property "Reference" "R20"
 			(at 35.56 39.3699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4769,7 +4769,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 31.242 40.64 90)
 			(hide yes)
 			(show_name no)
@@ -4811,7 +4811,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "R14")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -4829,7 +4829,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2a623b08-f8e1-480a-b2d9-7db20b1bde59")
-		(property "Reference" "R7"
+		(property "Reference" "R31"
 			(at 245.11 111.76 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4849,7 +4849,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Anteater - Resistor:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 245.11 116.332 90)
 			(hide yes)
 			(show_name no)
@@ -4891,7 +4891,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "R7")
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -4909,7 +4909,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2b381ba4-a729-4baa-b919-a18764e31cef")
-		(property "Reference" "#PWR066"
+		(property "Reference" "#PWR040"
 			(at 251.46 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -4969,7 +4969,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "#PWR066")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -4986,7 +4986,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2b7f98f9-ae98-4604-8d99-f890de4c5f62")
-		(property "Reference" "U5"
+		(property "Reference" "U11"
 			(at 57.15 156.21 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5181,7 +5181,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "U5")
+					(reference "U11")
 					(unit 1)
 				)
 			)
@@ -5199,7 +5199,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2f42ba64-c11e-42c2-8e5d-3e6f13946082")
-		(property "Reference" "R16"
+		(property "Reference" "R29"
 			(at 205.74 110.4899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5221,7 +5221,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 201.422 111.76 90)
 			(hide yes)
 			(show_name no)
@@ -5263,7 +5263,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "R16")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -5281,7 +5281,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "306e2d79-cac8-469a-9981-85615137b0e3")
-		(property "Reference" "C16"
+		(property "Reference" "C17"
 			(at 93.98 33.0199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5303,7 +5303,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 91.1352 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -5345,7 +5345,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "C16")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -5363,7 +5363,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3090566f-cc56-435e-b096-106450d464bf")
-		(property "Reference" "R15"
+		(property "Reference" "R26"
 			(at 205.74 86.3599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5385,7 +5385,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 201.422 87.63 90)
 			(hide yes)
 			(show_name no)
@@ -5427,7 +5427,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "R15")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -5444,7 +5444,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3244010b-9d43-45c7-9511-0035b4ce3d98")
-		(property "Reference" "U7"
+		(property "Reference" "U8"
 			(at 209.55 26.67 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5639,7 +5639,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "U7")
+					(reference "U8")
 					(unit 1)
 				)
 			)
@@ -5657,7 +5657,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "334355f6-22c3-4da6-a3d0-857782a315ba")
-		(property "Reference" "R5"
+		(property "Reference" "R37"
 			(at 116.84 170.18 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5677,7 +5677,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Anteater - Resistor:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 116.84 174.752 90)
 			(hide yes)
 			(show_name no)
@@ -5719,7 +5719,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "R5")
+					(reference "R37")
 					(unit 1)
 				)
 			)
@@ -5736,7 +5736,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3bb7703b-35ae-42f2-8b82-070ea65dc959")
-		(property "Reference" "C19"
+		(property "Reference" "C20"
 			(at 92.202 133.858 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5756,7 +5756,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 92.71 131.1148 0)
 			(hide yes)
 			(show_name no)
@@ -5798,7 +5798,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "C19")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -5816,7 +5816,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3bfdc8dd-53b7-4f24-9f5d-f49d58049744")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR043"
 			(at 234.95 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -5876,7 +5876,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "#PWR065")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -5894,7 +5894,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3d0c25bb-2a4c-4cac-9eba-4ded7dd3bbdc")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR049"
 			(at 208.28 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -5954,7 +5954,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "#PWR013")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -5972,7 +5972,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "40d2f27d-efca-439a-95c4-63b77872ee57")
-		(property "Reference" "R2"
+		(property "Reference" "R28"
 			(at 38.1 106.6799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5994,7 +5994,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Anteater - Resistor:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 37.338 107.95 90)
 			(hide yes)
 			(show_name no)
@@ -6036,7 +6036,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "R2")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -6054,7 +6054,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "41b4c3c6-01be-4e4b-93f7-c8480f356faf")
-		(property "Reference" "C6"
+		(property "Reference" "C16"
 			(at 242.57 22.86 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6064,7 +6064,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1 u"
+		(property "Value" "0.1uF"
 			(at 242.57 25.4 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6074,7 +6074,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Anteater - Logic IC:SN74LVC1G32DBVR"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 238.76 31.4452 0)
 			(hide yes)
 			(show_name no)
@@ -6116,7 +6116,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "C6")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -6133,7 +6133,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "48647745-cfee-4243-a1a2-79eba057b5a9")
-		(property "Reference" "C17"
+		(property "Reference" "C18"
 			(at 131.318 57.15 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6195,7 +6195,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "C17")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -6213,7 +6213,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4c03c89d-e7a4-456d-9880-13e2bd3b206c")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR060"
 			(at 139.7 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -6273,7 +6273,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "#PWR046")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -6291,7 +6291,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "520d6b3e-3847-4612-8c25-83ff0bbbdd8c")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR041"
 			(at 278.13 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -6351,7 +6351,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "#PWR031")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -6369,7 +6369,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "593ec75a-1dc0-4539-b9ab-e48cfb8cfe20")
-		(property "Reference" "U10"
+		(property "Reference" "U9"
 			(at 127 31.75 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6573,7 +6573,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "U10")
+					(reference "U9")
 					(unit 1)
 				)
 			)
@@ -6591,7 +6591,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "59d825cc-c0f6-4aa2-beb4-ec7f33c640d9")
-		(property "Reference" "#PWR069"
+		(property "Reference" "#PWR050"
 			(at 35.56 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -6651,7 +6651,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "#PWR069")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -6669,7 +6669,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "60f16e3f-c9bc-4bd1-aa47-2e4acf002a86")
-		(property "Reference" "#PWR064"
+		(property "Reference" "#PWR057"
 			(at 109.22 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -6730,7 +6730,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "#PWR064")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -6748,7 +6748,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "62a18c25-8c1d-4ec8-a8b4-fcd8d1c06611")
-		(property "Reference" "#PWR071"
+		(property "Reference" "#PWR037"
 			(at 49.53 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -6808,7 +6808,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "#PWR071")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -6826,7 +6826,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6c1bbc8f-bddc-493b-b4d5-3d25d1f8a2e9")
-		(property "Reference" "#PWR070"
+		(property "Reference" "#PWR058"
 			(at 125.73 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -6886,7 +6886,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "#PWR070")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -6904,7 +6904,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "74db93da-b010-465a-8ecb-486b33f9662c")
-		(property "Reference" "R22"
+		(property "Reference" "R32"
 			(at 46.99 133.3499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6926,7 +6926,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 42.672 134.62 90)
 			(hide yes)
 			(show_name no)
@@ -6968,7 +6968,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "R22")
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -6986,7 +6986,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "76393b1e-671b-4275-b760-0f736d0a9ad6")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR046"
 			(at 222.25 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -7046,7 +7046,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "#PWR017")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -7064,7 +7064,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "77686f50-1ccb-448b-810d-aaff11d7c7ee")
-		(property "Reference" "U11"
+		(property "Reference" "U10"
 			(at 92.71 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7268,7 +7268,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "U11")
+					(reference "U10")
 					(unit 1)
 				)
 			)
@@ -7286,7 +7286,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "816ce608-2e6c-4818-bd22-e86b844322a0")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR059"
 			(at 82.55 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -7346,7 +7346,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "#PWR021")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -7364,7 +7364,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "877be678-0b6d-40cf-afe7-26eb6b88976c")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR053"
 			(at 35.56 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -7424,7 +7424,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "#PWR08")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -7442,7 +7442,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "895cd806-c36d-4e58-b0a6-c8bcbca37b2c")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR051"
 			(at 279.4 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -7502,7 +7502,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "#PWR060")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -7519,7 +7519,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8a3eaff9-dc82-4bcd-8466-3706ade93797")
-		(property "Reference" "Q4"
+		(property "Reference" "Q5"
 			(at 29.464 128.016 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7708,7 +7708,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "Q4")
+					(reference "Q5")
 					(unit 1)
 				)
 			)
@@ -7726,7 +7726,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8dadeba1-1e36-497d-bcd9-6b67c4bb1480")
-		(property "Reference" "R8"
+		(property "Reference" "R35"
 			(at 245.11 134.62 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7746,7 +7746,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Anteater - Resistor:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 245.11 139.192 90)
 			(hide yes)
 			(show_name no)
@@ -7788,7 +7788,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "R8")
+					(reference "R35")
 					(unit 1)
 				)
 			)
@@ -7806,7 +7806,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "92128ce3-179f-4232-892e-c71aeffa0e59")
-		(property "Reference" "R1"
+		(property "Reference" "R18"
 			(at 59.69 17.78 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7826,7 +7826,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Anteater - Resistor:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 59.69 22.352 90)
 			(hide yes)
 			(show_name no)
@@ -7868,7 +7868,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "R1")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -7885,7 +7885,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "930e8a7d-d1e9-4c20-b8a8-d818ded58c8a")
-		(property "Reference" "R27"
+		(property "Reference" "R36"
 			(at 93.98 168.91 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7905,7 +7905,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 93.98 164.592 90)
 			(hide yes)
 			(show_name no)
@@ -7947,7 +7947,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "R27")
+					(reference "R36")
 					(unit 1)
 				)
 			)
@@ -7965,7 +7965,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a532c62-09d6-4e9d-ad9e-b91fa14af3a7")
-		(property "Reference" "Q5"
+		(property "Reference" "Q7"
 			(at 102.87 180.34 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8153,7 +8153,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "Q5")
+					(reference "Q7")
 					(unit 1)
 				)
 			)
@@ -8171,7 +8171,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a6a27d5-d975-4e78-ae85-a76fcf8d4eef")
-		(property "Reference" "C5"
+		(property "Reference" "C21"
 			(at 95.25 152.4 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8191,7 +8191,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Anteater - Logic IC:SN74LVC1G32DBVR"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 91.44 160.9852 0)
 			(hide yes)
 			(show_name no)
@@ -8233,7 +8233,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "C5")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -8251,7 +8251,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9d5cff10-30c8-46a1-b2fc-cced22bde689")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR054"
 			(at 55.88 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -8311,7 +8311,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "#PWR09")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -8535,7 +8535,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a83d4b51-eb08-4bc5-8441-cafbf317d2ca")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR045"
 			(at 90.17 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -8595,7 +8595,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "#PWR011")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -8613,7 +8613,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "abaa2cb5-0cd1-47ba-8299-8b8c7b36319f")
-		(property "Reference" "R6"
+		(property "Reference" "R27"
 			(at 245.11 86.36 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8633,7 +8633,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Anteater - Resistor:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 245.11 90.932 90)
 			(hide yes)
 			(show_name no)
@@ -8675,7 +8675,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "R6")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -8693,7 +8693,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b91c2742-778c-4745-8f7d-51d9de047ca9")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR042"
 			(at 33.02 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -8753,7 +8753,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "#PWR04")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -8771,7 +8771,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b9792a69-72ca-482c-b4c8-ca7e407051bd")
-		(property "Reference" "Q6"
+		(property "Reference" "Q3"
 			(at 217.17 96.52 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8959,7 +8959,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "Q6")
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -8977,7 +8977,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c0915f7f-3cca-47b8-9e88-4022c0f054ca")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR039"
 			(at 160.02 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -9037,7 +9037,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "#PWR022")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -9054,7 +9054,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c8c428fe-1297-4f75-88fa-4ff9833c571d")
-		(property "Reference" "R3"
+		(property "Reference" "R22"
 			(at 271.78 34.29 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9074,7 +9074,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Anteater - Resistor:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 271.78 38.862 90)
 			(hide yes)
 			(show_name no)
@@ -9116,7 +9116,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "R3")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -9133,7 +9133,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d3b01ebb-4b3d-4e09-a358-aa20290a9a48")
-		(property "Reference" "R37"
+		(property "Reference" "R30"
 			(at 41.656 113.792 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9155,7 +9155,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 46.482 115.57 90)
 			(hide yes)
 			(show_name no)
@@ -9197,7 +9197,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "R37")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -9215,7 +9215,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db2e9506-c331-4c45-8288-c53701e0a872")
-		(property "Reference" "Q8"
+		(property "Reference" "Q6"
 			(at 217.17 144.78 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9403,7 +9403,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "Q8")
+					(reference "Q6")
 					(unit 1)
 				)
 			)
@@ -9421,7 +9421,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e268fd0d-0ec3-47c3-b624-a375d355243d")
-		(property "Reference" "#PWR063"
+		(property "Reference" "#PWR038"
 			(at 234.95 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -9481,7 +9481,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "#PWR063")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -9499,7 +9499,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e40ec051-8083-444b-b188-382a8e88c70b")
-		(property "Reference" "R17"
+		(property "Reference" "R33"
 			(at 205.74 133.3499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9521,7 +9521,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 201.422 134.62 90)
 			(hide yes)
 			(show_name no)
@@ -9563,7 +9563,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "R17")
+					(reference "R33")
 					(unit 1)
 				)
 			)
@@ -9581,7 +9581,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ed815fff-34ea-4a85-aa63-f6f175b22599")
-		(property "Reference" "#PWR072"
+		(property "Reference" "#PWR047"
 			(at 248.92 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -9641,7 +9641,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "#PWR072")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -9659,7 +9659,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f17f6136-4e54-4121-8b64-baebdc9ed01f")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR055"
 			(at 208.28 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -9719,7 +9719,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "#PWR015")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -9736,7 +9736,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f532bdd5-6ce9-4e30-9299-f3523123a3f7")
-		(property "Reference" "R48"
+		(property "Reference" "R34"
 			(at 49.276 142.748 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9758,7 +9758,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 50.8 137.922 90)
 			(hide yes)
 			(show_name no)
@@ -9800,7 +9800,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "R48")
+					(reference "R34")
 					(unit 1)
 				)
 			)
@@ -10025,7 +10025,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f7e5f61e-08cc-4450-872a-13b2a342608c")
-		(property "Reference" "Q7"
+		(property "Reference" "Q4"
 			(at 217.17 121.92 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10213,7 +10213,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "Q7")
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -10230,7 +10230,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fa46acb3-ae06-4a67-8ec0-0aee1bc2e081")
-		(property "Reference" "R36"
+		(property "Reference" "R21"
 			(at 75.438 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10252,7 +10252,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 79.502 40.64 90)
 			(hide yes)
 			(show_name no)
@@ -10294,7 +10294,7 @@
 		(instances
 			(project "ROC_V1"
 				(path "/19cb6025-5afe-4cbe-82f8-7b7ab9da466c/82463a24-1cbe-48d9-b1a9-86a7a119fb6d"
-					(reference "R36")
+					(reference "R21")
 					(unit 1)
 				)
 			)

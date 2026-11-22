@@ -310,7 +310,7 @@
     "annotate_start_num": 0,
     "annotation": {
       "method": 0,
-      "sort_order": 0
+      "sort_order": 1
     },
     "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
@@ -374,12 +374,612 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "A_MAX",
+          "name": "A_MAX",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Availability",
+          "name": "Availability",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "BALL_COLUMNS",
+          "name": "BALL_COLUMNS",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "BALL_ROWS",
+          "name": "BALL_ROWS",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "BODY_DIAMETER",
+          "name": "BODY_DIAMETER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "B_MAX",
+          "name": "B_MAX",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "B_MIN",
+          "name": "B_MIN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "B_NOM",
+          "name": "B_NOM",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "CENTROID_NOT_SPECIFIED",
+          "name": "CENTROID_NOT_SPECIFIED",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Check_prices",
+          "name": "Check_prices",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Current_A",
+          "name": "Current_A",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "D1_MAX",
+          "name": "D1_MAX",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "D1_MIN",
+          "name": "D1_MIN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "D1_NOM",
+          "name": "D1_NOM",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "D2_NOM",
+          "name": "D2_NOM",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DATASHEET_URL",
+          "name": "DATASHEET_URL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DEVICE_CLASS_L1",
+          "name": "DEVICE_CLASS_L1",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DEVICE_CLASS_L2",
+          "name": "DEVICE_CLASS_L2",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DEVICE_CLASS_L3",
+          "name": "DEVICE_CLASS_L3",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DIGIKEY_DESCRIPTION",
+          "name": "DIGIKEY_DESCRIPTION",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DIGIKEY_PART_NUMBER",
+          "name": "DIGIKEY_PART_NUMBER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DMAX",
+          "name": "DMAX",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DMIN",
+          "name": "DMIN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DNOM",
+          "name": "DNOM",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "D_MAX",
+          "name": "D_MAX",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "D_MIN",
+          "name": "D_MIN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "D_NOM",
+          "name": "D_NOM",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "E2_NOM",
+          "name": "E2_NOM",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "EMAX",
+          "name": "EMAX",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "EMIN",
+          "name": "EMIN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "ENOM",
+          "name": "ENOM",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "E_MAX",
+          "name": "E_MAX",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "E_MIN",
+          "name": "E_MIN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "E_NOM",
+          "name": "E_NOM",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "FOOTPRINT_VARIANT_NAME_0",
+          "name": "FOOTPRINT_VARIANT_NAME_0",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "HEIGHT",
+          "name": "HEIGHT",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Height",
+          "name": "Height",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "IPC",
+          "name": "IPC",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "JEDEC",
+          "name": "JEDEC",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "L1_MAX",
+          "name": "L1_MAX",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "L1_MIN",
+          "name": "L1_MIN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "L1_NOM",
+          "name": "L1_NOM",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LEAD_FREE",
+          "name": "LEAD_FREE",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "L_MAX",
+          "name": "L_MAX",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "L_MIN",
+          "name": "L_MIN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "L_NOM",
+          "name": "L_NOM",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LibraryID",
+          "name": "LibraryID",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MAX_SUPPLY_VOLTAGE",
+          "name": "MAX_SUPPLY_VOLTAGE",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MF",
+          "name": "MF",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MFG_PACKAGE_IDENT",
+          "name": "MFG_PACKAGE_IDENT",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MFG_PACKAGE_IDENT_COMPONENT_ID",
+          "name": "MFG_PACKAGE_IDENT_COMPONENT_ID",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MFG_PACKAGE_IDENT_DATE",
+          "name": "MFG_PACKAGE_IDENT_DATE",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MFG_PACKAGE_IDENT_REV",
+          "name": "MFG_PACKAGE_IDENT_REV",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MIN_SUPPLY_VOLTAGE",
+          "name": "MIN_SUPPLY_VOLTAGE",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MOUSER_DESCRIPTION",
+          "name": "MOUSER_DESCRIPTION",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MOUSER_PART_NUMBER",
+          "name": "MOUSER_PART_NUMBER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MP",
+          "name": "MP",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer",
+          "name": "Manufacturer",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Name",
+          "name": "Manufacturer_Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Part_Number",
+          "name": "Manufacturer_Part_Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Part Number",
+          "name": "Mouser Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Price/Stock",
+          "name": "Mouser Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "NOMINAL_SUPPLY_CURRENT",
+          "name": "NOMINAL_SUPPLY_CURRENT",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "NUMBER_OF_OUTPUTS",
+          "name": "NUMBER_OF_OUTPUTS",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "OUTPUT_CURRENT",
+          "name": "OUTPUT_CURRENT",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "OUTPUT_TYPE",
+          "name": "OUTPUT_TYPE",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "OUTPUT_VOLTAGE",
+          "name": "OUTPUT_VOLTAGE",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PACKAGE",
+          "name": "PACKAGE",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PACKAGE_TYPE",
+          "name": "PACKAGE_TYPE",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PINS",
+          "name": "PINS",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PIN_COLUMNS",
+          "name": "PIN_COLUMNS",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PIN_COUNT",
+          "name": "PIN_COUNT",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PREFIX",
+          "name": "PREFIX",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Package",
+          "name": "Package",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PartID",
+          "name": "PartID",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Power_W",
+          "name": "Power_W",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Price",
+          "name": "Price",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "ROHS",
+          "name": "ROHS",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SNAPEDA_PACKAGE_ID",
+          "name": "SNAPEDA_PACKAGE_ID",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SOURCE_URL",
+          "name": "SOURCE_URL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "STANDARD",
+          "name": "STANDARD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SWITCHING_FREQUENCY",
+          "name": "SWITCHING_FREQUENCY",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SWITCHING_TOPOLOGY",
+          "name": "SWITCHING_TOPOLOGY",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SearchPath",
+          "name": "SearchPath",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SnapEDA_Link",
+          "name": "SnapEDA_Link",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "TEMPERATURE_RANGE_HIGH",
+          "name": "TEMPERATURE_RANGE_HIGH",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "TEMPERATURE_RANGE_LOW",
+          "name": "TEMPERATURE_RANGE_LOW",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "THERMAL_PAD",
+          "name": "THERMAL_PAD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Tolerance",
+          "name": "Tolerance",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "VACANCIES",
+          "name": "VACANCIES",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "VERIFICATION_VERSION",
+          "name": "VERIFICATION_VERSION",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Voltage_V",
+          "name": "Voltage_V",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Voltage_VDC",
+          "name": "Voltage_VDC",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "AUTOMOTIVE",
+          "name": "AUTOMOTIVE",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -424,7 +1024,7 @@
         "uuid": "19cb6025-5afe-4cbe-82f8-7b7ab9da466c"
       }
     ],
-    "used_designators": "#PWR17,#PWR21,#PWR31,#PWR46,#PWR60-72,U5,U7,C5-6,R27-28",
+    "used_designators": "Q8,#PWR72-73,J1-4",
     "variants": []
   },
   "sheets": [
