@@ -633,7 +633,7 @@
         "uuid": "beb4defa-a91c-4f5d-8b77-131846075617"
       }
     ],
-    "used_designators": "D1,#PWR1-6,#PWR9-13,#PWR15-16,#PWR30-32,#PWR34-44,#PWR47-48,#PWR53-54,R15-42,VR2,U1,U3-9,R_Bypass1-2,C2,C4,C6-7",
+    "used_designators": "D1,#PWR1-6,#PWR9-13,#PWR15-16,#PWR30-32,#PWR34-44,#PWR47-48,#PWR53-54,R15-42,TP1-4,VR2,U1,U3-9,R_Bypass1-2,C2,C4,C6-7",
     "variants": []
   },
   "sheets": [

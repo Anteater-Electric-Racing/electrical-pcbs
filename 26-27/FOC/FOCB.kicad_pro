@@ -469,7 +469,6 @@
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
-      "same_local_global_power": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
@@ -517,8 +516,8 @@
     "meta": {
       "version": 5
     },
-    "net_colors": {},
-    "netclass_assignments": {},
+    "net_colors": null,
+    "netclass_assignments": null,
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -1250,7 +1249,7 @@
         "uuid": "b4fe6619-b5b7-4a4a-8013-ac1e600a1b83"
       }
     ],
-    "used_designators": "#PWR1-10,#PWR20,#PWR22-23,#PWR25-26,#PWR30,#PWR33-37,#PWR40-79,1,C1-6,C11-12,C22-36,D1,D20,IC1-2,J3-4,J7-29,L1,PS1-2,Q8,Q10,R1-8,R10-29,R42-60,R_Bypass1-2,U1-6,U10-21,VR1-4,Y1-3",
+    "used_designators": "U1-7,U10-21,PS1-2,1,IC1-2,R1-29,R40-63,#PWR1-26,#PWR30,#PWR33-37,#PWR40-43,#PWR46,#PWR48,#PWR51-72,#PWR80-85,D1-2,D20,C1-7,C9-13,C22-36,L1,Q8,Q10,R_Bypass1-2,VR1-4,Y1-3,J3-4,J7-8,TP1-16",
     "variants": []
   },
   "sheets": [
