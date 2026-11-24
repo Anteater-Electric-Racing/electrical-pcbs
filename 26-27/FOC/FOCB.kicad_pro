@@ -1181,9 +1181,27 @@
           "label": "Height",
           "name": "Height",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Type",
+          "name": "Sim.Type",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
         }
       ],
-      "filter_string": "",
+      "filter_string": "mcp",
       "group_symbols": true,
       "include_excluded_from_bom": true,
       "name": "",
@@ -1231,7 +1249,7 @@
         "uuid": "b4fe6619-b5b7-4a4a-8013-ac1e600a1b83"
       }
     ],
-    "used_designators": "U1-6,U10-21,PS1-2,1,IC1-2,R1-8,R10-29,R42-60,#PWR1-10,#PWR20,#PWR22-23,#PWR25-26,#PWR30,#PWR33-37,#PWR40-42,#PWR51-72,D1,D20,C1-6,C11-12,C22-35,L1,Q10,R_Bypass1-2,VR1-4,Y1-3",
+    "used_designators": "U1-6,U10-21,PS1-2,1,IC1-2,R1-8,R10-29,R42-60,#PWR1-10,#PWR20,#PWR22-23,#PWR25-26,#PWR30,#PWR33-37,#PWR40-43,#PWR51-72,D1,D20,C1-6,C11-12,C22-36,L1,Q8,Q10,R_Bypass1-2,VR1-4,Y1-3,J3-4,J7-8",
     "variants": []
   },
   "sheets": [
