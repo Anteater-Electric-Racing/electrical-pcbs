@@ -8403,6 +8403,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 234.95 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "729fae4b-ef62-4786-9810-30554d986aff")
 		)
@@ -8845,6 +8856,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 208.28 43.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "fe11932c-7408-4005-85a3-2983e911d1ec")
 		)
@@ -8951,6 +8973,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 218.44 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "08e59934-d324-468e-b988-4ed5eb67f768")
 		)
@@ -8961,6 +8994,96 @@
 			(project "FOCB"
 				(path "/b4fe6619-b5b7-4a4a-8013-ac1e600a1b83/c3171342-6ccc-4b3a-a5b0-79cfa02a1c34"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 60.96 66.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "052ca93c-b6d5-4543-8ea8-faecd4d81f6f")
+		(property "Reference" "TP22"
+			(at 63.5 61.4679 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 63.5 64.0079 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 60.96 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 60.96 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ceee903c-7cde-4ad9-82dd-e3c70b545e53")
+		)
+		(instances
+			(project "FOCB"
+				(path "/b4fe6619-b5b7-4a4a-8013-ac1e600a1b83/c3171342-6ccc-4b3a-a5b0-79cfa02a1c34"
+					(reference "TP22")
 					(unit 1)
 				)
 			)
@@ -9023,6 +9146,17 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 132.08 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 132.08 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -9136,6 +9270,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 195.58 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4d042b85-2080-4054-954d-722f17336ca8")
 		)
@@ -9228,6 +9373,17 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "LM393P"
+			(at 271.78 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 271.78 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -9493,6 +9649,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 60.96 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b3bed1d9-6787-4a26-96c4-d2cb736b5a64")
 		)
@@ -9653,6 +9820,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 167.64 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4ad2ae6f-0dbb-4e97-afda-953459a93c0f")
 		)
@@ -9747,6 +9925,96 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 60.96 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "10e80e62-0468-4399-8324-ebc79e2c870c")
+		(property "Reference" "TP21"
+			(at 63.5 44.9579 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 63.5 47.4979 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 60.96 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 60.96 49.53 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "875bb038-1c9f-4541-87bd-7ab227514f0a")
+		)
+		(instances
+			(project "FOCB"
+				(path "/b4fe6619-b5b7-4a4a-8013-ac1e600a1b83/c3171342-6ccc-4b3a-a5b0-79cfa02a1c34"
+					(reference "TP21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 208.28 68.58 0)
 		(unit 1)
@@ -9803,6 +10071,17 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 208.28 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 208.28 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -9962,6 +10241,17 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 256.54 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 256.54 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -10363,6 +10653,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 104.14 149.86 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d55acff4-cb22-4765-a29b-6575d4f6bd52")
 		)
@@ -10466,6 +10767,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 207.01 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "65b53ffc-a56f-4954-a856-87fd46c3ca76")
 		)
@@ -10536,6 +10848,17 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 104.14 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 104.14 187.96 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10957,6 +11280,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 218.44 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "5dedbda4-3e8d-45a8-8e4b-f02660e378b5")
 		)
@@ -11065,6 +11399,17 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 132.08 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 132.08 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -11315,6 +11660,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 238.76 63.5 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8430a9b7-c3db-47c9-8ff5-a3d1812beae6")
 		)
@@ -11381,6 +11737,17 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 30.48 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 30.48 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -11471,6 +11838,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 132.08 73.66 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9d016a0a-86ff-4ce0-b5a1-84276d917202")
 		)
@@ -11539,6 +11917,17 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 71.12 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 71.12 49.53 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11619,6 +12008,17 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 261.62 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 261.62 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -12179,6 +12579,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 238.76 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7c4cd5dc-e7a0-49c7-8401-76dd2970f709")
 		)
@@ -12250,6 +12661,17 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 245.11 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 245.11 135.89 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12338,6 +12760,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 30.48 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c4d0fdb1-a5ea-4c8e-8376-b04ff731a741")
 		)
@@ -12407,6 +12840,17 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 101.6 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 101.6 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -12568,6 +13012,17 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 35.56 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 35.56 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -12750,6 +13205,17 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "CD4071BE"
+			(at 201.93 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 201.93 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -13056,6 +13522,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 231.14 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "13"
 			(uuid "6b2b7051-5e5a-4d7f-93fd-9636edadaafe")
 		)
@@ -13174,6 +13651,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 167.64 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a0f8486e-d53c-40aa-a7d5-de36b6849113")
 		)
@@ -13253,6 +13741,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 236.22 140.97 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c145d6ce-3c05-424d-9580-45dd74173ba8")
 		)
@@ -13263,6 +13762,96 @@
 			(project "FOCB"
 				(path "/b4fe6619-b5b7-4a4a-8013-ac1e600a1b83/c3171342-6ccc-4b3a-a5b0-79cfa02a1c34"
 					(reference "R55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 81.28 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7c8f9210-274a-4dd3-828a-40b78f1bc544")
+		(property "Reference" "TP23"
+			(at 83.82 44.9579 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 83.82 47.4979 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 86.36 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 81.28 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 81.28 49.53 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "32b0a553-f309-4799-8d1e-645ef26e00ac")
+		)
+		(instances
+			(project "FOCB"
+				(path "/b4fe6619-b5b7-4a4a-8013-ac1e600a1b83/c3171342-6ccc-4b3a-a5b0-79cfa02a1c34"
+					(reference "TP23")
 					(unit 1)
 				)
 			)
@@ -13603,6 +14192,17 @@
 			)
 		)
 		(property "LibraryID" "8960b80c-0994-46e9-89d6-a2b7e069ec47"
+			(at 46.99 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 46.99 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -13999,6 +14599,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 71.12 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "84c0a671-397e-4e18-96b0-add6f1aaf724")
 		)
@@ -14077,6 +14688,17 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 97.79 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 97.79 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -14521,6 +15143,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 46.99 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2f3ec528-4cb5-42d4-b837-ab61eaa9e9eb")
 		)
@@ -14720,6 +15353,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 93.98 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2f96e8ad-3c3f-4366-93c2-7b4e134ef0c7")
 		)
@@ -14802,6 +15446,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 97.79 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e7a75e5d-36a9-4a13-8b8f-0fb81a60b780")
 		)
@@ -14872,6 +15527,17 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 30.48 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 30.48 113.03 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15117,6 +15783,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 101.6 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "70a555f7-d437-4ffe-b063-f0407f95d058")
 		)
@@ -15344,6 +16021,17 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 104.14 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 104.14 111.76 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15689,6 +16377,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 247.65 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "5dedbda4-3e8d-45a8-8e4b-f02660e378b4")
 		)
@@ -15828,6 +16527,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 165.1 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "5dedbda4-3e8d-45a8-8e4b-f02660e378b6")
 		)
@@ -15943,6 +16653,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 30.48 151.13 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8d0349b5-ebd6-4ce3-983e-d75b31f73132")
 		)
@@ -16016,6 +16737,17 @@
 		)
 		(property "Description" "test point"
 			(at 208.28 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 208.28 41.91 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16102,6 +16834,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 132.08 35.56 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "45ad83e9-917c-42ff-9b6a-056ccc3d39f6")
 		)
@@ -16171,6 +16914,17 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 97.79 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 97.79 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -16263,6 +17017,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 208.28 64.77 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f8abfb01-373f-4637-a913-87797aade4bf")
 		)
@@ -16332,6 +17097,17 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 167.64 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 167.64 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -16435,6 +17211,17 @@
 		)
 		(property "Manufacturer_Part_Number" "CD4071BE"
 			(at 164.084 139.446 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 165.1 149.86 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16561,6 +17348,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 208.28 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "dbece02c-37eb-46d4-875a-f3cb5330374e")
 		)
@@ -16633,6 +17431,17 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 167.64 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 167.64 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -16723,6 +17532,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 251.46 111.76 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1da88d8f-4e11-41df-9867-c2f619771af4")
 		)
@@ -16794,6 +17614,17 @@
 		)
 		(property "Description" "test point"
 			(at 167.64 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 167.64 35.56 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16882,6 +17713,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 60.96 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d405b37a-0bde-467b-ae59-edbc7cdc435c")
 		)
@@ -16953,6 +17795,17 @@
 		)
 		(property "Description" "test point"
 			(at 167.64 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 167.64 73.66 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17299,6 +18152,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 265.43 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "011003c3-ab29-4eff-ba4b-65616915f0a2")
 		)
@@ -17438,6 +18302,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 251.46 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9014343a-d085-49a8-b7f4-4273de796fc8")
 		)
@@ -17541,6 +18416,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 46.99 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "43878bbe-06ec-42e4-878d-9151d0354af4")
 		)
@@ -17632,6 +18518,17 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "CD4081BEE4"
+			(at 196.85 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 196.85 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -17771,6 +18668,96 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 81.28 66.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d5eb2f64-c45c-4ff6-887c-331f1551bb33")
+		(property "Reference" "TP24"
+			(at 83.82 61.4679 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 83.82 64.0079 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 86.36 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 81.28 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 81.28 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0978702e-614a-416b-ba62-d23be7fea58b")
+		)
+		(instances
+			(project "FOCB"
+				(path "/b4fe6619-b5b7-4a4a-8013-ac1e600a1b83/c3171342-6ccc-4b3a-a5b0-79cfa02a1c34"
+					(reference "TP24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 35.56 146.05 0)
 		(unit 1)
@@ -17827,6 +18814,17 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 35.56 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 35.56 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -17906,6 +18904,17 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 30.48 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 30.48 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -17998,6 +19007,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 238.76 41.91 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "35369237-f370-4dc6-9fd4-df2602419528")
 		)
@@ -18066,6 +19086,17 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 261.62 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 261.62 111.76 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18147,6 +19178,17 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 132.08 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 132.08 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -18239,6 +19281,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 283.21 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "491fa0b3-a039-4857-973c-7d6fb0ee423b")
 		)
@@ -18321,6 +19374,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 238.76 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f383dc03-d81e-49ef-b1a2-f63df4bb8265")
 		)
@@ -18390,6 +19454,17 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 101.6 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 101.6 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -18762,6 +19837,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 238.76 43.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b3fe44cc-bf69-496b-98e2-5e6a049719e6")
 		)
@@ -18844,6 +19930,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 30.48 189.23 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4a2173f7-6744-4bbc-9663-73efb625513b")
 		)
@@ -18915,6 +20012,17 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 71.12 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 71.12 66.04 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19126,6 +20234,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 46.99 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9cacd5be-9bf5-41a6-8dcd-c1a9bd8f9b1b")
 		)
@@ -19247,6 +20366,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 81.28 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "365d8776-aac4-4d8a-b169-8926f8579e9b")
 		)
@@ -19329,6 +20459,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 35.56 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d5f4876a-afd4-47d4-85f8-41ce267da3d9")
 		)
@@ -19401,6 +20542,17 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 132.08 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 132.08 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -19504,6 +20656,17 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "GRM188R72E102KW07D"
+			(at 81.28 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 81.28 53.34 0)
 			(hide yes)
 			(show_name no)
