@@ -9,7 +9,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
-			(at 0.508 10.16 0)
+			(at 0 9.398 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -20,7 +20,7 @@
 			)
 		)
 		(property "Value" "TLV2371"
-			(at 0.508 10.16 0)
+			(at 0 9.398 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -30,7 +30,7 @@
 			)
 		)
 		(property "Footprint" "LM_8960b80c09_cd2af068af86:TLV2371"
-			(at -5.08 0 0)
+			(at -3.81 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -63,7 +63,7 @@
 			)
 		)
 		(property "PartID" "TLV2371"
-			(at 0.508 10.16 0)
+			(at 0 9.398 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -74,7 +74,7 @@
 			)
 		)
 		(property "LibraryID" "8960b80c-0994-46e9-89d6-a2b7e069ec47"
-			(at -5.08 0 0)
+			(at -3.81 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -87,7 +87,7 @@
 		(symbol "TLV2371_0_1"
 			(polyline
 				(pts
-					(xy -8.89 7.62) (xy -8.89 -10.16)
+					(xy -6.35 6.35) (xy -6.35 -7.62)
 				)
 				(stroke
 					(width 0.127)
@@ -99,7 +99,7 @@
 			)
 			(polyline
 				(pts
-					(xy -8.89 -10.16) (xy 8.89 -10.16)
+					(xy -6.35 -7.62) (xy 5.08 -7.62)
 				)
 				(stroke
 					(width 0.127)
@@ -111,7 +111,7 @@
 			)
 			(polyline
 				(pts
-					(xy 8.89 7.62) (xy -8.89 7.62)
+					(xy 5.08 6.35) (xy -6.35 6.35)
 				)
 				(stroke
 					(width 0.127)
@@ -123,7 +123,7 @@
 			)
 			(polyline
 				(pts
-					(xy 8.89 -10.16) (xy 8.89 7.62)
+					(xy 5.08 -7.62) (xy 5.08 6.35)
 				)
 				(stroke
 					(width 0.127)
@@ -136,7 +136,7 @@
 		)
 		(symbol "TLV2371_1_1"
 			(pin output line
-				(at -16.51 2.54 0)
+				(at -13.97 2.54 0)
 				(length 7.62)
 				(name "OUT"
 					(effects
@@ -154,7 +154,7 @@
 				)
 			)
 			(pin power_in line
-				(at -16.51 -1.27 0)
+				(at -13.97 -1.27 0)
 				(length 7.62)
 				(name "GND"
 					(effects
@@ -172,7 +172,7 @@
 				)
 			)
 			(pin input line
-				(at -16.51 -5.08 0)
+				(at -13.97 -5.08 0)
 				(length 7.62)
 				(name "IN+"
 					(effects
@@ -190,7 +190,7 @@
 				)
 			)
 			(pin input line
-				(at 16.51 -5.08 180)
+				(at 12.7 -5.08 180)
 				(length 7.62)
 				(name "IN-"
 					(effects
@@ -208,7 +208,7 @@
 				)
 			)
 			(pin power_in line
-				(at 16.51 2.54 180)
+				(at 12.7 2.54 180)
 				(length 7.62)
 				(name "VDD"
 					(effects
