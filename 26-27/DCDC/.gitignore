@@ -1,0 +1,49 @@
+# MacOS generated files #
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+
+# For PCBs designed using KiCad: https://www.kicad.org/
+# Format documentation: https://kicad.org/help/file-formats/
+
+# Temporary files
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-backups
+*.kicad_prl
+*.sch-bak
+*~
+_autosave-*
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
+*.lck
+
+\#auto_saved_files#
+*auto_saved_files*
+
+# Netlist files (exported from Eeschema)
+*.net
+
+# Autorouter files (exported from Pcbnew)
+*.dsn
+*.ses
+ltspice/DCDCv9-3r_infineon_model.asc
+ltspice/DCDCv9-3r_Above575V_debug.asc
+ltspice/DCDCv9-3r_Above575V_debug.plt
+ltspice/DCDCv9-3r_infineon_model_breakdown_debug.asc
+ltspice/DCDCv9-3r_infineon_model_breakdown_debug.plt
+ltspice/DCDCv9-3r_infineon_model_breakdown_debug_Level1_modell.asc
+ltspice/DCDCv9-3r_infineon_model_breakdown_debug_Level1_modell.log
+ltspice/DCDCv9-3r_infineon_model_breakdown_debug_Level1_modell.op.raw
+ltspice/DCDCv9-3r_infineon_model_breakdown_debug_Level1_modell.raw
+ltspice/DCDCv9-3r.log
+ltspice/DCDCv9-3r.op.raw
+ltspice/DCDCv9-3r.raw
+/kicad/production/backups
+/transformer/cut ETD39 Transformer Isolator set v2b_autosave
