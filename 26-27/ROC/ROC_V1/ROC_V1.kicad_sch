@@ -7744,17 +7744,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 137.16) (xy 76.2 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "00e97342-84f1-4e99-915b-a0a005132316")
-	)
-	(wire
-		(pts
-			(xy 74.93 146.05) (xy 76.2 146.05)
+			(xy 74.93 142.24) (xy 76.2 142.24)
 		)
 		(stroke
 			(width 0)
@@ -7874,16 +7864,6 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 149.86) (xy 76.2 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "124ce176-54b1-48a1-9d05-79adba111166")
-	)
-	(wire
-		(pts
 			(xy 285.75 209.55) (xy 285.75 212.09)
 		)
 		(stroke
@@ -7961,6 +7941,16 @@
 			(type default)
 		)
 		(uuid "18a282fd-2373-422e-9e55-e0e314809d78")
+	)
+	(wire
+		(pts
+			(xy 74.93 151.13) (xy 76.2 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18cd388b-3523-42b8-af39-d6b5f125f48f")
 	)
 	(wire
 		(pts
@@ -8924,7 +8914,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 139.7) (xy 76.2 139.7)
+			(xy 74.93 138.43) (xy 76.2 138.43)
 		)
 		(stroke
 			(width 0)
@@ -9024,7 +9014,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 152.4) (xy 76.2 152.4)
+			(xy 74.93 146.05) (xy 76.2 146.05)
 		)
 		(stroke
 			(width 0)
@@ -9281,16 +9271,6 @@
 			(type default)
 		)
 		(uuid "c810a3b6-9926-4890-93fa-53a811a9f368")
-	)
-	(wire
-		(pts
-			(xy 74.93 143.51) (xy 76.2 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c97fcc37-44cc-4653-99c3-bb6c52dd0941")
 	)
 	(wire
 		(pts
@@ -9802,18 +9782,8 @@
 		)
 		(uuid "17d6216b-bcbd-43b1-a777-a735fcd322b3")
 	)
-	(label "TSSI_GREEN+"
-		(at 76.2 143.51 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1983c8eb-4618-4ede-9da4-5ae5fbeff816")
-	)
 	(label "RTML_AMBER-"
-		(at 152.4 255.27 0)
+		(at 152.4 260.35 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9952,6 +9922,16 @@
 		)
 		(uuid "2df7409f-1011-4933-99c6-a13571b3e23a")
 	)
+	(label "LIGHT TREE"
+		(at 152.4 254 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2df8ee1a-bf18-464a-b7a4-3cc0359aafea")
+	)
 	(label "LP1-"
 		(at 321.31 212.09 180)
 		(effects
@@ -9992,16 +9972,6 @@
 		)
 		(uuid "31016c78-62fb-4692-977a-31cee746806c")
 	)
-	(label "RTML_AMBER+"
-		(at 152.4 252.73 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "32c4db76-961d-4f9b-aa6b-9da61a37530e")
-	)
 	(label "HVMS+"
 		(at 69.85 264.16 180)
 		(effects
@@ -10011,26 +9981,6 @@
 			(justify right bottom)
 		)
 		(uuid "34015748-28e2-4923-b4a3-b628af310451")
-	)
-	(label "RTML_AMBER+"
-		(at 76.2 137.16 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "34c3c85d-63aa-4539-95d6-447cf3d7ddbc")
-	)
-	(label "TSSI_GREEN+"
-		(at 152.4 259.08 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "35bf1c6a-6af0-43c3-a7a5-dab994480822")
 	)
 	(label "CAN_L"
 		(at 365.76 48.26 0)
@@ -10081,16 +10031,6 @@
 			(justify left bottom)
 		)
 		(uuid "3e67e0b9-af68-45a4-a218-790db4c27b8a")
-	)
-	(label "TSSI_RED+"
-		(at 76.2 149.86 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4490504f-b6c1-44d8-8eef-6c817a581af0")
 	)
 	(label "BMS_FAULT_LED-"
 		(at 76.2 158.75 0)
@@ -10221,6 +10161,16 @@
 			(justify right bottom)
 		)
 		(uuid "6213f627-184c-4fab-9068-5e1bf1b244f1")
+	)
+	(label "LIGHT TREE"
+		(at 76.2 151.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6333cb52-d88f-4d2c-a30f-a93b55e0101e")
 	)
 	(label "LP1-"
 		(at 152.4 278.13 0)
@@ -10353,7 +10303,7 @@
 		(uuid "85ceba6d-f7e8-4ed3-84e5-b323c698a4ea")
 	)
 	(label "TSSI_GREEN-"
-		(at 76.2 146.05 0)
+		(at 76.2 142.24 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10513,7 +10463,7 @@
 		(uuid "a97830d6-0cd2-4f58-ac4f-7b9cf105e38e")
 	)
 	(label "TSSI_GREEN-"
-		(at 152.4 261.62 0)
+		(at 152.4 264.16 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10573,7 +10523,7 @@
 		(uuid "b3f01ac7-7222-41b0-9a92-4d671cc8ab67")
 	)
 	(label "RTML_AMBER-"
-		(at 76.2 139.7 0)
+		(at 76.2 138.43 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10623,7 +10573,7 @@
 		(uuid "bec54b7d-f144-4788-bc67-7b62a48ae37f")
 	)
 	(label "TSSI_RED-"
-		(at 76.2 152.4 0)
+		(at 76.2 146.05 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10791,16 +10741,6 @@
 			(justify left bottom)
 		)
 		(uuid "ddce5f96-d200-4911-9361-d1493e019487")
-	)
-	(label "TSSI_RED+"
-		(at 152.4 265.43 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e2642942-6cc8-4ca6-8e1b-6f518d1db835")
 	)
 	(label "IMD_FAULT_LED+"
 		(at 30.48 274.32 180)
@@ -20252,18 +20192,8 @@
 				(justify left)
 			)
 		)
-		(pin "RTML_AMBER+" output
-			(at 74.93 137.16 0)
-			(uuid "c4c5a761-241f-46af-97be-f5f5de0e946d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "RTML_AMBER-" output
-			(at 74.93 139.7 0)
+			(at 74.93 138.43 0)
 			(uuid "89611d28-09c8-44cf-8377-cc39f831ae57")
 			(effects
 				(font
@@ -20282,18 +20212,8 @@
 				(justify left)
 			)
 		)
-		(pin "TSSI_RED+" output
-			(at 74.93 149.86 0)
-			(uuid "253fbb63-218c-4c89-893b-c07d1aed66be")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "TSSI_RED-" output
-			(at 74.93 152.4 0)
+			(at 74.93 146.05 0)
 			(uuid "db8549af-5109-41c1-b76f-364377a86e80")
 			(effects
 				(font
@@ -20302,9 +20222,9 @@
 				(justify right)
 			)
 		)
-		(pin "TSSI_GREEN+" output
-			(at 74.93 143.51 0)
-			(uuid "5804a852-ea2e-468c-ab90-a0169e64e174")
+		(pin "TSSI_GREEN-" output
+			(at 74.93 142.24 0)
+			(uuid "4ad026dc-7107-47d6-88dc-d62020b68a7b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20312,9 +20232,9 @@
 				(justify right)
 			)
 		)
-		(pin "TSSI_GREEN-" output
-			(at 74.93 146.05 0)
-			(uuid "4ad026dc-7107-47d6-88dc-d62020b68a7b")
+		(pin "LIGHT TREE" input
+			(at 74.93 151.13 0)
+			(uuid "f928e2ee-2586-4b87-a7cd-5c555888a566")
 			(effects
 				(font
 					(size 1.27 1.27)
